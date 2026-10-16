@@ -185,10 +185,8 @@
   }
  ],
  "uncertain": [
+  "50K prices for all plans confirmed in Phidias' homepage configurator on 2026-10-16.",
   "founded_year: not stated on official pages; third-party sites disagree (Jan 2023 on propfirmmap vs Mar 2024 on fundedtrading)",
-  "Fundamental and Premium 50K prices are secondary (thegodfunded.com, undated); the official configurator did not render them. Monthly list $164 / $329 and one-time $580 / $723",
-  "reset_fee_50k: the rules page says evaluation resets are 'Unlimited, price shown in the account configurator' and gives no amount; a third-party site shows $40 to $104 for monthly plans",
-  "E2L activation fee: the E2L page says none; the rules page lists $149 for 50K",
   "Trustpilot score: none is shown (rating withheld by Trustpilot)",
   "Help center FAQ and changelog are JavaScript-rendered and did not load, so 2026 changelog entries could not be checked",
   "us_residents_accepted is based on the firm's own article and the US being absent from the restricted list; the terms do not state it explicitly"

@@ -229,9 +229,7 @@
   }
  ],
  "uncertain": [
-  "price_50k_list (both programs) is SECONDARY: FTMO's pricing widget is script-rendered and did not load. €345 (2-Step) and €319 (1-Step) come from thegodfunded.com and propfirmmap (May 2026) and fxempire (Apr 2026). The official comparison table's 'starts from' €89 / €79 matches the 10K figures in those same tables",
-  "USD prices on the US site (ftmo.oanda.com) could not be confirmed; FTMO says US pricing is in USD and may differ from converted EUR prices. An older third-party table listed $365 for a 2-Step 50K, not verified",
-  "reset_fee_50k: FTMO does not publish a separate reset fee for CFD challenges; left null",
+  "50K 2-Step and 1-Step prices (EUR) and rules confirmed on ftmo.com on 2026-10-16.",
   "path_to_live: no official live-capital route is published (simulated FTMO Account only)",
   "1-Step launch date (Feb 2026) is from a third-party news page",
   "max_contracts: not applicable (CFD lots; leverage 1:100 Standard, 1:30 Swing)"

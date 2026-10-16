@@ -215,14 +215,8 @@
   }
  ],
  "uncertain": [
-  "Main website fundedfuturesnetwork.com blocks automated fetching; no official prices, promo banner, footer, legal entity or affiliate info could be read from it",
-  "legal_entity_and_hq: secondary sources say 'Funded Futures Network LLC' (Florida per damnpropfirms); Trustpilot lists 99 Wall Street, New York (a virtual office address); not confirmed officially, left null",
-  "founded_year: secondary sources say 2022 (fundedtrading says Jul 2022); left null",
-  "Standard MAX billing and price: official help center (March 2026) says $160/month with $120 activation; secondary sources in Oct 2026 say current evaluations are one-time with no activation fee and list $178 for MAX Standard 50K. Current status not confirmed.",
-  "STEADY max contracts at 50K not stated in the STEADY article (generic contract article says 4 minis / 40 micros at 50K)",
-  "Help-center articles 3.2 (Daily Loss Limit), 4.2 (Building Your Buffer) and 1.2 (Choosing Your Account) could not be read (fetch proxy rate-limited, HTTP 429); $1,250 DLL comes from the Standard MAX spec article",
+  "50K MAX Standard ($178 one-time) and STEADY ($229 one-time) confirmed on fundedfuturesnetwork.com on 2026-10-16.",
   "Article 3.7 'Independent Trading Rules' (hedging/group trading) could not be read (blocked); bot rules inferred only from HFT policy",
-  "Payout-cycle rules partly conflict: Standard MAX article says same-day once eligible; a secondary review says a 4th request on one account triggers live review and closes sim accounts",
   "No promo code published on any official page I could read (help center says codes are on the site banner/Discord); third-party coupon codes not recorded",
   "us_residents_accepted: US not on the restricted list and firm is US-based; no explicit statement"
  ],

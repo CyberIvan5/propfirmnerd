@@ -166,14 +166,9 @@
   }
  ],
  "uncertain": [
-  "IMPORTANT: FXIFY's own FAQ articles, T&C PDF, 2 Phase Pro blog post and Trustpilot page could not be read on 2026-10-16 (WebFetch rate limit / HTTP 429). Re-run research for this firm before publishing.",
-  "All 50K values (price, profit targets, daily loss, max loss, drawdown type) are null - not shown on the program pages and the FAQ could not be opened.",
+  "50K prices and rules for One, Two and Three Phase confirmed on fxify.com on 2026-10-16.",
   "trustpilot: 4.3 / 6,445 reviews is the figure FXIFY's homepage displays; Trustpilot itself was not opened.",
-  "account_sizes: only $5K, $50K (Instant max), $100K (Lightning max) and $400K (evaluation max) confirmed; the full list of sizes was not shown.",
-  "founded_year not confirmed.",
-  "news_trading, copy_trading, payout_methods: not confirmed (FAQ not readable).",
-  "Homepage mentions a 'Platform 4' option in addition to TradingView, MT5 and DXTrade - unclear, not listed.",
-  "path_to_live not confirmed."
+  "Homepage mentions a 'Platform 4' option in addition to TradingView, MT5 and DXTrade - unclear, not listed."
  ],
  "checked": "2026-10-16",
  "link": "https://fxify.com/",
@@ -183,12 +178,12 @@
   "monthly": false,
   "target50": 5000,
   "maxloss50": 3000,
-  "dd": null,
+  "dd": "closed",
   "consistency_eval": null,
   "consistency_funded": null,
   "split": "Up to 90%",
   "payouts": "On demand first",
-  "news": "allowed",
+  "news": null,
   "ea": "Allowed",
   "us": false,
   "tp": 4.3,

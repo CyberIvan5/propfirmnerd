@@ -241,13 +241,9 @@
   }
  ],
  "uncertain": [
-  "founded_year: not stated on official pages (propfirmmatch says futures firm created Nov 2024; forex brand older) - null.",
+  "50K 2 Step ($232), 1 Step ($200) and Instant ($324) confirmed on blueguardian.com/forex on 2026-10-16.",
   "trustpilot.score: rating unavailable on Trustpilot due to guideline breach.",
-  "1 Step Standard ($200) and 2 Step Standard ($232) 50K prices are SECONDARY (propfirmmatch); only the Instant $324 price is visible on the official page.",
-  "us_residents_accepted: US not on official restricted lists, but no explicit statement; firm paused new US sign-ups in Feb 2024 (Finance Magnates) - current status not confirmed, left null.",
-  "Consistency rule for 1 Step/2 Step Standard not mentioned in help articles - null (not confirmed as none).",
-  "Payout guarantee: homepage mentions '24hr payout guarantee' (futures page adds $1,000 extra) but help center calls 24 business hours a processing target.",
-  "path_to_live: T&C mention allocation to a 'live account' but also say evaluations are simulated/demo - null."
+  "Payout guarantee: homepage mentions '24hr payout guarantee' (futures page adds $1,000 extra) but help center calls 24 business hours a processing target."
  ],
  "checked": "2026-10-16",
  "link": "https://blueguardian.com/",

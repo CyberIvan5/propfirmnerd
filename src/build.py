@@ -38,7 +38,7 @@ NAV = [("firms", "Firm reviews"), ("compare", "Compare"), ("best", "Best of"),
 SECTION_TITLES = {"firms": "Firm reviews", "compare": "Compare", "best": "Best prop firms",
                   "promo-codes": "Promo codes", "tools": "Tools", "guides": "Guides"}
 MARKET_LABEL = {"futures": "Futures", "forex": "Forex & CFDs", "multi": "Futures & forex"}
-DD_LABEL = {"eod": "End-of-day trailing", "intraday": "Intraday trailing", "static": "Static",
+DD_LABEL = {"eod": "End-of-day trailing", "intraday": "Intraday trailing", "static": "Static", "closed": "Trailing on closed balance",
             "mixed": "Depends on plan", None: "—"}
 
 esc = html.escape

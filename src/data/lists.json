@@ -81,7 +81,7 @@
   "blurb": "50K list prices from low to high, with the fees that change them",
   "sort": "price50",
   "limit": 10,
-  "intro": "50K evaluations sorted by list price before discounts. Monthly plans look cheap until they rebill, and some firms add an activation fee when you pass, so check both columns and run the numbers in our <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>. FTMO's price is in euros.",
+  "intro": "Each firm's main 50K plan, sorted by list price before discounts; some firms also sell cheaper plans, listed on their reviews. Monthly plans look cheap until they rebill, and some firms add an activation fee when you pass, so check both columns and run the numbers in our <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>. FTMO's price is in euros.",
   "why": {}
  },
  {
@@ -121,7 +121,7 @@
    ]
   },
   "limit": 10,
-  "intro": "Most futures firms ban automation outright. These firms allow it, each with its own limits: high-frequency trading and copying the same bot across users are banned almost everywhere. Read the firm's rules on your own bot before you buy.",
+  "intro": "Many futures firms ban or tightly restrict automation. These firms allow it, each with its own limits: high-frequency trading and copying the same bot across users are banned almost everywhere. Read the firm's rules on your own bot before you buy.",
   "why": {}
  },
  {
@@ -176,7 +176,7 @@
    "us": true
   },
   "limit": 15,
-  "intro": "Every firm below states, on its own pages, that it accepts US residents. Most are futures firms, which trade regulated US exchanges. Some forex firms serve US clients through a separate entity or a reduced set of platforms; the review for each firm says how.",
+  "intro": "Every firm below either says on its own pages that it accepts US residents or leaves the US off its restricted-country list. Most are futures firms, which trade regulated US exchanges. Some forex firms serve US clients through a separate entity or a reduced set of platforms; the review for each firm says how.",
   "why": {}
  }
 ]

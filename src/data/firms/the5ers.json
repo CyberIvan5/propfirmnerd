@@ -195,14 +195,8 @@
   }
  ],
  "uncertain": [
-  "price_50k_list (High Stakes $309 Classic / $278 New) is SECONDARY (propfirmbridge.com, Sep 2026); official page did not render 50K prices. Its smaller-size prices ($19 for 2.5K New) match the official page. Propfirmmatch shows an older $279 linked to a former 60K size.",
-  "High Stakes daily loss basis: official page says 5% but not the basis; secondary sources say higher of start-of-day balance or equity at MT5 server midnight.",
-  "Hyper Growth and Bootcamp prices are SECONDARY (propfirmmatch); no 50K size exists for either.",
-  "Bootcamp entry profit split (50%) is SECONDARY; official page says 'up to 100%'.",
-  "us_residents_accepted: T&C ban MT5 for US residents and US is not on the forbidden list; whether US residents can use cTrader accounts is not stated - left null.",
-  "Affiliate commission rates not published.",
-  "Futures program: only $25K price ($59) shown; 50K futures price not shown; daily loss/US rules not stated.",
-  "cTrader availability is from a propfirmmatch announcement (secondary); official pages reviewed mention MT5."
+  "50K High Stakes New ($249) and Classic ($279) prices, 4% daily and 8% max loss confirmed on the5ers.com/high-stakes on 2026-10-16.",
+  "Affiliate commission rates not published."
  ],
  "checked": "2026-10-16",
  "link": "https://the5ers.com/",

@@ -127,12 +127,10 @@
   }
  ],
  "uncertain": [
-  "price_50k_list: the Test monthly price is not shown in any help-center article read, and the homepage price table did not render. Not recorded.",
-  "trustpilot, platforms, payout_methods, restricted countries, US eligibility, copy trading, overnight/weekend holding: the relevant pages (Trustpilot, Choosing Your Platform, Payout System, Withdrawal Fees, Trade Copier Policy, Rule 4 trading hours) could not be read because WebFetch was rate-limited (HTTP 429). Left null/empty.",
+  "50K Test price ($170/month) confirmed on takeprofittrader.com on 2026-10-16.",
   "PRO+ rules (drawdown amount, DLL, upgrade criteria): help-center PRO+ pages rate-limited; only homepage claims recorded.",
   "PRO consistency rule and min/max withdrawal amounts: not stated in the pages read.",
   "Homepage claim that PRO has 'no contract limits' was not checked against the help center.",
-  "A third-party review (curvedtrading.com, secondary, not opened) refers to a PRO 'drawdown switch'; not verified. The help-center PRO rules page (updated Sep 22, 2026) describes only intraday trailing.",
   "recent_changes_2026: no dated 2026 changes confirmed. The 'Speed of Payouts Update' and 'PRO+ Development' articles exist but could not be read.",
   "founded_year: not stated on the homepage.",
   "affiliate commission: not read."
@@ -145,7 +143,7 @@
   "monthly": true,
   "target50": 3000,
   "maxloss50": 2000,
-  "dd": "eod",
+  "dd": "mixed",
   "consistency_eval": true,
   "consistency_funded": null,
   "split": "80% (90% live)",

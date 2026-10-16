@@ -3,14 +3,14 @@
   "a": "apex-trader-funding",
   "b": "topstep",
   "blurb": "One-time evaluation vs $49 a month",
-  "verdict": "Topstep is cheaper to start ($49 a month for 50K) and has a published route to a live account; Apex sells a one-time evaluation with no consistency rule and a choice of drawdown, but closes each funded account after six payouts. Both cap 50K drawdown at $2,000 and both ban holding past the close.",
+  "verdict": "Topstep costs $49 a month for 50K and has a published route to a live account, while Apex does not show its new evaluation prices outside checkout in every country. Apex sells a one-time evaluation with no consistency rule and a choice of drawdown, but closes each funded account after six payouts. Both cap 50K drawdown at $2,000 and both ban holding past the close.",
   "body": "<h2>Which to pick</h2><p>Pick Topstep if you want a low monthly entry price and an end-of-day drawdown on every account. Pick Apex if you want to pass fast in one payment and prefer no consistency target in the evaluation. Apex blocks some countries entirely, so check that it serves yours.</p>"
  },
  {
   "a": "ftmo",
   "b": "fundednext",
   "blurb": "Two of the largest forex firms, rule by rule",
-  "verdict": "Both sell a 50K two-step challenge with a static 10% max loss and a refundable fee. FTMO (€345) has the longer track record and a 4.8 Trustpilot score; FundedNext ($299.99) is cheaper, also sells futures, but bans EAs on CFD accounts of $50K and above.",
+  "verdict": "Both sell a 50K two-step challenge with a static 10% max loss and a refundable fee. FTMO (€345) has the longer track record and a 4.8 Trustpilot score; FundedNext ($299.99, in US dollars) is likely cheaper depending on the exchange rate, also sells futures, but bans EAs on CFD accounts of $50K and above.",
   "body": "<h2>Which to pick</h2><p>Pick FTMO for the longer track record and if you use EAs on a 50K account. Pick FundedNext if you want futures and CFDs from one firm or a lower price. FundedNext's 2-Step asks for 8% then 5%; FTMO's asks for 10% then 5%.</p>"
  },
  {
@@ -23,8 +23,8 @@
  {
   "a": "lucid-trading",
   "b": "tradeify",
-  "blurb": "The two cheapest one-time 50K evaluations",
-  "verdict": "Lucid ($136 for LucidFlex) and Tradeify ($145 for Growth) are the two cheapest one-time 50K evaluations we track, both with end-of-day drawdown and no activation fee. Lucid allows bots and has no consistency rule once funded on LucidFlex; Tradeify allows only your own non-HFT bots and adds a 35% rule to Growth payouts.",
-  "body": "<h2>Which to pick</h2><p>Pick Lucid if you trade with your own automation or copiers. Pick Tradeify if you want a choice of payout styles (Select Flex or Select Daily) or an instant-funded option. Lucid restricts more countries, including Serbia.</p>"
+  "blurb": "Two of the cheapest one-time 50K evaluations",
+  "verdict": "Lucid ($136 for LucidFlex) and Tradeify ($145 for Growth) are two of the cheapest one-time 50K evaluations we track, both with end-of-day drawdown and no activation fee. Lucid allows bots and has no consistency rule once funded on LucidFlex; Tradeify allows only your own non-HFT bots and adds a 35% rule to Growth payouts.",
+  "body": "<h2>Which to pick</h2><p>Pick Lucid if you trade with your own automation or copiers. Pick Tradeify if you want a choice of payout styles (Select Flex or Select Daily). Lucid restricts more countries, including Serbia.</p>"
  }
 ]

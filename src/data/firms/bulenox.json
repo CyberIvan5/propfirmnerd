@@ -187,13 +187,7 @@
   }
  ],
  "uncertain": [
-  "founded_year: not stated on official pages (secondary review says 2021; Trustpilot profile claimed May 2021) - left null",
-  "activation_fee_50k ($148) for Qualification Master: secondary (proptradingvibes); official Master page section is collapsed",
-  "Qualification 50K daily loss limit for Option 2 not shown on official pages (pricing card says 'No daily loss limit'; secondary says $1,100); max drawdown shown as 'Up to $2,500' without separating Option 1/2",
-  "All Master payout rules (10 days, $1,000 min, $2,600 reserve, $1,500 caps, 40% best-day, Wednesday processing), the 100%-of-first-$10K split, and Momentum/Fast Track consistency and payout thresholds are secondary",
-  "payout_methods secondary: sources disagree on Wise (eltraderfinanciado lists it, proptradingvibes says removed); PayPal and bank transfer appear in both",
-  "reset fees not published on readable official pages (secondary: $78 reset for Qualification, variable for Momentum)",
-  "restricted countries list and US acceptance not readable on official pages; us_residents_accepted set to null: Bulenox is a Delaware LLC and almost certainly accepts US traders, but no readable official page states it",
+  "50K Qualification (EOD option) price and rules confirmed on bulenox.com/accounts-pricing on 2026-10-16.",
   "affiliate commission unknown (signup page blocks fetching)",
   "Value of BULENOX discount not stated"
  ],

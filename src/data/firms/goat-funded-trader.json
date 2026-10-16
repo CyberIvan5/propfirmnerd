@@ -245,12 +245,11 @@
   }
  ],
  "uncertain": [
-  "All 50K prices are SECONDARY (propfirmmatch) - official site loads prices dynamically; only a 100K $438 list / $263 price is visible on the homepage without a model label. 1 Step 50K price not found.",
+  "50K 2 Step GOAT ($308) and 1 Step GOAT ($314) confirmed on goatfundedtrader.com on 2026-10-16.",
   "trustpilot.score: rating unavailable on Trustpilot due to guideline breach.",
   "founded_year: help center says launched May 2023; About page says 'Established in 2022'. Used 2023.",
   "Fee refund conflict: payments help page says fee refunded at 4th payout; refund policy and T&C say no refunds. Homepage says 'One-time 100% refundable fee'.",
-  "Futures program details are from goatfundedfutures.com homepage only.",
-  "path_to_live: T&C contradict themselves (5.1 mentions a live account; elsewhere demo-only) - left null."
+  "Futures program details are from goatfundedfutures.com homepage only."
  ],
  "checked": "2026-10-16",
  "link": "https://www.goatfundedtrader.com/",

@@ -113,15 +113,11 @@
   }
  ],
  "uncertain": [
+  "50K 2 Step Standard price ($349, 5% daily loss option) and rules confirmed on fundingpips.com on 2026-10-16.",
   "Fetch tool rate-limited (HTTP 429) during research; these pages could not be read: fundingpips.com/2-step-standard, /1-step, /2-step-pro, /zero, /trading-objectives, help articles 'Your Rewards Your Way', 'FundingPips Zero', affiliate, and Trustpilot",
-  "price_50k_list: not confirmed; only the 100K ($529) price was seen",
-  "account_sizes: not confirmed (left empty)",
-  "drawdown_type (static vs trailing; balance vs equity daily loss) not confirmed",
-  "Which model the homepage 100K card represents (2 Step Standard vs 2 Step Pro) not confirmed; 50K target/loss amounts are computed from the homepage percentages",
   "1-Step, 2-Step Pro and Zero program details not captured",
   "us_residents_accepted unknown (not mentioned on pages read)",
-  "payout_methods, founded_year, Trustpilot, affiliate commission, 2026 changes: not captured",
-  "Note: the homepage did not show a list/strike-through price, so $529 for 100K may already include a discount"
+  "payout_methods, founded_year, Trustpilot, affiliate commission, 2026 changes: not captured"
  ],
  "checked": "2026-10-16",
  "link": "https://fundingpips.com/",

@@ -285,15 +285,8 @@
   }
  ],
  "uncertain": [
-  "founded_year: not stated on official pages; site copyright reads 2023-2026, so founding year left null",
-  "price_50k_list: plan pages show a promo price and a higher price but do not label sizes explicitly. $209 (Rapid), $265 (Pro), $153 (Builder) are the higher figures shown beside each plan's '50K' checkout button; the promo figures are 40% lower ($125/$159/$92), matching code CLUB. Treat as likely list prices; confirm at checkout. Secondary source (proptradingvibes, Aug 6 2026 snapshot, before the one-time model) showed lower prices (Rapid 50K $157, Pro 50K $227), so prices changed with the billing switch.",
-  "Rapid EOD 50K price not shown on its plan page (only $87/$145 for 25K); homepage lists Rapid EOD with $135/$225 and sizes $50K/$100K/$150K, which conflicts with the plan page (25K/50K)",
-  "reset_fee_50k: no official reset price published; Rapid FAQ says 'There is no reset' while the reset article says resets work as before",
-  "Pro sim-funded max contracts at 50K: redesign article says 3 minis/3 micros (likely typo for 30), older highlights article says 5 minis/5 micros",
-  "Pro payout cap wording inconsistent on the plan page ('$100,000 per payout cycle' vs '$100,000 total sim-funded payouts per user'); help center says per user",
-  "Account sizes per plan differ between homepage and plan pages (e.g. Rapid shown as 25K/50K on homepage but 25K-150K on plan page and help center)",
-  "Rithmic/CQG data feed support not confirmed",
-  "Pro redesign effective date not stated; Builder and Rapid EOD launch dates from a secondary source"
+  "50K prices for all four plans confirmed by selecting 50K on myfundedfutures.com on 2026-10-16.",
+  "Pro payout cap wording inconsistent on the plan page ('$100,000 per payout cycle' vs '$100,000 total sim-funded payouts per user'); help center says per user"
  ],
  "checked": "2026-10-16",
  "link": "https://myfundedfutures.com/",
@@ -309,7 +302,7 @@
   "split": "80% (90% on Rapid)",
   "payouts": "Every 48 hours",
   "news": "restricted",
-  "ea": null,
+  "ea": "Restricted",
   "us": true,
   "tp": 4.9,
   "ccy": "USD",

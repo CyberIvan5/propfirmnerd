@@ -262,11 +262,8 @@
   }
  ],
  "uncertain": [
+  "50K prices for E8 One ($288), Pro ($218) and Signature ($160) confirmed on e8markets.com on 2026-10-16.",
   "trustpilot.score: Trustpilot shows no rating ('unavailable due to a breach of our guidelines'); review count 3,305.",
-  "E8 One 50K target/max loss/daily ($4,500/$3,000/$2,000) inferred from the official $100K default config (9%/6%/4%) and propfirmmatch's 50K listing; help center 'preset' says 6%/4%/3%. Values depend on checkout options.",
-  "E8 Pro and E8 Signature 50K list prices not shown on the official site; secondary sources conflict ($218 vs $228 Pro; $160 vs $150 Signature) - left null.",
-  "E8 Signature (Classic Markets) possibly being retired ('FAREWELL' code) - not confirmed.",
-  "Futures platforms (NinjaTrader, Tradovate) only from a secondary source; not listed.",
   "path_to_live: Terms say all accounts are simulated; no live-account path described.",
   "Affiliate commission not published."
  ],
@@ -278,7 +275,7 @@
   "monthly": false,
   "target50": 4500,
   "maxloss50": 3000,
-  "dd": null,
+  "dd": "closed",
   "consistency_eval": false,
   "consistency_funded": true,
   "split": "80% (up to 100%)",
