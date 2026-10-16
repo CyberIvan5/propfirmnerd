@@ -1,0 +1,58 @@
+<!--META {
+ "title": "ES Tick Value: $12.50 per Tick, $50 per Point (Calculator) | PropFirmNerd",
+ "description": "ES (E-mini S&P 500) tick value is $12.50 and point value is $50. Calculator for any move and contract count.",
+ "h1": "ES tick value",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": [
+  "tools.js"
+ ],
+ "faq": [
+  [
+   "How much is 1 point on ES?",
+   "One point on ES is worth $50 per contract."
+  ],
+  [
+   "What is the ES tick size?",
+   "0.25 index points, worth $12.50."
+  ],
+  [
+   "How many MES equal one ES?",
+   "Ten."
+  ]
+ ],
+ "related": [
+  [
+   "/tools/position-size-calculator/",
+   "Position size calculator",
+   "Contracts per trade from your risk and stop"
+  ],
+  [
+   "/tools/tick-value-calculator/",
+   "All futures tick values",
+   "ES, NQ, CL, GC, ZN and more"
+  ],
+  [
+   "/best/futures-prop-firms/",
+   "Best futures prop firms",
+   "Shortlist with checked rules"
+  ]
+ ]
+} META-->
+<header class="art-head"><h1>ES tick value</h1></header>
+<div class="content"><p class="lede">One ES tick (0.25 index points) is worth $12.50, and one full point is worth $50. The micro version, MES, is one tenth of that: $1.25 a tick and $5 a point.</p></div>
+<form class="tool" data-tool="tick" data-preset="ES">
+<div class="grid">
+<label>Contract<select name="symbol"></select></label>
+<label>Contracts<input name="qty" type="number" min="1" step="1" value="1" inputmode="numeric"></label>
+<label>Move in ticks<input name="ticks" type="number" step="1" value="8" inputmode="numeric"></label>
+</div>
+<div class="result">
+<div>Tick size<b data-out="size">—</b></div>
+<div>Value of one tick<b data-out="tick">—</b></div>
+<div>Value of one point<b data-out="point">—</b></div>
+<div>Your move (<span data-out="pts"></span>)<b data-out="move">—</b></div>
+</div>
+</form>
+<script>window.PFN_CONTRACTS={{CONTRACTS_JSON}};</script>
+<div class="content"><h2>ES vs MES</h2>{{CONTRACT_TABLE:ES,MES,NQ,MNQ}}</div>

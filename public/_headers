@@ -1,0 +1,4 @@
+/go/*
+  X-Robots-Tag: noindex
+/assets/*
+  Cache-Control: public, max-age=86400

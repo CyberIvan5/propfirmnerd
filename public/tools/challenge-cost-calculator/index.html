@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prop Firm Challenge True Cost Calculator | PropFirmNerd</title>
+<meta name="description" content="Add up what a prop firm evaluation really costs: fee after discount, monthly rebills, resets and activation, and the profit you need to break even.">
+<link rel="canonical" href="https://propfirmnerd.com/tools/challenge-cost-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PropFirmNerd">
+<meta property="og:title" content="Prop Firm Challenge True Cost Calculator | PropFirmNerd">
+<meta property="og:description" content="Add up what a prop firm evaluation really costs: fee after discount, monthly rebills, resets and activation, and the profit you need to break even.">
+<meta property="og:url" content="https://propfirmnerd.com/tools/challenge-cost-calculator/">
+<meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#18212C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20261016">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "True cost of a prop firm challenge", "url": "https://propfirmnerd.com/tools/challenge-cost-calculator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the real cost higher than the listed price?", "acceptedAnswer": {"@type": "Answer", "text": "Monthly plans rebill until you pass, many traders reset or rebuy after a fail, and some firms charge an activation fee when you pass. A discount usually applies only to the first payment."}}, {"@type": "Question", "name": "What does break-even profit mean here?", "acceptedAnswer": {"@type": "Answer", "text": "It is how much your funded account must earn before your share of the profit covers what you spent. It assumes the split you enter and ignores taxes and payout fees."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://propfirmnerd.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "True cost of a prop firm challenge", "item": "https://propfirmnerd.com/tools/challenge-cost-calculator/"}]}]}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+<a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav">
+<a href="/firms/">Firm reviews</a>
+<a href="/compare/">Compare</a>
+<a href="/best/">Best of</a>
+<a href="/promo-codes/">Promo codes</a>
+<a href="/tools/" aria-current="page">Tools</a>
+<a href="/guides/">Guides</a>
+</nav>
+</div></header>
+<main class="kind-tool"><div class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/tools/">Tools</a> › True cost of a prop firm challenge</div>
+<header class="art-head"><h1>True cost of a prop firm challenge</h1></header>
+<div class="content"><p class="lede">The sticker price is only the first payment. Enter the plan's numbers and how long you expect to take, and see the full bill and the profit you need to earn it back.</p></div>
+<form class="tool" data-tool="cost">
+<div class="grid">
+<label>Evaluation price ($)<input name="fee" type="number" min="0" step="1" value="150" inputmode="decimal"></label>
+<label>Billing<select name="billing"><option value="monthly" selected>Monthly</option><option value="one-time">One-time</option></select></label>
+<label>Discount (%)<input name="disc" type="number" min="0" max="100" step="1" value="0" inputmode="decimal"></label>
+<label>Months until you pass<input name="months" type="number" min="1" step="1" value="2" inputmode="numeric"></label>
+<label>Resets or rebuys<input name="resets" type="number" min="0" step="1" value="1" inputmode="numeric"></label>
+<label>Reset price ($)<input name="resetfee" type="number" min="0" step="1" value="100" inputmode="decimal"></label>
+<label>Activation fee ($)<input name="act" type="number" min="0" step="1" value="0" inputmode="decimal"></label>
+<label>Your profit split (%)<input name="split" type="number" min="1" max="100" step="1" value="90" inputmode="decimal"></label>
+</div>
+<div class="result">
+<div>Evaluation fees<b data-out="eval">—</b></div>
+<div>Resets<b data-out="resets">—</b></div>
+<div class="loss">Total spent<b data-out="total">—</b></div>
+<div>To break even you need<b data-out="breakeven">—</b></div>
+</div>
+</form>
+<div class="content">
+<p>The calculator applies the discount to every monthly payment. If a code only covers the first month, set the months to 1, note the discounted price, then run it again without the discount for the rest. Firm prices are on each <a href="/firms/">review</a> and current codes on the <a href="/promo-codes/">promo code page</a>.</p>
+</div><section class="faq"><h2>Questions traders ask</h2>
+<details><summary>Why is the real cost higher than the listed price?</summary><div><p>Monthly plans rebill until you pass, many traders reset or rebuy after a fail, and some firms charge an activation fee when you pass. A discount usually applies only to the first payment.</p></div></details>
+<details><summary>What does break-even profit mean here?</summary><div><p>It is how much your funded account must earn before your share of the profit covers what you spent. It assumes the split you enter and ignores taxes and payout fees.</p></div></details>
+</section><section class="related"><h2>Keep reading</h2><ul class="rows"><li><a href="/promo-codes/"><strong>Prop firm promo codes</strong><span>Current discounts</span></a></li><li><a href="/tools/pass-probability-calculator/"><strong>Pass probability calculator</strong><span>How many attempts to expect</span></a></li></ul></section>
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<div class="cols">
+<div class="about"><a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a><p>Prop firm rules, prices and codes in one place, checked against each firm's own pages and dated so you know how fresh they are.</p></div>
+<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li></ul></div>
+<div><strong>Learn</strong><ul><li><a href="/tools/">Calculators</a></li><li><a href="/guides/">Guides</a></li><li><a href="/methodology/">How we check firms</a></li><li><a href="/risks/">Risks of prop trading</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+</div>
+<p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
+</div></footer>
+<script src="/assets/js/tools.js?v=20261016"></script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
+var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
+</script>
+</body>
+</html>

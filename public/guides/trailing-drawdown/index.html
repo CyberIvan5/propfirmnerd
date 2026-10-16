@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trailing Drawdown Explained: Intraday vs End-of-Day vs Static | PropFirmNerd</title>
+<meta name="description" content="How trailing drawdown works at prop firms, the difference between intraday and end-of-day trailing and static max loss, with worked examples.">
+<link rel="canonical" href="https://propfirmnerd.com/guides/trailing-drawdown/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PropFirmNerd">
+<meta property="og:title" content="Trailing Drawdown Explained: Intraday vs End-of-Day vs Static | PropFirmNerd">
+<meta property="og:description" content="How trailing drawdown works at prop firms, the difference between intraday and end-of-day trailing and static max loss, with worked examples.">
+<meta property="og:url" content="https://propfirmnerd.com/guides/trailing-drawdown/">
+<meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#18212C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20261016">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Trailing drawdown explained", "description": "How trailing drawdown works at prop firms, the difference between intraday and end-of-day trailing and static max loss, with worked examples.", "url": "https://propfirmnerd.com/guides/trailing-drawdown/", "datePublished": "2026-10-16", "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "PropFirmNerd editorial team", "url": "https://propfirmnerd.com/about/"}, "publisher": {"@type": "Organization", "name": "PropFirmNerd", "url": "https://propfirmnerd.com/"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is trailing drawdown?", "acceptedAnswer": {"@type": "Answer", "text": "A max loss limit that moves up as your account makes new highs, so the distance between your best balance and the limit stays the same. It never moves down."}}, {"@type": "Question", "name": "Is end-of-day drawdown better than intraday?", "acceptedAnswer": {"@type": "Answer", "text": "For most traders, yes. End-of-day trailing only moves the limit at the close, so open profit you give back during the day does not tighten it. Intraday trailing moves the limit with every new high, including unrealized profit."}}, {"@type": "Question", "name": "Does trailing drawdown ever stop?", "acceptedAnswer": {"@type": "Answer", "text": "At many futures firms it stops once the limit reaches your starting balance or a set amount above it. After that the limit stays fixed. Each firm's review lists its rule."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://propfirmnerd.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "Trailing drawdown explained", "item": "https://propfirmnerd.com/guides/trailing-drawdown/"}]}]}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+<a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav">
+<a href="/firms/">Firm reviews</a>
+<a href="/compare/">Compare</a>
+<a href="/best/">Best of</a>
+<a href="/promo-codes/">Promo codes</a>
+<a href="/tools/">Tools</a>
+<a href="/guides/" aria-current="page">Guides</a>
+</nav>
+</div></header>
+<main class="kind-article"><div class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a> › Trailing drawdown explained</div>
+<header class="art-head"><h1>Trailing drawdown explained</h1><p class="byline">Updated October 16, 2026. <a href="/about/">PropFirmNerd editorial team</a></p></header><div class="content"><p class="lede">Trailing drawdown is a loss limit that follows your highest balance upward and never comes back down. Whether it follows your balance at the close or every tick during the day decides how hard it is to live with.</p>
+<h2>Static max loss</h2>
+<p>The limit sits a fixed amount below your starting balance. On a 50K account with a $2,000 static max loss, the account fails at $48,000 whether you are up $5,000 or flat. Forex firms commonly use a static overall limit plus a daily loss limit.</p>
+<h2>End-of-day trailing</h2>
+<p>The limit moves up only when the trading day closes at a new high. Start at $50,000 with a $2,000 limit, so the limit is $48,000. Close Monday at $51,000 and the limit moves to $49,000. On Tuesday you are up another $800 at lunch but close flat at $51,000: the limit stays at $49,000, because only the close counts.</p>
+<h2>Intraday trailing</h2>
+<p>The limit follows your highest balance in real time, open profit included. Same start: the limit is $48,000. A trade runs to +$800, so your peak is $50,800 and the limit is now $48,800, even if the trade comes back to break-even. Every winning trade you do not close at its best tightens the limit. This is the version that ends the most accounts.</p>
+<h2>When trailing stops</h2>
+<p>Many futures firms stop trailing once the limit reaches the starting balance (or, at some firms, the starting balance plus a small amount). From then on the limit is fixed, and profit above that is cushion. This is why the first weeks of a funded account are the riskiest.</p>
+<h2>Try it on your own numbers</h2>
+<p>The <a href="/tools/drawdown-simulator/">drawdown simulator</a> runs the same days through all three rules and shows which one would have stopped you. Each firm's exact rule is on its <a href="/firms/">review</a>, and the <a href="/compare/">comparison table</a> filters firms by drawdown type.</p></div><section class="faq"><h2>Questions traders ask</h2>
+<details><summary>What is trailing drawdown?</summary><div><p>A max loss limit that moves up as your account makes new highs, so the distance between your best balance and the limit stays the same. It never moves down.</p></div></details>
+<details><summary>Is end-of-day drawdown better than intraday?</summary><div><p>For most traders, yes. End-of-day trailing only moves the limit at the close, so open profit you give back during the day does not tighten it. Intraday trailing moves the limit with every new high, including unrealized profit.</p></div></details>
+<details><summary>Does trailing drawdown ever stop?</summary><div><p>At many futures firms it stops once the limit reaches your starting balance or a set amount above it. After that the limit stays fixed. Each firm's review lists its rule.</p></div></details>
+</section><section class="related"><h2>Keep reading</h2><ul class="rows"><li><a href="/tools/drawdown-simulator/"><strong>Drawdown simulator</strong><span>Try it on your own days</span></a></li><li><a href="/best/end-of-day-drawdown-prop-firms/"><strong>Firms with end-of-day drawdown</strong><span>Shortlist</span></a></li><li><a href="/guides/consistency-rule/"><strong>Consistency rules explained</strong><span>The other rule that blocks payouts</span></a></li></ul></section>
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<div class="cols">
+<div class="about"><a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a><p>Prop firm rules, prices and codes in one place, checked against each firm's own pages and dated so you know how fresh they are.</p></div>
+<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li></ul></div>
+<div><strong>Learn</strong><ul><li><a href="/tools/">Calculators</a></li><li><a href="/guides/">Guides</a></li><li><a href="/methodology/">How we check firms</a></li><li><a href="/risks/">Risks of prop trading</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+</div>
+<p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
+</div></footer>
+
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
+var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
+</script>
+</body>
+</html>

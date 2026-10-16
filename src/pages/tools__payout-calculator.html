@@ -1,0 +1,27 @@
+<!--META {
+ "title": "Prop Firm Payout & Profit Split Calculator | PropFirmNerd",
+ "description": "Work out what you keep from a prop firm payout: flat or tiered profit split (100% of the first $X, then 90%) and payout fees.",
+ "h1": "Prop firm payout calculator",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": ["tools.js"],
+ "faq": [["What does 100% of the first $10,000 mean?", "Some firms let you keep all profit up to a threshold, then apply the normal split above it. Enter the threshold in the first field; enter 0 if the firm uses a flat split."]],
+ "related": [["/tools/challenge-cost-calculator/", "True cost calculator", "What you spent to get here"], ["/compare/", "Compare profit splits", "Every firm in one table"]]
+} META-->
+<header class="art-head"><h1>Prop firm payout calculator</h1></header>
+<div class="content"><p class="lede">Enter the profit you are withdrawing and the firm's split. Many firms pay 100% up to a threshold and a lower share above it; leave the threshold at 0 for a flat split.</p></div>
+<form class="tool" data-tool="payout">
+<div class="grid">
+<label>Profit to withdraw ($)<input name="profit" type="number" min="0" step="50" value="3000" inputmode="decimal"></label>
+<label>100% split up to ($)<input name="first" type="number" min="0" step="100" value="0" inputmode="decimal"></label>
+<label>Split above that (%)<input name="split" type="number" min="0" max="100" step="1" value="90" inputmode="decimal"></label>
+<label>Payout fees ($)<input name="fees" type="number" min="0" step="1" value="0" inputmode="decimal"></label>
+</div>
+<div class="result">
+<div>Your share<b data-out="gross">—</b></div>
+<div>Firm's share<b data-out="firm">—</b></div>
+<div class="gain">You receive<b data-out="net">—</b></div>
+<div>Effective split<b data-out="eff">—</b></div>
+</div>
+</form>
+<div class="content"><p>Payout rules often matter more than the split: minimum payout amounts, caps per payout, buffers you must leave in the account and consistency rules decide when you can withdraw at all. Those are listed on each <a href="/firms/">firm review</a>.</p></div>

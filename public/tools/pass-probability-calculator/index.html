@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prop Firm Pass Probability Calculator (Monte Carlo) | PropFirmNerd</title>
+<meta name="description" content="Estimate your chance of passing a prop firm evaluation from your win rate, average win and loss, trades per day, profit target and max loss.">
+<link rel="canonical" href="https://propfirmnerd.com/tools/pass-probability-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PropFirmNerd">
+<meta property="og:title" content="Prop Firm Pass Probability Calculator (Monte Carlo) | PropFirmNerd">
+<meta property="og:description" content="Estimate your chance of passing a prop firm evaluation from your win rate, average win and loss, trades per day, profit target and max loss.">
+<meta property="og:url" content="https://propfirmnerd.com/tools/pass-probability-calculator/">
+<meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#18212C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20261016">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Pass probability calculator", "url": "https://propfirmnerd.com/tools/pass-probability-calculator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How accurate is this?", "acceptedAnswer": {"@type": "Answer", "text": "It is only as good as your inputs. It assumes each trade is independent with the win rate and sizes you enter. Real results cluster: losing streaks, tilt and news days make failure more likely than a simple model suggests."}}, {"@type": "Question", "name": "Why can a strategy with a positive expectancy still fail most of the time?", "acceptedAnswer": {"@type": "Answer", "text": "Because the max loss is usually small next to the profit target, a normal losing streak can end the account before the edge shows up. Smaller size lowers the chance of busting but makes reaching the target take longer."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://propfirmnerd.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Pass probability calculator", "item": "https://propfirmnerd.com/tools/pass-probability-calculator/"}]}]}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+<a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav">
+<a href="/firms/">Firm reviews</a>
+<a href="/compare/">Compare</a>
+<a href="/best/">Best of</a>
+<a href="/promo-codes/">Promo codes</a>
+<a href="/tools/" aria-current="page">Tools</a>
+<a href="/guides/">Guides</a>
+</nav>
+</div></header>
+<main class="kind-tool"><div class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Pass probability calculator</div>
+<header class="art-head"><h1>Pass probability calculator</h1></header>
+<div class="content"><p class="lede">This runs 4,000 simulated evaluations with your numbers and counts how many hit the profit target before the max loss. It is a model, not a forecast, but it shows quickly whether your sizing fits the rules.</p></div>
+<form class="tool" data-tool="pass">
+<div class="grid">
+<label>Win rate (%)<input name="win" type="number" min="1" max="99" step="1" value="50" inputmode="decimal"></label>
+<label>Average win ($)<input name="avgw" type="number" min="0" step="10" value="250" inputmode="decimal"></label>
+<label>Average loss ($)<input name="avgl" type="number" min="0" step="10" value="200" inputmode="decimal"></label>
+<label>Max trades per day<input name="perday" type="number" min="1" step="1" value="3" inputmode="numeric"></label>
+<label>Profit target ($)<input name="target" type="number" min="0" step="100" value="3000" inputmode="decimal"></label>
+<label>Max loss ($)<input name="limit" type="number" min="0" step="100" value="2000" inputmode="decimal"></label>
+<label>Drawdown<select name="trailing"><option value="trail" selected>Trailing (on closed trades)</option><option value="static">Static</option></select></label>
+<label>Stop for the day after losing ($, 0 = never)<input name="daily" type="number" min="0" step="50" value="500" inputmode="decimal"></label>
+<label>Days allowed<input name="days" type="number" min="1" step="1" value="60" inputmode="numeric"></label>
+<label style="flex-direction:row;align-items:center;gap:8px;margin-top:22px"><input name="lock" type="checkbox" checked style="width:auto"> Trailing stops at the starting balance</label>
+</div>
+<div class="result">
+<div class="gain">Pass<b data-out="pass">—</b></div>
+<div class="loss">Hit max loss<b data-out="fail">—</b></div>
+<div>Ran out of days<b data-out="open">—</b></div>
+<div>Average days to pass<b data-out="days">—</b></div>
+<div>Expectancy<b data-out="ev">—</b></div>
+</div>
+</form>
+<div class="content">
+<h2>What the numbers usually show</h2>
+<p>Try halving your average win and loss: the pass rate typically goes up while the days needed grow. Try a 40% win rate with the same sizes: an edge that looks fine on paper often busts more evaluations than it passes. The results change slightly each time because the trades are random; that spread is real too.</p>
+</div><section class="faq"><h2>Questions traders ask</h2>
+<details><summary>How accurate is this?</summary><div><p>It is only as good as your inputs. It assumes each trade is independent with the win rate and sizes you enter. Real results cluster: losing streaks, tilt and news days make failure more likely than a simple model suggests.</p></div></details>
+<details><summary>Why can a strategy with a positive expectancy still fail most of the time?</summary><div><p>Because the max loss is usually small next to the profit target, a normal losing streak can end the account before the edge shows up. Smaller size lowers the chance of busting but makes reaching the target take longer.</p></div></details>
+</section><section class="related"><h2>Keep reading</h2><ul class="rows"><li><a href="/tools/position-size-calculator/"><strong>Position size calculator</strong><span>Size each trade</span></a></li><li><a href="/guides/how-to-pass-a-prop-firm-challenge/"><strong>How to pass a prop firm challenge</strong><span>The math of target vs max loss</span></a></li></ul></section>
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<div class="cols">
+<div class="about"><a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a><p>Prop firm rules, prices and codes in one place, checked against each firm's own pages and dated so you know how fresh they are.</p></div>
+<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li></ul></div>
+<div><strong>Learn</strong><ul><li><a href="/tools/">Calculators</a></li><li><a href="/guides/">Guides</a></li><li><a href="/methodology/">How we check firms</a></li><li><a href="/risks/">Risks of prop trading</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+</div>
+<p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
+</div></footer>
+<script src="/assets/js/tools.js?v=20261016"></script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
+var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prop Firm Drawdown Simulator: Trailing vs End-of-Day vs Static | PropFirmNerd</title>
+<meta name="description" content="Enter your daily P&amp;L and see exactly when a static, end-of-day trailing or intraday trailing max loss would have ended your prop firm account.">
+<link rel="canonical" href="https://propfirmnerd.com/tools/drawdown-simulator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PropFirmNerd">
+<meta property="og:title" content="Prop Firm Drawdown Simulator: Trailing vs End-of-Day vs Static | PropFirmNerd">
+<meta property="og:description" content="Enter your daily P&amp;L and see exactly when a static, end-of-day trailing or intraday trailing max loss would have ended your prop firm account.">
+<meta property="og:url" content="https://propfirmnerd.com/tools/drawdown-simulator/">
+<meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#18212C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20261016">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Drawdown simulator", "url": "https://propfirmnerd.com/tools/drawdown-simulator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does intraday trailing fail me earlier?", "acceptedAnswer": {"@type": "Answer", "text": "Intraday trailing raises your limit as soon as open profit makes a new high, even if you give that profit back before the close. End-of-day trailing only moves the limit at the close, and static never moves it."}}, {"@type": "Question", "name": "What does 'stops trailing at the starting balance' mean?", "acceptedAnswer": {"@type": "Answer", "text": "Many futures firms stop moving the limit once it reaches your starting balance (sometimes starting balance plus a small amount). After that, the limit stays fixed. Tick the box to model this."}}, {"@type": "Question", "name": "Why does the simulator assume the high came before the low?", "acceptedAnswer": {"@type": "Answer", "text": "With only the day's high, low and close, we cannot know the order. Assuming the high came first is the worst case for intraday trailing, which is how a firm's system would treat it if it happened."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://propfirmnerd.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Drawdown simulator", "item": "https://propfirmnerd.com/tools/drawdown-simulator/"}]}]}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+<a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav">
+<a href="/firms/">Firm reviews</a>
+<a href="/compare/">Compare</a>
+<a href="/best/">Best of</a>
+<a href="/promo-codes/">Promo codes</a>
+<a href="/tools/" aria-current="page">Tools</a>
+<a href="/guides/">Guides</a>
+</nav>
+</div></header>
+<main class="kind-tool"><div class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Drawdown simulator</div>
+<header class="art-head"><h1>Drawdown simulator</h1></header>
+<div class="content"><p class="lede">Type in how each day went, relative to where it started: the best open profit, the worst point and the close. The simulator runs the same days through a static, an end-of-day trailing and an intraday trailing limit, and shows which one stops you and when.</p></div>
+<form class="tool" data-tool="dd">
+<div class="grid">
+<label>Starting balance ($)<input name="start" type="number" step="1000" value="50000" inputmode="decimal"></label>
+<label>Max loss ($)<input name="limit" type="number" step="100" value="2000" inputmode="decimal"></label>
+<label style="flex-direction:row;align-items:center;gap:8px;margin-top:22px"><input name="lock" type="checkbox" checked style="width:auto"> Trailing stops at the starting balance</label>
+</div>
+<div class="tbl-wrap"><table class="data"><thead><tr><th scope="col">Day</th><th scope="col">Best open profit ($)</th><th scope="col">Worst point ($)</th><th scope="col">Close ($)</th></tr></thead><tbody>
+<tr data-day><th scope="row">Day 1</th><td><input name="hi0" type="number" step="25" value="800" inputmode="decimal" aria-label="Day 1 best open profit"></td><td><input name="lo0" type="number" step="25" value="-100" inputmode="decimal" aria-label="Day 1 worst point"></td><td><input name="cl0" type="number" step="25" value="700" inputmode="decimal" aria-label="Day 1 close"></td></tr><tr data-day><th scope="row">Day 2</th><td><input name="hi1" type="number" step="25" value="900" inputmode="decimal" aria-label="Day 2 best open profit"></td><td><input name="lo1" type="number" step="25" value="-200" inputmode="decimal" aria-label="Day 2 worst point"></td><td><input name="cl1" type="number" step="25" value="600" inputmode="decimal" aria-label="Day 2 close"></td></tr><tr data-day><th scope="row">Day 3</th><td><input name="hi2" type="number" step="25" value="1200" inputmode="decimal" aria-label="Day 3 best open profit"></td><td><input name="lo2" type="number" step="25" value="-300" inputmode="decimal" aria-label="Day 3 worst point"></td><td><input name="cl2" type="number" step="25" value="100" inputmode="decimal" aria-label="Day 3 close"></td></tr><tr data-day><th scope="row">Day 4</th><td><input name="hi3" type="number" step="25" value="400" inputmode="decimal" aria-label="Day 4 best open profit"></td><td><input name="lo3" type="number" step="25" value="-1500" inputmode="decimal" aria-label="Day 4 worst point"></td><td><input name="cl3" type="number" step="25" value="-1200" inputmode="decimal" aria-label="Day 4 close"></td></tr><tr data-day><th scope="row">Day 5</th><td><input name="hi4" type="number" step="25" value="300" inputmode="decimal" aria-label="Day 5 best open profit"></td><td><input name="lo4" type="number" step="25" value="-400" inputmode="decimal" aria-label="Day 5 worst point"></td><td><input name="cl4" type="number" step="25" value="200" inputmode="decimal" aria-label="Day 5 close"></td></tr><tr data-day><th scope="row">Day 6</th><td><input name="hi5" type="number" step="25" value="600" inputmode="decimal" aria-label="Day 6 best open profit"></td><td><input name="lo5" type="number" step="25" value="-200" inputmode="decimal" aria-label="Day 6 worst point"></td><td><input name="cl5" type="number" step="25" value="500" inputmode="decimal" aria-label="Day 6 close"></td></tr><tr data-day><th scope="row">Day 7</th><td><input name="hi6" type="number" step="25" inputmode="decimal" aria-label="Day 7 best open profit"></td><td><input name="lo6" type="number" step="25" inputmode="decimal" aria-label="Day 7 worst point"></td><td><input name="cl6" type="number" step="25" inputmode="decimal" aria-label="Day 7 close"></td></tr><tr data-day><th scope="row">Day 8</th><td><input name="hi7" type="number" step="25" inputmode="decimal" aria-label="Day 8 best open profit"></td><td><input name="lo7" type="number" step="25" inputmode="decimal" aria-label="Day 8 worst point"></td><td><input name="cl7" type="number" step="25" inputmode="decimal" aria-label="Day 8 close"></td></tr><tr data-day><th scope="row">Day 9</th><td><input name="hi8" type="number" step="25" inputmode="decimal" aria-label="Day 9 best open profit"></td><td><input name="lo8" type="number" step="25" inputmode="decimal" aria-label="Day 9 worst point"></td><td><input name="cl8" type="number" step="25" inputmode="decimal" aria-label="Day 9 close"></td></tr><tr data-day><th scope="row">Day 10</th><td><input name="hi9" type="number" step="25" inputmode="decimal" aria-label="Day 10 best open profit"></td><td><input name="lo9" type="number" step="25" inputmode="decimal" aria-label="Day 10 worst point"></td><td><input name="cl9" type="number" step="25" inputmode="decimal" aria-label="Day 10 close"></td></tr>
+</tbody></table></div>
+<svg data-chart role="img" aria-label="Balance range per day with the three loss limits"></svg>
+<p class="muted" style="font-size:14px">Black: each day's range and close. Grey dashed: static limit. Red: end-of-day trailing. Orange dotted: intraday trailing.</p>
+<div class="result" data-out="res"></div>
+</form>
+<div class="content">
+<h2>Reading the result</h2>
+<p>The sample is three good days and then one bad Day 4. The static limit never comes close. End-of-day trailing has climbed with each close and ends up within $500 of the worst point. Intraday trailing also counted the $1,200 of open profit on Day 3 that was given back before the close, so its limit reached the starting balance and Day 4 breaks it. Change the numbers to match how you trade; if your best and worst points are far apart, intraday trailing will cost you.</p>
+<p>Firms differ in the details: some count the limit from the highest closing balance, some from the highest balance including open trades, and some stop trailing once you are up a set amount. The rule for each firm is on its <a href="/firms/">review</a>.</p>
+</div><section class="faq"><h2>Questions traders ask</h2>
+<details><summary>Why does intraday trailing fail me earlier?</summary><div><p>Intraday trailing raises your limit as soon as open profit makes a new high, even if you give that profit back before the close. End-of-day trailing only moves the limit at the close, and static never moves it.</p></div></details>
+<details><summary>What does &#x27;stops trailing at the starting balance&#x27; mean?</summary><div><p>Many futures firms stop moving the limit once it reaches your starting balance (sometimes starting balance plus a small amount). After that, the limit stays fixed. Tick the box to model this.</p></div></details>
+<details><summary>Why does the simulator assume the high came before the low?</summary><div><p>With only the day's high, low and close, we cannot know the order. Assuming the high came first is the worst case for intraday trailing, which is how a firm's system would treat it if it happened.</p></div></details>
+</section><section class="related"><h2>Keep reading</h2><ul class="rows"><li><a href="/guides/trailing-drawdown/"><strong>Trailing drawdown explained</strong><span>Worked examples</span></a></li><li><a href="/best/end-of-day-drawdown-prop-firms/"><strong>Firms with end-of-day drawdown</strong><span>Shortlist</span></a></li></ul></section>
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<div class="cols">
+<div class="about"><a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a><p>Prop firm rules, prices and codes in one place, checked against each firm's own pages and dated so you know how fresh they are.</p></div>
+<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li></ul></div>
+<div><strong>Learn</strong><ul><li><a href="/tools/">Calculators</a></li><li><a href="/guides/">Guides</a></li><li><a href="/methodology/">How we check firms</a></li><li><a href="/risks/">Risks of prop trading</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+</div>
+<p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
+</div></footer>
+<script src="/assets/js/tools.js?v=20261016"></script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
+var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--META {
+ "title": "Prop Firm Pass Probability Calculator (Monte Carlo) | PropFirmNerd",
+ "description": "Estimate your chance of passing a prop firm evaluation from your win rate, average win and loss, trades per day, profit target and max loss.",
+ "h1": "Pass probability calculator",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": ["tools.js"],
+ "faq": [["How accurate is this?", "It is only as good as your inputs. It assumes each trade is independent with the win rate and sizes you enter. Real results cluster: losing streaks, tilt and news days make failure more likely than a simple model suggests."],
+         ["Why can a strategy with a positive expectancy still fail most of the time?", "Because the max loss is usually small next to the profit target, a normal losing streak can end the account before the edge shows up. Smaller size lowers the chance of busting but makes reaching the target take longer."]],
+ "related": [["/tools/position-size-calculator/", "Position size calculator", "Size each trade"], ["/guides/how-to-pass-a-prop-firm-challenge/", "How to pass a prop firm challenge", "The math of target vs max loss"]]
+} META-->
+<header class="art-head"><h1>Pass probability calculator</h1></header>
+<div class="content"><p class="lede">This runs 4,000 simulated evaluations with your numbers and counts how many hit the profit target before the max loss. It is a model, not a forecast, but it shows quickly whether your sizing fits the rules.</p></div>
+<form class="tool" data-tool="pass">
+<div class="grid">
+<label>Win rate (%)<input name="win" type="number" min="1" max="99" step="1" value="50" inputmode="decimal"></label>
+<label>Average win ($)<input name="avgw" type="number" min="0" step="10" value="250" inputmode="decimal"></label>
+<label>Average loss ($)<input name="avgl" type="number" min="0" step="10" value="200" inputmode="decimal"></label>
+<label>Max trades per day<input name="perday" type="number" min="1" step="1" value="3" inputmode="numeric"></label>
+<label>Profit target ($)<input name="target" type="number" min="0" step="100" value="3000" inputmode="decimal"></label>
+<label>Max loss ($)<input name="limit" type="number" min="0" step="100" value="2000" inputmode="decimal"></label>
+<label>Drawdown<select name="trailing"><option value="trail" selected>Trailing (on closed trades)</option><option value="static">Static</option></select></label>
+<label>Stop for the day after losing ($, 0 = never)<input name="daily" type="number" min="0" step="50" value="500" inputmode="decimal"></label>
+<label>Days allowed<input name="days" type="number" min="1" step="1" value="60" inputmode="numeric"></label>
+<label style="flex-direction:row;align-items:center;gap:8px;margin-top:22px"><input name="lock" type="checkbox" checked style="width:auto"> Trailing stops at the starting balance</label>
+</div>
+<div class="result">
+<div class="gain">Pass<b data-out="pass">—</b></div>
+<div class="loss">Hit max loss<b data-out="fail">—</b></div>
+<div>Ran out of days<b data-out="open">—</b></div>
+<div>Average days to pass<b data-out="days">—</b></div>
+<div>Expectancy<b data-out="ev">—</b></div>
+</div>
+</form>
+<div class="content">
+<h2>What the numbers usually show</h2>
+<p>Try halving your average win and loss: the pass rate typically goes up while the days needed grow. Try a 40% win rate with the same sizes: an edge that looks fine on paper often busts more evaluations than it passes. The results change slightly each time because the trades are random; that spread is real too.</p>
+</div>

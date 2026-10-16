@@ -1,0 +1,34 @@
+<!--META {
+ "title": "Prop Firm Challenge True Cost Calculator | PropFirmNerd",
+ "description": "Add up what a prop firm evaluation really costs: fee after discount, monthly rebills, resets and activation, and the profit you need to break even.",
+ "h1": "True cost of a prop firm challenge",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": ["tools.js"],
+ "faq": [["Why is the real cost higher than the listed price?", "Monthly plans rebill until you pass, many traders reset or rebuy after a fail, and some firms charge an activation fee when you pass. A discount usually applies only to the first payment."],
+         ["What does break-even profit mean here?", "It is how much your funded account must earn before your share of the profit covers what you spent. It assumes the split you enter and ignores taxes and payout fees."]],
+ "related": [["/promo-codes/", "Prop firm promo codes", "Current discounts"], ["/tools/pass-probability-calculator/", "Pass probability calculator", "How many attempts to expect"]]
+} META-->
+<header class="art-head"><h1>True cost of a prop firm challenge</h1></header>
+<div class="content"><p class="lede">The sticker price is only the first payment. Enter the plan's numbers and how long you expect to take, and see the full bill and the profit you need to earn it back.</p></div>
+<form class="tool" data-tool="cost">
+<div class="grid">
+<label>Evaluation price ($)<input name="fee" type="number" min="0" step="1" value="150" inputmode="decimal"></label>
+<label>Billing<select name="billing"><option value="monthly" selected>Monthly</option><option value="one-time">One-time</option></select></label>
+<label>Discount (%)<input name="disc" type="number" min="0" max="100" step="1" value="0" inputmode="decimal"></label>
+<label>Months until you pass<input name="months" type="number" min="1" step="1" value="2" inputmode="numeric"></label>
+<label>Resets or rebuys<input name="resets" type="number" min="0" step="1" value="1" inputmode="numeric"></label>
+<label>Reset price ($)<input name="resetfee" type="number" min="0" step="1" value="100" inputmode="decimal"></label>
+<label>Activation fee ($)<input name="act" type="number" min="0" step="1" value="0" inputmode="decimal"></label>
+<label>Your profit split (%)<input name="split" type="number" min="1" max="100" step="1" value="90" inputmode="decimal"></label>
+</div>
+<div class="result">
+<div>Evaluation fees<b data-out="eval">—</b></div>
+<div>Resets<b data-out="resets">—</b></div>
+<div class="loss">Total spent<b data-out="total">—</b></div>
+<div>To break even you need<b data-out="breakeven">—</b></div>
+</div>
+</form>
+<div class="content">
+<p>The calculator applies the discount to every monthly payment. If a code only covers the first month, set the months to 1, note the discounted price, then run it again without the discount for the rest. Firm prices are on each <a href="/firms/">review</a> and current codes on the <a href="/promo-codes/">promo code page</a>.</p>
+</div>

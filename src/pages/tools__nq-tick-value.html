@@ -1,0 +1,58 @@
+<!--META {
+ "title": "NQ Tick Value: $5 per Tick, $20 per Point (Calculator) | PropFirmNerd",
+ "description": "NQ (E-mini Nasdaq-100) tick value is $5 and point value is $20. Calculator for any move and contract count.",
+ "h1": "NQ tick value",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": [
+  "tools.js"
+ ],
+ "faq": [
+  [
+   "How much is 1 point on NQ?",
+   "One point on NQ is worth $20 per contract."
+  ],
+  [
+   "What is the NQ tick size?",
+   "0.25 index points, worth $5."
+  ],
+  [
+   "Is NQ more volatile than ES?",
+   "In dollar terms per contract, NQ usually moves more in a day than ES. Compare recent average daily ranges before choosing; the tick values above turn points into dollars."
+  ]
+ ],
+ "related": [
+  [
+   "/tools/position-size-calculator/",
+   "Position size calculator",
+   "Contracts per trade from your risk and stop"
+  ],
+  [
+   "/tools/tick-value-calculator/",
+   "All futures tick values",
+   "ES, NQ, CL, GC, ZN and more"
+  ],
+  [
+   "/best/futures-prop-firms/",
+   "Best futures prop firms",
+   "Shortlist with checked rules"
+  ]
+ ]
+} META-->
+<header class="art-head"><h1>NQ tick value</h1></header>
+<div class="content"><p class="lede">One NQ tick (0.25 index points) is worth $5, and one full point is worth $20. A routine 50-point Nasdaq swing is $1,000 on a single contract, which is half the max loss on many 50K evaluations.</p></div>
+<form class="tool" data-tool="tick" data-preset="NQ">
+<div class="grid">
+<label>Contract<select name="symbol"></select></label>
+<label>Contracts<input name="qty" type="number" min="1" step="1" value="1" inputmode="numeric"></label>
+<label>Move in ticks<input name="ticks" type="number" step="1" value="20" inputmode="numeric"></label>
+</div>
+<div class="result">
+<div>Tick size<b data-out="size">—</b></div>
+<div>Value of one tick<b data-out="tick">—</b></div>
+<div>Value of one point<b data-out="point">—</b></div>
+<div>Your move (<span data-out="pts"></span>)<b data-out="move">—</b></div>
+</div>
+</form>
+<script>window.PFN_CONTRACTS={{CONTRACTS_JSON}};</script>
+<div class="content"><h2>NQ vs MNQ</h2>{{CONTRACT_TABLE:NQ,MNQ,ES,MES}}<p>If your stop needs more than a few dozen points, micros give you finer control: ten MNQ equal one NQ, but you can trade three or seven instead.</p></div>

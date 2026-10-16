@@ -1,0 +1,34 @@
+<!--META {
+ "title": "Futures Position Size Calculator for Prop Traders | PropFirmNerd",
+ "description": "How many contracts to trade from your risk per trade and stop size, with the share of your prop firm max loss each trade uses.",
+ "h1": "Futures position size calculator",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": ["tools.js"],
+ "faq": [["How much should I risk per trade in a prop firm evaluation?", "There is no rule that fits everyone, but the math is simple: if each loss costs 10% of your max loss, ten losses in a row end the account. Many traders size so a full stop costs a small share of the max loss and stay well inside the daily loss limit."],
+         ["Why does the calculator round down?", "You cannot trade part of a contract, and rounding up would risk more than you entered."]],
+ "related": [["/tools/tick-value-calculator/", "Tick value calculator", "Tick and point values"], ["/tools/pass-probability-calculator/", "Pass probability calculator", "Does your sizing pass?"]]
+} META-->
+<header class="art-head"><h1>Futures position size calculator</h1></header>
+<div class="content"><p class="lede">Enter what you are willing to lose on the trade and where your stop is. The calculator returns the largest whole number of contracts that stays inside that risk.</p></div>
+<form class="tool" data-tool="size" data-preset="MNQ">
+<div class="grid">
+<label>Contract<select name="symbol"></select></label>
+<label>Risk per trade ($)<input name="risk" type="number" min="0" step="10" value="200" inputmode="decimal"></label>
+<label>Stop distance<input name="stop" type="number" min="0" step="0.25" value="20" inputmode="decimal"></label>
+<label>Stop measured in<select name="unit"><option value="points" selected>Points</option><option value="ticks">Ticks</option></select></label>
+<label>Account max loss ($, optional)<input name="maxloss" type="number" min="0" step="100" value="2000" inputmode="decimal"></label>
+</div>
+<div class="result">
+<div>Risk per contract<b data-out="per">—</b></div>
+<div>Contracts<b data-out="n">—</b></div>
+<div>Actual risk<b data-out="used">—</b></div>
+<div class="loss">Share of max loss<b data-out="share">—</b></div>
+</div>
+</form>
+<script>window.PFN_CONTRACTS={{CONTRACTS_JSON}};</script>
+<div class="content">
+<h2>How it works</h2>
+<p>Risk per contract is the stop in ticks times the contract's tick value. The number of contracts is your risk divided by that, rounded down. Slippage and commissions are not included, so leave a margin, especially on fast markets and news.</p>
+<p>Prop firms also cap how many contracts you may hold, and some scale the cap with your profit. Check the cap on the <a href="/firms/">firm's review</a>; it can be lower than what this calculator allows.</p>
+</div>

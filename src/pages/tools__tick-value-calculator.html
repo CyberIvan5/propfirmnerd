@@ -1,0 +1,54 @@
+<!--META {
+ "title": "Futures Tick Value Calculator (ES, NQ, MNQ, CL, GC) | PropFirmNerd",
+ "description": "Tick size, tick value and point value for the futures contracts prop firms allow, plus the dollar value of any move.",
+ "h1": "Futures tick value calculator",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": [
+  "tools.js"
+ ],
+ "faq": [
+  [
+   "What is a tick in futures?",
+   "A tick is the smallest price step a contract can move. Its dollar value is fixed by the exchange for each contract, so a 10-tick move in one contract always pays or costs the same amount."
+  ],
+  [
+   "What is the difference between tick value and point value?",
+   "Point value is what a move of 1.00 in the quoted price is worth. Tick value is what the smallest allowed move is worth. For ES, a point is four ticks."
+  ]
+ ],
+ "related": [
+  [
+   "/tools/position-size-calculator/",
+   "Position size calculator",
+   "Contracts per trade from your risk and stop"
+  ],
+  [
+   "/tools/tick-value-calculator/",
+   "All futures tick values",
+   "ES, NQ, CL, GC, ZN and more"
+  ],
+  [
+   "/best/futures-prop-firms/",
+   "Best futures prop firms",
+   "Shortlist with checked rules"
+  ]
+ ]
+} META-->
+<header class="art-head"><h1>Futures tick value calculator</h1></header>
+<div class="content"><p class="lede">Pick a contract to see its tick size and what one tick and one point are worth, then enter a move to price it. Specs come from the exchange's contract pages.</p></div>
+<form class="tool" data-tool="tick" data-preset="ES">
+<div class="grid">
+<label>Contract<select name="symbol"></select></label>
+<label>Contracts<input name="qty" type="number" min="1" step="1" value="1" inputmode="numeric"></label>
+<label>Move in ticks<input name="ticks" type="number" step="1" value="10" inputmode="numeric"></label>
+</div>
+<div class="result">
+<div>Tick size<b data-out="size">—</b></div>
+<div>Value of one tick<b data-out="tick">—</b></div>
+<div>Value of one point<b data-out="point">—</b></div>
+<div>Your move (<span data-out="pts"></span>)<b data-out="move">—</b></div>
+</div>
+</form>
+<script>window.PFN_CONTRACTS={{CONTRACTS_JSON}};</script>
+<div class="content"><h2>Tick values at a glance</h2>{{CONTRACT_TABLE:ES,MES,NQ,MNQ,YM,MYM,RTY,M2K,CL,MCL,NG,GC,MGC,SI,SIL,HG,6E,M6E,6B,6J,ZN,ZB,ZF,ZT}}<p class="muted">Tick value = tick size × point value. Prop firms set their own contract limits and commissions; those are on each <a href="/firms/">firm review</a>.</p></div>

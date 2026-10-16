@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NQ Tick Value: $5 per Tick, $20 per Point (Calculator) | PropFirmNerd</title>
+<meta name="description" content="NQ (E-mini Nasdaq-100) tick value is $5 and point value is $20. Calculator for any move and contract count.">
+<link rel="canonical" href="https://propfirmnerd.com/tools/nq-tick-value/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PropFirmNerd">
+<meta property="og:title" content="NQ Tick Value: $5 per Tick, $20 per Point (Calculator) | PropFirmNerd">
+<meta property="og:description" content="NQ (E-mini Nasdaq-100) tick value is $5 and point value is $20. Calculator for any move and contract count.">
+<meta property="og:url" content="https://propfirmnerd.com/tools/nq-tick-value/">
+<meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#18212C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20261016">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "NQ tick value", "url": "https://propfirmnerd.com/tools/nq-tick-value/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much is 1 point on NQ?", "acceptedAnswer": {"@type": "Answer", "text": "One point on NQ is worth $20 per contract."}}, {"@type": "Question", "name": "What is the NQ tick size?", "acceptedAnswer": {"@type": "Answer", "text": "0.25 index points, worth $5."}}, {"@type": "Question", "name": "Is NQ more volatile than ES?", "acceptedAnswer": {"@type": "Answer", "text": "In dollar terms per contract, NQ usually moves more in a day than ES. Compare recent average daily ranges before choosing; the tick values above turn points into dollars."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://propfirmnerd.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "NQ tick value", "item": "https://propfirmnerd.com/tools/nq-tick-value/"}]}]}</script>
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+<a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav">
+<a href="/firms/">Firm reviews</a>
+<a href="/compare/">Compare</a>
+<a href="/best/">Best of</a>
+<a href="/promo-codes/">Promo codes</a>
+<a href="/tools/" aria-current="page">Tools</a>
+<a href="/guides/">Guides</a>
+</nav>
+</div></header>
+<main class="kind-tool"><div class="wrap">
+<div class="crumbs"><a href="/">Home</a> › <a href="/tools/">Tools</a> › NQ tick value</div>
+<header class="art-head"><h1>NQ tick value</h1></header>
+<div class="content"><p class="lede">One NQ tick (0.25 index points) is worth $5, and one full point is worth $20. A routine 50-point Nasdaq swing is $1,000 on a single contract, which is half the max loss on many 50K evaluations.</p></div>
+<form class="tool" data-tool="tick" data-preset="NQ">
+<div class="grid">
+<label>Contract<select name="symbol"></select></label>
+<label>Contracts<input name="qty" type="number" min="1" step="1" value="1" inputmode="numeric"></label>
+<label>Move in ticks<input name="ticks" type="number" step="1" value="20" inputmode="numeric"></label>
+</div>
+<div class="result">
+<div>Tick size<b data-out="size">—</b></div>
+<div>Value of one tick<b data-out="tick">—</b></div>
+<div>Value of one point<b data-out="point">—</b></div>
+<div>Your move (<span data-out="pts"></span>)<b data-out="move">—</b></div>
+</div>
+</form>
+<script>window.PFN_CONTRACTS=[{"symbol": "ES", "name": "E-mini S&P 500", "tick_size": 0.25, "tick_size_text": "0.25", "tick_value_usd": 12.5, "point_value_usd": 50}, {"symbol": "MNQ", "name": "Micro E-mini Nasdaq-100", "tick_size": 0.25, "tick_size_text": "0.25", "tick_value_usd": 0.5, "point_value_usd": 2}];</script>
+<div class="content"><h2>NQ vs MNQ</h2><div class="tbl-wrap"><table class="data"><thead><tr><th scope="col">Symbol</th><th scope="col">Contract</th><th scope="col" class="n">Tick size</th><th scope="col" class="n">Tick value</th><th scope="col" class="n">Point value</th></tr></thead><tbody><tr><th scope="row">MNQ</th><td>Micro E-mini Nasdaq-100</td><td class="n">0.25</td><td class="n">$0.50</td><td class="n">$2.00</td></tr><tr><th scope="row">ES</th><td>E-mini S&amp;P 500</td><td class="n">0.25</td><td class="n">$12.50</td><td class="n">$50.00</td></tr></tbody></table></div><p>If your stop needs more than a few dozen points, micros give you finer control: ten MNQ equal one NQ, but you can trade three or seven instead.</p></div><section class="faq"><h2>Questions traders ask</h2>
+<details><summary>How much is 1 point on NQ?</summary><div><p>One point on NQ is worth $20 per contract.</p></div></details>
+<details><summary>What is the NQ tick size?</summary><div><p>0.25 index points, worth $5.</p></div></details>
+<details><summary>Is NQ more volatile than ES?</summary><div><p>In dollar terms per contract, NQ usually moves more in a day than ES. Compare recent average daily ranges before choosing; the tick values above turn points into dollars.</p></div></details>
+</section><section class="related"><h2>Keep reading</h2><ul class="rows"><li><a href="/tools/position-size-calculator/"><strong>Position size calculator</strong><span>Contracts per trade from your risk and stop</span></a></li><li><a href="/tools/tick-value-calculator/"><strong>All futures tick values</strong><span>ES, NQ, CL, GC, ZN and more</span></a></li><li><a href="/best/futures-prop-firms/"><strong>Best futures prop firms</strong><span>Shortlist with checked rules</span></a></li></ul></section>
+</div></main>
+<footer class="site-foot"><div class="wrap">
+<div class="cols">
+<div class="about"><a class="logo" href="/" aria-label="PropFirmNerd home"><svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true"><path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg><span>PropFirm<b>Nerd</b></span></a><p>Prop firm rules, prices and codes in one place, checked against each firm's own pages and dated so you know how fresh they are.</p></div>
+<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li></ul></div>
+<div><strong>Learn</strong><ul><li><a href="/tools/">Calculators</a></li><li><a href="/guides/">Guides</a></li><li><a href="/methodology/">How we check firms</a></li><li><a href="/risks/">Risks of prop trading</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
+</div>
+<p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
+</div></footer>
+<script src="/assets/js/tools.js?v=20261016"></script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
+var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
+</script>
+</body>
+</html>

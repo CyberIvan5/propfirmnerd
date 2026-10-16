@@ -1,0 +1,58 @@
+<!--META {
+ "title": "MNQ Tick Value: $0.50 per Tick, $2 per Point (Calculator) | PropFirmNerd",
+ "description": "MNQ (Micro E-mini Nasdaq-100) tick value is $0.50 and point value is $2. Calculator for any move and contract count.",
+ "h1": "MNQ tick value",
+ "section": "tools",
+ "kind": "tool",
+ "scripts": [
+  "tools.js"
+ ],
+ "faq": [
+  [
+   "How much is 1 point on MNQ?",
+   "One point on MNQ is worth $2 per contract. A 10-point move is $20 per contract."
+  ],
+  [
+   "How many MNQ equal one NQ?",
+   "Ten. NQ is $20 per point and MNQ is $2 per point."
+  ],
+  [
+   "What is the MNQ tick size?",
+   "0.25 index points, worth $0.50."
+  ]
+ ],
+ "related": [
+  [
+   "/tools/position-size-calculator/",
+   "Position size calculator",
+   "Contracts per trade from your risk and stop"
+  ],
+  [
+   "/tools/tick-value-calculator/",
+   "All futures tick values",
+   "ES, NQ, CL, GC, ZN and more"
+  ],
+  [
+   "/best/futures-prop-firms/",
+   "Best futures prop firms",
+   "Shortlist with checked rules"
+  ]
+ ]
+} META-->
+<header class="art-head"><h1>MNQ tick value</h1></header>
+<div class="content"><p class="lede">One MNQ tick (0.25 index points) is worth $0.50, and one full point is worth $2. MNQ is one tenth the size of NQ, which is why prop firms often let you trade 10 micros for every mini.</p></div>
+<form class="tool" data-tool="tick" data-preset="MNQ">
+<div class="grid">
+<label>Contract<select name="symbol"></select></label>
+<label>Contracts<input name="qty" type="number" min="1" step="1" value="1" inputmode="numeric"></label>
+<label>Move in ticks<input name="ticks" type="number" step="1" value="80" inputmode="numeric"></label>
+</div>
+<div class="result">
+<div>Tick size<b data-out="size">—</b></div>
+<div>Value of one tick<b data-out="tick">—</b></div>
+<div>Value of one point<b data-out="point">—</b></div>
+<div>Your move (<span data-out="pts"></span>)<b data-out="move">—</b></div>
+</div>
+</form>
+<script>window.PFN_CONTRACTS={{CONTRACTS_JSON}};</script>
+<div class="content"><h2>MNQ vs NQ</h2>{{CONTRACT_TABLE:MNQ,NQ,MES,ES}}<h2>What a typical MNQ trade risks</h2><p>A 20-point stop on one MNQ contract is 80 ticks, or $40. On five contracts it is $200. On a 50K evaluation with a $2,000 max loss, that is 10% of your entire drawdown on one trade. Use the <a href="/tools/position-size-calculator/">position size calculator</a> to size from your stop instead of picking a contract count first.</p></div>
