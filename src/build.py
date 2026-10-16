@@ -908,7 +908,10 @@ def contract_table(contracts, syms):
                  f'<td class="n">${c["tick_value_usd"]:,.2f}</td><td class="n">${c["point_value_usd"]:,.2f}</td></tr>')
     return (f'<div class="tbl-wrap"><table class="data"><thead><tr><th scope="col">Symbol</th><th scope="col">Contract</th>'
             f'<th scope="col" class="n">Tick size</th><th scope="col" class="n">Tick value</th><th scope="col" class="n">Point value</th></tr></thead>'
-            f'<tbody>{rows}</tbody></table></div>')
+            f'<tbody>{rows}</tbody></table></div>'
+            + '<p class="muted" style="font-size:14px">Source: CME Group rulebook ' + ", ".join(
+                f'<a href="{esc(by[s]["source_url"])}" rel="nofollow noopener" target="_blank">{esc(s)}</a>' for s in syms if s in by and by[s].get("source_url"))
+            + '. Checked October 2026.</p>')
 
 
 # ---------------------------------------------------------------- build
