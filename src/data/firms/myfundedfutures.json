@@ -1,0 +1,318 @@
+{
+ "slug": "myfundedfutures",
+ "name": "MyFundedFutures",
+ "website": "https://myfundedfutures.com",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "MyFunded Futures, LLC (Texas governing law; disputes venue Collin County, Texas, USA). Street address not published in the Terms.",
+ "founded_year": null,
+ "trustpilot": {
+  "score": 4.9,
+  "reviews": 22373,
+  "url": "https://www.trustpilot.com/review/myfundedfutures.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Tradovate",
+  "TradingView",
+  "NinjaTrader",
+  "Quantower",
+  "DeepCharts",
+  "Volumetrica",
+  "ATAS",
+  "Hyperprop"
+ ],
+ "instruments": "CME Group futures: CME (equity index E-mini/micro, FX, Micro Bitcoin/Ether, livestock), CBOT (grains, Dow), NYMEX (energy), COMEX (metals). SI, HG, PL, NG, QG temporarily restricted as of 2026-10-16.",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Builder",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 153,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "50% on the sim funded account",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80/20",
+   "payout_frequency": "Every 48 hours once eligible",
+   "payout_rules_note": null,
+   "notes": "Max drawdown is $1,500 or $2,000 depending on the option chosen."
+  },
+  {
+   "name": "Rapid",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 209,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD in evaluation; intraday trailing on the sim funded account",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None",
+   "min_trading_days": 2,
+   "max_contracts_50k": null,
+   "profit_split": "90/10",
+   "payout_frequency": "Daily",
+   "payout_rules_note": null,
+   "notes": null
+  },
+  {
+   "name": "Rapid EOD",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 225,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None",
+   "min_trading_days": 4,
+   "max_contracts_50k": null,
+   "profit_split": "90/10",
+   "payout_frequency": "Daily",
+   "payout_rules_note": null,
+   "notes": null
+  },
+  {
+   "name": "Pro",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 265,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None",
+   "min_trading_days": 2,
+   "max_contracts_50k": null,
+   "profit_split": "80/20",
+   "payout_frequency": "Bi-weekly",
+   "payout_rules_note": null,
+   "notes": null
+  }
+ ],
+ "news_trading": "Restricted: positions and orders must be flat from 2 minutes before to 2 minutes after Tier 1 releases (FOMC, FOMC minutes, NFP, CPI; EIA for energy, ag reports for ags) on Rapid and Pro sim-funded accounts; allowed in all evaluations and on Builder",
+ "ea_bots_allowed": "Restricted: automated strategies allowed if tailored to the trader's own settings and not exploiting sim fills; HFT not allowed; live automated trading must follow CME guidelines",
+ "copy_trading": "Allowed on all account types for the trader's own accounts (Tradesyncer preferred, Tradovate group copier OK); copying other traders or sharing devices is prohibited",
+ "overnight_weekend_holding": "Not allowed: open positions are auto-closed at 4:10 PM ET on regular trading days (on holiday early closes there is no auto-liquidation and the trader must flatten).",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "90 restricted countries/regions incl. China, Russia, Ukraine, Turkey, UAE, Serbia, Croatia, Romania, Bulgaria, Nigeria, Pakistan, Vietnam, Philippines, Malaysia, Indonesia. List: https://help.myfundedfutures.com/en/articles/8229993-restricted-countries-policy",
+ "payout_methods": [
+  "Riseworks (bank transfer or crypto)",
+  "Plaid/ACH (US traders)"
+ ],
+ "path_to_live": "Live accounts start at $0 balance with EOD drawdown. Rapid: automatic after $10,000 net profit in a single day or Risk team approval. Pro: review after 3 consecutive payouts, reaching the $100K payout cap, or invitation. Builder: after the 5th approved sim payout. Up to $5,000 of sim profits held in a Reserve that covers a live breach or is paid as a performance bonus.",
+ "current_public_promo": {
+  "code": "CLUB",
+  "discount": "40% off",
+  "applies_to": "Evaluations (the site shows 40%-lower promotional prices)",
+  "source_url": "https://myfundedfutures.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "commission on evaluation and reset fees from referrals; rate not published; monthly payout, $100 minimum",
+  "url": "https://help.myfundedfutures.com/en/articles/17116402-becoming-an-affiliate-with-myfundedfutures",
+  "notes": "Apply via the MFFU dashboard. Paid advertising (PPC, native ads), paid endorsements and spam are prohibited; affiliate must live in a non-restricted country."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-01-12",
+   "change": "Rapid sim-funded profit split set to 90%",
+   "source": "https://help.myfundedfutures.com/en/articles/13745661-payout-policy-overview-best-and-fastest-prop-firm-payouts"
+  },
+  {
+   "date": "2026-08-20",
+   "change": "Cutoff date for Legacy Subscriptions in the Terms",
+   "source": "https://myfundedfutures.com/terms"
+  },
+  {
+   "date": "2026-08-25",
+   "change": "New evaluation purchases switched to one-time payments with no renewal cycle",
+   "source": "https://help.myfundedfutures.com/en/articles/16596406-understanding-the-difference-between-account-resets-and-renewals"
+  },
+  {
+   "date": "2026",
+   "change": "Pro plan redesigned (live Reserve program, $100K sim payout cap per user); old Pro accounts keep old rules. Exact date not stated.",
+   "source": "https://help.myfundedfutures.com/en/articles/17573707-comprehensive-look-into-redesigned-pro-plan"
+  },
+  {
+   "date": "2026-07/2026-09",
+   "change": "Builder plan and Rapid EOD plan (50K, then 25K) launched (reported by a third-party tracker)",
+   "source": "https://www.eltraderfinanciado.com/en/news/myfundedfutures"
+  }
+ ],
+ "pros": [
+  "No activation fee and one-time evaluation fee (no monthly renewal) since 2026-08-25",
+  "Rapid plans: 90/10 split and daily payouts after a $2,100 buffer (50K)",
+  "No daily loss limit on Rapid and Pro",
+  "Pro allows up to $100,000 total sim-funded payouts per user",
+  "Trustpilot 4.9 from 22,373 reviews (2026-10-16)"
+ ],
+ "cons": [
+  "Rapid sim-funded drawdown is intraday trailing (from equity high), stricter than EOD",
+  "No overnight holding: positions auto-closed 4:10 PM ET",
+  "Tier 1 news trading banned on Rapid and Pro sim-funded accounts",
+  "Long restricted-country list (90 entries, including Serbia, Turkey, UAE, Ukraine)",
+  "Several metals/energy contracts (SI, HG, PL, NG, QG) temporarily restricted; plan pages show inconsistent figures in places"
+ ],
+ "best_for": "Futures traders who want a one-time fee evaluation and frequent payouts (daily on Rapid, 90/10) and do not hold positions overnight.",
+ "sources": [
+  {
+   "url": "https://myfundedfutures.com/",
+   "supports": "plan lineup, promo-adjusted vs list prices, CLUB banner, platforms, legal name in disclaimer, copyright 2023-2026"
+  },
+  {
+   "url": "https://myfundedfutures.com/plans/rapid",
+   "supports": "Rapid price pair $125/$209 next to the 50K CTA, account sizes, buffers, contracts, news rule"
+  },
+  {
+   "url": "https://myfundedfutures.com/plans/pro",
+   "supports": "Pro 50K price $159 promo / $265, rules table, $100K cap, live review after 3 payouts"
+  },
+  {
+   "url": "https://myfundedfutures.com/plans/builder",
+   "supports": "Builder 50K price $92/$153, payout rules, 5 payouts to live"
+  },
+  {
+   "url": "https://myfundedfutures.com/plans/rapid-eod",
+   "supports": "Rapid EOD sizes and $145 list price for 25K"
+  },
+  {
+   "url": "https://myfundedfutures.com/terms",
+   "supports": "legal entity, Texas governing law, legacy subscription cutoff 2026-08-20"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/13134709-rapid-plan-50k-a-comprehensive-look",
+   "supports": "Rapid 50K rules (dated 2026-08-24)"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/16158363-rapid-eod-50k-a-comprehensive-look",
+   "supports": "Rapid EOD 50K rules"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/17573707-comprehensive-look-into-redesigned-pro-plan",
+   "supports": "Pro 50K rules, live transition, Reserve"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/11802674-pro-plan-sim-funded-and-live-account-highlights",
+   "supports": "Pro sim-funded rules (contract limit 5 minis conflicts with redesign article)"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/14290805-builder-plan-50k-a-comprehensive-guide",
+   "supports": "Builder 50K rules, daily loss soft pause, no overnight holds"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/13745661-payout-policy-overview-best-and-fastest-prop-firm-payouts",
+   "supports": "payout frequency/min/max per plan, Rapid 90% split since 2026-01-12"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/11542406-guide-to-your-first-payout-quick-and-easy-process",
+   "supports": "payout methods (Riseworks, ACH for US, bank/crypto)"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/13134718-understanding-rapid-live",
+   "supports": "Rapid live transition and Reserve"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/8230009-news-trading-policy",
+   "supports": "news trading rules"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/8444599-fair-play-and-prohibited-trading-practices",
+   "supports": "automation, HFT, copy trading between traders, hedging"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/10771500-copy-trading-at-myfundedfutures",
+   "supports": "copy trading allowed on all account types"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/9558251-permitted-times-to-trade",
+   "supports": "4:10 PM ET auto-close"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/8229993-restricted-countries-policy",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/9735811-futures-instrument-list",
+   "supports": "instruments and temporarily restricted commodities"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/collections/5786939-trading-platforms",
+   "supports": "platform list"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/16596406-understanding-the-difference-between-account-resets-and-renewals",
+   "supports": "one-time payment model from 2026-08-25"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/17116402-becoming-an-affiliate-with-myfundedfutures",
+   "supports": "affiliate program terms"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/myfundedfutures.com",
+   "supports": "Trustpilot score and review count"
+  },
+  {
+   "url": "https://www.eltraderfinanciado.com/en/news/myfundedfutures",
+   "supports": "secondary: Builder / Rapid EOD launch dates"
+  },
+  {
+   "url": "https://myfundedfutures.com/",
+   "supports": "50K prices for Builder, Rapid, Rapid EOD and Pro; targets; drawdown; splits (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "founded_year: not stated on official pages; site copyright reads 2023-2026, so founding year left null",
+  "price_50k_list: plan pages show a promo price and a higher price but do not label sizes explicitly. $209 (Rapid), $265 (Pro), $153 (Builder) are the higher figures shown beside each plan's '50K' checkout button; the promo figures are 40% lower ($125/$159/$92), matching code CLUB. Treat as likely list prices; confirm at checkout. Secondary source (proptradingvibes, Aug 6 2026 snapshot, before the one-time model) showed lower prices (Rapid 50K $157, Pro 50K $227), so prices changed with the billing switch.",
+  "Rapid EOD 50K price not shown on its plan page (only $87/$145 for 25K); homepage lists Rapid EOD with $135/$225 and sizes $50K/$100K/$150K, which conflicts with the plan page (25K/50K)",
+  "reset_fee_50k: no official reset price published; Rapid FAQ says 'There is no reset' while the reset article says resets work as before",
+  "Pro sim-funded max contracts at 50K: redesign article says 3 minis/3 micros (likely typo for 30), older highlights article says 5 minis/5 micros",
+  "Pro payout cap wording inconsistent on the plan page ('$100,000 per payout cycle' vs '$100,000 total sim-funded payouts per user'); help center says per user",
+  "Account sizes per plan differ between homepage and plan pages (e.g. Rapid shown as 25K/50K on homepage but 25K-150K on plan page and help center)",
+  "Rithmic/CQG data feed support not confirmed",
+  "Pro redesign effective date not stated; Builder and Rapid EOD launch dates from a secondary source"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://myfundedfutures.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 153,
+  "monthly": false,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "eod",
+  "consistency_eval": false,
+  "consistency_funded": true,
+  "split": "80% (90% on Rapid)",
+  "payouts": "Every 48 hours",
+  "news": "restricted",
+  "ea": null,
+  "us": true,
+  "tp": 4.9,
+  "ccy": "USD",
+  "instant": false
+ }
+}

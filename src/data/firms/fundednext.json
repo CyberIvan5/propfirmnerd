@@ -1,0 +1,320 @@
+{
+ "slug": "fundednext",
+ "name": "FundedNext",
+ "website": "https://fundednext.com/",
+ "status": "active",
+ "status_note": null,
+ "market": "multi",
+ "legal_entity_and_hq": "GrowthNext - F.Z.E. (reg. no. 28831), Office No. 7, AI Robotics HUB, C1 Building, Ajman Free Zone, Ajman, UAE (contracting party). Related: FundedNext Ltd. (Comoros, HY01023052), FundedNext Limited (Hong Kong, payments), Incenteco Trading LTD (Cyprus, HE 307114). Governed by Ajman/UAE law, DIAC arbitration in Dubai",
+ "founded_year": 2022,
+ "trustpilot": {
+  "score": 4.5,
+  "reviews": 81760,
+  "url": "https://www.trustpilot.com/review/fundednext.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "MT4",
+  "MT5",
+  "cTrader",
+  "Match-Trader",
+  "NinjaTrader (futures)",
+  "Tradovate (futures)",
+  "TradingView (futures)"
+ ],
+ "instruments": "CFDs: forex, indices, commodities, crypto (simulated). Futures: CME-group futures (simulated)",
+ "account_sizes": [
+  6000,
+  15000,
+  25000,
+  50000,
+  100000,
+  150000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "Stellar 2-Step (CFD)",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 299.99,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (balance or equity must stay above 90% of initial balance)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "none (N/A) on the default 21-day cycle; the On-Demand payout option requires best day at most 40% of profit",
+   "min_trading_days": 5,
+   "max_contracts_50k": null,
+   "profit_split": "80% default (21-day cycle); 60% (3 Profitable Days option); 90% (On-Demand option); 90% after Scale-Up; 95% with paid Lifetime add-on",
+   "payout_frequency": "first reward after 21 days, then every 14 days (default)",
+   "payout_rules_note": "Fee refunded with the first reward. A 15% challenge reward (of the Phase 1 + 2 targets) is paid once Scale-Up criteria are met (accounts bought from 2026-01-12); not available to US traders. On funded: max 3% open risk at any time; profits from trades within ±5 min of high-impact news count at 40% only; Quick Strike (trades closed within 30s) must stay below 30% of profit.",
+   "notes": "Sizes: 6K, 15K, 25K, 50K, 100K, 200K. 50K targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 5% of initial balance. EAs are NOT allowed at $50K and above. The October promo (STRTN) covers only the 6K size."
+  },
+  {
+   "name": "Stellar 1-Step (CFD)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 329.99,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "static (balance or equity must stay above 94% of initial balance)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "none listed",
+   "min_trading_days": 2,
+   "max_contracts_50k": null,
+   "profit_split": "80% default for accounts bought or reset from 2026-01-12 (90% for earlier accounts); 90% after Scale-Up; 95% with Lifetime add-on",
+   "payout_frequency": "every 5 business days (if in profit for the cycle)",
+   "payout_rules_note": "Refundable fee paid with the 3rd reward for accounts bought from 2026-01-12 (1st reward before that). Max 3% open risk on funded; news profits at 40%; Quick Strike below 30%.",
+   "notes": "Sizes 6K to 200K. 10% target, 3% daily, 6% max loss. EAs not allowed at $50K and above."
+  },
+  {
+   "name": "FundedNext Futures Rapid Pro",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 299.98,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": 174.99,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (locks at starting balance + $100, i.e. $50,100)",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "none in the challenge; 40% on the funded account (highest day at most 40% of total profit to withdraw)",
+   "min_trading_days": null,
+   "max_contracts_50k": "4 minis / 40 micros",
+   "profit_split": "90%",
+   "payout_frequency": "every 3 days once eligible",
+   "payout_rules_note": "50K: minimum withdrawal $250, max $1,200 per cycle, at least $500 profit in the cycle, no buffer. Account concludes after 5 Performance Rewards. Live review after 15 rewards across the trader profile (not guaranteed). Optional $1,000 daily-loss-limit add-on lowers the price. A Rapid Daily variant has daily payouts and a $1,000 DLL.",
+   "notes": "Discounted price varies by official page (seen 2026-10-16): $159.99 on the product page, $149.99 in the help-center rules article, $169.99 in the help-center price article; all list $299.98 (code RAPID, 'up to 50%'). Overnight holding is not allowed on futures. Flex (cheaper: 50K list $141.99, $1,500 EOD drawdown, $2,500 target, 95% split, 5-day payouts, $1,500 cap) is also sold."
+  }
+ ],
+ "news_trading": "CFD: allowed in challenge phases; on funded accounts, profits from trades within ±5 minutes of high-impact news on correlated pairs count at only 40% (losses count in full). Futures: Flex page says news trading is allowed",
+ "ea_bots_allowed": "CFD: restricted. Allowed on MT4/MT5 for accounts below $50K (with conditions and a usage fee); not allowed at $50K and above, not on cTrader/Match-Trader, and not for US clients; prop-passing EAs are banned. Futures: automated bots/AI allowed per the Futures Challenge Terms (subject to review)",
+ "copy_trading": "CFD: allowed only between Challenge accounts of the same trader; prohibited between different people and on any FundedNext (funded) account. Futures: copying/mirroring trades across multiple accounts is prohibited per the terms",
+ "overnight_weekend_holding": "CFD: overnight allowed on all account types; weekend holding allowed on Challenge and FundedNext accounts (reinstated 2026-05-08 after a pause from 2026-01-17). Futures: holding beyond market close is not allowed",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "CFD terms: North Korea, Myanmar, Belarus, Iran, Russia (Terms of Service also add Vietnam). Futures has a longer list (about 50 countries, incl. Bangladesh, Malaysia, Ukraine, Vietnam, Albania, Sri Lanka): https://helpfutures.fundednext.com/en/articles/17228971-are-any-countries-restricted-on-fundednext-futures",
+ "payout_methods": [
+  "USDT (ERC20/TRC20)",
+  "USDC (ERC20)",
+  "Confirmo",
+  "RiseWorks",
+  "Bank transfer",
+  "Card",
+  "Direct deposit to FNmarkets"
+ ],
+ "path_to_live": "Futures: review after 15 Performance Rewards across the trader profile (then every 5 for returning traders), not guaranteed; up to 5 live accounts; Challenge accounts closed on transfer. CFD: no live route published (Scale-Up program raises split to 90%).",
+ "current_public_promo": {
+  "code": "STRTN",
+  "discount": "Up to 33% off (up to 20% for US traders)",
+  "applies_to": "Only the 6K CFD challenge, from October 12, 2026; FundedNext says it may end at any time",
+  "source_url": "https://fundednext.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Tiered: Galactic 12%, Cosmic 15%, Infinity 18% (tiers unlocked by monthly commission of $1,000 / $2,500 / $6,000)",
+  "url": "https://help.fundednext.com/en/articles/8020082-does-fundednext-have-an-affiliate-program",
+  "notes": "Cosmic/Infinity are demoted after 3 consecutive months below target. The entry 'Star' tier rate was not stated in the article read."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-01-12",
+   "change": "Stellar product update: 1-Step default split cut from 90% to 80% (90% after Scale-Up); 1-Step fee refund moved from the 1st to the 3rd reward; 15% challenge reward tied to Scale-Up",
+   "source": "https://help.fundednext.com/en/articles/17252927-stellar-1-step-account"
+  },
+  {
+   "date": "2026-01-17",
+   "change": "Weekend holding paused on Stellar funded accounts (reported by a third-party tracker)",
+   "source": "https://thegodfunded.com/en/news/fundednext-reinstates-weekend-holding-for-trading-accounts"
+  },
+  {
+   "date": "2026-03-31",
+   "change": "US traders can no longer buy new cTrader accounts; US CFD clients use Match-Trader only",
+   "source": "https://help.fundednext.com/en/articles/12673271-usa-client-guide-at-fundednext-cfd-accounts-platforms-rewards"
+  },
+  {
+   "date": "2026-05-08",
+   "change": "Weekend holding reinstated for Stellar 1-Step, 2-Step and Lite accounts (reported by a third-party tracker)",
+   "source": "https://help.fundednext.com/en/articles/11982358-does-fundednext-allow-holding-trades-over-the-night-weekend"
+  },
+  {
+   "date": "2026 (terms updated 2026-09-25)",
+   "change": "Futures lineup now Rapid Pro, Rapid Daily, Legacy and Flex (plus Direct); Flex sold with 'launch price'",
+   "source": "https://fundednext.com/futures-challenge-terms"
+  }
+ ],
+ "pros": [
+  "Large, established operation: Trustpilot 4.5 from about 81,760 reviews; FundedNext launched March 2022",
+  "Accepts US traders for both CFD and futures",
+  "Stellar 2-Step uses a static 10% max loss, and the fee is refunded with the first reward",
+  "Futures Rapid Pro has no daily loss limit, a 90% split, payouts every 3 days and no buffer",
+  "Many payout methods (crypto, Rise, bank, card)"
+ ],
+ "cons": [
+  "Default CFD split is 80%; higher splits need Scale-Up, add-ons or a different payout schedule",
+  "EAs banned on CFD accounts of $50K and above, and for all US CFD clients",
+  "Funded news-trading profits count at only 40% (±5 min window); 3% max-risk rule on funded",
+  "Rules changed several times in 2026 (Jan 12 split/refund changes, weekend-holding pause and reinstatement); Trustpilot summary notes complaints about accounts deactivated after moving to live"
+ ],
+ "best_for": "Traders who want both CFD and futures options from one large firm, including US residents (CFD via Match-Trader).",
+ "sources": [
+  {
+   "url": "https://fundednext.com/cfds",
+   "supports": "CFD models and prices"
+  },
+  {
+   "url": "https://fundednext.com/cfds/stellar-2-step",
+   "supports": "2-Step prices by size, rules"
+  },
+  {
+   "url": "https://fundednext.com/cfds/stellar-1-step",
+   "supports": "1-Step prices by size, rules"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/17255124-stellar-2-step-challenge",
+   "supports": "2-Step full rules, splits, payout cycle, EA/copy/news"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/17252927-stellar-1-step-account",
+   "supports": "1-Step full rules, Jan 12 2026 changes"
+  },
+  {
+   "url": "https://fundednext.com/cfd-challenge-terms",
+   "supports": "DLL/MLL percentages, min days, refund policy (terms updated 2026-05-05)"
+  },
+  {
+   "url": "https://fundednext.com/futures",
+   "supports": "futures models, Flex pricing"
+  },
+  {
+   "url": "https://fundednext.com/futures/rapid",
+   "supports": "Rapid 50K price $159.99/$299.98, rules, code RAPID"
+  },
+  {
+   "url": "https://fundednext.com/futures/flex",
+   "supports": "Flex rules"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17229677-fundednext-futures-rapid-pro-challenge-all-rules",
+   "supports": "Rapid Pro challenge rules, $149.99 price"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17229713-fundednext-futures-rapid-pro-fundednext-account-all-rules",
+   "supports": "Rapid Pro funded payout rules"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17228899-what-are-the-available-account-sizes-and-their-prices-in-fundednext-futures",
+   "supports": "futures sizes and prices ($169.99 offer)"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17228852-what-are-the-reset-conditions-and-fees-at-fundednext-futures",
+   "supports": "reset fees"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/16522296-road-to-live-trading-rapid-flex-direct",
+   "supports": "futures path to live"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17242085-what-methods-are-available-for-performance-reward-withdrawal-in-fundednext-futures",
+   "supports": "futures payout methods"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17228971-are-any-countries-restricted-on-fundednext-futures",
+   "supports": "futures restricted countries"
+  },
+  {
+   "url": "https://fundednext.com/futures-challenge-terms",
+   "supports": "futures entity, drawdowns, automation allowed, no overnight, copy prohibition"
+  },
+  {
+   "url": "https://fundednext.com/terms-of-service",
+   "supports": "entities, governing law"
+  },
+  {
+   "url": "https://fundednext.com/about-us",
+   "supports": "launch date March 2022, founders"
+  },
+  {
+   "url": "https://fundednext.com/trading-platforms",
+   "supports": "CFD platforms"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/8016279-where-are-you-located",
+   "supports": "HQ Ajman"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/11982074-does-fundednext-accept-u-s-clients",
+   "supports": "US accepted"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/12673271-usa-client-guide-at-fundednext-cfd-accounts-platforms-rewards",
+   "supports": "US restrictions, cTrader cutoff"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/8020763-is-ea-allowed-in-fundednext",
+   "supports": "EA policy"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/11982358-does-fundednext-allow-holding-trades-over-the-night-weekend",
+   "supports": "overnight/weekend holding"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/8020084-how-can-i-withdraw-my-profits",
+   "supports": "CFD payout methods"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/17560173-what-is-the-fundednext-stellar-october-returns-offer",
+   "supports": "STRTN promo"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/8020082-does-fundednext-have-an-affiliate-program",
+   "supports": "affiliate tiers"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/fundednext.com",
+   "supports": "Trustpilot"
+  },
+  {
+   "url": "https://thegodfunded.com/en/news/fundednext-reinstates-weekend-holding-for-trading-accounts",
+   "supports": "SECONDARY: weekend-holding pause/reinstatement dates"
+  }
+ ],
+ "uncertain": [
+  "Rapid Pro 50K current discounted price differs across three official pages ($149.99 / $159.99 / $169.99); list $299.98 is consistent",
+  "Futures activation fee: not mentioned on any page read; left null",
+  "CFD reset fees: not found; left null",
+  "CFD 2-Step and 1-Step 50K prices: only one price is shown per size (no strike-through), so it is recorded as the list price",
+  "founded_year 2022 is the FundedNext launch (18 March 2022); parent NEXT Ventures dates from 2016",
+  "Weekend-holding pause/reinstatement dates come from a third-party news page; the official FAQ (2026-09-08) only confirms current status",
+  "The CFD daily loss reset time and balance-vs-equity basis were not confirmed",
+  "Affiliate base-tier ('Star') rate not confirmed",
+  "account_sizes merges CFD (6K-200K) and futures (25K-150K) sizes"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://fundednext.com/",
+ "facets": {
+  "market": "multi",
+  "price50": 299.99,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 5000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80%",
+  "payouts": "After 21 days, then every 14",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": true,
+  "tp": 4.5,
+  "ccy": "USD",
+  "instant": false
+ }
+}

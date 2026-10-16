@@ -1,0 +1,249 @@
+{
+ "slug": "funded-futures-network",
+ "name": "Funded Futures Network",
+ "website": "https://fundedfuturesnetwork.com",
+ "status": "active",
+ "status_note": "Trustpilot reviews from August and September 2026 include many complaints about slow or denied payouts. Read the payout rules before buying.",
+ "market": "futures",
+ "legal_entity_and_hq": null,
+ "founded_year": null,
+ "trustpilot": {
+  "score": 3.8,
+  "reviews": 495,
+  "url": "https://www.trustpilot.com/review/fundedfuturesnetwork.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Rithmic"
+ ],
+ "instruments": "CME Group futures (equity index E-mini/micro, interest rates, FX, Micro Bitcoin, livestock, grains, energy, metals); products outside the listed table require contacting support",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000,
+  250000
+ ],
+ "programs": [
+  {
+   "name": "MAX Standard",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 178,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "40% in evaluation and sim funded; none on live",
+   "min_trading_days": 5,
+   "max_contracts_50k": null,
+   "profit_split": "80/20 sim funded; 90/10 live",
+   "payout_frequency": "Same-day processing once eligible",
+   "payout_rules_note": null,
+   "notes": null
+  },
+  {
+   "name": "STEADY",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 229,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "52% in evaluation; none in funded",
+   "min_trading_days": 2,
+   "max_contracts_50k": null,
+   "profit_split": "90/10",
+   "payout_frequency": "Every 5 winning days ($150+ each)",
+   "payout_rules_note": null,
+   "notes": null
+  }
+ ],
+ "news_trading": "Restricted: allowed in evaluations; in exhibition, sim-funded and live-funded accounts traders must be flat (no positions or pending orders) from 1 minute before to 1 minute after Tier 1 US events (CPI, FOMC, NFP, GDP); violation = immediate liquidation and forfeited profits",
+ "ea_bots_allowed": "Restricted: no explicit ban found, but the HFT rule applies to manual and automated trading: no more than 30% of a session's trades may last 5 seconds or less; one violation fails the account and forfeits profits with no appeal",
+ "copy_trading": "Allowed with limits: max 5 copy-traded accounts at once (max 10 accounts total per user); exceeding 5 makes all copy-traded accounts lose funding eligibility",
+ "overnight_weekend_holding": "Not allowed: day-trade only; flat with no pending orders by 4:50 PM ET Monday-Friday (auto-close at 4:50 PM ET, not on early-close holidays).",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "23 prohibited countries incl. Russia, Ukraine, Azerbaijan, Pakistan, Nigeria, Iran, Iraq, Venezuela, Cuba, North Korea. https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/47386113405083-Article-12-1-Country-Restrictions-Product-List",
+ "payout_methods": [
+  "ACH (default)",
+  "PayPal",
+  "Bank wire"
+ ],
+ "path_to_live": "After 5 consecutive payouts on an account the trader can apply to their risk manager (final decision is the risk manager's). Live accounts: 90/10 split, no consistency rule, no maximum payout, same-day payouts. For accounts bought after 2026-07-01 sim-funded profits are forfeited and live starts at account size plus original buffer.",
+ "current_public_promo": {
+  "code": null,
+  "discount": null,
+  "applies_to": null,
+  "source_url": null,
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": null,
+  "commission": null,
+  "url": null,
+  "notes": "Help center has no affiliate information; main site could not be read. A secondary tracker mentions an affiliate email, but no official affiliate page was confirmed."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-04-20",
+   "change": "Per-account payout caps introduced for OG and MAX sim-funded accounts (50K: $1,500 for payouts 1-3, $2,000 after); older 7PV OG accounts exempt",
+   "source": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870357137051-Article-5-3-Per-Account-Payout-Caps"
+  },
+  {
+   "date": "2026-05-15",
+   "change": "HFT policy: max 30% of trades of 5 seconds or less per session",
+   "source": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/49271157730331-3-8-High-Frequency-Trading-HFT-Policy"
+  },
+  {
+   "date": "2026-07-01",
+   "change": "STEADY account (one-time fee) introduced, replacing Express MAX for new purchases; sim-funded profits forfeited on move to live for accounts bought after this date",
+   "source": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/52438414061211-Article-2-5-STEADY-Account"
+  },
+  {
+   "date": "2026-07-02",
+   "change": "Max 5 active funded accounts; live split 90/10; Standard MAX sim split 80/20, STEADY 90/10",
+   "source": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870384059291-Article-4-3-Sim-Funded-vs-Live-Funded-Accounts"
+  }
+ ],
+ "pros": [
+  "STEADY: one-time fee, no activation fee, no daily loss limit, 90/10 sim split",
+  "EOD trailing drawdown on current products",
+  "News trading allowed during evaluations",
+  "No payout fees; ACH, PayPal and wire supported",
+  "Short restricted-country list (23 countries)"
+ ],
+ "cons": [
+  "Trustpilot 3.8 with recent reviews reporting 2-3 week payout delays and denials (Aug-Sep 2026)",
+  "Strict HFT rule (30% of trades under 5 seconds fails the account, no appeal) and 1-minute news flat rule in funded",
+  "Per-account payout caps ($1,500 for first 3 payouts at 50K) and $10,000 per-user cap",
+  "Sim-funded profits forfeited when moving to live (accounts bought after 2026-07-01)",
+  "Rithmic only; legal entity and address not published in the help center"
+ ],
+ "best_for": "Day traders on Rithmic who want a one-time-fee EOD evaluation (STEADY) and accept capped sim payouts.",
+ "sources": [
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/52438414061211-Article-2-5-STEADY-Account",
+   "supports": "STEADY 50K price, rules, payouts, live forfeiture"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870377993883-Article-2-3-Standard-MAX-Accounts-Full-Specifications",
+   "supports": "Standard MAX 50K rules (updated 2026-03-06)"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870383486235-Article-1-3-Account-Sizes-and-Monthly-Costs",
+   "supports": "monthly prices per size (updated 2026-03-20), $100 reset, $120 activation"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870371770779-Article-2-5-Account-Comparison-Quick-Reference",
+   "supports": "account comparison, $120 activation fee, 80/20 sim and 90/10 live"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/53347326287131-Article-5-2-Payout-Eligibility-by-Account-Type",
+   "supports": "payout eligibility, buffers, winning-day thresholds"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870357137051-Article-5-3-Per-Account-Payout-Caps",
+   "supports": "payout caps"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870391804827-Article-5-1-How-Payouts-Work-Overview",
+   "supports": "payout methods, same-day processing, no fees, $500 min, $10K per user"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870384059291-Article-4-3-Sim-Funded-vs-Live-Funded-Accounts",
+   "supports": "path to live, splits, 5 funded accounts max"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870356788763-Article-3-5-Contract-Limits-and-the-Funded-Account-Scaling-Plan",
+   "supports": "contract limits and scaling"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870363111451-Article-3-4-Permitted-Trading-Hours-and-Position-Closing-Rules",
+   "supports": "4:50 PM ET flat rule, no overnight"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870383895195-Article-3-3-Trading-the-News-Holiday-Hours",
+   "supports": "news trading"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/49271157730331-3-8-High-Frequency-Trading-HFT-Policy",
+   "supports": "HFT rule"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870407769883-Article-7-1-Copy-Trading-Limits-and-Rules",
+   "supports": "copy trading limits"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/47386113405083-Article-12-1-Country-Restrictions-Product-List",
+   "supports": "restricted countries, products"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870407959707-Article-8-2-Promotional-Codes-Activation-Fee-Waivers-and-Discounts",
+   "supports": "$100 reset, $120 activation, codes not published in help center"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.zendesk.com/hc/en-us/articles/46870383435163-Article-1-1-What-Is-Funded-Futures-Network",
+   "supports": "Rithmic platform, 10 accounts per user"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/fundedfuturesnetwork.com",
+   "supports": "Trustpilot score, count, recent payout complaints"
+  },
+  {
+   "url": "https://propfirmmap.com/trust-check/fundedfuturesnetwork",
+   "supports": "secondary: 2026 change timeline, Oct 2026 MAX Standard 50K $178 list"
+  },
+  {
+   "url": "https://traderpayout.com/funded-futures-network/funded-futures-network-review",
+   "supports": "secondary: current evaluations one-time, no activation fee (October 2026)"
+  },
+  {
+   "url": "https://damnpropfirms.com/futures-prop-firms/funded-futures-network/",
+   "supports": "secondary: Funded Futures Network LLC (Florida), founded 2022 by Kevin Swart"
+  },
+  {
+   "url": "https://fundedfuturesnetwork.com/",
+   "supports": "50K prices for MAX Standard and STEADY (now one-time), targets, drawdown, minimum days (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "Main website fundedfuturesnetwork.com blocks automated fetching; no official prices, promo banner, footer, legal entity or affiliate info could be read from it",
+  "legal_entity_and_hq: secondary sources say 'Funded Futures Network LLC' (Florida per damnpropfirms); Trustpilot lists 99 Wall Street, New York (a virtual office address); not confirmed officially, left null",
+  "founded_year: secondary sources say 2022 (fundedtrading says Jul 2022); left null",
+  "Standard MAX billing and price: official help center (March 2026) says $160/month with $120 activation; secondary sources in Oct 2026 say current evaluations are one-time with no activation fee and list $178 for MAX Standard 50K. Current status not confirmed.",
+  "STEADY max contracts at 50K not stated in the STEADY article (generic contract article says 4 minis / 40 micros at 50K)",
+  "Help-center articles 3.2 (Daily Loss Limit), 4.2 (Building Your Buffer) and 1.2 (Choosing Your Account) could not be read (fetch proxy rate-limited, HTTP 429); $1,250 DLL comes from the Standard MAX spec article",
+  "Article 3.7 'Independent Trading Rules' (hedging/group trading) could not be read (blocked); bot rules inferred only from HFT policy",
+  "Payout-cycle rules partly conflict: Standard MAX article says same-day once eligible; a secondary review says a 4th request on one account triggers live review and closes sim accounts",
+  "No promo code published on any official page I could read (help center says codes are on the site banner/Discord); third-party coupon codes not recorded",
+  "us_residents_accepted: US not on the restricted list and firm is US-based; no explicit statement"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://fundedfuturesnetwork.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 178,
+  "monthly": false,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "eod",
+  "consistency_eval": true,
+  "consistency_funded": true,
+  "split": "80% (90% live)",
+  "payouts": "Same day once eligible",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": true,
+  "tp": 3.8,
+  "ccy": "USD",
+  "instant": false
+ }
+}

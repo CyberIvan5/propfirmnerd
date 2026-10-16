@@ -399,7 +399,7 @@ def firm_row(f, cols):
         "split": f'<td>{esc(fac(f, "split") or "—")}</td>',
         "payouts": f'<td>{esc(fac(f, "payouts") or "—")}</td>',
         "news": f'<td>{esc((fac(f, "news") or "—").capitalize())}</td>',
-        "ea": f'<td>{yn(fac(f, "ea"), "Allowed", "Not allowed")}</td>',
+        "ea": f'<td>{esc(fac(f, "ea") if isinstance(fac(f, "ea"), str) else yn(fac(f, "ea"), "Allowed", "Not allowed"))}</td>',
         "us": f'<td>{yn(fac(f, "us"))}</td>',
         "tp": f'<td class="n">{fac(f, "tp") or "—"}</td>',
         "code": f'<td>{code_cell(f)}</td>',
@@ -503,7 +503,7 @@ def rules_kv(f):
 
 def strip_html(f):
     ccy = fac(f, "ccy", "USD")
-    cells = [("50K price", money(fac(f, "price50"), ccy), "per month" if fac(f, "monthly") else "cheapest main plan", ""),
+    cells = [("50K price", money(fac(f, "price50"), ccy), "per month" if fac(f, "monthly") else "main plan", ""),
              ("Profit target", money(fac(f, "target50"), ccy), "on 50K", "gain"),
              ("Max loss", money(fac(f, "maxloss50"), ccy), DD_LABEL.get(fac(f, "dd"), "").lower(), "loss"),
              ("Consistency", cons_label(f), "rule applies to", ""),
@@ -609,7 +609,8 @@ def build_firm_pages(site, firms, lists, compares):
         verdict = f'<p class="lede">{ed["verdict"]}</p>' if ed.get("verdict") else ""
         promo_link = f'<p><a href="/firms/{s}/promo-code/">{n} promo code and current discount</a></p>'
         rules_link = f'<p><a href="/firms/{s}/rules/">Every {n} rule explained</a></p>' if ed.get("rules_page") else ""
-        body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + dd_block(fac(f, "dd"))
+        pnote = f'<p class="muted" style="margin-top:-18px">{esc(f["price_note"])}</p>' if f.get("price_note") else ""
+        body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + pnote + dd_block(fac(f, "dd"))
                 + f'<div class="content">{ticket_html(f)}' + (body_ed.split("<!--RULES-->")[0] if body_ed else "")
                 + "</div>" + program_table(f)
                 + f'<h2 id="rules">Trading rules and fine print</h2>{rules_kv(f)}{rules_link}'
@@ -753,8 +754,9 @@ def build_lists(site, firms, lists):
         for f in picks:
             why = (l.get("why") or {}).get(f["slug"]) or (f["_ed_meta"].get("one_liner") or f.get("best_for") or "")
             ccy = fac(f, "ccy", "USD")
-            facts = (f"50K for {strip_tags(money(fac(f, 'price50'), ccy))}{'/mo' if fac(f, 'monthly') else ''}, "
-                     f"target {strip_tags(money(fac(f, 'target50'), ccy))}, max loss {strip_tags(money(fac(f, 'maxloss50'), ccy))}, "
+            lead = (f"50K for {strip_tags(money(fac(f, 'price50'), ccy))}{'/mo' if fac(f, 'monthly') else ''}, "
+                    if fac(f, 'price50') is not None else "50K price not published, ")
+            facts = (lead + f"target {strip_tags(money(fac(f, 'target50'), ccy))}, max loss {strip_tags(money(fac(f, 'maxloss50'), ccy))}, "
                      f"{DD_LABEL.get(fac(f, 'dd'), '').lower()} drawdown")
             items += (f'<li><div><h3><a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></h3><p>{esc(why)}</p></div>'
                       f'<a class="btn ghost" href="/firms/{f["slug"]}/">Read review</a>'
@@ -790,7 +792,7 @@ def build_compares(site, firms, compares):
             return f'<tr><th scope="row">{label}</th><td>{fn(a)}</td><td>{fn(b)}</td></tr>'
         rows = "".join([
             row("Market", lambda f: esc(MARKET_LABEL.get(fac(f, "market"), "—"))),
-            row("Cheapest main 50K plan", lambda f: money(fac(f, "price50"), fac(f, "ccy", "USD")) + (" /mo" if fac(f, "monthly") else "")),
+            row("Main 50K plan", lambda f: money(fac(f, "price50"), fac(f, "ccy", "USD")) + (" /mo" if fac(f, "monthly") else "")),
             row("Profit target (50K)", lambda f: money(fac(f, "target50"), fac(f, "ccy", "USD"))),
             row("Max loss (50K)", lambda f: money(fac(f, "maxloss50"), fac(f, "ccy", "USD"))),
             row("Drawdown", lambda f: esc(DD_LABEL.get(fac(f, "dd"), "—"))),

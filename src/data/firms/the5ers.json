@@ -1,0 +1,227 @@
+{
+ "slug": "the5ers",
+ "name": "The5ers",
+ "website": "https://the5ers.com",
+ "status": "active",
+ "status_note": null,
+ "market": "multi",
+ "legal_entity_and_hq": "Five Percent Online Ltd (UK company no. 12553363), registered office 168 Praed Street, London W2 1RH, UK; also an Israeli company no. 515864007 at 2 Ha'tidhar Street, Raanana, Israel. Terms governed by the laws of Israel (Tel Aviv courts).",
+ "founded_year": 2016,
+ "trustpilot": {
+  "score": 4.7,
+  "reviews": 39790,
+  "url": "https://www.trustpilot.com/review/the5ers.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "MetaTrader 5",
+  "cTrader",
+  "BlackArrow (futures)"
+ ],
+ "instruments": "Forex, metals, indices, oil, crypto CFDs (stocks on Hyper Growth) on MT5; separate futures program (The5ers Futures) on BlackArrow",
+ "account_sizes": [
+  2500,
+  5000,
+  10000,
+  20000,
+  25000,
+  50000,
+  100000,
+  250000
+ ],
+ "programs": [
+  {
+   "name": "High Stakes (New)",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 249,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "Static (8% of the starting balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": null,
+   "min_trading_days": "3 profitable days per phase",
+   "max_contracts_50k": null,
+   "profit_split": "80%, rising to 100% on the scaling plan",
+   "payout_frequency": "First after 14 days, then every 2 weeks",
+   "payout_rules_note": "Payouts capped at $3,000 per request on 50K; $300 minimum.",
+   "notes": "Targets are 10% in phase 1 and 5% in phase 2."
+  },
+  {
+   "name": "High Stakes (Classic)",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 279,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "Static (8% of the starting balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": null,
+   "min_trading_days": "3 profitable days per phase",
+   "max_contracts_50k": null,
+   "profit_split": "80%, rising to 100% on the scaling plan",
+   "payout_frequency": "First after 14 days, then every 2 weeks",
+   "payout_rules_note": null,
+   "notes": "Targets are 8% in phase 1 and 5% in phase 2."
+  }
+ ],
+ "news_trading": "Restricted: High Stakes forbids new orders 2 minutes before/after high-impact news; bracketing pending orders around high-impact news is prohibited in all programs (T&C)",
+ "ea_bots_allowed": "Restricted: T&C require prior written approval for automated trading software; third-party EAs, rollover-scalping EAs, HFT, tick scalping and arbitrage are prohibited",
+ "copy_trading": "Restricted: copy trading or trade coordination with other traders/accounts is prohibited (T&C)",
+ "overnight_weekend_holding": "Overnight and weekend holding allowed; indices held over the weekend carry high swap. Futures Day Trade accounts must close 10 minutes before market close; futures Swing accounts cannot hold over the weekend.",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Forbidden Territories include Afghanistan, Belarus, Bosnia and Herzegovina (in T&C), Cuba, Iran, Iraq, Israel, Lebanon, Russia, Syria, Venezuela, Yemen and others. T&C: MetaQuotes platforms (MT5) may not be used by US residents. List: https://the5ers.com/terms-and-conditions/",
+ "payout_methods": [
+  "Rise (3.5% fee)",
+  "Crypto: USDT TRC20, USDC ERC20, ETH, LTC (3.5% fee, $1,500 cap per withdrawal)",
+  "Bank transfer (3.5% fee)",
+  "Hub Credits (no fee)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": null,
+  "discount": "$100K High Stakes for $149",
+  "applies_to": "Limited-time offer shown on The5ers' High Stakes page",
+  "source_url": "https://the5ers.com/high-stakes/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": null,
+  "url": "https://the5ers.com/refer-a-trader/",
+  "notes": "Refer-a-trader program exists; commission rates not published on the page. Sign-up via https://hub.the5ers.com/affiliate"
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-03",
+   "change": "New High Stakes entry option added: 10% Step 1 / 5% Step 2 at a lower price; Classic 8%/5% kept (reported by a third-party tracker)",
+   "source": "https://thegodfunded.com/en/news/the5ers-introduces-new-entry-option-for-high-stakes-account-with-revised-targets/"
+  },
+  {
+   "date": "2026-08",
+   "change": "Summer Plan ($100K from $149) extended through September, then until further notice (reported by a third-party tracker)",
+   "source": "https://thegodfunded.com/en/news/the5ers-extends-summer-plan-and-boosters-through-september/"
+  }
+ ],
+ "pros": [
+  "Long track record: founded 2016",
+  "Trustpilot 4.7 from 39,790 reviews (seen 2026-10-16)",
+  "High Stakes max loss is static (8% on 50K), not trailing",
+  "Unlimited time to pass; scaling plan to $500K with split rising to 100%",
+  "70% fee refund with the first High Stakes payout"
+ ],
+ "cons": [
+  "High Stakes payouts capped per request ($3,000 on 50K) and only every 14 days",
+  "3.5% commission on Rise, crypto and bank withdrawals",
+  "EAs need prior written approval; copy trading prohibited",
+  "Hyper Growth and Bootcamp start at lower splits (75% / 50%)",
+  "Several overlapping programs and plan versions (High Stakes New and Classic, Hyper Growth, Bootcamp)"
+ ],
+ "best_for": "Forex/CFD traders who want a long-established firm with static drawdown and a scaling plan, and do not need fast or uncapped payouts.",
+ "sources": [
+  {
+   "url": "https://the5ers.com",
+   "supports": "programs list, legal entity, founded, restricted territories"
+  },
+  {
+   "url": "https://the5ers.com/high-stakes/",
+   "supports": "High Stakes targets, 5%/10% loss, profitable days, scaling split, news 2-minute rule, leverage, New/Classic account limits, sizes"
+  },
+  {
+   "url": "https://the5ers.com/hyper-growth/",
+   "supports": "Hyper Growth rules, $40K max capital, split table, weekend holding"
+  },
+  {
+   "url": "https://the5ers.com/bootcamp/",
+   "supports": "Bootcamp step rules, tiers, costs"
+  },
+  {
+   "url": "https://the5ers.com/futures/",
+   "supports": "futures program sizes/rules"
+  },
+  {
+   "url": "https://the5ers.com/futures-faqs/",
+   "supports": "futures platform BlackArrow"
+  },
+  {
+   "url": "https://the5ers.com/faqs/payout-policy-and-hub-credit-in-the-high-stakes-program/",
+   "supports": "High Stakes payout min, caps, 70% refund, hub credit"
+  },
+  {
+   "url": "https://the5ers.com/faqs/withdrawals-everything-you-need-to-know/",
+   "supports": "payout methods, fees, 14-day frequency"
+  },
+  {
+   "url": "https://the5ers.com/terms-and-conditions/",
+   "supports": "EA, copy trading, news bracketing, US/MT5, restricted countries, legal entities, governing law"
+  },
+  {
+   "url": "https://the5ers.com/about-the5ers/",
+   "supports": "founded 2016"
+  },
+  {
+   "url": "https://the5ers.com/summer-plan/",
+   "supports": "current promo pricing"
+  },
+  {
+   "url": "https://the5ers.com/refer-a-trader/",
+   "supports": "affiliate program exists"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/the5ers.com",
+   "supports": "Trustpilot score/reviews"
+  },
+  {
+   "url": "https://propfirmbridge.com/education/the5ers-high-stakes-review-new-classic-prices-rules-bridge",
+   "supports": "SECONDARY: 50K High Stakes prices New $278 / Classic $309"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firms/the-5-ers/challenges",
+   "supports": "SECONDARY: Hyper Growth and Bootcamp list prices, 14-day payout"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firms/the-5-ers",
+   "supports": "SECONDARY: platforms incl. cTrader, payout methods"
+  },
+  {
+   "url": "https://the5ers.com/high-stakes/",
+   "supports": "50K High Stakes New and Classic prices, targets, daily and max loss, payout cap (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "price_50k_list (High Stakes $309 Classic / $278 New) is SECONDARY (propfirmbridge.com, Sep 2026); official page did not render 50K prices. Its smaller-size prices ($19 for 2.5K New) match the official page. Propfirmmatch shows an older $279 linked to a former 60K size.",
+  "High Stakes daily loss basis: official page says 5% but not the basis; secondary sources say higher of start-of-day balance or equity at MT5 server midnight.",
+  "Hyper Growth and Bootcamp prices are SECONDARY (propfirmmatch); no 50K size exists for either.",
+  "Bootcamp entry profit split (50%) is SECONDARY; official page says 'up to 100%'.",
+  "us_residents_accepted: T&C ban MT5 for US residents and US is not on the forbidden list; whether US residents can use cTrader accounts is not stated - left null.",
+  "Affiliate commission rates not published.",
+  "Futures program: only $25K price ($59) shown; 50K futures price not shown; daily loss/US rules not stated.",
+  "cTrader availability is from a propfirmmatch announcement (secondary); official pages reviewed mention MT5."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://the5ers.com/",
+ "facets": {
+  "market": "multi",
+  "price50": 249,
+  "monthly": false,
+  "target50": 5000,
+  "maxloss50": 4000,
+  "dd": "static",
+  "consistency_eval": null,
+  "consistency_funded": null,
+  "split": "80% to 100%",
+  "payouts": "Every 2 weeks",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": 4.7,
+  "ccy": "USD",
+  "instant": false
+ }
+}

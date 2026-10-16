@@ -1,0 +1,284 @@
+{
+ "slug": "apex-trader-funding",
+ "name": "Apex Trader Funding",
+ "website": "https://apextraderfunding.com",
+ "status": "active",
+ "status_note": "Apex blocks visitors from some countries, including where we check from, so we could not read its current 50K prices. Rules below come from Apex's own help center.",
+ "market": "futures",
+ "legal_entity_and_hq": "Apex Trader Funding Inc., a Texas corporation headquartered in Austin, Texas, USA (mailing address only: 2028 E. Ben White Blvd Ste 240-9873, Austin, TX 78741)",
+ "founded_year": 2021,
+ "trustpilot": {
+  "score": 4.2,
+  "reviews": 21323,
+  "url": "https://www.trustpilot.com/review/apextraderfunding.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Rithmic",
+  "Tradovate",
+  "WealthCharts",
+  "NinjaTrader (via Rithmic or Tradovate)"
+ ],
+ "instruments": "CME Group futures (CME/CBOT/NYMEX/COMEX), simulated",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "EOD Trailing Drawdown Evaluation -> EOD Performance Account (PA)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": null,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (calculated at market close, enforced intraday the next session). In the PA the threshold stops trailing at $50,100 (starting balance + $100), reached when the highest EOD balance hits $52,100.",
+   "daily_loss_limit_50k": 1000,
+   "consistency_rule": "None in evaluation; in the PA, no single profitable day may be 50% or more of total profit since the last approved payout",
+   "min_trading_days": null,
+   "max_contracts_50k": 6,
+   "profit_split": "100% of approved payouts (sim PA); 90/10 in Apex live accounts",
+   "payout_frequency": "After 5 qualifying trading days (each with at least $250 profit on 50K EOD) since the last payout; days need not be consecutive",
+   "payout_rules_note": "50K EOD PA: minimum payout $500; balance must be at least $52,600 to request; Safety Net $52,100 must be maintained for the life of the PA. Max per request by payout number: $1,500 / $1,500 / $2,000 / $2,500 / $2,500 / $3,000. Maximum 6 payouts per PA, after which the PA is closed. PA contract limit is 4 (scaling tiers 2 -> 3 -> 4 contracts) with a tier-based DLL of $1,000 to $3,000. Inactivity: PA closed if fewer than 2 days of $50+ net profit in any rolling 30-day period. Up to 20 active PAs.",
+   "notes": "Evaluation: 30 calendar days of access, no extensions, no reset fees (a failed evaluation requires a new purchase). Evaluation DLL ($1,000) pauses trading for the session but does not fail the account. No minimum trading days; can pass in one day. 7 calendar days after passing to pay the PA activation fee. Apex's help center says a 'No Activation Fee' purchase option exists but does not publish its price. Per 'EOD Drawdown Explained', Rithmic and WealthCharts evaluation thresholds stop trailing at the target-profit balance, while Tradovate evaluation thresholds trail indefinitely."
+  },
+  {
+   "name": "Intraday Trailing Drawdown Evaluation -> Intraday Performance Account (PA)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": null,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "Intraday trailing (follows highest balance including unrealized gains, enforced in real time). In the PA, trailing stops once the threshold reaches starting balance + $100.",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None in evaluation; in the PA, no single profitable day may be 50% or more of total profit since the last approved payout",
+   "min_trading_days": null,
+   "max_contracts_50k": 6,
+   "profit_split": "100% of approved payouts (sim PA); 90/10 in Apex live accounts",
+   "payout_frequency": "After 5 qualifying trading days (each with at least $200 profit on 50K Intraday) since the last payout",
+   "payout_rules_note": "50K Intraday PA: minimum payout $500; balance must be at least $52,600 to request; Safety Net $52,100. Max per request by payout number: $1,500 / $2,000 / $2,500 / $2,500 / $3,000 / $3,000. Maximum 6 payouts per PA, after which the PA is closed. PA contract limit 4 with tier-based scaling and tier-based DLL. Same inactivity rule and 20-PA cap as EOD.",
+   "notes": "No daily loss limit during the evaluation. 30 calendar days of access, no extensions, no reset fees."
+  },
+  {
+   "name": "Legacy Evaluation (limited-time relaunch)",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 197,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 125,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2500,
+   "drawdown_type": "Trailing threshold (the Legacy Products page does not say intraday or EOD)",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "Apex's own March 17, 2026 news post says Legacy accounts keep a 30% consistency rule (not confirmed in the help center)",
+   "min_trading_days": null,
+   "max_contracts_50k": 10,
+   "profit_split": null,
+   "payout_frequency": "Apex's own news post describes an 8-day payout cycle with a $50 profit floor for Legacy accounts (not confirmed in the help center)",
+   "payout_rules_note": null,
+   "notes": "Listed on apextraderfunding.com/legacy-products as 'Available Now - Limited Time', $197/month for 50K before discount, same price on Tradovate, WealthCharts and Rithmic; sizes 25K-300K; no daily drawdown, no scaling. The inactivity policy applies to Legacy accounts purchased after March 1, 2026."
+  }
+ ],
+ "news_trading": "Allowed, with restrictions: trading during news is allowed as part of a normal strategy; placing orders on both sides to gamble on the outcome or 'chasing the market' is prohibited",
+ "ea_bots_allowed": "Not allowed: Prohibited Activities states automation and algorithm usage is not allowed; high-frequency trading is prohibited",
+ "copy_trading": "Restricted: trade copying with other traders is prohibited; the WealthCharts platform page promotes a built-in trade copier for executing trades across multiple accounts",
+ "overnight_weekend_holding": "Not allowed: positions must be closed before market close. Apex's own March 19, 2026 news post says holding past 4:59 PM ET leads to liquidation.",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "About 90 countries are restricted, including Serbia, Turkey, Ukraine, Russia, China, Nigeria, Pakistan, Vietnam, Latvia and Cyprus. The US is not restricted. List: https://apextraderfunding.com/help-center/getting-started/restricted-countries/",
+ "payout_methods": [
+  "ACH direct deposit (US bank accounts)",
+  "Plane (international bank transfer)"
+ ],
+ "path_to_live": "Discretionary: Apex may move a trader from the simulated PA to a live account at any time, based on discipline, consistency and risk management (one guideline is three consecutive withdrawals from one PA). Live split is 90/10, live payouts can be requested daily (minimum $500, only from profit above a $3,100 safety net).",
+ "current_public_promo": {
+  "code": "SAVENOW",
+  "discount": "90% off evaluations (limited time)",
+  "applies_to": "Evaluations; shown on Apex's site banner when our researcher checked",
+  "source_url": "https://apextraderfunding.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": null,
+  "commission": null,
+  "url": null,
+  "notes": "Could not confirm from Apex's own site (the affiliate page did not load and the About page does not mention one)."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-03-01",
+   "change": "Previous evaluation and PA products became 'Legacy' and closed to new purchases; new EOD and Intraday evaluation products launched as one-time purchases with 30-day access, no reset fees, 50% PA consistency, 6-payout cap per PA, and tier-based PA scaling/DLL.",
+   "source": "https://apextraderfunding.com/help-center/helpful-items/status-updates/"
+  },
+  {
+   "date": "2026-03",
+   "change": "New EOD 50K accounts require 5 days of at least $250 net profit before a payout request.",
+   "source": "https://apextraderfunding.com/news/2026/03/18/what-is-the-250-minimum-daily-profit-rule-in-apex-trader-funding/"
+  },
+  {
+   "date": "2026",
+   "change": "Legacy accounts relaunched as a limited-time, monthly-billed offer (page last modified 2026-08-25).",
+   "source": "https://apextraderfunding.com/legacy-products"
+  }
+ ],
+ "pros": [
+  "One-time evaluation fee with no recurring subscription and no reset fees on the new products.",
+  "100% of approved PA payouts go to the trader.",
+  "No consistency rule and no minimum trading days during the evaluation; it can be passed in one day.",
+  "Choice of EOD or intraday trailing drawdown at every size.",
+  "Firm publishes a 90%-off code (SAVENOW) on its own site."
+ ],
+ "cons": [
+  "Each PA is capped at 6 payouts (max $1,500-$3,000 per request on 50K), after which it closes and a new evaluation is needed.",
+  "Automation/algorithms are not allowed.",
+  "Evaluation access expires after 30 calendar days with no extensions.",
+  "List prices for the new evaluations and PA activation fees are not published in the help center; they show only in the site's product selector/checkout.",
+  "Restricted-country list is long (about 90 countries, including Serbia and Turkey)."
+ ],
+ "best_for": "Discretionary futures day traders who want a one-time-fee evaluation with no evaluation consistency rule and accept a 6-payout cap per funded account.",
+ "sources": [
+  {
+   "url": "https://apextraderfunding.com/",
+   "supports": "SAVENOW 90% banner, legal entity, partners/platforms, new-products overview"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-evaluations/",
+   "supports": "EOD evaluation rules for all sizes (target, drawdown, DLL, contracts, 30-day access)"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/evaluation-accounts-ea/intraday-trailing-drawdown-evaluations/",
+   "supports": "Intraday evaluation rules for all sizes"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-drawdown-explained/",
+   "supports": "EOD drawdown mechanics and lock level"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-performance-accounts-pa/",
+   "supports": "EOD PA drawdown, contracts, scaling, 100% split, 20-PA cap"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/eod-trailing-drawdown-accounts/eod-payouts/",
+   "supports": "EOD payout rules, ladder, safety net, 6-payout cap"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/intraday-trailing-drawdown-accounts/intraday-trailing-drawdown-performance-accounts-pa/",
+   "supports": "Intraday PA rules, inactivity"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/intraday-trailing-drawdown-accounts/intraday-trailing-drawdown-payouts/",
+   "supports": "Intraday payout rules and ladder"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/additional-helpful-items/scaling-levels-pa-explained/",
+   "supports": "50K PA scaling tiers and DLL"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/billing/evaluation-plan-fees-and-access-explained/",
+   "supports": "one-time billing, no resets, 30-day access"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/billing/pa-activation-process-deadline-explained/",
+   "supports": "7-day PA activation window, one-time fee"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/billing/coupon-codes/",
+   "supports": "SAVENOW code and promo rules"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/billing/inactivity-policy-on-performance-accounts-pa/",
+   "supports": "PA inactivity rule"
+  },
+  {
+   "url": "https://apextraderfunding.com/legacy-products",
+   "supports": "Legacy product prices, rules, PA fees"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/helpful-items/status-updates/",
+   "supports": "March 1, 2026 Legacy transition"
+  },
+  {
+   "url": "https://apextraderfunding.com/news/",
+   "supports": "March 2026 news posts on Legacy/new product rules"
+  },
+  {
+   "url": "https://apextraderfunding.com/news/2026/03/19/payout-purgatory-heightened-compliance-audits-at-apex-trader-funding/",
+   "supports": "4:59 PM ET close, payout review description"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/getting-started/prohibited-activities/",
+   "supports": "news, automation, copy trading, holding through close"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/getting-started/choosing-the-right-platform/",
+   "supports": "platforms (Rithmic, Tradovate, WealthCharts), WealthCharts trade copier"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/getting-started/restricted-countries/",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/getting-started/apex-live-prop-trading-program-faq/",
+   "supports": "path to live, live 90/10 split, live payouts"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/additional-helpful-items/payout-method-information/",
+   "supports": "ACH and Plane payouts, processing times"
+  },
+  {
+   "url": "https://apextraderfunding.com/help-center/additional-helpful-items/payout-method-international-users/",
+   "supports": "Plane for international users"
+  },
+  {
+   "url": "https://apextraderfunding.com/about/",
+   "supports": "founded 2021, Austin TX, founder Darrell Martin"
+  },
+  {
+   "url": "https://apextraderfunding.com/terms-of-use/",
+   "supports": "Texas corporation, governing law"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/apextraderfunding.com",
+   "supports": "Trustpilot score and review count"
+  }
+ ],
+ "uncertain": [
+  "price_50k_list (EOD and Intraday): Apex does not publish new-product list prices in its help center; prices appear only in the site's product selector, which did not render. Third-party figures conflict (e.g. proptradingvibes.com: EOD $490 / Intraday $249; traderpayout.com: Intraday $249, EOD not given) - secondary, not recorded.",
+  "activation_fee_50k (EOD and Intraday): not published in the help center; third-party figures conflict (EOD 50K reported as $129 or $139; Intraday 50K as $59, $79 or $99) - secondary, not recorded.",
+  "Price of the 'No Activation Fee' purchase option: not published on pages read.",
+  "Legacy program: consistency (30%) and payout cycle (8 days, $50 floor) come from Apex's own news posts, not the help center; Legacy profit split and drawdown type (intraday vs EOD) not confirmed.",
+  "min_trading_days: help center says 'None' for evaluations; set null because the field means a minimum and there is none (0).",
+  "affiliate_program: not confirmed from Apex's own pages.",
+  "Metals futures suspension/restoration in early 2026 is reported only by third parties (curvedtrading.com) - secondary, not recorded.",
+  "Founded year: About page says 2021; the Background page references a trading network 'since 2008' (Apex Investing). 2021 used.",
+  "Payout processor for live accounts: Apex's own news post mentions Deel, the help center mentions Plane/ACH; only the help-center methods are recorded."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://apextraderfunding.com/",
+ "facets": {
+  "market": "futures",
+  "price50": null,
+  "monthly": false,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "mixed",
+  "consistency_eval": false,
+  "consistency_funded": true,
+  "split": "100% of payouts",
+  "payouts": "After 5 qualifying days",
+  "news": "allowed",
+  "ea": "Not allowed",
+  "us": true,
+  "tp": 4.2,
+  "ccy": "USD",
+  "instant": false
+ }
+}

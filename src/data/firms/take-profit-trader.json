@@ -1,0 +1,160 @@
+{
+ "slug": "take-profit-trader",
+ "name": "Take Profit Trader",
+ "website": "https://takeprofittrader.com",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "TakeProfitTrader LLC, 9100 Conroy Windermere Rd Suite 200, Windermere, FL 34786, USA",
+ "founded_year": null,
+ "trustpilot": {
+  "score": null,
+  "reviews": null,
+  "url": "https://www.trustpilot.com/review/takeprofittrader.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [],
+ "instruments": "CME Group futures (approved instruments list in help center); PRO+ trades in live markets via Tradovate",
+ "account_sizes": [
+  25000,
+  50000,
+  75000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Test (evaluation) to PRO",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 170,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 130,
+   "reset_fee_50k": 99,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing in the Test; intraday trailing in PRO",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "Test: best day must be under 50% of total profit",
+   "min_trading_days": 3,
+   "max_contracts_50k": "6 minis / 60 micros",
+   "profit_split": "80/20 in PRO; 90/10 in PRO+ (live)",
+   "payout_frequency": "From the first PRO day, on profit above the buffer",
+   "payout_rules_note": "First withdrawal needs the balance above $52,000 on 50K (buffer).",
+   "notes": "Daily loss limit removed, per Take Profit Trader's homepage."
+  }
+ ],
+ "news_trading": "Restricted: in PRO accounts you must be flat (no positions or open orders) from one minute before to one minute after prohibited events, including FOMC statements, NFP and CPI",
+ "ea_bots_allowed": "Not allowed: PRO Account Rules state 'We do not allow any automated or bot trading of any kind'",
+ "copy_trading": null,
+ "overnight_weekend_holding": null,
+ "us_residents_accepted": null,
+ "restricted_countries_note": null,
+ "payout_methods": [],
+ "path_to_live": "PRO traders can upgrade to PRO+, a live-market account routed through Tradovate with a 90/10 split and EOD drawdown (homepage). Upgrade criteria not confirmed.",
+ "current_public_promo": {
+  "code": "NOFEE40",
+  "discount": "40% off the Test plus no PRO activation fee",
+  "applies_to": "Monthly Test subscription; waives the $130 PRO activation fee",
+  "source_url": "https://takeprofittrader.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": null,
+  "url": "https://takeprofittrader.com/affiliate",
+  "notes": "Affiliate page and help-center affiliate articles exist; commission not confirmed."
+ },
+ "recent_changes_2026": [],
+ "pros": [
+  "No recurring fee after passing; the PRO activation fee is a one-time $130, waived with the firm's own NOFEE40 code.",
+  "Withdrawals can start from day one in PRO once the $52,000 buffer is reached (50K).",
+  "Test has no time limit and uses an EOD trailing drawdown.",
+  "PRO+ is a live-market account with a 90/10 split and no buffer requirement."
+ ],
+ "cons": [
+  "PRO (sim funded) split is 80/20, lower than many competitors' 90/10.",
+  "PRO uses intraday trailing drawdown (stricter than the Test's EOD drawdown).",
+  "No automated or bot trading of any kind.",
+  "Must be flat around major news (FOMC, NFP, CPI) in PRO.",
+  "Test is a monthly subscription until passed."
+ ],
+ "best_for": "Manual futures day traders who want withdrawals from the first funded day and are fine with an 80/20 split until moving up to PRO+.",
+ "sources": [
+  {
+   "url": "https://takeprofittrader.com/",
+   "supports": "programs, $130 PRO fee, 80/20 and 90/10 splits, PRO+ EOD/no buffer, NOFEE40 banner, legal entity and address"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15169070804125-Rule-1-Hit-Your-Profit-Target",
+   "supports": "profit targets and account sizes"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15169066911133-Rule-2-Do-Not-Exceed-Maximum-Position-Size",
+   "supports": "max position size"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170265979165-Rule-3-Do-Not-Hit-End-Of-Day-EOD-Maximum-Trailing-Drawdown",
+   "supports": "Test EOD trailing drawdown amounts and mechanics"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15170316538013-Rule-5-Be-Consistent",
+   "supports": "3-day minimum, 50% consistency"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15141145057053-Test-Subscriptions",
+   "supports": "monthly billing, no recurring PRO fee"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15140989806493-Resetting-Your-Test-Account",
+   "supports": "reset fees"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15171769361053-PRO-Account-Rules",
+   "supports": "PRO intraday drawdown, weekly activity, no bots, news blackout"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15172219527581-PRO-Account-Profit-Split-Withdrawal-Rules",
+   "supports": "80/20 split, $52,000 buffer on 50K"
+  },
+  {
+   "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/29660646764445-NOFEE40-PROMO-FAQS",
+   "supports": "NOFEE40 terms"
+  },
+  {
+   "url": "https://takeprofittrader.com/",
+   "supports": "50K price ($170/month), target, drawdown, contract limit, PRO fee, splits (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "price_50k_list: the Test monthly price is not shown in any help-center article read, and the homepage price table did not render. Not recorded.",
+  "trustpilot, platforms, payout_methods, restricted countries, US eligibility, copy trading, overnight/weekend holding: the relevant pages (Trustpilot, Choosing Your Platform, Payout System, Withdrawal Fees, Trade Copier Policy, Rule 4 trading hours) could not be read because WebFetch was rate-limited (HTTP 429). Left null/empty.",
+  "PRO+ rules (drawdown amount, DLL, upgrade criteria): help-center PRO+ pages rate-limited; only homepage claims recorded.",
+  "PRO consistency rule and min/max withdrawal amounts: not stated in the pages read.",
+  "Homepage claim that PRO has 'no contract limits' was not checked against the help center.",
+  "A third-party review (curvedtrading.com, secondary, not opened) refers to a PRO 'drawdown switch'; not verified. The help-center PRO rules page (updated Sep 22, 2026) describes only intraday trailing.",
+  "recent_changes_2026: no dated 2026 changes confirmed. The 'Speed of Payouts Update' and 'PRO+ Development' articles exist but could not be read.",
+  "founded_year: not stated on the homepage.",
+  "affiliate commission: not read."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://takeprofittrader.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 170,
+  "monthly": true,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "eod",
+  "consistency_eval": true,
+  "consistency_funded": null,
+  "split": "80% (90% live)",
+  "payouts": "From day one above buffer",
+  "news": "restricted",
+  "ea": "Not allowed",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": false
+ }
+}

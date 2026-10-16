@@ -1,0 +1,146 @@
+{
+ "slug": "fundingpips",
+ "name": "FundingPips",
+ "website": "https://fundingpips.com/",
+ "status": "active",
+ "status_note": null,
+ "market": "forex",
+ "legal_entity_and_hq": "FundingPips Corp, Comoros Union (company no. HY01223081), Bonovo Road, Fomboni, Mohéli. Also lists a FundingPips address at IFZA Business Park, DDP Dubai, UAE (office at Bay View Tower, Business Bay, Dubai) and FundingPips Services Ltd, Nicosia, Cyprus (HE 450941, admin/support)",
+ "founded_year": null,
+ "trustpilot": {
+  "score": null,
+  "reviews": null,
+  "url": "https://www.trustpilot.com/review/fundingpips.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "MT5",
+  "cTrader"
+ ],
+ "instruments": "Forex/CFD (simulated); leverage shown as 1:100 on the homepage card",
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000
+ ],
+ "programs": [
+  {
+   "name": "2 Step Standard",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 349,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 5000,
+   "drawdown_type": null,
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "None on bi-weekly payouts; 35% on the monthly 100% option",
+   "min_trading_days": "3 per phase (per the plan page)",
+   "max_contracts_50k": null,
+   "profit_split": "80% bi-weekly; 100% monthly",
+   "payout_frequency": "Bi-weekly or monthly (trader's choice)",
+   "payout_rules_note": null,
+   "notes": "Targets are 8% in phase 1 and 5% in phase 2. Price shown is with the 5% daily loss option; a 3% option is also sold."
+  }
+ ],
+ "news_trading": "Restricted: in evaluation, holding through news is allowed but deliberately trading news is prohibited. On Master (funded) accounts, profit from trades opened/closed within ±5 min of restricted news may be deducted (trades opened 5h+ before are excluded). Zero Master: no holding/opening/closing within ±10 min of restricted news (account closure)",
+ "ea_bots_allowed": "Restricted: third-party EAs only as trade/risk managers; fully automated personal EAs allowed with proof of ownership; all EAs prohibited in the Monthly Competition",
+ "copy_trading": "Restricted: copying between different users and copying into FundingPips from an external source are prohibited; using a FundingPips account as master for an external account is allowed (investor password)",
+ "overnight_weekend_holding": "Evaluation: overnight and weekend allowed. Master (1 Step Flex, 2 Step Standard, 2 Step Flex, 2 Step Pro): not allowed by default (daily auto-close around 20:45 UTC summer / 21:45 UTC winter) unless a holding add-on is bought. Zero Master: positions must be closed before the weekend, or the account is terminated",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Help center: no service to residents of FATF and EU/UN sanctions-list countries, Vietnam and UAE; full list not read. https://help.fundingpips.com/hc/en-us/articles/34505029138449-Trading-Conduct-and-Security-Standards",
+ "payout_methods": [],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "HELLO",
+  "discount": "20% off",
+  "applies_to": "First purchase",
+  "source_url": "https://fundingpips.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": null,
+  "url": "https://help.fundingpips.com/hc/en-us/articles/34447107645841",
+  "notes": "Help center links a 'Become an Affiliate' article; it could not be read (rate limit)."
+ },
+ "recent_changes_2026": [],
+ "pros": [
+  "Trader picks the payout schedule, up to 100% split on monthly payouts",
+  "Evaluation allows overnight/weekend holding and holding through news",
+  "Personal fully automated EAs allowed with proof of ownership",
+  "First-purchase discount published by the firm (HELLO, 20%)"
+ ],
+ "cons": [
+  "Master accounts close positions daily unless you buy a holding add-on",
+  "Weekly (Tuesday) payouts pay only 60%",
+  "Operating entity is registered in the Comoros, with offices in Dubai and Cyprus",
+  "UAE and Vietnam residents are restricted"
+ ],
+ "best_for": "Forex/CFD traders who want to choose their payout schedule, from bi-weekly at 80% to monthly at 100%.",
+ "sources": [
+  {
+   "url": "https://fundingpips.com/",
+   "supports": "homepage 100K card ($529, 8%/5% targets, 10% max, 5% daily, 3 min days, 1:100), reward split options, platforms MT5/cTrader, HELLO promo"
+  },
+  {
+   "url": "https://help.fundingpips.com/",
+   "supports": "model names, help-center structure, 1% minimum traditional reward"
+  },
+  {
+   "url": "https://help.fundingpips.com/hc/en-us",
+   "supports": "legal entities and addresses, restricted jurisdictions, non-refundable fees"
+  },
+  {
+   "url": "https://help.fundingpips.com/hc/en-us/articles/34504137479441-News-Trading-and-Holding-Trades-Over-the-Weekend",
+   "supports": "news and weekend holding rules"
+  },
+  {
+   "url": "https://help.fundingpips.com/hc/en-us/articles/34505029138449-Trading-Conduct-and-Security-Standards",
+   "supports": "EA, copy trading, hedging, HFT, VPN, restricted countries"
+  },
+  {
+   "url": "https://fundingpips.com/2-step-standard",
+   "supports": "50K price, targets, daily and max loss, split (checked in browser)"
+  },
+  {
+   "url": "https://fundingpips.com/trading-objectives",
+   "supports": "2 Step Standard rules, news and holding rules, reward cycles (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "Fetch tool rate-limited (HTTP 429) during research; these pages could not be read: fundingpips.com/2-step-standard, /1-step, /2-step-pro, /zero, /trading-objectives, help articles 'Your Rewards Your Way', 'FundingPips Zero', affiliate, and Trustpilot",
+  "price_50k_list: not confirmed; only the 100K ($529) price was seen",
+  "account_sizes: not confirmed (left empty)",
+  "drawdown_type (static vs trailing; balance vs equity daily loss) not confirmed",
+  "Which model the homepage 100K card represents (2 Step Standard vs 2 Step Pro) not confirmed; 50K target/loss amounts are computed from the homepage percentages",
+  "1-Step, 2-Step Pro and Zero program details not captured",
+  "us_residents_accepted unknown (not mentioned on pages read)",
+  "payout_methods, founded_year, Trustpilot, affiliate commission, 2026 changes: not captured",
+  "Note: the homepage did not show a list/strike-through price, so $529 for 100K may already include a discount"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://fundingpips.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 349,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 5000,
+  "dd": null,
+  "consistency_eval": false,
+  "consistency_funded": null,
+  "split": "80% (100% monthly)",
+  "payouts": "Bi-weekly or monthly",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": false
+ }
+}

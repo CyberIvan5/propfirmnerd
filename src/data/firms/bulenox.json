@@ -1,0 +1,220 @@
+{
+ "slug": "bulenox",
+ "name": "Bulenox",
+ "website": "https://bulenox.com",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "Bulenox LLC, 1201 N Orange St, Ste 7149, Wilmington, DE 19801, USA (Delaware governing law)",
+ "founded_year": null,
+ "trustpilot": {
+  "score": 4.7,
+  "reviews": 1814,
+  "url": "https://www.trustpilot.com/review/bulenox.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Rithmic (data/connection, R | Trader Pro required)",
+  "NinjaTrader",
+  "Quantower",
+  "Sierra Chart",
+  "MultiCharts",
+  "ATAS",
+  "Bookmap",
+  "Tiger.Trade",
+  "Optimus Flow",
+  "Photon Trader",
+  "MotiveWave",
+  "OverCharts",
+  "Trade Navigator",
+  "QST",
+  "Inside Edge",
+  "Investor/RT",
+  "Medved Trader",
+  "QScalp",
+  "ScalpTool",
+  "TSLab",
+  "VolFix"
+ ],
+ "instruments": "41 CME Group futures (CME, CBOT, NYMEX, COMEX): equity indices, energies, metals, FX, grains, livestock, Micro Bitcoin and Micro Ether; micros available (1 standard = 10 micros). Commissions are charged and count toward drawdown and daily loss limit (e.g. ES $4.18 round turn, MES/MNQ $1.22 round turn).",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Qualification (end-of-day option)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 175,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2500,
+   "drawdown_type": "EOD trailing (option 2), with a scaling plan",
+   "daily_loss_limit_50k": 1100,
+   "consistency_rule": "None in Qualification",
+   "min_trading_days": "None",
+   "max_contracts_50k": "7 minis",
+   "profit_split": null,
+   "payout_frequency": null,
+   "payout_rules_note": null,
+   "notes": "Access valid for 30 days. A trailing (intraday) option is sold at the same sizes; the choice is locked for the life of the account. Passing leads to a Master account, which Bulenox charges an activation fee for; the amount is not shown on the pricing page."
+  }
+ ],
+ "news_trading": "Allowed (homepage: CPI, FOMC, NFP, no blackout windows)",
+ "ea_bots_allowed": "Restricted: Terms of Use prohibit scalping algorithms, the DTC Protocol Bridge API, automated discretionary trading and very large numbers of rapid trades; third-party algorithms need Bulenox management approval",
+ "copy_trading": "Restricted: trade copiers/third-party software connected via Rithmic API carry a $100 monthly fee; Bulenox does not support them. Policy on copying between people not published in readable form.",
+ "overnight_weekend_holding": "Not allowed: positions must be closed by 3:59 PM CT; holding overnight is 'strictly prohibited'.",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Bulenox does not publish its country list in a readable form; check with Bulenox before buying.",
+ "payout_methods": [
+  "ACH/wire (bank transfer)",
+  "PayPal"
+ ],
+ "path_to_live": "After 3 successful payouts on active Master accounts, accounts may be considered for a Funded (live capital) account; not automatic, at Bulenox's discretion, requires signing the Funded Account Agreement.",
+ "current_public_promo": {
+  "code": "BULENOX",
+  "discount": "Best available discount (amount not stated)",
+  "applies_to": "Qualification, Fast Track and Momentum accounts; Bulenox says the code never expires",
+  "source_url": "https://bulenox.com/accounts-pricing",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": null,
+  "url": "https://bulenox.com/member/aff/signup",
+  "notes": "Affiliate signup page linked in the site footer; commission terms not readable (page blocks automated fetching)."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-04",
+   "change": "Profit split changed to 100% of first $10,000 then 90%; payout frequency changed to weekly on Wednesdays; drawdown changed from balance-based to trailing with EOD option (reported by a third-party tracker)",
+   "source": "https://propfirmmap.com/trust-check/bulenox"
+  },
+  {
+   "date": "2026-08-11",
+   "change": "Commission rate sheet updated",
+   "source": "https://bulenox.com/legal/Bulenox-Rates.pdf"
+  },
+  {
+   "date": "2026-08-17",
+   "change": "Fast Track and Momentum launched; Qualification switched from monthly subscription to one-time 30-day access; 250K size removed; max active Master accounts cut from 11 to 5 (reported by a third-party tracker)",
+   "source": "https://www.eltraderfinanciado.com/en/news/bulenox/bulenox-launches-fast-track-momentum-august-2026"
+  }
+ ],
+ "pros": [
+  "No minimum trading days to pass",
+  "News trading allowed with no blackout windows",
+  "Wide platform choice via Rithmic (20+ platforms)",
+  "Low one-time evaluation fee: $175 for the 50K Qualification"
+ ],
+ "cons": [
+  "No overnight holding (flat by 3:59 PM CT); evaluation access expires after 30 days",
+  "Commissions are charged and count toward drawdown",
+  "Many rules are hidden in collapsed help-center sections; Terms of Use dated July 2021 and state 'all sales are final'",
+  "Rules changed several times in 2026 (April and August)",
+  "Passing leads to a Master account that carries an activation fee; the amount is not shown on the pricing page"
+ ],
+ "best_for": "Futures traders on Rithmic-based platforms who want a low one-time evaluation fee and want to trade news.",
+ "sources": [
+  {
+   "url": "https://bulenox.com/",
+   "supports": "products, Option 1/2 mechanics, profit split up to 90%, news trading, platforms, legal entity/address, BULENOX promo banner"
+  },
+  {
+   "url": "https://bulenox.com/accounts-pricing",
+   "supports": "Qualification prices, targets, max drawdown, contracts, 30-day access, up to 5 Master accounts"
+  },
+  {
+   "url": "https://bulenox.com/help-center/fast-track",
+   "supports": "Fast Track prices, drawdown, daily loss limit, contracts"
+  },
+  {
+   "url": "https://bulenox.com/help-center/momentum",
+   "supports": "Momentum prices, targets, drawdown, daily loss limit, contracts, free Master activation, 30-day validity"
+  },
+  {
+   "url": "https://bulenox.com/help-center/qualification",
+   "supports": "no minimum days, 3:59 PM CT close, no overnight, $100/month third-party API fee"
+  },
+  {
+   "url": "https://bulenox.com/help-center/funded",
+   "supports": "funded account after 3 payouts, discretionary"
+  },
+  {
+   "url": "https://bulenox.com/faq",
+   "supports": "instrument list, rate sheet link"
+  },
+  {
+   "url": "https://bulenox.com/legal/Bulenox-Rates.pdf",
+   "supports": "commissions"
+  },
+  {
+   "url": "https://bulenox.com/legal/Terms_of_Use.pdf",
+   "supports": "legal entity, Delaware law, no refunds, automated trading restrictions"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/bulenox.com",
+   "supports": "Trustpilot score and count"
+  },
+  {
+   "url": "https://proptradingvibes.com/blog/bulenox-pricing-activation-fee",
+   "supports": "secondary: Master activation fee by size"
+  },
+  {
+   "url": "https://proptradingvibes.com/blog/bulenox-payout-schedule",
+   "supports": "secondary: Master 50K payout rules, payout methods"
+  },
+  {
+   "url": "https://www.eltraderfinanciado.com/en/news/bulenox/bulenox-launches-fast-track-momentum-august-2026",
+   "supports": "secondary: August 2026 changes, Momentum/Fast Track payout rules, profit split"
+  },
+  {
+   "url": "https://www.eltraderfinanciado.com/en/review/bulenox",
+   "supports": "secondary: restricted countries count, Option 2 DLL"
+  },
+  {
+   "url": "https://propfirmmap.com/trust-check/bulenox",
+   "supports": "secondary: 2026 change timeline"
+  },
+  {
+   "url": "https://bulenox.com/accounts-pricing?risk=eod#plans",
+   "supports": "50K Qualification price, target, drawdown, daily loss limit, contracts (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "founded_year: not stated on official pages (secondary review says 2021; Trustpilot profile claimed May 2021) - left null",
+  "activation_fee_50k ($148) for Qualification Master: secondary (proptradingvibes); official Master page section is collapsed",
+  "Qualification 50K daily loss limit for Option 2 not shown on official pages (pricing card says 'No daily loss limit'; secondary says $1,100); max drawdown shown as 'Up to $2,500' without separating Option 1/2",
+  "All Master payout rules (10 days, $1,000 min, $2,600 reserve, $1,500 caps, 40% best-day, Wednesday processing), the 100%-of-first-$10K split, and Momentum/Fast Track consistency and payout thresholds are secondary",
+  "payout_methods secondary: sources disagree on Wise (eltraderfinanciado lists it, proptradingvibes says removed); PayPal and bank transfer appear in both",
+  "reset fees not published on readable official pages (secondary: $78 reset for Qualification, variable for Momentum)",
+  "restricted countries list and US acceptance not readable on official pages; us_residents_accepted set to null: Bulenox is a Delaware LLC and almost certainly accepts US traders, but no readable official page states it",
+  "affiliate commission unknown (signup page blocks fetching)",
+  "Value of BULENOX discount not stated"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://bulenox.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 175,
+  "monthly": false,
+  "target50": 3000,
+  "maxloss50": 2500,
+  "dd": "mixed",
+  "consistency_eval": false,
+  "consistency_funded": null,
+  "split": null,
+  "payouts": null,
+  "news": "allowed",
+  "ea": "Restricted",
+  "us": null,
+  "tp": 4.7,
+  "ccy": "USD",
+  "instant": false
+ }
+}

@@ -1,0 +1,293 @@
+{
+ "slug": "e8-markets",
+ "name": "E8 Markets",
+ "website": "https://e8markets.com",
+ "status": "active",
+ "status_note": null,
+ "market": "multi",
+ "legal_entity_and_hq": "E8 Funding LLC, 4101 McEwen Rd #205, Dallas, TX 75244, USA (operates TradeLocker, cTrader, Match-Trader); E8 Markets Ltd, Saint Lucia reg. 2025-00347 (operates MT5); Digital Renaissance LLC, Puerto Rico (website policies). Terms governed by Texas law.",
+ "founded_year": 2021,
+ "trustpilot": {
+  "score": null,
+  "reviews": 3305,
+  "url": "https://www.trustpilot.com/review/e8markets.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "MetaTrader 5",
+  "TradeLocker",
+  "cTrader",
+  "Match-Trader",
+  "E8 Terminal"
+ ],
+ "instruments": "Forex, commodities, indices, energy, crypto CFDs ('Classic Markets'); CME futures (NQ, ES, GC etc.) via E8 Futures; perpetual futures (data from Hyperliquid)",
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000,
+  200000,
+  400000,
+  500000
+ ],
+ "programs": [
+  {
+   "name": "E8 One",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 288,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4500,
+   "max_loss_50k": 3000,
+   "drawdown_type": "Dynamic (trails the highest closed balance, locks at the starting balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "None in the challenge; 40% in the performance stage",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80% (90% or 100% at checkout)",
+   "payout_frequency": "On demand",
+   "payout_rules_note": null,
+   "notes": "Rules shown are the default configuration (6% max drawdown); E8 One is configurable at checkout."
+  },
+  {
+   "name": "E8 Pro",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 218,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "Static",
+   "daily_loss_limit_50k": 1250,
+   "consistency_rule": "None, but a $1,000 daily profit cap",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80% or 100%",
+   "payout_frequency": "Daily",
+   "payout_rules_note": null,
+   "notes": null
+  },
+  {
+   "name": "E8 Signature",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 160,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "End-of-day trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None in the challenge; 35% in the performance stage",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80%",
+   "payout_frequency": "On demand after 5 profitable days",
+   "payout_rules_note": null,
+   "notes": null
+  }
+ ],
+ "news_trading": "Restricted: allowed on E8 Pro, E8 Signature and in the E8 One Challenge stage; E8 One Performance accounts may not open/close trades 5 minutes before to 5 minutes after high-impact news",
+ "ea_bots_allowed": "Allowed on E8 One and E8 Pro and Signature Classic/Perpetuals, provided multiple users are not running the same trades/strategy; not allowed on Futures (Signature Futures, E8 Zero)",
+ "copy_trading": "Restricted: copying between your own accounts allowed; cooperation with other traders prohibited; hedging across accounts prohibited",
+ "overnight_weekend_holding": "Allowed on E8 One and E8 Pro (incl. weekend); E8 Signature positions are auto-closed at 23:00 server time",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Not offered in Cuba, Syria, Iran, Lebanon, Iraq, Yemen, North Korea, Russia, Ukraine, Belarus and ~30 others; longer list for futures (incl. China, Indonesia, Turkey, Vietnam, Nigeria, Philippines). MT5 not available to US citizens (US traders use TradeLocker/cTrader/Match-Trader via the US entity). https://help.e8markets.com/en/articles/5514278-accepted-countries",
+ "payout_methods": [
+  "WorkMarket (bank transfer)",
+  "Rise (cash or crypto)",
+  "Aeropay (US clients only)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "E8",
+  "discount": "Up to 50% off",
+  "applies_to": "First order (Classic Markets accounts)",
+  "source_url": "https://e8markets.com/compare-simfi-funded-accounts",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "not published (claims '2x vs typical category rates'; rate card on request)",
+  "url": "https://e8markets.com/affiliate",
+  "notes": "Applications reviewed in 3 business days; not all accepted; seats limited by region."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-06",
+   "change": "E8 Pro V2 launched: 8% target, 8% static drawdown, no consistency rule, daily payouts (reported by a third-party tracker)",
+   "source": "https://propfirmmatch.com/industry-news/e8-markets-to-launch-e8pro-v2-with-static-drawdown-and-daily-payouts"
+  },
+  {
+   "date": "2026-10",
+   "change": "E8 Signature Futures bought after 1 Oct 2026 17:00 UTC: max payouts cut from 5 to 4, 3rd/4th payout caps lowered (50K: $2,250 to $2,000), 150K EOD drawdown $4,500 to $4,000",
+   "source": "https://help.e8markets.com/en/articles/11940573-payout-caps-and-buffers-for-e8-signature-explained"
+  },
+  {
+   "date": "2025-12",
+   "change": "Lineup cut to E8 One and a rebuilt 1-step E8 Signature; older programs removed (reported by a third-party tracker)",
+   "source": "https://forexpropreviews.com/major-update-e8-markets-rebuilds-removes-all-other-programs/"
+  }
+ ],
+ "pros": [
+  "US-based entity (Dallas, TX) and US clients accepted, with a US-only Aeropay payout option",
+  "No activation fees; one-time fee on all products",
+  "E8 Pro: static drawdown, daily payouts, no payout caps",
+  "Highly customizable E8 One (drawdown, daily limit, split up to 100%)",
+  "E8 says it has paid out over $79M to traders"
+ ],
+ "cons": [
+  "Trustpilot rating suspended: 'rating is unavailable due to a breach of our guidelines' and Trustpilot says it removed fake reviews",
+  "Fees non-refundable 'under any circumstance' per Terms",
+  "E8 One uses a trailing (dynamic) drawdown and bans news trading in the Performance stage",
+  "Signature payouts capped and limited to 4-5 payouts per account; caps reduced for futures in Oct 2026",
+  "Frequent product changes (Dec 2025 rebuild, June 2026 Pro V2, Oct 2026 Signature changes)"
+ ],
+ "best_for": "Traders, including US residents, who want a customizable 1-step forex/CFD challenge or a static-drawdown account with daily payouts.",
+ "sources": [
+  {
+   "url": "https://e8markets.com",
+   "supports": "programs, platforms, legal entities, markets, promos"
+  },
+  {
+   "url": "https://e8markets.com/compare-simfi-funded-accounts",
+   "supports": "E8 One prices by size, no activation fee, 80% split, first payout 3 days"
+  },
+  {
+   "url": "https://e8markets.com/?market=forex#accounts",
+   "supports": "E8 One price table (50K $288 list / $202)"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/13106558-all-product-overviews-e8-one-vs-e8-zero-vs-e8-pro-vs-e8-signature",
+   "supports": "product comparison: drawdown types, consistency, splits, EA, news, holding"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/11775980-e8-one",
+   "supports": "E8 One rules and payout minimum"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/15274219-e8-pro",
+   "supports": "E8 Pro rules: 8% target, 2.5% daily, 8% static, daily payouts, no caps"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/13653031-static-drawdown",
+   "supports": "E8 Pro static drawdown 8% ($4,000 on 50K)"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/11755943-e8-signature",
+   "supports": "E8 Signature 50K rules, contracts, payouts"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/11940573-payout-caps-and-buffers-for-e8-signature-explained",
+   "supports": "Signature payout caps and Oct 2026 change"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/11782996-dynamic-drawdown",
+   "supports": "dynamic drawdown mechanics"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/11769446-daily-drawdown",
+   "supports": "daily drawdown calculation"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/15272556-everything-about-payouts-when-how-how-fast",
+   "supports": "payout methods, timing, minimums, fees"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/9185497-can-i-trade-news",
+   "supports": "news trading rules"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/6929927-trading-policies-and-prohibited-trading-strategies",
+   "supports": "EA, copy trading, HFT, hedging rules"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/5514966-can-i-hold-positions-overnight-and-trade-over-the-weekend",
+   "supports": "overnight/weekend rules"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/5514278-accepted-countries",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/12105810-what-is-e8-markets-why-us",
+   "supports": "founded 2021, $71M payouts"
+  },
+  {
+   "url": "https://e8markets.com/e8-markets-terms-and-conditions",
+   "supports": "legal entities, MT5 US restriction, non-refundable fees, Texas law"
+  },
+  {
+   "url": "https://e8markets.com/winter-arc",
+   "supports": "E8ARC promo"
+  },
+  {
+   "url": "https://e8markets.com/e8-markets-discount-code",
+   "supports": "official discount codes incl. FAREWELL, REB8, E8"
+  },
+  {
+   "url": "https://help.e8markets.com/en/articles/9453455-are-there-currently-any-discounts",
+   "supports": "code E8 always available"
+  },
+  {
+   "url": "https://e8markets.com/affiliate",
+   "supports": "affiliate program"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/e8markets.com",
+   "supports": "Trustpilot rating unavailable, 3,305 reviews, fake reviews removed"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firms/e8-markets/challenges",
+   "supports": "SECONDARY: E8 One 50K config 9%/4%/6%; E8 Pro $218"
+  },
+  {
+   "url": "https://evalbegone.com/prop-firms/e8-markets/",
+   "supports": "SECONDARY: E8 Pro $228, Signature $150 (50K)"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firm-challenges/e8-markets-e8-signature-forex-1-step-50k",
+   "supports": "SECONDARY: Signature Forex 50K $160 list"
+  },
+  {
+   "url": "https://e8markets.com/compare-simfi-funded-accounts",
+   "supports": "50K prices for E8 One, Pro and Signature, targets, drawdown, daily limits (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "trustpilot.score: Trustpilot shows no rating ('unavailable due to a breach of our guidelines'); review count 3,305.",
+  "E8 One 50K target/max loss/daily ($4,500/$3,000/$2,000) inferred from the official $100K default config (9%/6%/4%) and propfirmmatch's 50K listing; help center 'preset' says 6%/4%/3%. Values depend on checkout options.",
+  "E8 Pro and E8 Signature 50K list prices not shown on the official site; secondary sources conflict ($218 vs $228 Pro; $160 vs $150 Signature) - left null.",
+  "E8 Signature (Classic Markets) possibly being retired ('FAREWELL' code) - not confirmed.",
+  "Futures platforms (NinjaTrader, Tradovate) only from a secondary source; not listed.",
+  "path_to_live: Terms say all accounts are simulated; no live-account path described.",
+  "Affiliate commission not published."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://e8markets.com/",
+ "facets": {
+  "market": "multi",
+  "price50": 288,
+  "monthly": false,
+  "target50": 4500,
+  "maxloss50": 3000,
+  "dd": null,
+  "consistency_eval": false,
+  "consistency_funded": true,
+  "split": "80% (up to 100%)",
+  "payouts": "On demand",
+  "news": "restricted",
+  "ea": "Allowed",
+  "us": true,
+  "tp": null,
+  "ccy": "USD",
+  "instant": false
+ }
+}

@@ -1,0 +1,261 @@
+{
+ "slug": "tradeday",
+ "name": "TradeDay",
+ "website": "https://www.tradeday.com/",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "TradeDay LLC, 2nd Floor, 412 S. Wells, Chicago, Illinois 60607, USA (states it is not registered with the SEC or CFTC)",
+ "founded_year": 2020,
+ "trustpilot": {
+  "score": 4.5,
+  "reviews": 1447,
+  "url": "https://www.trustpilot.com/review/tradeday.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Tradovate",
+  "NinjaTrader",
+  "TradingView",
+  "Jigsaw",
+  "Rithmic (R|Trader Pro)",
+  "Quantower",
+  "ATAS",
+  "MotiveWave",
+  "Bookmap",
+  "Sierra Chart",
+  "EdgeProX",
+  "Finamark",
+  "Volfix",
+  "WealthCharts",
+  "MultiCharts",
+  "Overcharts"
+ ],
+ "instruments": "CME, CBOT, NYMEX and COMEX futures only (equity index, FX, metals, bonds, energy, ags); no high-margin or very illiquid products",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Quick Pay",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 131,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 59,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "Evaluation: intraday trailing or EOD trailing (buyer chooses; EOD costs more). Funded Sim: intraday trailing on all Quick Pay accounts, based on gross profit. Trails up to the starting balance, then stops",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "30% in evaluation (no single day above 30% of total profit; exceeding it raises the target instead of failing). Homepage lists none on Funded",
+   "min_trading_days": 5,
+   "max_contracts_50k": "5 contracts (50 micros)",
+   "profit_split": "Per account: 50/50 on profit below $4,000, 80/20 above $4,000; 90/10 in Funded Live",
+   "payout_frequency": "From day one of the funded account, whenever the balance is in profit (minimum 1 day)",
+   "payout_rules_note": "Min payout request $250. No payout buffer. Requests before 5:30 pm CT are processed within 24h on business days. Funded Sim accounts are reviewed for a move to Live at $10,000 gross profit; profit above $10,000 is removed and forfeited at the threshold. Up to 5 active Funded Sim accounts. Wire fees: international $15, US free; L1 crypto $2.50 + gas.",
+   "notes": "50K list prices: Intraday $131/month ($59 now), EOD $175/month ($79 now), 55% off, seen 2026-10-16. The reset fee shown ($59) is the intraday-version figure on the pricing card; the EOD version is $79. Monthly billing stops when you pass. No activation fee. Positions must be closed 10 minutes before the daily close, and the account is auto-flattened 2 minutes before Tier 1 data releases."
+  },
+  {
+   "name": "Fast Pass",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 189,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 95,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (evaluation and Funded Sim). On the first payout request the drawdown moves up to the starting balance and stays fixed there",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "45% in evaluation; 45% of gross profit on Funded Sim for accounts opened on or after 2026-07-26",
+   "min_trading_days": 3,
+   "max_contracts_50k": "5 contracts (50 micros) in evaluation; funded starts at 2 contracts and scales +1 per $2,000 profit",
+   "profit_split": "80/20 in Funded Sim; 90/10 in Funded Live",
+   "payout_frequency": "Each request needs net profit plus 5 profitable days (not necessarily consecutive) of at least $150 (50K) since the last request",
+   "payout_rules_note": "Min request $250. Max per request on 50K: $1,500 for accounts opened on or after 2026-07-26 ($2,000 for older accounts), and never more than 50% of the account balance. No buffer. TradeDay 'may move the trader to funded Live before the 5th payout request'.",
+   "notes": "50K EOD: list $189/month, $95 now (50% off), seen 2026-10-16. The homepage FAQ says Fast Pass has 'no minimum trading day requirement', but the pricing cards and help center say 3 days."
+  }
+ ],
+ "news_trading": "Restricted: positions are auto-liquidated 2 minutes before Tier 1 economic data releases and trading reopens 2 minutes after. Accidental trades are not a fail, but repeated abuse loses the account",
+ "ea_bots_allowed": "Restricted: algos/bots bought from a third party are forbidden; no platform API access; more than 200 trades a day is prohibited; if multiple users make the same trades, all accounts are shut down",
+ "copy_trading": "Restricted: a copier from your own personal account elsewhere is allowed. Copying trades between users is banned. Opposite-direction copying across your own accounts counts as banned hedging",
+ "overnight_weekend_holding": "Overnight within a session is allowed, but all positions must be closed 10 minutes before the daily market close (auto-liquidation at 3:50 pm CT). No holding through the close, so no weekend holding",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Help-center list of about 80 prohibited countries, including Serbia, Balkans, Croatia, Bosnia, Montenegro, Kosovo, Macedonia, Slovenia, Romania, Bulgaria, Turkey, Ukraine (no new users), Nigeria, Pakistan and Vietnam, plus US territories Guam, Puerto Rico and USVI. https://tradeday.freshdesk.com/en/support/solutions/articles/103000123294-prohibited-countries",
+ "payout_methods": [
+  "Riseworks: bank wire",
+  "Riseworks: crypto"
+ ],
+ "path_to_live": "Quick Pay: each Funded Sim account is reviewed for Funded Live at $10,000 gross profit (transfer can take up to 10 business days); TradeDay may occasionally move traders straight to Live. Fast Pass: may move to Live before the 5th payout request. Up to 5 Funded Live accounts at a 90/10 split. Live traders pay CME pro data fees of $156/month per exchange plus commissions.",
+ "current_public_promo": {
+  "code": "TDNEW",
+  "discount": "Up to 55% off",
+  "applies_to": "Evaluations, as advertised on TradeDay's site",
+  "source_url": "https://www.tradeday.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Tiered by monthly sales: 15% ($0-$5,000), 20% ($5,001-$10,000), 22.5% ($10,001+); 'up to 22.5% commission on all purchases'",
+  "url": "https://www.tradeday.com/affiliate-program",
+  "notes": "Apply through a PostAffiliatePro form; contact affiliates@tradeday.com. Approval criteria not published."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-05-29",
+   "change": "TradeDay 2.0: Quick Pay replaces the old evaluation (day-one payouts, milestones removed); new Fast Pass program; defined route to Funded Live (up to 5 Live accounts, 90% split); old programs no longer sold",
+   "source": "https://www.tradeday.com/blog-posts/tradeday-2-0---the-next-evolution-of-prop-trading"
+  },
+  {
+   "date": "2026-07-26",
+   "change": "Fast Pass Funded Sim: 50K payout cap cut from $2,000 to $1,500 and 45% funded consistency rule added for accounts opened on or after this date",
+   "source": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000404096-fast-pass-funded-sim-payout-policy"
+  },
+  {
+   "date": "2026-08",
+   "change": "Rithmic platforms added",
+   "source": "https://www.tradeday.com/about"
+  }
+ ],
+ "pros": [
+  "US-based company (Chicago), founded 2020",
+  "Quick Pay allows payouts from day one of funding, with no buffer and a $250 minimum",
+  "No activation fee and no daily loss limit; monthly billing stops once you pass",
+  "Trustpilot 4.5 from 1,447 reviews",
+  "Wide platform support across CQG/Tradovate and Rithmic"
+ ],
+ "cons": [
+  "Quick Pay pays only 50/50 on profit below $4,000 per account",
+  "Quick Pay funded accounts use an intraday trailing drawdown even if the evaluation was EOD",
+  "Quick Pay Funded Sim profit above $10,000 is forfeited at the Live review threshold",
+  "Monthly subscription: the cost keeps recurring until you pass",
+  "Intraday only: positions must be flat before the daily close, and the account is flattened around Tier 1 news; the firm's own disclosure gives a 36% evaluation pass rate (Jan to Jun 2026)"
+ ],
+ "best_for": "US-based intraday futures traders who want early payouts (Quick Pay) or a short 3-day evaluation (Fast Pass) and don't need to hold through the daily close.",
+ "sources": [
+  {
+   "url": "https://www.tradeday.com/",
+   "supports": "pricing (list/discounted, per month), targets, drawdowns, contracts, consistency, resets, funded terms, promo TDNEW"
+  },
+  {
+   "url": "https://www.tradeday.com/about",
+   "supports": "entity, HQ, founding year, founders, milestones, platforms"
+  },
+  {
+   "url": "https://www.tradeday.com/blog-posts/tradeday-2-0---the-next-evolution-of-prop-trading",
+   "supports": "TradeDay 2.0 changes"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008847-what-are-the-objectives-and-rules-of-the-quick-pay-and-fast-pass-evaluation-",
+   "supports": "evaluation objectives"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008850-what-is-the-trade-for-a-minimum-number-of-days-objective-",
+   "supports": "min trading days 5 / 3"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008849-what-is-the-consistency-objective-",
+   "supports": "consistency rule mechanics"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008855-what-is-the-maximum-drawdown-rule-",
+   "supports": "drawdown mechanics"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008889-what-are-the-rules-for-funded-funded-sim-and-funded-live-traders-",
+   "supports": "funded drawdown types"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000335937-quick-pay-funded-sim-payout-policy",
+   "supports": "Quick Pay split tiers, min payout, fees"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000404096-fast-pass-funded-sim-payout-policy",
+   "supports": "Fast Pass payout rules and caps"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000353468-quick-pay-funded-sim-path-to-live-trading",
+   "supports": "path to live"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008902-how-does-monthly-billing-work-",
+   "supports": "monthly billing"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008894-are-there-any-fees-when-i-am-funded-",
+   "supports": "no activation fee, live data fees"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000018874-what-is-the-permitted-trading-times-guideline-",
+   "supports": "close-out times, overnight"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000081072-can-i-trade-news-or-data-releases-",
+   "supports": "news rule"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000085101-automated-algo-and-bot-trading",
+   "supports": "bots"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000121031-prohibited-trade-practices",
+   "supports": "prohibited practices, 200 trades/day"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000354796-multiple-accounts",
+   "supports": "account limits, copy trading"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000123294-prohibited-countries",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008898-what-are-the-payment-methods-for-my-trading-profits-",
+   "supports": "payout methods"
+  },
+  {
+   "url": "https://tradeday.freshdesk.com/en/support/solutions/articles/103000008813-which-trading-platforms-does-tradeday-use-",
+   "supports": "platforms"
+  },
+  {
+   "url": "https://www.tradeday.com/affiliate-program",
+   "supports": "affiliate tiers"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/tradeday.com",
+   "supports": "Trustpilot score and count"
+  }
+ ],
+ "uncertain": [
+  "us_residents_accepted: the US is not on the prohibited list and the firm is Chicago-based, but no page states outright that US residents are accepted (US territories are listed as prohibited)",
+  "Quick Pay reset fee: the cards show a reset equal to the discounted price ($59 intraday / $79 EOD); it is unclear whether a reset is billed at list price when no promo runs",
+  "Quick Pay funded consistency: the homepage card says 'None'; no help-center article confirms it",
+  "Fast Pass min days: the homepage FAQ says none, but the cards and help center say 3",
+  "Weekend holding is not addressed explicitly; it is inferred from the 'flat before the daily close' rule",
+  "Help-center 'modified' dates show no year"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://www.tradeday.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 131,
+  "monthly": true,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "mixed",
+  "consistency_eval": true,
+  "consistency_funded": null,
+  "split": "50% under $4K, then 80%",
+  "payouts": "From the first funded day",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": true,
+  "tp": 4.5,
+  "ccy": "USD",
+  "instant": false
+ }
+}

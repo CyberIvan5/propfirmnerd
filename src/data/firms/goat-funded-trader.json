@@ -1,0 +1,275 @@
+{
+ "slug": "goat-funded-trader",
+ "name": "Goat Funded Trader",
+ "website": "https://www.goatfundedtrader.com",
+ "status": "active",
+ "status_note": null,
+ "market": "forex",
+ "legal_entity_and_hq": "Wishes Tower International Limited (Hong Kong, company no. 76428795), Room 2007, 20/F, Futura Plaza, 111-113 How Ming Street, Kwun Tong, Hong Kong; simulated trading services provided by Goat Funded LTD (Saint Lucia, no. 2025-00240). Futures: WITI LIMITED (Hong Kong, no. 77146639).",
+ "founded_year": 2023,
+ "trustpilot": {
+  "score": null,
+  "reviews": 4344,
+  "url": "https://www.trustpilot.com/review/goatfundedtrader.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "MetaTrader 5",
+  "cTrader",
+  "TradeLocker",
+  "Match-Trader",
+  "Volumetrica"
+ ],
+ "instruments": "Forex, CFD indices, metals, commodities, stocks and crypto CFDs (futures via separate Goat Funded Futures brand: CME, CBOT, NYMEX, COMEX)",
+ "account_sizes": [
+  2500,
+  5000,
+  8000,
+  10000,
+  15000,
+  25000,
+  50000,
+  100000,
+  150000,
+  200000,
+  250000,
+  300000,
+  400000
+ ],
+ "programs": [
+  {
+   "name": "2 Step GOAT",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 308,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "Static (10% of the starting balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "None",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80% (up to 100% as a paid add-on)",
+   "payout_frequency": "Every 14 days",
+   "payout_rules_note": null,
+   "notes": "Targets are 8% in phase 1 and 6% in phase 2."
+  },
+  {
+   "name": "1 Step GOAT",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 314,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "Static (6% of the starting balance)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "None",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80% (up to 100% as a paid add-on)",
+   "payout_frequency": "Every 14 days",
+   "payout_rules_note": null,
+   "notes": null
+  }
+ ],
+ "news_trading": "Restricted: trades opened or closed within 5 minutes before/after high-impact news can earn at most 1% of initial balance per trade; excess profit removed (no breach)",
+ "ea_bots_allowed": "Restricted: only EAs you developed yourself; third-party EAs, HFT and gold arbitrage EAs banned",
+ "copy_trading": "Restricted: since Oct 2026 allowed between your own GFT accounts via the GOAT Trade Copier; copying others or external accounts prohibited",
+ "overnight_weekend_holding": "Overnight and weekend holding allowed; trades opened in the last 3 market hours on Friday and closed in the first 3 hours Monday have funded profits removed",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Restricted: Afghanistan, Belarus, Bolivia, Bosnia, CAR, Chile, Cuba, DRC, Hong Kong, Iran, Israel, Jordan, Laos, Lebanon, Libya, Mali, Myanmar, North Korea, PNG, Russia, Senegal, Singapore, Somalia, South Korea, South Sudan, Sudan, Syria, Togo, Ukraine, Venezuela, Yemen, Zimbabwe. MT5 and cTrader not available to US clients (TradeLocker, Match-Trader, Volumetrica are). https://help.goatfundedtrader.com/en/articles/10742187-which-countries-are-restricted-at-goat-funded-trader",
+ "payout_methods": [
+  "Rise (no limit)",
+  "Crypto ($3,000 max per payout)",
+  "Skrill ($5,000 max)",
+  "Bank transfer (only Kenya, South Africa, Egypt, Nigeria, Cote d'Ivoire, Tanzania, Cameroon, Ghana; $10,000 max)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "GFT45",
+  "discount": "45% off",
+  "applies_to": "All accounts (a separate code, FIRST, gives new customers 50% off their first account)",
+  "source_url": "https://www.goatfundedtrader.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "10% of referred activity, 12% at 50 referrals, 15% at 150; 3.5% on sub-affiliates",
+  "url": "https://help.goatfundedtrader.com/affiliates.html",
+  "notes": "14-day cookie; $100 minimum withdrawal; paid ads prohibited"
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-07",
+   "change": "Funded profitable-day requirement raised from 3 to 4 per payout (2-Step accounts from 25 Jul, 1-Step from 27 Jul)",
+   "source": "https://help.goatfundedtrader.com/compare-models.html"
+  },
+  {
+   "date": "2026-08",
+   "change": "1-Step daily drawdown cut from 4% to 3% for accounts bought from 1 Aug 2026",
+   "source": "https://help.goatfundedtrader.com/1-step.html"
+  },
+  {
+   "date": "2026-10",
+   "change": "VPNs, VPSs, proxies and hosting services banned during trading on any account from 6 Oct 2026",
+   "source": "https://help.goatfundedtrader.com/trading-rules.html"
+  },
+  {
+   "date": "2026-10",
+   "change": "Copy trading between own GFT accounts allowed; GOAT Trade Copier launched; min hold time cut from 2 to 1 minute (reported by a third-party tracker)",
+   "source": "https://propfirmmatch.com/prop-firms/goat-funded-trader/announcements"
+  },
+  {
+   "date": "2026-07",
+   "change": "Resets offered at every stage; new Instant HERO and Instant Premium plans (reported by a third-party tracker)",
+   "source": "https://propfirmmatch.com/prop-firms/goat-funded-trader/announcements"
+  }
+ ],
+ "pros": [
+  "Static max loss on all evaluation models (10% on 2-step, 6% on 1-step)",
+  "No consistency rule on evaluation models",
+  "Published guarantee: rewards processed within 2 business days or $1,000 added",
+  "Wide platform choice, with US clients able to use TradeLocker, Match-Trader, Volumetrica",
+  "Published affiliate rates and a futures sister brand (Goat Funded Futures)"
+ ],
+ "cons": [
+  "Trustpilot rating suspended for a guideline breach (fake reviews removed); 40% of 4,344 reviews are 1-star",
+  "Goat Guard: a 2% floating loss cuts split to 50%; second trigger closes account",
+  "First two payouts capped (6% / $10,000) and $3,000 daily profit cap when funded",
+  "3% processing fee on every payout; refund policy says fees are non-refundable except at 4th payout",
+  "Frequent rule changes in 2026 (profitable days, daily DD, VPN ban)"
+ ],
+ "best_for": "Forex/CFD traders who want static drawdown 2-step challenges and fast payout processing, and can work within payout caps and floating-loss limits.",
+ "sources": [
+  {
+   "url": "https://www.goatfundedtrader.com/",
+   "supports": "account sizes, platforms, promo codes, entities"
+  },
+  {
+   "url": "https://www.goatfundedtrader.com/about",
+   "supports": "registered office, entities"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/compare-models.html",
+   "supports": "all model rules and 2026 changes"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/2-step-goat.html",
+   "supports": "2 Step GOAT rules, caps, split"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/2-step-standard.html",
+   "supports": "2 Step Standard rules"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/1-step.html",
+   "supports": "1 Step rules"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/goat-guard.html",
+   "supports": "Goat Guard"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/trading-rules.html",
+   "supports": "news, EA, copy trading, weekend, VPN ban, inactivity"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/rewards.html",
+   "supports": "payout methods, 2-day guarantee, $100 min, 3% fee"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/platforms.html",
+   "supports": "platforms, US platform limits, leverage"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/payments.html",
+   "supports": "fee refund at 4th payout, payment methods"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/why-gft.html",
+   "supports": "launched May 2023, HQ Hong Kong"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/grow.html",
+   "supports": "scaling plan, resets"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/affiliates.html",
+   "supports": "affiliate commission"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/en/articles/10742187-which-countries-are-restricted-at-goat-funded-trader",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://www.goatfundedtrader.com/legal/terms-and-conditions",
+   "supports": "entities, no refunds, MT5 not for US"
+  },
+  {
+   "url": "https://www.goatfundedtrader.com/legal/refund-policy",
+   "supports": "no-refund policy"
+  },
+  {
+   "url": "https://goatfundedfutures.com/",
+   "supports": "Goat Funded Futures programs, 50K GOAT Daily rules/price, entity"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/goatfundedtrader.com",
+   "supports": "Trustpilot status"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firm-challenges/goat-funded-trader-goat-2-steps-50k",
+   "supports": "SECONDARY: 2 Step GOAT 50K price $308"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firms/goat-funded-trader/challenges",
+   "supports": "SECONDARY: Standard 2-Step 50K price $358"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firms/goat-funded-trader/announcements",
+   "supports": "SECONDARY: 2026 announcements"
+  },
+  {
+   "url": "https://www.einpresswire.com/article/949020655/goat-funded-trader-lifts-copy-trading-restriction-between-traders-own-accounts-and-introduces-goat-copier",
+   "supports": "company press release on copier (Oct 12, 2026)"
+  },
+  {
+   "url": "https://www.goatfundedtrader.com/",
+   "supports": "50K prices for 2 Step GOAT and 1 Step GOAT, targets, daily and max loss, codes (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "All 50K prices are SECONDARY (propfirmmatch) - official site loads prices dynamically; only a 100K $438 list / $263 price is visible on the homepage without a model label. 1 Step 50K price not found.",
+  "trustpilot.score: rating unavailable on Trustpilot due to guideline breach.",
+  "founded_year: help center says launched May 2023; About page says 'Established in 2022'. Used 2023.",
+  "Fee refund conflict: payments help page says fee refunded at 4th payout; refund policy and T&C say no refunds. Homepage says 'One-time 100% refundable fee'.",
+  "Futures program details are from goatfundedfutures.com homepage only.",
+  "path_to_live: T&C contradict themselves (5.1 mentions a live account; elsewhere demo-only) - left null."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://www.goatfundedtrader.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 308,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 5000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80%",
+  "payouts": "Every 14 days",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": true,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}

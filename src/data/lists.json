@@ -1,29 +1,182 @@
 [
- {"slug": "futures-prop-firms", "h1": "Best futures prop firms", "title": "Best Futures Prop Firms ({month}): Rules & Prices Compared",
+ {
+  "slug": "futures-prop-firms",
+  "h1": "Best futures prop firms",
+  "title": "Best Futures Prop Firms ({month}): Rules & Prices Compared",
   "description": "The futures prop firms worth shortlisting, ranked on drawdown type, max loss vs target, payout rules and price, with every rule checked against the firm's own pages.",
-  "blurb": "Ranked on drawdown, payout rules and price", "where": {"market": ["futures", "multi"]}, "limit": 10,
-  "intro": "", "why": {}},
- {"slug": "forex-prop-firms", "h1": "Best forex prop firms", "title": "Best Forex Prop Firms ({month}): Rules & Prices Compared",
+  "blurb": "Ranked on drawdown, payout rules and price",
+  "where": {
+   "market": [
+    "futures",
+    "multi"
+   ]
+  },
+  "limit": 10,
+  "intro": "Ten futures prop firms ranked on how their 50K drawdown works, what you keep from payouts and what the evaluation costs. End-of-day drawdown and no activation fee move a firm up; payout caps and recent rule churn move it down.",
+  "why": {
+   "tradeify": "One-time fee from $145, no activation fee, end-of-day drawdown on every plan, news trading allowed.",
+   "topstep": "$49 a month for 50K, end-of-day drawdown, optional daily limit and a published route to live trading.",
+   "lucid-trading": "Cheapest one-time 50K we track ($136), bots allowed, no consistency rule once funded on LucidFlex.",
+   "myfundedfutures": "One-time fees with no activation fee; Rapid plans pay daily at 90/10.",
+   "apex-trader-funding": "One-time evaluation with no consistency rule, but each funded account closes after six payouts.",
+   "alpha-futures": "90% split and end-of-day drawdown; monthly billing and a ban on bots.",
+   "take-profit-trader": "Withdrawals from the first funded day, but PRO switches to intraday drawdown at 80/20.",
+   "phidias": "News trading allowed everywhere and a static-drawdown route to live trading.",
+   "bulenox": "$175 one-time and news allowed; choose intraday or end-of-day drawdown up front.",
+   "tradeday": "Payouts from day one on Quick Pay, at 50/50 until $4,000 of profit."
+  },
+  "order": [
+   "tradeify",
+   "topstep",
+   "lucid-trading",
+   "myfundedfutures",
+   "apex-trader-funding",
+   "alpha-futures",
+   "take-profit-trader",
+   "phidias",
+   "bulenox",
+   "tradeday"
+  ]
+ },
+ {
+  "slug": "forex-prop-firms",
+  "h1": "Best forex prop firms",
+  "title": "Best Forex Prop Firms ({month}): Rules & Prices Compared",
   "description": "Forex and CFD prop firms compared on price, profit targets, daily and max loss, payout rules and track record, checked against each firm's own pages.",
-  "blurb": "Two-step and one-step CFD challenges compared", "where": {"market": ["forex", "multi"]}, "limit": 10,
-  "intro": "", "why": {}},
- {"slug": "cheapest-prop-firms", "h1": "Cheapest prop firms", "title": "Cheapest Prop Firms ({month}): 50K Prices Compared",
+  "blurb": "Two-step and one-step CFD challenges compared",
+  "where": {
+   "market": [
+    "forex",
+    "multi"
+   ]
+  },
+  "limit": 10,
+  "intro": "Forex and CFD prop firms ranked on drawdown type, track record, payout terms and price for a 50K account. Static max loss and a long payout history count most; suspended Trustpilot ratings and floating-loss rules count against a firm.",
+  "why": {
+   "ftmo": "Running since 2015, static 10% max loss on the 2-Step and the fee refunded with the first reward.",
+   "the5ers": "Since 2016, static 8% max loss on 50K and a scaling plan to $500K; payouts capped and slower.",
+   "fundednext": "Static 10% max loss, fee refunded, US traders accepted; EAs banned from 50K up.",
+   "fundingpips": "Pick your reward cycle, up to 100% monthly; registered in the Comoros.",
+   "fxify": "Refundable fee and EAs allowed; no US residents.",
+   "e8-markets": "US-based and configurable; Trustpilot rating currently suspended.",
+   "blue-guardian": "Cheaper static-drawdown 2-step; floating-loss rule and a 3% payout fee.",
+   "goat-funded-trader": "Big discounts and static drawdown; strict floating-loss rule and a 3% payout fee."
+  },
+  "order": [
+   "ftmo",
+   "the5ers",
+   "fundednext",
+   "fundingpips",
+   "fxify",
+   "e8-markets",
+   "blue-guardian",
+   "goat-funded-trader"
+  ]
+ },
+ {
+  "slug": "cheapest-prop-firms",
+  "h1": "Cheapest prop firms",
+  "title": "Cheapest Prop Firms ({month}): 50K Prices Compared",
   "description": "The cheapest 50K prop firm evaluations by list price, plus the activation fees and rebills that change the real cost.",
-  "blurb": "50K list prices from low to high, with the fees that change them", "sort": "price50", "limit": 10,
-  "intro": "", "why": {}},
- {"slug": "prop-firms-for-beginners", "h1": "Best prop firms for beginners", "title": "Best Prop Firms for Beginners ({month})",
+  "blurb": "50K list prices from low to high, with the fees that change them",
+  "sort": "price50",
+  "limit": 10,
+  "intro": "50K evaluations sorted by list price before discounts. Monthly plans look cheap until they rebill, and some firms add an activation fee when you pass, so check both columns and run the numbers in our <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>. FTMO's price is in euros.",
+  "why": {}
+ },
+ {
+  "slug": "prop-firms-for-beginners",
+  "h1": "Best prop firms for beginners",
+  "title": "Best Prop Firms for Beginners ({month})",
   "description": "Prop firms with the most forgiving rules for a first evaluation: end-of-day or static drawdown, no daily limit surprises, clear payout rules and low cost.",
-  "blurb": "Forgiving drawdown, clear rules, low cost to try", "limit": 6, "order": [], "intro": "", "why": {}},
- {"slug": "prop-firms-for-scalping", "h1": "Best prop firms for scalping", "title": "Best Prop Firms for Scalping ({month})",
-  "description": "Prop firms whose rules suit scalpers: no minimum hold time, generous contract limits and drawdown that does not punish open profit.",
-  "blurb": "No hold-time rules, room for size", "limit": 6, "order": [], "intro": "", "why": {}},
- {"slug": "prop-firms-no-consistency-rule", "h1": "Prop firms with no consistency rule", "title": "Prop Firms With No Consistency Rule ({month})",
+  "blurb": "Forgiving drawdown, clear rules, low cost to try",
+  "limit": 6,
+  "order": [
+   "ftmo",
+   "tradeify",
+   "topstep",
+   "the5ers",
+   "lucid-trading",
+   "fundednext"
+  ],
+  "intro": "For a first evaluation, the rules matter more than the price: a drawdown that does not punish open profit, a clear payout process and an established firm. These six fit that brief.",
+  "why": {
+   "ftmo": "Static max loss on the 2-Step, no time limit and the fee back with your first reward.",
+   "tradeify": "One payment, no activation fee and end-of-day drawdown on every plan.",
+   "topstep": "Cheap to start at $49 a month, end-of-day drawdown and a daily limit that pauses you instead of failing you.",
+   "the5ers": "Static drawdown and unlimited time to pass.",
+   "lucid-trading": "Low one-time price and end-of-day drawdown.",
+   "fundednext": "Static max loss on the Stellar 2-Step and the fee back with your first reward."
+  }
+ },
+ {
+  "slug": "prop-firms-that-allow-bots",
+  "h1": "Prop firms that allow bots and EAs",
+  "title": "Prop Firms That Allow Bots and EAs ({month})",
+  "description": "Prop firms that permit expert advisors and automated trading, and the limits each one sets on bots, HFT and copy trading.",
+  "blurb": "Expert advisors and automation permitted",
+  "where": {
+   "ea": [
+    "Allowed"
+   ]
+  },
+  "limit": 10,
+  "intro": "Most futures firms ban automation outright. These firms allow it, each with its own limits: high-frequency trading and copying the same bot across users are banned almost everywhere. Read the firm's rules on your own bot before you buy.",
+  "why": {}
+ },
+ {
+  "slug": "prop-firms-no-consistency-rule",
+  "h1": "Prop firms with no consistency rule",
+  "title": "Prop Firms With No Consistency Rule ({month})",
   "description": "Prop firms that do not cap your best day in the evaluation, and which of them add a consistency rule later for payouts.",
-  "blurb": "No best-day cap in the evaluation", "where": {"consistency_eval": false}, "limit": 10, "intro": "", "why": {}},
- {"slug": "end-of-day-drawdown-prop-firms", "h1": "Prop firms with end-of-day drawdown", "title": "Prop Firms With End-of-Day Drawdown ({month})",
+  "blurb": "No best-day cap in the evaluation",
+  "where": {
+   "consistency_eval": false
+  },
+  "limit": 10,
+  "intro": "These firms do not cap your best day in the evaluation. Several still add a consistency rule once you are funded, before a payout; the table shows where.",
+  "why": {}
+ },
+ {
+  "slug": "end-of-day-drawdown-prop-firms",
+  "h1": "Prop firms with end-of-day drawdown",
+  "title": "Prop Firms With End-of-Day Drawdown ({month})",
   "description": "Futures prop firms whose max loss trails only at the daily close, so open profit you give back intraday does not tighten your limit.",
-  "blurb": "Max loss moves only at the close", "where": {"dd": ["eod", "mixed"]}, "limit": 10, "intro": "", "why": {}},
- {"slug": "instant-funding-prop-firms", "h1": "Instant funding prop firms", "title": "Instant Funding Prop Firms ({month}): Skip the Evaluation",
+  "blurb": "Max loss moves only at the close",
+  "where": {
+   "dd": [
+    "eod",
+    "mixed"
+   ]
+  },
+  "limit": 10,
+  "intro": "With end-of-day trailing drawdown, your loss limit moves only at the daily close, so profit you give back during the day does not tighten it. Firms marked \"depends on plan\" also sell an intraday version. See <a href=\"/guides/trailing-drawdown/\">how trailing drawdown works</a>.",
+  "why": {}
+ },
+ {
+  "slug": "instant-funding-prop-firms",
+  "h1": "Instant funding prop firms",
+  "title": "Instant Funding Prop Firms ({month}): Skip the Evaluation",
   "description": "Prop firms that sell a funded account with no evaluation, what they cost and the stricter rules that usually come with them.",
-  "blurb": "Funded account without an evaluation, and the catch", "where": {"instant": true}, "limit": 10, "intro": "", "why": {}}
+  "blurb": "Funded account without an evaluation, and the catch",
+  "where": {
+   "instant": true
+  },
+  "limit": 10,
+  "intro": "Instant funding skips the evaluation: you pay more up front and trade a funded account from day one. The rules are usually stricter, with consistency requirements and lower payout caps. These firms sell an instant or direct account alongside their evaluations; open each review for the instant plan's terms.",
+  "why": {}
+ },
+ {
+  "slug": "prop-firms-that-accept-us-traders",
+  "h1": "Prop firms that accept US traders",
+  "title": "Prop Firms That Accept US Traders ({month})",
+  "description": "Futures and forex prop firms that accept US residents, checked against each firm's own country rules, with 50K prices and drawdown.",
+  "blurb": "US residents accepted, per each firm's own pages",
+  "where": {
+   "us": true
+  },
+  "limit": 15,
+  "intro": "Every firm below states, on its own pages, that it accepts US residents. Most are futures firms, which trade regulated US exchanges. Some forex firms serve US clients through a separate entity or a reduced set of platforms; the review for each firm says how.",
+  "why": {}
+ }
 ]

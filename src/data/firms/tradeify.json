@@ -1,0 +1,286 @@
+{
+ "slug": "tradeify",
+ "name": "Tradeify",
+ "website": "https://tradeify.co",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "Tradeify Holdings, Corp, 1700 S. Dixie Highway, Suite 305, Boca Raton, FL 33432, USA (payment agent: Novaflame LTD, Limassol, Cyprus)",
+ "founded_year": null,
+ "trustpilot": {
+  "score": 4.4,
+  "reviews": 5251,
+  "url": "https://www.trustpilot.com/review/tradeify.co",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Tradovate",
+  "NinjaTrader",
+  "TradingView (via Tradovate)",
+  "Rithmic",
+  "Tradesea",
+  "Quantower",
+  "Sierra Chart",
+  "R|Trader",
+  "WealthCharts"
+ ],
+ "instruments": "CME Group futures (CME/CBOT/NYMEX/COMEX), simulated",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Select (Evaluation -> Select Flex or Select Daily funded)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 165,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 109,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (updates at end of day, enforced in real time). Funded: locks at $50,100 when EOD balance reaches $52,100 or on first payout request.",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "Evaluation: no single day may be more than 40% of total profit (optional 50% add-on, priced $205 for 50K). Funded: none.",
+   "min_trading_days": 3,
+   "max_contracts_50k": 4,
+   "profit_split": "90/10",
+   "payout_frequency": "Select Flex: every 5 winning days ($150+ each). Select Daily: daily eligibility.",
+   "payout_rules_note": "50K funded, minimum payout $250. Flex: up to 50% of profits, capped at $2,500 per payout (accounts bought after Sep 1, 2026; $3,000 before), no DLL, no buffer. Daily: up to 2x profit since last payout, capped at $1,250 (after Sep 1, 2026; $1,000 before), $1,000 DLL, $2,100 buffer. Funded contracts start at 2 minis, scale to 3 at $1,500 and 4 at $2,000 EOD profit. Must be net positive for the cycle. The Flex/Daily choice is permanent per account.",
+   "notes": "No DLL during the evaluation. 50K accounts bought before the new dashboard keep a $2,500 profit target. Select 300K exists as a limited release ($449)."
+  },
+  {
+   "name": "Growth (Evaluation -> Growth Sim Funded)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 145,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 95,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (enforced in real time against net liquidation value); funded locks at $50,100",
+   "daily_loss_limit_50k": 1250,
+   "consistency_rule": "None in evaluation; 35% consistency rule on every funded payout request",
+   "min_trading_days": 1,
+   "max_contracts_50k": 4,
+   "profit_split": "90/10",
+   "payout_frequency": "When eligible: at least 5 trading days with $150+ profit since the last payout",
+   "payout_rules_note": "50K funded (bought on/after Sep 12, 2025): balance must be at least $53,000; minimum payout $500; max per request $1,500 / $2,000 / $2,500 / $3,000 (payout 4 onward). Paid in 24-48 hours.",
+   "notes": "DLL of $1,250 is a soft breach (stops trading for the day, does not fail). 50K accounts bought before Sep 12, 2025 allowed 5 contracts."
+  },
+  {
+   "name": "Lightning Funded (instant funding)",
+   "steps": "instant/direct funding",
+   "billing": "one-time",
+   "price_50k_list": 492,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": null,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (enforced in real time); locks at $50,100",
+   "daily_loss_limit_50k": 1250,
+   "consistency_rule": "Progressive: 20% for the 1st payout, 25% for the 2nd, 30% for later payouts (accounts bought after Sep 12, 2025)",
+   "min_trading_days": null,
+   "max_contracts_50k": 4,
+   "profit_split": "90/10",
+   "payout_frequency": "No minimum trading days; request once the profit goal and consistency rule are met",
+   "payout_rules_note": "50K profit goal $3,000 for payout 1 and $2,000 from payout 2 (resets after each payout). Minimum payout $1,000; maximum $2,000 for payouts 1-3, $2,500 from payout 4.",
+   "notes": "No evaluation and no resets; a failed account must be repurchased. DLL is a soft breach."
+  }
+ ],
+ "news_trading": "Allowed: Tradeify states it has no rules against trading news events",
+ "ea_bots_allowed": "Restricted: personal bots allowed if not HFT; trader must prove sole ownership (may require a live video of enabling it); using the same bot across multiple firms is against policy",
+ "copy_trading": "Restricted: compliance FAQ lists 'prohibited trade-copying' as coordination and flags coordinated automation across unrelated accounts; no published rule on copying between your own accounts was found",
+ "overnight_weekend_holding": "Not allowed: positions must be closed by 4:45 PM ET each weekday (12:59 PM ET on holiday half-days); open positions are auto-closed at market close without failing the account; no weekend holding",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "About 65 countries restricted by residency, including Bosnia & Herzegovina, Montenegro, Bulgaria, Albania, Turkey, Russia, Ukraine, Israel, Malaysia, Indonesia, Vietnam and Pakistan. Serbia is not listed. US is not restricted. List: https://help.tradeify.co/en/articles/10495888-rules-restricted-countries",
+ "payout_methods": [
+  "Rise (main method: ACH bank transfer, crypto, local currencies)",
+  "Plane (alternative)"
+ ],
+ "path_to_live": "Tradeify Elite: 3 payouts on one account, or 10 total payouts since the last live transition, make a trader eligible for consideration (not automatic). Elite Live accounts: 80/20 split, daily payouts, EOD drawdown ($2,000 on 50K), no DLL, plus per-account Performance Reward Pools; up to 5 live accounts.",
+ "current_public_promo": {
+  "code": null,
+  "discount": null,
+  "applies_to": null,
+  "source_url": null,
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "15% on Growth and Select evaluations, 10% on Lightning Funded, $5 per reset, $5 per activation fee",
+  "url": "https://tradeify.co/become-an-affiliate/",
+  "notes": "Application form; $1,000 minimum affiliate payout via Plane, paid on the 15th; 60-day cookie, last click wins."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-03-31",
+   "change": "New Select plan (3-day evaluation, Flex or Daily payout choice); live program rebranded Tradeify Elite with one live account per funded account that received a payout, no simulated-profit cap.",
+   "source": "https://help.tradeify.co/en/articles/12987441-introducing-the-new-select-plan-changes-to-the-live-program"
+  },
+  {
+   "date": "2026-04-07",
+   "change": "Tradeify 3.0: all plans one-time purchase only (no subscriptions), Select/Growth prices up about 3%, Select 50K target back to $3,000 for new accounts, Rithmic and Tradesea added.",
+   "source": "https://help.tradeify.co/en/articles/14135902-tradeify-3-0-program-updates-improvements"
+  },
+  {
+   "date": "2026-09-01",
+   "change": "Select 50K payout caps changed for new accounts: Flex cap $3,000 -> $2,500; Daily cap $1,000 -> $1,250.",
+   "source": "https://help.tradeify.co/en/articles/12853966-select-flex-and-select-daily-payout-policies"
+  }
+ ],
+ "pros": [
+  "One-time purchase with no activation fees on any plan.",
+  "Low 50K entry: Growth $145, Select $165 (list).",
+  "No consistency rule in Select funded accounts and no DLL in the Select evaluation or Select Flex funded account.",
+  "News trading is explicitly allowed; personal (non-HFT) bots allowed.",
+  "Wide platform choice across Tradovate and Rithmic."
+ ],
+ "cons": [
+  "Per-payout caps on 50K ($1,250-$3,000 depending on plan and payout number).",
+  "Live (Elite) split is 80/20, lower than the 90/10 in sim funded.",
+  "Funded payouts require more than 50% of trades and profit from positions held over 10 seconds.",
+  "Long restricted-country list (about 65), including several Balkan countries.",
+  "Homepage pricing cards showed placeholder text and inconsistent prices on 2026-10-16; the help center pricing reference is the reliable source."
+ ],
+ "best_for": "Futures traders who want a low one-time evaluation fee with no activation fee and a choice between 5-day or daily payouts.",
+ "sources": [
+  {
+   "url": "https://tradeify.co/",
+   "supports": "programs, GEMS banner, legal entity and address"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/14369021-tradeify-pricing-reference",
+   "supports": "all prices, reset fees, one-time billing, no activation fees"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/12853921-select-evaluation-accounts",
+   "supports": "Select evaluation rules, funded drawdown lock"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/12853966-select-flex-and-select-daily-payout-policies",
+   "supports": "Select funded/payout rules, caps, scaling, 90/10, Elite eligibility"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495915-growth-evaluation-accounts",
+   "supports": "Growth evaluation rules"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/11083796-growth-funded-account-payout-policy",
+   "supports": "Growth payout rules"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495938-lightning-funded-accounts",
+   "supports": "Lightning rules"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495932-lightning-funded-account-payout-policy",
+   "supports": "Lightning payout rules"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10468320-rules-consistency-rule",
+   "supports": "consistency by program"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495897-rules-trailing-max-drawdowns",
+   "supports": "EOD drawdown and lock levels"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/13252431-select-vs-growth-choosing-your-evaluation-type",
+   "supports": "Select vs Growth comparison"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10468246-are-there-activation-fees",
+   "supports": "no activation fees"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495874-rules-news-trading",
+   "supports": "news trading allowed"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495876-rules-permitted-times-to-trade",
+   "supports": "4:45 PM ET close, no overnight/weekend"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495888-rules-restricted-countries",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/12268494-common-faqs",
+   "supports": "payout methods, 10-second rule, VPN/VPS, one-time fees"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10468318-guidelines-for-traders",
+   "supports": "bot rules, HFT, hedging"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/17069653-risk-compliance-guidelines-faq",
+   "supports": "trade-copying prohibition, payout review"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10468221-supported-platforms",
+   "supports": "platforms"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/12844518-rise-payouts-main-payout-method",
+   "supports": "Rise payout methods"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/12969284-tradeify-elite-program",
+   "supports": "Elite live program, 80/20 split"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/14135902-tradeify-3-0-program-updates-improvements",
+   "supports": "April 2026 changes"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/12987441-introducing-the-new-select-plan-changes-to-the-live-program",
+   "supports": "March 2026 Select/Elite changes"
+  },
+  {
+   "url": "https://help.tradeify.co/en/articles/10495963-affiliates",
+   "supports": "affiliate commissions and terms"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/tradeify.co",
+   "supports": "Trustpilot score and count"
+  },
+  {
+   "url": "https://www.financemagnates.com/executives/tradeify-co-founders-difficult-to-enter-futures-prop-subscription-ditch-barely-moved-revenue/",
+   "supports": "secondary: founders Brett Simberkoff and Vinan Mistry, founded 2024"
+  }
+ ],
+ "uncertain": [
+  "founded_year: Finance Magnates (secondary, July 2026 interview) says 2024; not confirmed on Tradeify's own pages, so left null.",
+  "Promo GEMS: published on Tradeify's own banner, but the banner's stated end date (31 August) had passed; confirm before publishing. The homepage also shows a 'DASH' code with a placeholder amount, not recorded.",
+  "Homepage price cards show $359 and $251 for every size with placeholder text; prices recorded are from the help-center Pricing Reference ('Updated this week').",
+  "Copy trading between a trader's own accounts: not addressed directly; compliance FAQ lists 'prohibited trade-copying'.",
+  "Lightning profit_target_50k left null because Lightning has no evaluation target; the $3,000 first-payout profit goal is in payout_rules_note.",
+  "Growth funded DLL and contract limits in the funded stage are not stated in the Growth articles."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://tradeify.co/",
+ "facets": {
+  "market": "futures",
+  "price50": 145,
+  "monthly": false,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "eod",
+  "consistency_eval": false,
+  "consistency_funded": true,
+  "split": "90%",
+  "payouts": "After 5 days of $150+",
+  "news": "allowed",
+  "ea": "Restricted",
+  "us": true,
+  "tp": 4.4,
+  "ccy": "USD",
+  "instant": true
+ }
+}

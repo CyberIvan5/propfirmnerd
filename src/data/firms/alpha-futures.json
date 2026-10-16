@@ -1,0 +1,287 @@
+{
+ "slug": "alpha-futures",
+ "name": "Alpha Futures",
+ "website": "https://alpha-futures.com",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "Alpha Futures Limited (company no. 15655643, England and Wales), 1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT, UK",
+ "founded_year": 2024,
+ "trustpilot": {
+  "score": 4.4,
+  "reviews": 6151,
+  "url": "https://www.trustpilot.com/review/alpha-futures.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "AlphaTrader (in-house, web and mobile)",
+  "TradingView (via Plus500)",
+  "WealthCharts",
+  "DeepChart (Volumetrica)",
+  "Quantower"
+ ],
+ "instruments": "CME Group futures (CME, CBOT, NYMEX, COMEX), incl. Micro Bitcoin (MBT) and Micro Ether (MET), which count as full mini contracts",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Standard",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 129,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 109,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (from highest end-of-day balance), stops trailing at starting balance",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "50% in evaluation; 40% in Qualified account",
+   "min_trading_days": 2,
+   "max_contracts_50k": "5 minis / 50 micros (scaling plan applies in Qualified)",
+   "profit_split": "90/10",
+   "payout_frequency": "up to 4 requests per month, each after 5 winning days of $200+",
+   "payout_rules_note": "Min $500, max $3,000 per request (50K); up to 50% of account profit per request; MLL does not reset to $0 after payout. Terms say payments typically processed within 3 business days (up to 14 with extra verification).",
+   "notes": "Qualified 50K has a $1,000 Daily Loss Guard (soft lock until next session). Evaluation rebills monthly until passed or cancelled. Alpha also sells a no-evaluation 'Direct' account (50K: $519 one-time, $2,000 MLL, $1,000 daily loss guard, 20% consistency, withdrawal targets $3,000 then $2,000, max $2,000 per withdrawal, 90% split)."
+  },
+  {
+   "name": "Zero",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 139,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 119,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing, stops at starting balance",
+   "daily_loss_limit_50k": 1000,
+   "consistency_rule": "none in evaluation; 40% in Qualified account",
+   "min_trading_days": 1,
+   "max_contracts_50k": "3 minis / 30 micros",
+   "profit_split": "90/10",
+   "payout_frequency": "up to 4 requests per month, each after 5 winning days of $200+",
+   "payout_rules_note": "Min $200, max $1,500 per request (50K); up to 50% of profit per request.",
+   "notes": "Daily Loss Guard is 2% of starting balance and is a soft breach: positions flattened and account locked until next trading day 6PM ET, not closed. Sizes 25K/50K/100K."
+  },
+  {
+   "name": "Advanced",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 209,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 189,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 1750,
+   "drawdown_type": "EOD trailing, stops at starting balance",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "40% in evaluation; none in Qualified account",
+   "min_trading_days": 3,
+   "max_contracts_50k": "5 minis / 50 micros (no scaling plan)",
+   "profit_split": "90/10",
+   "payout_frequency": "up to 4 requests per month, each after 5 winning days of $200+",
+   "payout_rules_note": "Min $1,000, max $15,000 per request (all sizes); up to 50% of profit per request.",
+   "notes": "A $149 activation fee per Advanced Qualified account applied before 2026-07-08; accounts bought after that date have no activation fee. No news restrictions on Advanced Qualified. Sizes 50K/100K/150K."
+  }
+ ],
+ "news_trading": "Restricted: no restrictions in evaluations or Advanced Qualified; on Standard, Zero and Direct Qualified no orders may be executed from 2 minutes before to 2 minutes after high-impact (ForexFactory red folder) news; 4-minute window for high-impact speeches. Violations void profits; first violation is a warning, later ones breach the account.",
+ "ea_bots_allowed": "Not allowed: AI, bots and full automation prohibited on all account types; semi-automated tools (signal indicators) allowed if the trader places and manages trades manually; 100+ trades per day strategies not accepted",
+ "copy_trading": "Allowed only when a single person trades their own Alpha Futures accounts; group, reverse (hedging across accounts) and automated copy trading prohibited",
+ "overnight_weekend_holding": "Not allowed: all trades must be closed by 4:20 PM ET every day (Alpha closes positions if the trader does not).",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "61 restricted countries incl. Serbia, Croatia, Bosnia, Montenegro, North Macedonia, Albania, Kosovo, Slovenia, Romania, Bulgaria, Russia, Ukraine, Belarus, Turkey, China, Vietnam, Philippines, Malaysia, Pakistan, Nigeria. Trading also not permitted while travelling in a listed country. US is not on the list. https://help.alpha-futures.com/en/articles/9523389-countries-with-limitations",
+ "payout_methods": [
+  "ACH (US)",
+  "Wire transfer",
+  "SWIFT",
+  "Wise",
+  "Rise"
+ ],
+ "path_to_live": "Risk/Alpha Prime teams may call a trader to live after e.g. 5 performance fees on one Qualified account or significant lifetime payouts. Live 50K: $0 start, $2,000 EOD drawdown, daily payouts, no consistency or news limits. Two options: Alpha Futures Live (80% split, daily uncapped withdrawals) or Alpha Prime (60% split plus a 12-month salary funded by 50% of Qualified sim profit, capped at $75,000). All Qualified accounts close when called to live.",
+ "current_public_promo": {
+  "code": "ALPHA50",
+  "discount": "50% off",
+  "applies_to": "Standard, Advanced and Direct (ALPHA40 gives 40% off Zero); valid October 6 to 31, 2026",
+  "source_url": "https://alpha-futures.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "15% recurring on subscriptions from referred new customers while active, plus 15% on their resets; no cap",
+  "url": "https://help.alpha-futures.com/en/articles/9619919-affiliate-program",
+  "notes": "Link created in the dashboard 'Affiliate' section. Running ads with the affiliate link ends affiliate status. Referred customers get 10% off by default unless a promo is active. Affiliate payouts processed within 48 hours, one request per day."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-07-07",
+   "change": "Direct (no-evaluation) account launched",
+   "source": "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview"
+  },
+  {
+   "date": "2026-07-08",
+   "change": "$149 Advanced activation fee removed for accounts purchased after this date",
+   "source": "https://help.alpha-futures.com/en/articles/9492083-activation-fee"
+  },
+  {
+   "date": "2026-07",
+   "change": "Payout frequency changed to up to 4 times per month; Zero daily loss limit replaced by a 2% soft Daily Loss Guard; 90% flat split (reported by a third-party tracker)",
+   "source": "https://propfirmmap.com/trust-check/alphafutures"
+  },
+  {
+   "date": "2026-07-27",
+   "change": "New Terms and Conditions effective",
+   "source": "https://alpha-futures.com/terms-and-conditions"
+  },
+  {
+   "date": "2026-08-21",
+   "change": "Path to Live structure updated (Alpha Prime 60% + salary vs Live 80%)",
+   "source": "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure"
+  }
+ ],
+ "pros": [
+  "90% profit split on all evaluation-based accounts",
+  "EOD trailing drawdown that stops at the starting balance",
+  "No activation fee on accounts bought after 2026-07-08",
+  "Advanced Qualified: no daily loss guard, no consistency rule, up to $15,000 per payout request",
+  "UK-registered company (Companies House 15655643) with published registered office"
+ ],
+ "cons": [
+  "Evaluations are monthly subscriptions that rebill until passed or cancelled",
+  "Bots/full automation prohibited; positions must be closed by 4:20 PM ET daily",
+  "Payouts need 5 winning days of $200+ and are limited to 50% of profit per request",
+  "Path-to-live Alpha Prime option has only a 60% split",
+  "Rules and promotions changed many times in 2026; 61 restricted countries incl. most of the Balkans"
+ ],
+ "best_for": "Manual intraday futures traders who want a 90% split with EOD drawdown and accept monthly evaluation billing.",
+ "sources": [
+  {
+   "url": "https://alpha-futures.com/",
+   "supports": "plan prices, sizes, targets, MLL, resets, min days, contracts, platforms, legal entity, $750K max sim allocation"
+  },
+  {
+   "url": "https://alpha-futures.com/alpha-futures-discount-codes",
+   "supports": "ALPHA50/ALPHA40 promo codes and validity dates"
+  },
+  {
+   "url": "https://alpha-futures.com/terms-and-conditions",
+   "supports": "legal entity, English law, subscription billing, payout processing time, 90% split"
+  },
+  {
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15655643",
+   "supports": "incorporation 17 April 2024, registered office, active status"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
+   "supports": "Standard 50K rules"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",
+   "supports": "Zero 50K rules"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/11634907-advanced-account-overview",
+   "supports": "Advanced 50K rules"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/15838742-direct-account-overview",
+   "supports": "Direct account, launch date 2026-07-07"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492068-monthly-subscription",
+   "supports": "monthly rebilling"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492083-activation-fee",
+   "supports": "activation fee history"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492051-payout-policy",
+   "supports": "payout rules, min/max per plan"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/10443600-payout-methods",
+   "supports": "payout methods"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9491999-maximum-loss-limit-mll",
+   "supports": "EOD trailing MLL mechanics"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492014-daily-loss-guard",
+   "supports": "Daily Loss Guard"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492096-what-and-when-you-can-trade",
+   "supports": "instruments, 4:20 PM ET close"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9523389-countries-with-limitations",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9508585-prohibited-trading-practices",
+   "supports": "bots, HFT, hedging, group trading"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/10573989-copy-trading",
+   "supports": "copy trading policy"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492063-news-trading-policy",
+   "supports": "news trading policy"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9619919-affiliate-program",
+   "supports": "affiliate program"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure",
+   "supports": "path to live"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/10525305-trading-platforms",
+   "supports": "platforms"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/alpha-futures.com",
+   "supports": "Trustpilot score and count"
+  },
+  {
+   "url": "https://propfirmmap.com/trust-check/alphafutures",
+   "supports": "secondary: dated 2026 rule-change timeline"
+  }
+ ],
+ "uncertain": [
+  "Reset fee values are from the homepage pricing table; the Terms say resets cost the same as the monthly fee, which conflicts (e.g. Standard 50K $129/month vs $109 reset). Verify at checkout.",
+  "us_residents_accepted: the US is not on the restricted list and the help center does not exclude it, but no page states it explicitly",
+  "Payout timing conflicts: Terms Schedule 4 says 'bi-weekly or on demand' while the payout policy says up to 4 times per month after 5 winning days; homepage FAQ says Standard payouts paid within 5 business days, Terms say typically 3 business days",
+  "Exact dates of July 2026 payout-frequency and Daily Loss Guard changes are from a secondary tracker (propfirmmap)",
+  "Terms list a London notices address (10 Lower Thames Street) different from the Harpenden registered office",
+  "Trustpilot shows location 'United States' although the company is UK-registered"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://alpha-futures.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 129,
+  "monthly": true,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "eod",
+  "consistency_eval": true,
+  "consistency_funded": true,
+  "split": "90%",
+  "payouts": "Up to 4 a month",
+  "news": "restricted",
+  "ea": "Not allowed",
+  "us": true,
+  "tp": 4.4,
+  "ccy": "USD",
+  "instant": true
+ }
+}

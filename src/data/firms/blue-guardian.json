@@ -1,0 +1,272 @@
+{
+ "slug": "blue-guardian",
+ "name": "Blue Guardian",
+ "website": "https://blueguardian.com",
+ "status": "active",
+ "status_note": null,
+ "market": "multi",
+ "legal_entity_and_hq": "Iconic Exchange FZCO (t/a Blue Guardian), IFZA Business Park, DDP, Dubai, UAE (operates site, payments); Blue Guardian Limited, The Sotheby Building, Rodney Bay, Gros-Islet, Saint Lucia (simulated platforms); Blue Guardian Marketing LLC, Dubai. Terms governed by UAE law (Dubai).",
+ "founded_year": null,
+ "trustpilot": {
+  "score": null,
+  "reviews": 2112,
+  "url": "https://www.trustpilot.com/review/blueguardian.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "MetaTrader 5",
+  "TradeLocker",
+  "Match-Trader",
+  "NinjaTrader",
+  "Tradovate",
+  "TradingView",
+  "DeepCharts"
+ ],
+ "instruments": "Forex, commodities, indices and other CFDs; CME-listed futures via Blue Guardian Futures",
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000,
+  300000,
+  400000
+ ],
+ "programs": [
+  {
+   "name": "2 Step Standard",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 232,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "Static",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": null,
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "85% (90% as a paid add-on)",
+   "payout_frequency": "Every 14 days",
+   "payout_rules_note": null,
+   "notes": "Targets are $4,000 in phase 1 and $2,000 in phase 2."
+  },
+  {
+   "name": "1 Step Standard",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 200,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4500,
+   "max_loss_50k": 3000,
+   "drawdown_type": "Trailing",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": null,
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "85% (90% as a paid add-on)",
+   "payout_frequency": "Every 14 days",
+   "payout_rules_note": null,
+   "notes": null
+  },
+  {
+   "name": "Instant Standard",
+   "steps": "instant funding",
+   "billing": "one-time",
+   "price_50k_list": 324,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": null,
+   "max_loss_50k": 3000,
+   "drawdown_type": "Trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "20%",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80% (90% as a paid add-on)",
+   "payout_frequency": "On demand after 5 profitable days",
+   "payout_rules_note": null,
+   "notes": null
+  }
+ ],
+ "news_trading": "Restricted: allowed in challenges; on funded/instant accounts no opening/closing within 5 minutes before/after high-impact (red folder) news and FOMC, profits may be removed; Instant Standard bought after 13 Nov 2025 no news trading",
+ "ea_bots_allowed": "Restricted: EAs allowed for your own strategies on forex/CFD; HFT, tick scalping (trades under 2 minutes flagged) and arbitrage bots prohibited",
+ "copy_trading": "Restricted: only between accounts you legally own; copying another trader prohibited; hedging across accounts prohibited",
+ "overnight_weekend_holding": "Overnight and weekend holding allowed on forex/CFD accounts",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Forex help center lists Afghanistan, Albania, Algeria, Cuba, Iran, Jordan, Libya, Myanmar, North Korea, Philippines, Senegal, Syria, Vietnam; futures list is longer (incl. Iraq, Israel, Malaysia, Pakistan, Russia, Turkey, Ukraine, Venezuela, Yemen). https://help.blueguardian.com/en/articles/15618204-general-information-rules",
+ "payout_methods": [
+  "Rise (no max; $500 min)",
+  "Crypto (under $5,000; $100 min)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "HALLOWEEN",
+  "discount": "About 35% off",
+  "applies_to": "Forex challenges (shown on Blue Guardian's site)",
+  "source_url": "https://blueguardian.com/forex",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "10% (0-100 referrals), 12.5% (100-250), 15% (250+), plus bonuses",
+  "url": "https://blueguardian.com/affiliates",
+  "notes": "Can apply to skip to Level 3; bonuses not for custom deals"
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-08",
+   "change": "1 Step Standard target cut from 10% to 9%; 2 Step Standard min trading days cut from 5 to 3 (accounts bought from 20 Aug)",
+   "source": "https://help.blueguardian.com/en/articles/14062186-1-step-standard-rules"
+  },
+  {
+   "date": "2026-09",
+   "change": "Futures Express: from 2nd payout, new profit equal to 50% of previous payout required (accounts bought from 2 Sep)",
+   "source": "https://helpfutures.blueguardian.com/en/articles/15679143-express-account-rules"
+  }
+ ],
+ "pros": [
+  "2 Step Standard uses a static 8% max loss",
+  "Payouts processed within 24 business hours per help center",
+  "Instant funding option with on-demand payouts",
+  "Both forex/CFD and futures under one brand; overnight/weekend holding and own EAs allowed",
+  "Published tiered affiliate commissions"
+ ],
+ "cons": [
+  "Trustpilot rating suspended for a guideline breach (fake reviews removed)",
+  "1 Step and Instant use trailing drawdown",
+  "Guardian Shield: 1-2% floating loss closes trades and first breach halves the split",
+  "3% processing fee on every payout; strict no-refund policy",
+  "News trading restricted on funded accounts"
+ ],
+ "best_for": "Forex/CFD traders who want a choice of instant, 1-step or static-drawdown 2-step accounts and fast payout processing, and can trade within floating-loss limits.",
+ "sources": [
+  {
+   "url": "https://blueguardian.com",
+   "supports": "programs, platforms, entities, HALLOWEEN promo, payout methods"
+  },
+  {
+   "url": "https://blueguardian.com/forex",
+   "supports": "50K price $324 list / $211 discounted, sizes"
+  },
+  {
+   "url": "https://blueguardian.com/futures",
+   "supports": "futures sizes, no activation fees, platforms"
+  },
+  {
+   "url": "https://blueguardian.com/about-us",
+   "supports": "CEO Sean Bainton, entities"
+  },
+  {
+   "url": "https://blueguardian.com/terms-and-conditions",
+   "supports": "entities, UAE law"
+  },
+  {
+   "url": "https://blueguardian.com/refund-policy",
+   "supports": "no refunds"
+  },
+  {
+   "url": "https://blueguardian.com/affiliates",
+   "supports": "affiliate tiers"
+  },
+  {
+   "url": "https://blueguardian.com/payouts",
+   "supports": "Rise/crypto, payout claims"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/14061082-instant-standard-account-rules",
+   "supports": "Instant rules"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/14062186-1-step-standard-rules",
+   "supports": "1 Step Standard rules, Guardian Shield, EA, copy, news"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/14062291-2-step-standard-rules",
+   "supports": "2 Step Standard rules"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/16444654-1-step-nano-rules",
+   "supports": "1 Step Nano rules"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/16445450-2-step-nano-rules",
+   "supports": "2 Step Nano rules"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/9660857-how-do-payouts-work",
+   "supports": "payout methods, frequency, minimums, 3% fee"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/15618204-general-information-rules",
+   "supports": "restricted countries, $400K max allocation, KYC"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/9661512-prohibited-trading-practices-account-policies",
+   "supports": "prohibited strategies, hedging"
+  },
+  {
+   "url": "https://helpfutures.blueguardian.com/en/articles/15654479-standard-account-rules",
+   "supports": "futures Standard 50K rules"
+  },
+  {
+   "url": "https://helpfutures.blueguardian.com/en/articles/15679143-express-account-rules",
+   "supports": "futures Express 50K rules"
+  },
+  {
+   "url": "https://helpfutures.blueguardian.com/en/articles/15805753-introduction-to-blue-guardian-futures",
+   "supports": "futures programs, restricted countries, payout methods"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/blueguardian.com",
+   "supports": "Trustpilot status"
+  },
+  {
+   "url": "https://propfirmmatch.com/prop-firms/blue-guardian/challenges",
+   "supports": "SECONDARY: 50K prices Instant $324, 2 Step Nano $127; MATCH pages 2-3: 1 Step $200, 1 Step Nano $160, 2 Step Standard $232"
+  },
+  {
+   "url": "https://propfirmmatch.com/futures/prop-firms/blue-guardian-futures",
+   "supports": "SECONDARY: futures bot ban, platforms"
+  },
+  {
+   "url": "https://blueguardian.com/forex",
+   "supports": "50K prices for 2 Step, 1 Step and Instant Standard, targets, daily loss, drawdown (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "founded_year: not stated on official pages (propfirmmatch says futures firm created Nov 2024; forex brand older) - null.",
+  "trustpilot.score: rating unavailable on Trustpilot due to guideline breach.",
+  "1 Step Standard ($200) and 2 Step Standard ($232) 50K prices are SECONDARY (propfirmmatch); only the Instant $324 price is visible on the official page.",
+  "us_residents_accepted: US not on official restricted lists, but no explicit statement; firm paused new US sign-ups in Feb 2024 (Finance Magnates) - current status not confirmed, left null.",
+  "Consistency rule for 1 Step/2 Step Standard not mentioned in help articles - null (not confirmed as none).",
+  "Payout guarantee: homepage mentions '24hr payout guarantee' (futures page adds $1,000 extra) but help center calls 24 business hours a processing target.",
+  "path_to_live: T&C mention allocation to a 'live account' but also say evaluations are simulated/demo - null."
+ ],
+ "checked": "2026-10-16",
+ "link": "https://blueguardian.com/",
+ "facets": {
+  "market": "multi",
+  "price50": 232,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 4000,
+  "dd": "static",
+  "consistency_eval": null,
+  "consistency_funded": null,
+  "split": "85%",
+  "payouts": "Every 14 days",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}

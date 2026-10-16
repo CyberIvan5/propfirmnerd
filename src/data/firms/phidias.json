@@ -1,0 +1,216 @@
+{
+ "slug": "phidias",
+ "name": "Phidias",
+ "website": "https://phidiaspropfirm.com/",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "Phidias Propfirm Limited (reg. no. GICO.123937-76), Suite 4.3.02, Block 4, Eurotowers, Gibraltar GX11 1AA; governed by Gibraltar law",
+ "founded_year": null,
+ "trustpilot": {
+  "score": null,
+  "reviews": 339,
+  "url": "https://www.trustpilot.com/review/phidiaspropfirm.com",
+  "seen": "2026-10-16"
+ },
+ "platforms": [
+  "Rithmic",
+  "Tradovate",
+  "TradingView (via Tradovate)",
+  "NinjaTrader",
+  "DeepCharts"
+ ],
+ "instruments": "CME/CBOT/NYMEX/COMEX futures (equity index, rates, FX, crypto micros, ags, energy, metals) plus Eurex products (FDAX, FESX, FGBL, etc.); LIVE accounts cleared via Dorman Trading",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000
+ ],
+ "programs": [
+  {
+   "name": "Fundamental",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 164,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 149,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 2500,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None in evaluation; 30% rule on the funded account",
+   "min_trading_days": 3,
+   "max_contracts_50k": "10 minis / 100 micros",
+   "profit_split": "80/20",
+   "payout_frequency": "Every 10 trading days",
+   "payout_rules_note": null,
+   "notes": "Also sold as a one-time payment of $580 with no activation fee."
+  },
+  {
+   "name": "Premium",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 329,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 149,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 2500,
+   "drawdown_type": "EOD trailing",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None in evaluation; 30% rule on the funded account",
+   "min_trading_days": 1,
+   "max_contracts_50k": "10 minis / 100 micros",
+   "profit_split": "75% rising to 100% by the 5th payout",
+   "payout_frequency": "Every 5 days",
+   "payout_rules_note": null,
+   "notes": "Also sold as a one-time payment of $723 with no activation fee."
+  },
+  {
+   "name": "Express to Live",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 723,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 2500,
+   "max_loss_50k": 650,
+   "drawdown_type": "Static (never trails)",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "None",
+   "min_trading_days": 0,
+   "max_contracts_50k": "5 minis / 50 micros",
+   "profit_split": "80/20",
+   "payout_frequency": "Fixed bonus on reaching the target, then live payouts",
+   "payout_rules_note": null,
+   "notes": null
+  }
+ ],
+ "news_trading": "Allowed on all accounts at every stage",
+ "ea_bots_allowed": "Restricted: on Fundamental/Premium, robots, fully automated algorithms and HFT are not permitted; semi-automated tools are allowed only with active manual monitoring",
+ "copy_trading": "Allowed, including third-party copier software, within per-type account caps (5 CASH Fundamental, 5 CASH Premium, 5 E2L). Accounts may be suspended if identical strategies exceed the maximum allowed capital",
+ "overnight_weekend_holding": "Premium: overnight and weekend allowed. Fundamental and E2L: not allowed; positions must be closed before the daily cutoff, and failing to close means disqualification. E2L LIVE: not allowed unless agreed",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Annex 1 of the terms lists about 59 restricted countries, including Serbia, Croatia, Bosnia, Montenegro, North Macedonia, Kosovo, Slovenia, Bulgaria, Romania, Albania, Malta, Nigeria, Pakistan, Philippines, Indonesia, South Africa and Russia. The US is not on the list. https://phidiaspropfirm.com/tou",
+ "payout_methods": [
+  "Rise (RISEWORKS.io), bank transfer via Rise"
+ ],
+ "path_to_live": "E2L: automatic. Hit the target and click 'Switch to Live' for a LIVE account at Dorman Trading. Fundamental/Premium: discretionary review from 5 payouts or $100,000 cumulative profit; the earlier 3 payouts / $75,000 threshold is marked deprecated. Further tiers: ELITE LIVE (60 days + $125K balance) and MASTER LIVE (120 days + $250K). One LIVE account per trader.",
+ "current_public_promo": {
+  "code": "BIG50",
+  "discount": "60% off monthly plans, 85% off one-time plans",
+  "applies_to": "Shown in the account configurator on Phidias' homepage",
+  "source_url": "https://phidiaspropfirm.com/",
+  "seen": "2026-10-16"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "15% 'starting commission' on every sale made with the affiliate code, no cap; also applies to resets/new accounts/upgrades bought with the code",
+  "url": "https://phidiaspropfirm.com/affiliate-program",
+  "notes": "Anyone can apply (no need to be a Phidias trader). Applications reviewed within ~24h. Paid monthly via Rise."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026 (rules page last modified 2026-09-22)",
+   "change": "Discretionary path-to-LIVE threshold raised to 5 payouts or $100,000 cumulative profit; previous 3 payouts / $75,000 marked deprecated (About page still shows old thresholds)",
+   "source": "https://phidiaspropfirm.com/rules"
+  }
+ ],
+ "pros": [
+  "News trading allowed on all accounts at every stage",
+  "No daily loss limit on Fundamental, Premium or E2L",
+  "E2L has no consistency rule, no minimum days, and an automatic route to a LIVE account cleared by Dorman Trading",
+  "Premium allows overnight and weekend holding and reaches a 100% split from the 5th payout",
+  "US residents are not on the restricted list"
+ ],
+ "cons": [
+  "Trustpilot rating is withheld for a guidelines breach and Trustpilot says it removed fake reviews; about 34% of the 339 reviews are 1-star, many alleging denied payouts (unverified)",
+  "Long restricted-country list, including most of the Balkans (Serbia, Croatia, Bosnia, Montenegro, North Macedonia, Slovenia, Bulgaria, Romania)",
+  "E2L static drawdown is small: $650 on 50K",
+  "Fundamental/Premium payouts are capped at $2,000 per period (50K), and Fundamental pays only every 10 trading days",
+  "Some official pages contradict each other: the 30% rule is worded as 'total balance' vs 'total profit', and the E2L activation fee and path-to-live thresholds differ between pages"
+ ],
+ "best_for": "US and non-restricted futures traders who want news trading, no daily loss limit, and either a fast static-drawdown route to a live account (E2L) or overnight/swing holding (Premium).",
+ "sources": [
+  {
+   "url": "https://phidiaspropfirm.com/",
+   "supports": "programs, platforms, promo code PHIDIAS80, banner discount"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/accounts",
+   "supports": "account types, sizes, 25K E2L card, monthly vs one-time options"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/rules",
+   "supports": "drawdowns, targets, contracts, consistency, min days, payouts, activation fees, path to live, news/EA/copy rules, holding rules, restricted countries"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/express-to-live",
+   "supports": "E2L 50K list $723 / current $144.60, no activation fee, no monthly subscription"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/tradovate",
+   "supports": "platforms, TRADOVATE code for activation fee"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/contact",
+   "supports": "legal entity, registration number, address"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/tou",
+   "supports": "Gibraltar law, restricted countries annex, no refunds, Rise payouts"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/fr/formations/prop-firms-pour-traders-us",
+   "supports": "US not on restricted list (firm's own article, modified 2026-10-12)"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/affiliate-program",
+   "supports": "affiliate commission"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/phidiaspropfirm.com",
+   "supports": "Trustpilot status and review count"
+  },
+  {
+   "url": "https://thegodfunded.com/en/firms/phidias/challenges",
+   "supports": "SECONDARY: Fundamental/Premium 50K prices"
+  },
+  {
+   "url": "https://phidiaspropfirm.com/",
+   "supports": "50K prices for all plans (monthly and one-time), targets, drawdown, activation fee, contract limits, code (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "founded_year: not stated on official pages; third-party sites disagree (Jan 2023 on propfirmmap vs Mar 2024 on fundedtrading)",
+  "Fundamental and Premium 50K prices are secondary (thegodfunded.com, undated); the official configurator did not render them. Monthly list $164 / $329 and one-time $580 / $723",
+  "reset_fee_50k: the rules page says evaluation resets are 'Unlimited, price shown in the account configurator' and gives no amount; a third-party site shows $40 to $104 for monthly plans",
+  "E2L activation fee: the E2L page says none; the rules page lists $149 for 50K",
+  "Trustpilot score: none is shown (rating withheld by Trustpilot)",
+  "Help center FAQ and changelog are JavaScript-rendered and did not load, so 2026 changelog entries could not be checked",
+  "us_residents_accepted is based on the firm's own article and the US being absent from the restricted list; the terms do not state it explicitly"
+ ],
+ "checked": "2026-10-16",
+ "link": "https://phidiaspropfirm.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 164,
+  "monthly": true,
+  "target50": 4000,
+  "maxloss50": 2500,
+  "dd": "eod",
+  "consistency_eval": false,
+  "consistency_funded": true,
+  "split": "80% (up to 100% on Premium)",
+  "payouts": "Every 10 trading days",
+  "news": "allowed",
+  "ea": "Restricted",
+  "us": true,
+  "tp": null,
+  "ccy": "USD",
+  "instant": false
+ }
+}
