@@ -14,6 +14,8 @@
 <meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#18212C">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVG0D1N0KZ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MVG0D1N0KZ');</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -93,6 +95,8 @@
 <script>
 (function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
 b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="/go/"]');if(a&&window.gtag){gtag('event','affiliate_click',{firm:a.getAttribute('href').split('/')[2],page:location.pathname});}});
+document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){window.gtag&&gtag('event','code_copy',{code:btn.getAttribute('data-copy'),page:location.pathname});})});
 document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
 var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
 </script>

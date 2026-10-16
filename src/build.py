@@ -31,7 +31,7 @@ OUT = ROOT / "public"
 SITE = "https://propfirmnerd.com"
 NAME = "PropFirmNerd"
 TODAY = datetime.date.today().isoformat()
-GA_ID = ""  # e.g. G-XXXXXXX; empty = no analytics tag
+GA_ID = "G-MVG0D1N0KZ"
 
 NAV = [("firms", "Firm reviews"), ("compare", "Compare"), ("best", "Best of"),
        ("promo-codes", "Promo codes"), ("tools", "Tools"), ("guides", "Guides")]
@@ -303,6 +303,8 @@ LAYOUT = """<!doctype html>
 <script>
 (function(){{var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
 b&&b.addEventListener('click',function(){{var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)}});
+document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href^="/go/"]');if(a&&window.gtag){{gtag('event','affiliate_click',{{firm:a.getAttribute('href').split('/')[2],page:location.pathname}});}}}});
+document.querySelectorAll('[data-copy]').forEach(function(btn){{btn.addEventListener('click',function(){{window.gtag&&gtag('event','code_copy',{{code:btn.getAttribute('data-copy'),page:location.pathname}});}})}});
 document.querySelectorAll('[data-copy]').forEach(function(btn){{btn.addEventListener('click',function(){{
 var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{btn.textContent='Copied'}},function(){{btn.textContent=t}});}})}});}})();
 </script>
