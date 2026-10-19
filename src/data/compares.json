@@ -26,5 +26,53 @@
   "blurb": "Two of the cheapest one-time 50K evaluations",
   "verdict": "Lucid ($136 for LucidFlex) and Tradeify ($145 for Growth) are two of the cheapest one-time 50K evaluations we track, both with end-of-day drawdown and no activation fee. Lucid allows bots and has no consistency rule once funded on LucidFlex; Tradeify allows only your own non-HFT bots and adds a 35% rule to Growth payouts.",
   "body": "<h2>Which to pick</h2><p>Pick Lucid if you trade with your own automation or copiers. Pick Tradeify if you want a choice of payout styles (Select Flex or Select Daily). Lucid restricts more countries, including Serbia.</p>"
+ },
+ {
+  "a": "topstep",
+  "b": "take-profit-trader",
+  "blurb": "$49 a month vs early withdrawals",
+  "published": "2026-10-19",
+  "verdict": "Topstep is cheaper to start ($49 a month for 50K against $170 at Take Profit Trader) and keeps an end-of-day drawdown in its funded account. Take Profit Trader lets you withdraw from your first funded day once the balance is above its $52,000 buffer, but its PRO account switches to an intraday trailing drawdown and pays 80% until you reach PRO+.",
+  "body": "<h2>Which to pick</h2><p>Pick Topstep if the monthly cost and an end-of-day drawdown matter most. On its Standard path you pay $49 a month plus a $149 activation fee once you pass, or $95 a month with no activation fee. Pick Take Profit Trader if you want access to withdrawals early and are comfortable with an intraday trailing drawdown once funded. Its PRO activation fee is $130.</p><h2>Rules that trip people up</h2><p>Topstep's Combine has a best-day limit of 55% of the profit target. Going over it raises the target instead of failing you. Take Profit Trader's Test requires your best day to stay under 50% of total profit. On news, Take Profit Trader's PRO accounts must be flat from one minute before to one minute after events such as FOMC, NFP and CPI. Topstep only bans purposely trading your full maximum size into a scheduled major news event.</p>"
+ },
+ {
+  "a": "bulenox",
+  "b": "apex-trader-funding",
+  "blurb": "Wider drawdown vs 100% payouts",
+  "published": "2026-10-19",
+  "verdict": "Bulenox gives its 50K end-of-day account a wider $2,500 drawdown, has no consistency rule in the Qualification and allows news trading with no blackout window, for $175 one-time. Apex keeps the 50K drawdown at $2,000 and pays 100% of approved payouts on its performance accounts. It also adds a 50% consistency rule once you are funded and closes each performance account after six payouts. We could not see Apex's current prices from where we check.",
+  "body": "<h2>Which to pick</h2><p>Pick Bulenox if you want more room on a 50K account and trade around news releases. Pick Apex if you want to keep all of each approved payout and do not mind its funded consistency rule and six-payout limit per account. Neither firm lets you hold positions overnight. Apex does not allow automated trading at all. Bulenox needs management approval for third-party algorithms.</p><h2>Getting to a live account</h2><p>Both decide at their discretion. Bulenox may consider traders for a live account after three successful payouts. Apex says it may move a trader to live at any time, and lists three consecutive withdrawals from one account as one guideline.</p>"
+ },
+ {
+  "a": "take-profit-trader",
+  "b": "apex-trader-funding",
+  "blurb": "Monthly Test vs one-time evaluation",
+  "published": "2026-10-19",
+  "verdict": "Take Profit Trader charges $170 a month for a 50K Test and lets funded PRO traders withdraw from the first day above the buffer. Apex sells one-time evaluations with no consistency rule, and pays 100% of approved payouts on its performance accounts. It limits each performance account to six payouts. Neither firm allows bots.",
+  "body": "<h2>Which to pick</h2><p>Pick Take Profit Trader if you want withdrawals available early. Its PRO account pays 80%, or 90% on PRO+, and needs the balance above $52,000 on 50K before the first withdrawal. Pick Apex if you would rather pay once and keep 100% of approved payouts, and you can live with a funded consistency rule: no single day may be 50% or more of profit since the last payout.</p><h2>Drawdown</h2><p>Both use a $2,000 maximum loss on 50K. Take Profit Trader trails at end of day in the Test and intraday in PRO. Apex lets you choose an end-of-day or an intraday trailing evaluation.</p>"
+ },
+ {
+  "a": "tradeify",
+  "b": "topstep",
+  "blurb": "One-time fee vs monthly",
+  "published": "2026-10-19",
+  "verdict": "Tradeify charges once ($145 for a 50K Growth evaluation, with no activation fee). Topstep charges $49 a month plus a $149 activation fee on its Standard path. If you pass in the first month, Topstep's Standard path costs $198 in total against $145 at Tradeify. Both use a $2,000 end-of-day trailing drawdown on 50K and pay 90%.",
+  "body": "<h2>Which to pick</h2><p>Pick Tradeify if you want a single payment, trade news (it has no news rule), or want an instant funded account (Lightning Funded). Pick Topstep if you prefer a low monthly entry. It also offers a $95-a-month path with no activation fee.</p><h2>Consistency rules</h2><p>Tradeify's Growth evaluation has no consistency rule, but every funded payout request must pass a 35% rule. Its Select evaluation limits any day to 40% of total profit. Topstep's Combine limits your best day to 55% of the profit target and raises the target if you go over. Its Standard funded account has no consistency rule.</p>"
+ },
+ {
+  "a": "ftmo",
+  "b": "the5ers",
+  "blurb": "Wider limits vs lower price",
+  "published": "2026-10-19",
+  "verdict": "The5ers High Stakes is cheaper ($249 for 50K against €345 for FTMO's 2-Step) and asks for the same targets of 10% and then 5%. Its loss limits are tighter: 8% maximum and 4% daily, against 10% and 5% at FTMO. FTMO allows EAs within platform limits, while The5ers needs written approval for automated trading.",
+  "body": "<h2>Which to pick</h2><p>Pick FTMO if you want more room before a breach and plan to use EAs. Pick The5ers if price matters more and your risk per day stays well inside 4%. Both pay 80% at the start with a scaling plan that raises it. Both pay the first reward after 14 days.</p><h2>News trading</h2><p>Both restrict it on funded accounts in a similar way. FTMO bars order execution 2 minutes before and after selected high-impact news on its standard funded accounts. The5ers' High Stakes forbids new orders 2 minutes before and after high-impact news.</p>"
+ },
+ {
+  "a": "topstep",
+  "b": "myfundedfutures",
+  "blurb": "Monthly vs one-time, 90% vs 80%",
+  "published": "2026-10-19",
+  "verdict": "MyFundedFutures sells one-time evaluations (from $153 for a 50K Builder) with no activation fee. Topstep charges $49 a month plus a $149 activation fee on its Standard path. Both use a $2,000 end-of-day drawdown on 50K evaluations. MyFundedFutures pays more often (every 48 hours on Builder, daily on Rapid), but Builder pays 80% against Topstep's 90%.",
+  "body": "<h2>Which to pick</h2><p>Pick MyFundedFutures if you want frequent payouts and a single payment. Its Rapid plan pays 90%, but its sim funded account uses an intraday trailing drawdown. Rapid EOD keeps it at end of day for a higher price. Pick Topstep if you prefer a monthly price and an end-of-day drawdown in the funded account.</p><h2>News trading</h2><p>MyFundedFutures requires you to be flat from 2 minutes before to 2 minutes after Tier 1 releases on Rapid and Pro funded accounts. It allows news trading in every evaluation and on Builder. Topstep only bans purposely trading your full maximum size into a scheduled major news event.</p>"
  }
 ]

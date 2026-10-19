@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://propfirmnerd.com/</loc><lastmod>2026-10-16</lastmod><priority>1.0</priority></url>
+  <url><loc>https://propfirmnerd.com/</loc><lastmod>2026-10-19</lastmod><priority>1.0</priority></url>
   <url><loc>https://propfirmnerd.com/about/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/affiliate-disclosure/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/best/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/best/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/best/cheapest-prop-firms/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/best/end-of-day-drawdown-prop-firms/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/best/forex-prop-firms/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
@@ -13,13 +13,19 @@
   <url><loc>https://propfirmnerd.com/best/prop-firms-no-consistency-rule/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/best/prop-firms-that-accept-us-traders/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/best/prop-firms-that-allow-bots/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://propfirmnerd.com/compare/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/compare/apex-trader-funding-vs-topstep/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://propfirmnerd.com/compare/apex-trader-funding-vs-tradeify/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/bulenox-vs-apex-trader-funding/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://propfirmnerd.com/compare/ftmo-vs-fundednext/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/ftmo-vs-the5ers/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://propfirmnerd.com/compare/lucid-trading-vs-tradeify/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/take-profit-trader-vs-apex-trader-funding/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/topstep-vs-myfundedfutures/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/topstep-vs-take-profit-trader/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://propfirmnerd.com/compare/tradeify-vs-topstep/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://propfirmnerd.com/contact/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/firms/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/firms/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/firms/alpha-futures/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/firms/alpha-futures/promo-code/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/firms/alpha-futures/rules/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
@@ -70,23 +76,23 @@
   <url><loc>https://propfirmnerd.com/firms/tradeify/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/firms/tradeify/promo-code/</loc><lastmod>2026-10-16</lastmod><priority>0.9</priority></url>
   <url><loc>https://propfirmnerd.com/firms/tradeify/rules/</loc><lastmod>2026-10-16</lastmod><priority>0.8</priority></url>
-  <url><loc>https://propfirmnerd.com/guides/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/guides/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/guides/consistency-rule/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/guides/how-to-pass-a-prop-firm-challenge/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/guides/trailing-drawdown/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/guides/what-is-a-prop-firm/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/methodology/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/privacy/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/promo-codes/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/promo-codes/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://propfirmnerd.com/risks/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/challenge-cost-calculator/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/drawdown-simulator/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/es-tick-value/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/mnq-tick-value/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/nq-tick-value/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/pass-probability-calculator/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/payout-calculator/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/position-size-calculator/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://propfirmnerd.com/tools/tick-value-calculator/</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/challenge-cost-calculator/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/drawdown-simulator/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/es-tick-value/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/mnq-tick-value/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/nq-tick-value/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/pass-probability-calculator/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/payout-calculator/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/position-size-calculator/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://propfirmnerd.com/tools/tick-value-calculator/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
 </urlset>
