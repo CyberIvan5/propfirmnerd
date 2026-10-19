@@ -30,7 +30,7 @@
  ],
  "programs": [
   {
-   "name": "Flex 1-Step (1 Step Flex Challenge)",
+   "name": "Flex 1-Step",
    "steps": "1-step",
    "billing": "one-time",
    "price_50k_list": 490,
@@ -50,7 +50,7 @@
    "notes": "Launched 17 Aug 2026. Sizes $5K-$100K (the store also lists a $200K variant at $1,600). Daily loss is 3% from the higher of opening balance or equity. No minimum trading days to pass, no time limit. Weekend holding NOT allowed (positions may be closed). Leverage 1:30 FX, 1:10 metals/indices/commodities, 1:2 crypto. 30-day inactivity breach. Reset of 50K Phase 1 is $343 (30% off), funded reset $980; reset must be bought within 7 days of the breach, once per account."
   },
   {
-   "name": "Prime Challenge (shown on the site as 'Prime 2-Step Elite')",
+   "name": "Prime 2-Step",
    "steps": "2-step",
    "billing": "one-time",
    "price_50k_list": 406,
@@ -70,7 +70,7 @@
    "notes": "Phase 1 target 8% ($4,000), Phase 2 6% ($3,000). Daily drawdown 4% of initial balance measured from the higher of balance or equity at day start. Sizes $2.5K-$200K. Leverage 1:30. News: no new positions within 2 minutes before/after scheduled high-impact news; managing or closing existing trades is allowed. The 3-day minimum applies per phase per the Oct 2026 Outline & Fees PDF ('3 or 5'). Store lists DXtrade at a lower $325, but DXtrade accounts were migrated to MT5 in April 2026; MT5/TradeLocker price is $406. Phase 1 reset $285, Phase 2 reset $406, funded reset $812."
   },
   {
-   "name": "1-Step Challenge (Classic 1-Step)",
+   "name": "1-Step",
    "steps": "1-step",
    "billing": "one-time",
    "price_50k_list": 302.5,
@@ -95,7 +95,7 @@
  "copy_trading": "Restricted: only between your own Blueberry Funded accounts; copy trading with third parties or third-party account management is prohibited (immediate termination)",
  "overnight_weekend_holding": "Overnight holding allowed on all account types. Weekend holding allowed on all account types except Flex 1-Step (positions may be closed automatically before the weekend)",
  "us_residents_accepted": false,
- "restricted_countries_note": "Serbia: NO, not on the restricted list. Restricted: Afghanistan, American Samoa, Australia, Belarus, Cuba, Guam, Iran, Iraq, Myanmar, North Korea, Russia, Somalia, Syria, United States, US Minor Outlying Islands, Yemen. https://help.blueberryfunded.com/en/articles/9550574-are-any-countries-restricted-from-purchasing-an-evaluation (the Oct 2026 Outline & Fees PDF gives a shorter list that also excludes Serbia)",
+ "restricted_countries_note": "Restricted: Afghanistan, American Samoa, Australia, Belarus, Cuba, Guam, Iran, Iraq, Myanmar, North Korea, Russia, Somalia, Syria, United States, US Minor Outlying Islands, Yemen.",
  "payout_methods": [
   "RiseWorks (Rise)",
   "Crypto USDC / USDT-TRC20 (up to $2,000)",
@@ -105,9 +105,13 @@
  "current_public_promo": {
   "code": "PRIME30",
   "discount": "30% off the Prime challenge (FLEX30 gives 30% off Flex 1-Step)",
-  "applies_to": "Prime and Flex 1-Step challenges, per Blueberry's homepage",
+  "applies_to": "Prime and Flex 1-Step challenges, per Blueberry's homepage (no discount shown on the 1-Step)",
   "source_url": "https://blueberryfunded.com/",
-  "seen": "2026-10-19"
+  "seen": "2026-10-19",
+  "programs": [
+   "Prime 2-Step",
+   "Flex 1-Step"
+  ]
  },
  "affiliate_program": {
   "exists": true,

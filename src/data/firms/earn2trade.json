@@ -83,9 +83,9 @@
  "news_trading": "Allowed (no restrictions around economic announcements)",
  "ea_bots_allowed": null,
  "copy_trading": "Not allowed: trade copiers are banned on all programs, before and after funding; accounts passed with a copier can be denied and are not refunded",
- "overnight_weekend_holding": "Evaluations: no overnight holding; all positions and orders closed by 3:50 PM CT (earlier for some agricultural and livestock contracts). Weekend holding not separately addressed but implied not allowed. Funded-account holding rules not confirmed",
+ "overnight_weekend_holding": "No overnight holding in evaluations: all positions and orders must be closed by 3:50 PM CT (earlier for some agricultural and livestock contracts).",
  "us_residents_accepted": true,
- "restricted_countries_note": "Serbia: NO, it is not on the list. Citizens of these countries cannot get funded: Afghanistan, Albania, Azerbaijan, Burma (Myanmar), Central African Republic, Cuba, Gibraltar, Iran, Iraq, Kenya, Libya, Mali, Nauru, Nigeria, North Korea, Pakistan, Russia, Somalia, South Sudan, Sudan, Syria, Turkmenistan, Ukraine, Venezuela, Yemen. The list restricts funding (not the evaluation purchase); non-US citizens need a W-8BEN with a foreign tax ID. Rise payouts are not available in Iowa, Minnesota, South Carolina, Guam, Puerto Rico, USVI or Haiti. https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+ "restricted_countries_note": "Citizens of these countries cannot get funded: Afghanistan, Albania, Azerbaijan, Burma (Myanmar), Central African Republic, Cuba, Gibraltar, Iran, Iraq, Kenya, Libya, Mali, Nauru, Nigeria, North Korea, Pakistan, Russia, Somalia, South Sudan, Sudan, Syria, Turkmenistan, Ukraine, Venezuela, Yemen. The list restricts funding (not the evaluation purchase); non-US citizens need a W-8BEN with a foreign tax ID. Rise payouts are not available in Iowa, Minnesota, South Carolina, Guam, Puerto Rico, USVI or Haiti.",
  "payout_methods": [
   "Rise ($50 per withdrawal non-US, 1.5% US)",
   "Deel ($50)",
@@ -108,16 +108,6 @@
  },
  "recent_changes_2026": [
   {
-   "date": "2026-06",
-   "change": "Up to 5 simultaneous evaluations per email; up to 3 funded accounts (1 Live) (reported by a third-party tracker)",
-   "source": "https://thegodfunded.com/en/news/earn2trade-now-allows-up-to-5-simultaneous-evaluations-and-launches-a-60-discount"
-  },
-  {
-   "date": "2026-07",
-   "change": "10-day minimum dropped; funded profit split changed from a flat 80% to 50% below / 80% at or above a per-account threshold ($2,250 on 50K per the official withdrawal policy) (reported by a third-party tracker)",
-   "source": "https://www.eltraderfinanciado.com/en/news/earn2trade/earn2trade-drops-10-day-minimum-scaling-split-jul-2026"
-  },
-  {
    "date": "2026-07-06",
    "change": "Help center article dated 6 Jul 2026 states that exceeding the TCP progression ladder contract limit is a hard fail that ends the evaluation",
    "source": "https://help.earn2trade.com/en/articles/5922873-what-is-the-progression-ladder-on-the-trader-career-path"
@@ -127,8 +117,7 @@
   "In business since 2016; Trustpilot 4.5 from 5,026 reviews",
   "Option to trade a real Live brokerage account right after passing, and the TCP growth plan scales Live accounts up to $400K",
   "No minimum trading days, news trading allowed, no consistency rule or buffer on funded accounts",
-  "Weekly withdrawals from $100; activation fee ($139) is taken from the first withdrawal, not paid upfront",
-  "Accepts US traders; Serbia is not on the restricted list"
+  "Weekly withdrawals from $100; activation fee ($139) is taken from the first withdrawal, not paid upfront"
  ],
  "cons": [
   "Funded split is only 50% on any withdrawal under $2,250 (50K); 80% needs a larger single withdrawal",

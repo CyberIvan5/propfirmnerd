@@ -213,12 +213,18 @@ def related_html(items):
     return '<section class="related"><h2>Keep reading</h2>' + rows_html(items) + "</section>"
 
 
+def clean_supports(t):
+    t = re.sub(r"\s*\((?:checked in (?:a )?browser|search snippet|seen [^)]*)\)", "", t, flags=re.I)
+    t = re.sub(r";?\s*Serbia[^;,)]*", "", t)
+    return t.strip(" ;,")
+
+
 def sources_html(firm):
     srcs = firm.get("sources") or []
     if not srcs:
         return ""
     lis = "".join(f'<li><a href="{esc(s["url"])}" rel="nofollow noopener" target="_blank">{esc(domain(s["url"]) + "/" + s["url"].split("/", 3)[-1] if s["url"].count("/") > 2 else s["url"])}</a>'
-                  f'{(" — " + esc(s.get("supports", ""))) if s.get("supports") else ""}</li>' for s in srcs)
+                  f'{(" — " + esc(clean_supports(s.get("supports", "")))) if s.get("supports") else ""}</li>' for s in srcs)
     return (f'<section class="sources"><h2>Sources</h2><p>Checked {fmt_date(firm["checked"])}. '
             f'We link the firm\'s own pages wherever we can. If something changed, '
             f'<a href="/contact/">tell us</a>.</p><ol>{lis}</ol></section>')
@@ -394,8 +400,8 @@ def firm_row(f, cols):
         "firm": f'<th scope="row"><a href="/firms/{s}/">{esc(f["name"])}</a></th>',
         "market": f'<td>{esc(MARKET_LABEL.get(fac(f, "market"), "—"))}</td>',
         "price": f'<td class="n">{money(fac(f, "price50"), ccy)}{"<small>/mo</small>" if fac(f, "monthly") else ""}</td>',
-        "target": f'<td class="n gain">{money(fac(f, "target50"), ccy)}</td>',
-        "maxloss": f'<td class="n loss">{money(fac(f, "maxloss50"), ccy)}</td>',
+        "target": f'<td class="n gain">{money(fac(f, "target50"), fac(f, "acc_ccy", ccy))}</td>',
+        "maxloss": f'<td class="n loss">{money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy))}</td>',
         "dd": f'<td>{esc(DD_LABEL.get(fac(f, "dd"), "—"))}</td>',
         "cons": f'<td>{esc(cons_label(f))}</td>',
         "split": f'<td>{esc(fac(f, "split") or "—")}</td>',
@@ -457,10 +463,10 @@ def program_table(f):
          + (" per month" if (p.get("billing") == "monthly") else (" one-time" if p.get("billing") == "one-time" else ""))),
         ("Activation fee", lambda p: money(p.get("activation_fee_50k"), p.get("price_50k_currency") or ccy)),
         ("Reset fee", lambda p: money(p.get("reset_fee_50k"), p.get("price_50k_currency") or ccy)),
-        ("Profit target", lambda p: money(p.get("profit_target_50k"), p.get("price_50k_currency") or ccy)),
-        ("Max loss", lambda p: money(p.get("max_loss_50k"), p.get("price_50k_currency") or ccy)),
+        ("Profit target", lambda p: money(p.get("profit_target_50k"), fac(f, "acc_ccy") or p.get("price_50k_currency") or ccy)),
+        ("Max loss", lambda p: money(p.get("max_loss_50k"), fac(f, "acc_ccy") or p.get("price_50k_currency") or ccy)),
         ("Drawdown type", lambda p: esc(p.get("drawdown_type") or "—")),
-        ("Daily loss limit", lambda p: money(p.get("daily_loss_limit_50k"), p.get("price_50k_currency") or ccy) if p.get("daily_loss_limit_50k") not in (None, "") else "None"),
+        ("Daily loss limit", lambda p: money(p.get("daily_loss_limit_50k"), fac(f, "acc_ccy") or p.get("price_50k_currency") or ccy) if p.get("daily_loss_limit_50k") not in (None, "") else "None"),
         ("Consistency rule", lambda p: esc(p.get("consistency_rule") or "—")),
         ("Minimum trading days", lambda p: esc(str(p.get("min_trading_days"))) if p.get("min_trading_days") not in (None, "") else "—"),
         ("Max contracts / size", lambda p: esc(str(p.get("max_contracts_50k"))) if p.get("max_contracts_50k") not in (None, "") else "—"),
@@ -506,8 +512,8 @@ def rules_kv(f):
 def strip_html(f):
     ccy = fac(f, "ccy", "USD")
     cells = [("50K price", money(fac(f, "price50"), ccy), "per month" if fac(f, "monthly") else "main plan", ""),
-             ("Profit target", money(fac(f, "target50"), ccy), "on 50K", "gain"),
-             ("Max loss", money(fac(f, "maxloss50"), ccy), DD_LABEL.get(fac(f, "dd"), "").lower(), "loss"),
+             ("Profit target", money(fac(f, "target50"), fac(f, "acc_ccy", ccy)), "on 50K", "gain"),
+             ("Max loss", money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy)), DD_LABEL.get(fac(f, "dd"), "").lower(), "loss"),
              ("Consistency", cons_label(f), "rule applies to", ""),
              ("Profit split", fac(f, "split") or "—", "to the trader", ""),
              ("Payouts", fac(f, "payouts") or "—", "", "")]
@@ -580,7 +586,7 @@ def firm_faq(f):
     if fac(f, "dd"):
         base.append([f"What drawdown does {n} use?",
                      f"{n}'s main 50K plan uses {DD_LABEL[fac(f, 'dd')].lower()} drawdown with a max loss of "
-                     f"{strip_tags(money(fac(f, 'maxloss50'), ccy))}, as of {fmt_date(f['checked'])}."])
+                     f"{strip_tags(money(fac(f, 'maxloss50'), fac(f, 'acc_ccy', ccy)))}, as of {fmt_date(f['checked'])}."])
     if fac(f, "price50") is not None:
         base.append([f"How much does a {n} 50K account cost?",
                      f"The list price of {n}'s cheapest main 50K plan was {strip_tags(money(fac(f, 'price50'), ccy))}"
@@ -696,10 +702,10 @@ def price_table(f):
             continue
         ccy = pr.get("price_50k_currency") or fac(f, "ccy", "USD")
         act = pr.get("activation_fee_50k") or 0
-        disc = round(lp * (100 - pct) / 100, 2) if pct else None
+        disc = round(lp * (100 - pct) / 100, 2) if pct and (not p.get("programs") or pr["name"] in p["programs"]) else None
         rows += (f'<tr><th scope="row">{esc(pr["name"])}</th><td class="n">{money(lp, ccy)}'
                  f'{" /mo" if pr.get("billing") == "monthly" else ""}</td>'
-                 + (f'<td class="n">{money(disc, ccy, dec=True)}</td>' if pct else "")
+                 + ((f'<td class="n">{money(disc, ccy, dec=True)}</td>' if disc else '<td class="n">—</td>') if pct else "")
                  + f'<td class="n">{money(act, ccy) if act else "None"}</td></tr>')
     if not rows:
         return ""
@@ -758,7 +764,7 @@ def build_lists(site, firms, lists):
             ccy = fac(f, "ccy", "USD")
             lead = (f"50K for {strip_tags(money(fac(f, 'price50'), ccy))}{'/mo' if fac(f, 'monthly') else ''}, "
                     if fac(f, 'price50') is not None else "50K price not published, ")
-            facts = (lead + f"target {strip_tags(money(fac(f, 'target50'), ccy))}, max loss {strip_tags(money(fac(f, 'maxloss50'), ccy))}, "
+            facts = (lead + f"target {strip_tags(money(fac(f, 'target50'), fac(f, 'acc_ccy', ccy)))}, max loss {strip_tags(money(fac(f, 'maxloss50'), fac(f, 'acc_ccy', ccy)))}, "
                      f"{DD_LABEL.get(fac(f, 'dd'), '').lower()} drawdown")
             items += (f'<li><div><h3><a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></h3><p>{esc(why)}</p></div>'
                       f'<a class="btn ghost" href="/firms/{f["slug"]}/">Read review</a>'
@@ -795,8 +801,8 @@ def build_compares(site, firms, compares):
         rows = "".join([
             row("Market", lambda f: esc(MARKET_LABEL.get(fac(f, "market"), "—"))),
             row("Main 50K plan", lambda f: money(fac(f, "price50"), fac(f, "ccy", "USD")) + (" /mo" if fac(f, "monthly") else "")),
-            row("Profit target (50K)", lambda f: money(fac(f, "target50"), fac(f, "ccy", "USD"))),
-            row("Max loss (50K)", lambda f: money(fac(f, "maxloss50"), fac(f, "ccy", "USD"))),
+            row("Profit target (50K)", lambda f: money(fac(f, "target50"), fac(f, "acc_ccy", fac(f, "ccy", "USD")))),
+            row("Max loss (50K)", lambda f: money(fac(f, "maxloss50"), fac(f, "acc_ccy", fac(f, "ccy", "USD")))),
             row("Drawdown", lambda f: esc(DD_LABEL.get(fac(f, "dd"), "—"))),
             row("Consistency rule", lambda f: esc(cons_label(f))),
             row("Profit split", lambda f: esc(fac(f, "split") or "—")),

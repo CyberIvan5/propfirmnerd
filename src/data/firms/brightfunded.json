@@ -93,8 +93,8 @@
  "ea_bots_allowed": "Allowed within the rules, but not on DXtrade (no API/automated trading there). Prohibited: HFT, tick scalping, grid trading, arbitrage, and bots/AI that trade at 'superhuman' speed or exploit platform delays",
  "copy_trading": "Restricted: allowed only between accounts owned by the same person (BrightFunded, other evaluation firms or retail brokers); copying between different people (incl. family/friends), account management for others and trading community signals are prohibited",
  "overnight_weekend_holding": "Allowed (overnight and weekend); swap fees apply unless the Swap-Free add-on is bought",
- "us_residents_accepted": true,
- "restricted_countries_note": "Serbia: NOT on the restricted list (checked 2026-10-19). Not served: residents and nationals of Cuba, Iran, North Korea, Syria, Vietnam and Pakistan (existing Pakistani accounts may continue). US and UAE residents cannot use MT5; US residents also cannot use cTrader, so US traders are limited to DXtrade. https://help.brightfunded.com/en/articles/9286630-what-countries-are-restricted-at-brightfunded",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Not served: residents and nationals of Cuba, Iran, North Korea, Syria, Vietnam and Pakistan (existing Pakistani accounts may continue). US and UAE residents cannot use MT5; US residents also cannot use cTrader, so US traders are limited to DXtrade.",
  "payout_methods": [
   "Bank transfer (paid in EUR)",
   "Crypto (USDC, ERC-20)"
@@ -134,8 +134,7 @@
   "Static max loss on both 2-Step plans (8% Bright, 10% Classic) and no consistency rule",
   "No time limit and no news restriction during the evaluation phases",
   "Fast processing: payouts processed within 1 day, no minimum payout amount",
-  "Scaling Plan of +30% every 4 months with no stated cap, and 100% split from the 3rd scale-up",
-  "Serbia is not restricted, for trading or for the affiliate program"
+  "Scaling Plan of +30% every 4 months with no stated cap, and 100% split from the 3rd scale-up"
  ],
  "cons": [
   "Trustpilot shows a warning: rating unavailable due to a breach of guidelines, and fake reviews were removed",
@@ -328,6 +327,7 @@
   "us": null,
   "tp": null,
   "ccy": "EUR",
+  "acc_ccy": "USD",
   "instant": false
  }
 }

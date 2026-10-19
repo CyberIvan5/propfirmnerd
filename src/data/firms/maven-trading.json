@@ -92,8 +92,8 @@
  "ea_bots_allowed": "Not allowed: 'EAs and automated trading are prohibited across all Maven platforms. All trades must be executed manually.' (the T&Cs elsewhere mention prior approval for automated trading, which conflicts)",
  "copy_trading": "Restricted: only copying your own trades between your own accounts; copying another person breaches both accounts",
  "overnight_weekend_holding": "Allowed: positions may be held overnight and over the weekend",
- "us_residents_accepted": true,
- "restricted_countries_note": "Serbia: NO, not on Maven's restricted list. Restricted (25): Afghanistan, Belarus, Burkina Faso, Burundi, Central African Republic, Republic of the Congo, Cuba, Eritrea, Guinea, Guinea-Bissau, Guyana, Haiti, Iran, Mali, North Korea, Russia, Saint Lucia, Sierra Leone, Somalia, South Sudan, Sudan, Ukraine, Vanuatu, Venezuela, Yemen. US and Canada are not on the list, but MetaTrader is not available there (Match Trader only). List on https://maventrading.com/terms-and-conditions and https://maventrading.com/faqs",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Restricted (25): Afghanistan, Belarus, Burkina Faso, Burundi, Central African Republic, Republic of the Congo, Cuba, Eritrea, Guinea, Guinea-Bissau, Guyana, Haiti, Iran, Mali, North Korea, Russia, Saint Lucia, Sierra Leone, Somalia, South Sudan, Sudan, Ukraine, Vanuatu, Venezuela, Yemen. US and Canada are not on the list, but MetaTrader is not available there (Match Trader only). List on and.",
  "payout_methods": [
   "USDT (BSC)",
   "USDC (ERC20)",
@@ -115,11 +115,6 @@
   "notes": "Application reviewed; requires 500+ social followers or a website with measurable traffic. Paid monthly once 10 referrals or $200 in sales is reached; KYC before first payout. The affiliate page shows the same 25-country restricted list; Serbia is not on it, but Maven does not explicitly state that Serbian residents can join. Sign-up at affiliates.maventrading.com/signup/."
  },
  "recent_changes_2026": [
-  {
-   "date": "2026-03",
-   "change": "'Gold Eternals' 24/7 gold trading added on MT5 and Match Trader at no cost (reported by a third-party tracker)",
-   "source": "https://thegodfunded.com/en/news/?firm=Maven"
-  },
   {
    "date": "2026-07",
    "change": "2 Step Omo challenge described on Maven's blog (6% / 8% targets, 4% daily, 8% static, 4 profitable days, M2 Account Saver); launch date not stated",

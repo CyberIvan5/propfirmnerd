@@ -3,7 +3,7 @@
  "name": "Apex Trader Funding",
  "website": "https://apextraderfunding.com",
  "status": "active",
- "status_note": "Apex blocks visitors from some countries, including where we check from, so we could not read its current 50K prices. Rules below come from Apex's own help center.",
+ "status_note": "Apex's site did not show its current 50K evaluation prices when we checked, so we do not list a price. The rules below come from Apex's own help center.",
  "market": "futures",
  "legal_entity_and_hq": "Apex Trader Funding Inc., a Texas corporation headquartered in Austin, Texas, USA (mailing address only: 2028 E. Ben White Blvd Ste 240-9873, Austin, TX 78741)",
  "founded_year": 2021,
@@ -79,11 +79,11 @@
    "max_loss_50k": 2500,
    "drawdown_type": "Trailing threshold (the Legacy Products page does not say intraday or EOD)",
    "daily_loss_limit_50k": null,
-   "consistency_rule": "Apex's own March 17, 2026 news post says Legacy accounts keep a 30% consistency rule (not confirmed in the help center)",
+   "consistency_rule": "Apex's own March 17, 2026 news post says Legacy accounts keep a 30% consistency rule (not stated in its help center)",
    "min_trading_days": null,
    "max_contracts_50k": 10,
    "profit_split": null,
-   "payout_frequency": "Apex's own news post describes an 8-day payout cycle with a $50 profit floor for Legacy accounts (not confirmed in the help center)",
+   "payout_frequency": "Apex's own news post describes an 8-day payout cycle with a $50 profit floor for Legacy accounts (not stated in its help center)",
    "payout_rules_note": null,
    "notes": "Listed on apextraderfunding.com/legacy-products as 'Available Now - Limited Time', $197/month for 50K before discount, same price on Tradovate, WealthCharts and Rithmic; sizes 25K-300K; no daily drawdown, no scaling. The inactivity policy applies to Legacy accounts purchased after March 1, 2026."
   }
@@ -93,7 +93,7 @@
  "copy_trading": "Restricted: trade copying with other traders is prohibited; the WealthCharts platform page promotes a built-in trade copier for executing trades across multiple accounts",
  "overnight_weekend_holding": "Not allowed: positions must be closed before market close. Apex's own March 19, 2026 news post says holding past 4:59 PM ET leads to liquidation.",
  "us_residents_accepted": true,
- "restricted_countries_note": "About 90 countries are restricted, including Serbia, Turkey, Ukraine, Russia, China, Nigeria, Pakistan, Vietnam, Latvia and Cyprus. The US is not restricted. List: https://apextraderfunding.com/help-center/getting-started/restricted-countries/",
+ "restricted_countries_note": "About 90 countries are restricted, including Serbia, Turkey, Ukraine, Russia, China, Nigeria, Pakistan, Vietnam, Latvia and Cyprus. The US is not restricted. The full list is in Apex's help center.",
  "payout_methods": [
   "ACH direct deposit (US bank accounts)",
   "Plane (international bank transfer)"
@@ -102,7 +102,7 @@
  "current_public_promo": {
   "code": "SAVENOW",
   "discount": "90% off evaluations (limited time)",
-  "applies_to": "Evaluations; shown on Apex's site banner when our researcher checked",
+  "applies_to": "Evaluations; shown on Apex's site banner when we checked",
   "source_url": "https://apextraderfunding.com/",
   "seen": "2026-10-16"
  },

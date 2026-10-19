@@ -45,7 +45,7 @@
    "drawdown_type": "trailing (6% below the highest equity reached, incl. floating P&L; never moves down)",
    "daily_loss_limit_50k": 1500,
    "consistency_rule": "20% for accounts bought on or after 8 Sep 2026 (described as limited-time; 15% for earlier accounts): highest profitable day must be under 20% of total profit before a reward request; not a breach",
-   "min_trading_days": 5,
+   "min_trading_days": null,
    "max_contracts_50k": null,
    "profit_split": "90%; 100% with a paid 'Lifetime Profit Split 100%' add-on",
    "payout_frequency": "bi-weekly (every 14 days); 'Rewards On Demand' add-on available",
@@ -98,7 +98,7 @@
  "copy_trading": "Restricted: only from personal accounts legally bound to the account holder; copy trading between other traders' accounts is prohibited",
  "overnight_weekend_holding": "Allowed overnight and over the weekend with no restrictions",
  "us_residents_accepted": null,
- "restricted_countries_note": "Serbia: NO, not on the restricted list. Restricted: Cuba, Iran, Syria, Vietnam, Kenya, Albania, Algeria, North Korea, Senegal, Myanmar, Russia, Belarus, Sudan, South Sudan, Venezuela, Crimea, Donetsk, Luhansk. The United States is not on the list, but no official page explicitly says US residents are accepted. https://help.aquafunded.com/en/articles/9251052-are-there-any-countries-we-cannot-trade-from",
+ "restricted_countries_note": "Restricted: Cuba, Iran, Syria, Vietnam, Kenya, Albania, Algeria, North Korea, Senegal, Myanmar, Russia, Belarus, Sudan, South Sudan, Venezuela, Crimea, Donetsk, Luhansk. The United States is not on the list, but no official page explicitly says US residents are accepted.",
  "payout_methods": [
   "Crypto (under $5,000)",
   "Rise (bank transfer or crypto, $500 and above)"
@@ -135,11 +135,11 @@
   }
  ],
  "pros": [
-  "Low list prices at 50K ($143-$305 for the main models) plus a 25% public code",
   "90% split on all main models, 100% available as an add-on",
   "News trading (with a 0.5% profit cap), weekend holding, EAs and own-account trade copiers allowed",
   "Evaluation fee refunded with the fourth payout; 24-business-hour payout guarantee or an extra $1,000",
-  "Four platforms: MT5, cTrader, TradeLocker, Match-Trader"
+  "Four platforms: MT5, cTrader, TradeLocker, Match-Trader",
+  "Low list prices at 50K ($239 to $305 for the main models) plus a 25% public code"
  ],
  "cons": [
   "Trustpilot shows no score: rating unavailable for a guideline breach and fake reviews removed (1,210 reviews, 39% one-star)",

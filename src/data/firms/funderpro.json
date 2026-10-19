@@ -94,19 +94,22 @@
  "ea_bots_allowed": "Allowed, restricted: you must own the EA/bot (and its source code, per the T&Cs); EAs for tick scalping, rollover scalping or HFT and anything exploiting platform gaps or latency are prohibited",
  "copy_trading": "Restricted: only between your own accounts; copying trades or signals between different people is prohibited",
  "overnight_weekend_holding": "Overnight allowed. Weekend holding only with the Swing Account add-on (+10% of fee, reduced leverage); without it all positions, including crypto, must be closed by Friday 16:30 EST or the challenge fails",
- "us_residents_accepted": true,
- "restricted_countries_note": "Serbia: NO, not on FunderPro's restricted list. Restricted: Afghanistan, Belarus, Central African Republic, DR Congo, Cuba, Haiti, Iran, Iraq, Libya, Mali, Myanmar, North Korea, Somalia, Sudan, South Sudan, Syria, Russia, Donetsk/Zaporizhzhia/Luhansk/Kherson/Crimea/Sevastopol regions of Ukraine, Venezuela, Yemen. US is not on the list, but MT5, cTrader and the Instant program are not available to US residents (TradeLocker challenges only). https://support.funderpro.com/en/articles/376945-sign-up-age-limits-and-country-restrictions",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Restricted: Afghanistan, Belarus, Central African Republic, DR Congo, Cuba, Haiti, Iran, Iraq, Libya, Mali, Myanmar, North Korea, Somalia, Sudan, South Sudan, Syria, Russia, Donetsk/Zaporizhzhia/Luhansk/Kherson/Crimea/Sevastopol regions of Ukraine, Venezuela, Yemen. US is not on the list, but MT5, cTrader and the Instant program are not available to US residents (TradeLocker challenges only).",
  "payout_methods": [
   "USDC (ERC20)",
   "Rise (Riseworks)"
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": null,
-  "discount": null,
-  "applies_to": null,
-  "source_url": null,
-  "seen": "2026-10-19"
+  "code": "PRO15",
+  "discount": "15% off (limited time, no end date given)",
+  "applies_to": "Pro challenge only, per FunderPro's Pro challenge page",
+  "source_url": "https://funderpro.com/pro-challenge/",
+  "seen": "2026-10-19",
+  "programs": [
+   "Pro (2-Phase, Weekly or Daily Rewards)"
+  ]
  },
  "affiliate_program": {
   "exists": true,
@@ -119,11 +122,6 @@
    "date": "2026-01",
    "change": "Trustpilot placed a warning on FunderPro's profile and the rating is shown as unavailable due to a guidelines breach; FunderPro published a response on 2026-01-19",
    "source": "https://funderpro.com/blog/transparent-update-regarding-funderpro-trustpilot/"
-  },
-  {
-   "date": "2026-03",
-   "change": "Challenge T&Cs and General Terms of Use amended ('Last updated: Mar 2026'); account types named as One Phase, Classic, Pro-Daily Rewards, Pro-Weekly Rewards and an Activation-Fee account type. Specific changes not listed",
-   "source": "https://funderpro.com/terms-conditions/"
   }
  ],
  "pros": [

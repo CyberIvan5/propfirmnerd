@@ -97,7 +97,7 @@
  "copy_trading": "Restricted: allowed from your own verified external account as Master or between your own Alpha Capital accounts (one Master at a time, account numbers sent in advance); copying other traders or groups is prohibited; not available from cTrader, DXtrade or TradeLocker",
  "overnight_weekend_holding": "Overnight allowed on all plans (swaps apply). Weekend: Alpha Pro allowed in Phases 1-2, not on the Qualified account (profits from those trades removed); Alpha Swing, One and Three allowed at all stages; Alpha Direct not allowed",
  "us_residents_accepted": true,
- "restricted_countries_note": "Serbia: NO, Serbia is not on the restricted list, and the firm's country-availability page lists Serbia among countries selectable at checkout. Restricted: Afghanistan, Belarus, Burundi, Central African Republic, Chad, Democratic Republic of the Congo, Republic of Congo, Crimea, Eritrea, Iran, Iraq, Cuba, North Korea, Libya, Myanmar, Somalia, Sudan, South Sudan, Russia, Syria, Yemen, Venezuela, Vietnam, sanctioned areas of Ukraine (Donetsk, Luhansk, Crimea, Kherson, Zaporizhzhia). https://help.alphacapitalgroup.uk/en/articles/8775575-countries-with-limitations and https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026. US residents: MT5 not available; cTrader closed to new US customers; DXtrade and TradeLocker available.",
+ "restricted_countries_note": "Restricted: Afghanistan, Belarus, Burundi, Central African Republic, Chad, Democratic Republic of the Congo, Republic of Congo, Crimea, Eritrea, Iran, Iraq, Cuba, North Korea, Libya, Myanmar, Somalia, Sudan, South Sudan, Russia, Syria, Yemen, Venezuela, Vietnam, sanctioned areas of Ukraine (Donetsk, Luhansk, Crimea, Kherson, Zaporizhzhia). and US residents: MT5 not available; cTrader closed to new US customers; DXtrade and TradeLocker available.",
  "payout_methods": [
   "Rise",
   "Wise",
@@ -106,10 +106,10 @@
  ],
  "path_to_live": "Alpha Prime (London prop firm in the same group): traders are reviewed after a $40,000 single payout, five payouts from one Qualified account, or $100,000 lifetime payouts; qualified traders move from simulated accounts to Alpha Prime live accounts with a 60% split plus a monthly salary",
  "current_public_promo": {
-  "code": "MYALPHA",
-  "discount": "30% off",
-  "applies_to": "Banner on Alpha Capital's homepage",
-  "source_url": "https://alphacapitalgroup.uk/",
+  "code": "ALPHA20",
+  "discount": "20% off",
+  "applies_to": "All accounts, valid October 1-31, 2026, per Alpha Capital's promo codes page",
+  "source_url": "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
   "seen": "2026-10-19"
  },
  "affiliate_program": {
@@ -130,11 +130,6 @@
    "source": "https://help.alphacapitalgroup.uk/en/articles/15888623-what-is-the-max-risk-rule-and-how-does-it-work"
   },
   {
-   "date": "2026-07-23",
-   "change": "Permanent price cuts on most evaluation plans, e.g. Alpha Pro 8% $10K On-Demand $147 to $57 (reported by a third-party tracker)",
-   "source": "https://thegodfunded.com/en/news/alpha-implements-permanent-price-reductions-across-funding-plans"
-  },
-  {
    "date": "2026-10-19",
    "change": "My Alpha trading journal launched (homepage banner code MYALPHA, 30% off)",
    "source": "https://alphacapitalgroup.uk/posts/forex-trading-journal-my-alpha-2026"
@@ -144,8 +139,7 @@
   "UK limited company registered since November 2021 (Companies House no. 13719951)",
   "Alpha Pro uses a static max loss (6%, 8% or 10%) and offers bi-weekly or on-demand payouts",
   "Four platforms (MT5, cTrader, DXtrade, TradeLocker); US residents accepted on DXtrade and TradeLocker",
-  "Published route to live capital through Alpha Prime",
-  "Scaling up to $2M cumulative on Pro and Swing; Serbia is selectable at checkout"
+  "Published route to live capital through Alpha Prime"
  ],
  "cons": [
   "Trustpilot rating removed for a guidelines breach, with fake reviews removed",

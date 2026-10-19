@@ -94,7 +94,7 @@
  "copy_trading": "Restricted: allowed between your own FundingTraders accounts under the same verified profile; copying other traders or signal services and sharing signals are prohibited",
  "overnight_weekend_holding": "1-Step, 2-Step Pro and 2-Step Swing: overnight and weekend allowed. 2-Step Day: forex, gold, indices and oil must be closed before Friday close (crypto may stay open). Instant Funded (2026-10-08 rules): overnight and weekend allowed. Trades of 15 seconds or less and a volume-weighted average hold time under 2 minutes are prohibited",
  "us_residents_accepted": null,
- "restricted_countries_note": "Serbia: NO, Serbia is not on the restricted list (checked both lists 2026-10-19). Terms of Service: no applications from Afghanistan, Kazakhstan, Mongolia, Morocco, Poland, Taiwan, Ukraine, Venezuela, Vietnam, Central African Republic, North Korea, Congo, Zaire, Iran, Iraq, Libya, Mali, Saipan, Somalia, South Sudan, Yemen, Ontario, Myanmar, Russian Federation (https://fundingtraders.com/terms-of-service). The help-center article (dated 2026-07-14) lists only Afghanistan, Kazakhstan, Mongolia, Venezuela, Myanmar (https://fundingtraders.com/help/en/articles/10505376-are-there-any-restricted-countries-for-fundingtraders-services). MT5 services are 'not intended for U.S. citizens/residents'.",
+ "restricted_countries_note": "Funding Traders publishes two different restricted-country lists: a longer one in its Terms of Service and a shorter one in its help center (dated July 14, 2026). Check both before buying. It says MT5 is not intended for US residents.",
  "payout_methods": [
   "Rise (bank transfer, min $200)",
   "Crypto USDT-ERC20 via Coinbase Commerce (min $50, only if Rise is not an option)"
@@ -139,8 +139,7 @@
   "2-Step Pro10 uses a static 10% max loss and a 5% daily limit, with no consistency rule",
   "1-Step pays 90% by default; Instant Funded pays 100% under the October 2026 rules",
   "Wide size range from $5K to $400K (Instant) and two platforms (MT5, TradeLocker)",
-  "Published Payout Guarantee: $500 cash + $500 credit if a payout is not processed within 2 business days",
-  "Serbia is not on either restricted-country list"
+  "Published Payout Guarantee: $500 cash + $500 credit if a payout is not processed within 2 business days"
  ],
  "cons": [
   "Trustpilot rating removed for a guidelines breach, with fake reviews removed",

@@ -78,7 +78,7 @@
   {
    "name": "1-Step Prime Challenge (Futures)",
    "steps": "1-step",
-   "billing": "one-time",
+   "billing": null,
    "price_50k_list": 159,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
@@ -101,7 +101,7 @@
  "copy_trading": "Restricted: only between Hola Prime accounts owned by the same person. Forex funded accounts: maximum one master and one copier account (accounts bought on or after 15 Sep 2026). Futures: own accounts only, and the lead account must have the lowest position limit. Copying from other prop firms or other people is prohibited",
  "overnight_weekend_holding": "Forex: overnight allowed on all accounts; weekend holding allowed on Prime challenges and Prime funded accounts, not on 2-Step Pro or Direct funded accounts (close before 15:45 EST Friday). Futures: no overnight or weekend holding; close by 3:30 PM CT daily",
  "us_residents_accepted": true,
- "restricted_countries_note": "Serbia: NO, it is not on the restricted list. Restricted: Afghanistan, Belarus, Burundi, Central African Republic, China, Cuba, North Korea, DR Congo, Eritrea, Guinea, Guinea-Bissau, Haiti, Hong Kong, India, Iran, Iraq, Laos, Libya, Mali, Moldova, Myanmar, Nicaragua, Oman, Pakistan, Russia, Somalia, Syria, Tunisia, Ukraine, Vietnam, Yemen, Zimbabwe. US clients accepted (forex: Match-Trader and TradeLocker only, no MT5/cTrader). 11 countries (e.g. Nigeria, Malaysia, Indonesia, Israel) are capped at $90K forex allocation. https://holaprime.com/forex/faq/about-hola-prime/who-is-eligible-to-join-hola-prime/",
+ "restricted_countries_note": "Restricted: Afghanistan, Belarus, Burundi, Central African Republic, China, Cuba, North Korea, DR Congo, Eritrea, Guinea, Guinea-Bissau, Haiti, Hong Kong, India, Iran, Iraq, Laos, Libya, Mali, Moldova, Myanmar, Nicaragua, Oman, Pakistan, Russia, Somalia, Syria, Tunisia, Ukraine, Vietnam, Yemen, Zimbabwe. US clients accepted (forex: Match-Trader and TradeLocker only, no MT5/cTrader). 11 countries (e.g. Nigeria, Malaysia, Indonesia, Israel) are capped at $90K forex allocation.",
  "payout_methods": [
   "Bank wire",
   "Crypto (BTC, USDC, ETH, USDT ERC-20/TRC-20)",
@@ -113,7 +113,11 @@
   "discount": "40% off",
   "applies_to": "All forex accounts, new users only (not futures)",
   "source_url": "https://holaprime.com/forex/",
-  "seen": "2026-10-19"
+  "seen": "2026-10-19",
+  "programs": [
+   "2-Step Prime Challenge (Forex)",
+   "1-Step Prime Challenge (Forex)"
+  ]
  },
  "affiliate_program": {
   "exists": true,
@@ -142,8 +146,7 @@
   "Offers both forex/CFD (MT5, cTrader, Match-Trader, TradeLocker) and CME futures (Tradovate, NinjaTrader, WealthCharts) from one account",
   "Forex Prime challenges use a static max loss (10% on 2-Step, 6% on 1-Step) and allow news trading and weekend holding",
   "Forex challenge fee is refunded with the 4th payout; payouts are processed within 1 hour once the review (up to 24 business hours) is done",
-  "Futures 1-Step Prime has no daily loss limit, a 90% split and weekly payouts; a published invite-only live-capital route exists for futures",
-  "Accepts US clients; Serbia is not on the restricted list"
+  "Futures 1-Step Prime has no daily loss limit, a 90% split and weekly payouts; a published invite-only live-capital route exists for futures"
  ],
  "cons": [
   "Trustpilot removed about 1,300 fake reviews from its profile in March 2025; the firm only launched in late 2024",
@@ -241,6 +244,10 @@
   {
    "url": "https://holaprime.com/forex/",
    "supports": "50K forex prices: 2-Step Prime $319, 1-Step Prime $329; rules; code (checked in browser)"
+  },
+  {
+   "url": "https://www.financemagnates.com/forex/prop-firm-hola-prime-had-1300-trustpilot-reviews-yesterday-but-only-49-today/",
+   "supports": "Trustpilot removed about 1,300 reviews (March 2025); launch in 2024 (news report)"
   },
   {
    "url": "https://holaprime.com/futures/",
