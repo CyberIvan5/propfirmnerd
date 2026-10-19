@@ -62,7 +62,7 @@
    "consistency_rule": "None",
    "min_trading_days": 4,
    "max_contracts_50k": null,
-   "profit_split": "Up to 100%",
+   "profit_split": "Up to 90%",
    "payout_frequency": "Every 14 or 30 days",
    "payout_rules_note": null,
    "notes": "Phase targets are 5% and 10% as shown on FXIFY's site."
@@ -88,7 +88,7 @@
    "notes": "Target shown is 5% per phase."
   }
  ],
- "news_trading": "Allowed on Two Phase and Three Phase, per the plan details on FXIFY's homepage",
+ "news_trading": null,
  "ea_bots_allowed": "Allowed, including martingale and grid, per FXIFY's homepage; check FXIFY's terms for limits",
  "copy_trading": null,
  "overnight_weekend_holding": "Weekend holding allowed (homepage); overnight not separately stated",
@@ -168,7 +168,8 @@
  "uncertain": [
   "50K prices and rules for One, Two and Three Phase confirmed on fxify.com on 2026-10-16.",
   "trustpilot: 4.3 / 6,445 reviews is the figure FXIFY's homepage displays; Trustpilot itself was not opened.",
-  "Homepage mentions a 'Platform 4' option in addition to TradingView, MT5 and DXTrade - unclear, not listed."
+  "Homepage mentions a 'Platform 4' option in addition to TradingView, MT5 and DXTrade - unclear, not listed.",
+  "News trading rule not published on the pages we could read (checked 2026-10-19); shown as unknown."
  ],
  "checked": "2026-10-16",
  "link": "https://fxify.com/",
