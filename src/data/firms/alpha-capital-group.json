@@ -1,0 +1,317 @@
+{
+ "slug": "alpha-capital-group",
+ "name": "Alpha Capital Group",
+ "website": "https://alphacapitalgroup.uk/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for Alpha Capital Group: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
+ "market": "forex",
+ "legal_entity_and_hq": "Alpha Capital Group Limited, England and Wales company no. 13719951, registered office 1 Allied Business Centre, Coldharbour Lane, Harpenden, England, AL5 4UT (Companies House). The firm calls itself London-based; its Terms give 6-7 Waterside Station Road, Harpenden AL5 4US",
+ "founded_year": 2021,
+ "trustpilot": {
+  "score": null,
+  "reviews": 21970,
+  "url": "https://www.trustpilot.com/review/alphacapitalgroup.uk",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "cTrader",
+  "DXtrade",
+  "TradeLocker"
+ ],
+ "instruments": "Forex, metals, indices and oil CFDs (simulated)",
+ "account_sizes": [
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000,
+  300000
+ ],
+ "programs": [
+  {
+   "name": "Alpha Pro 8%",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 297,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "static (8% of initial balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "none on bi-weekly payouts; on-demand payouts require that no single day is more than 40% of total profit",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with the optional 90% Profit Split add-on bought at purchase",
+   "payout_frequency": "chosen at purchase: Bi-Weekly (first request 14 days after the first trade on the Qualified account, then every 14 days) or On-Demand (any time once eligible)",
+   "payout_rules_note": "Bi-Weekly: at least 5 trading days with the same strategy before the first request, minimum $100 gross. On-Demand: minimum 2% of gross profit and the 40% best-day rule. Paid within 2 business days. A 0.25% bonus on the initial size is added to the 4th payout. No fee refund is published (return policy: 'All sales are final'). Max risk per asset 2% on 50K Qualified accounts bought after 2026-07-21 (hard breach). The payout choice also sets the base price.",
+   "notes": "Phase 1 target 8% ($4,000), Phase 2 5% ($2,500). Daily loss 4%, balance-based, reset 00:00 GMT+3. Minimum 3 trading days per phase. Leverage FX 1:100, metals 1:30, indices 1:20, oil 1:10. Max 20 lots on 50K. Weekend holding allowed in Phases 1-2 but not on the Qualified account (profits from those trades removed). Variants: Pro 6% (targets 6%/6%, 6% static, 3% daily on the greater of balance or equity) and Pro 10% (targets 10%/5%, 10% static, 5% daily balance-based). Price not published in readable form (see uncertain)."
+  },
+  {
+   "name": "Alpha One 10%",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 277,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "trailing on balance high-water mark (6%), fixed at the initial balance once the balance reaches +6%",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "on-demand payouts: no single day more than 40% of total profit",
+   "min_trading_days": 1,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with the add-on",
+   "payout_frequency": "on demand (Bi-Weekly is offered on Alpha Pro and Alpha Three only)",
+   "payout_rules_note": "On-Demand: minimum 2% of gross profit, 40% best-day rule. Paid within 2 business days. Max risk per asset 2% on 50K Qualified accounts bought after 2026-07-21. No fee refund published.",
+   "notes": "Daily loss 4%, calculated on the greater of the prior end-of-day balance or equity. Leverage FX 1:30, metals 1:9, indices 1:10, oil 1:10. Weekend holding allowed at all stages. Variants: One 6% (target 6%, max 4% trailing, daily 3% in evaluation / 4% on Qualified) and One 12% (target 12%, max 8% trailing, daily 5%, sizes up to $100K). Max lots at 50K not confirmed for this plan."
+  },
+  {
+   "name": "Alpha Direct",
+   "steps": "instant/direct funding",
+   "billing": "one-time",
+   "price_50k_list": 257,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": null,
+   "reset_fee_50k": null,
+   "profit_target_50k": null,
+   "max_loss_50k": 2500,
+   "drawdown_type": "trailing on balance high-water mark (5%)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "15% best-day rule (no single day more than 15% of total profit)",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "90%",
+   "payout_frequency": "on demand",
+   "payout_rules_note": "A 3% profit buffer ($1,500 on 50K) must be built and kept in the account; then minimum 1% of gross profit per request. KYC via Veriff before the first payout. Max risk per asset 1% (losses on the same asset and direction within 10 minutes combined).",
+   "notes": "Qualified from purchase, no evaluation. Daily loss 3% on the greater of end-of-day balance or equity. Max 20 lots on 50K. EAs disabled; no weekend holding; cannot be merged or scaled. Leverage FX 1:30. Sizes $2.5K-$200K. FUNDED40 code (40% off) applies to Alpha Direct only in October 2026."
+  }
+ ],
+ "news_trading": "Restricted: free during evaluation phases on all plans. Qualified accounts (Pro, One, Three, Direct): no opening or closing trades on the targeted instrument from 5 minutes before to 5 minutes after the release; trades opened more than 5 minutes earlier can be held; speeches/conferences restricted for their whole duration plus 5 minutes. Alpha Swing Qualified: news trading allowed, but trades opened within 2 minutes of a release must stay open longer than 2 minutes",
+ "ea_bots_allowed": "Restricted: MT5 only, trade-management EAs only, with prior approval (send the EX5 file); EAs that trade independently are prohibited; not available on cTrader, DXtrade, TradeLocker, swap-free or Alpha Direct accounts",
+ "copy_trading": "Restricted: allowed from your own verified external account as Master or between your own Alpha Capital accounts (one Master at a time, account numbers sent in advance); copying other traders or groups is prohibited; not available from cTrader, DXtrade or TradeLocker",
+ "overnight_weekend_holding": "Overnight allowed on all plans (swaps apply). Weekend: Alpha Pro allowed in Phases 1-2, not on the Qualified account (profits from those trades removed); Alpha Swing, One and Three allowed at all stages; Alpha Direct not allowed",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Serbia: NO, Serbia is not on the restricted list, and the firm's country-availability page lists Serbia among countries selectable at checkout. Restricted: Afghanistan, Belarus, Burundi, Central African Republic, Chad, Democratic Republic of the Congo, Republic of Congo, Crimea, Eritrea, Iran, Iraq, Cuba, North Korea, Libya, Myanmar, Somalia, Sudan, South Sudan, Russia, Syria, Yemen, Venezuela, Vietnam, sanctioned areas of Ukraine (Donetsk, Luhansk, Crimea, Kherson, Zaporizhzhia). https://help.alphacapitalgroup.uk/en/articles/8775575-countries-with-limitations and https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026. US residents: MT5 not available; cTrader closed to new US customers; DXtrade and TradeLocker available.",
+ "payout_methods": [
+  "Rise",
+  "Wise",
+  "Bank transfer",
+  "Crypto (via Rise)"
+ ],
+ "path_to_live": "Alpha Prime (London prop firm in the same group): traders are reviewed after a $40,000 single payout, five payouts from one Qualified account, or $100,000 lifetime payouts; qualified traders move from simulated accounts to Alpha Prime live accounts with a 60% split plus a monthly salary",
+ "current_public_promo": {
+  "code": "MYALPHA",
+  "discount": "30% off",
+  "applies_to": "Banner on Alpha Capital's homepage",
+  "source_url": "https://alphacapitalgroup.uk/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": null,
+  "commission": null,
+  "url": null,
+  "notes": "No affiliate or partner program page found on alphacapitalgroup.uk or in the help center (help searches for 'affiliate' and 'referral' return nothing; the Terms do not describe one). The About page says a staff member oversees 'partnerships and affiliate programs' but gives no link or terms. Serbia eligibility for affiliates: not stated."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-05",
+   "change": "Alpha Three no longer offered for new purchases (stated in the firm's rules post dated 2026-05-20)",
+   "source": "https://alphacapitalgroup.uk/posts/alpha-capital-rules-explained-drawdown-profit-targets-daily-loss-and-evaluation-rules-2026"
+  },
+  {
+   "date": "2026-07-21",
+   "change": "Max Risk Rule for Qualified accounts bought after this date: max risk per asset 3% ($5K-$25K), 2% ($50K-$200K), 1% (Alpha Direct); breach closes the account",
+   "source": "https://help.alphacapitalgroup.uk/en/articles/15888623-what-is-the-max-risk-rule-and-how-does-it-work"
+  },
+  {
+   "date": "2026-07-23",
+   "change": "Permanent price cuts on most evaluation plans, e.g. Alpha Pro 8% $10K On-Demand $147 to $57 (reported by a third-party tracker)",
+   "source": "https://thegodfunded.com/en/news/alpha-implements-permanent-price-reductions-across-funding-plans"
+  },
+  {
+   "date": "2026-10-19",
+   "change": "My Alpha trading journal launched (homepage banner code MYALPHA, 30% off)",
+   "source": "https://alphacapitalgroup.uk/posts/forex-trading-journal-my-alpha-2026"
+  }
+ ],
+ "pros": [
+  "UK limited company registered since November 2021 (Companies House no. 13719951)",
+  "Alpha Pro uses a static max loss (6%, 8% or 10%) and offers bi-weekly or on-demand payouts",
+  "Four platforms (MT5, cTrader, DXtrade, TradeLocker); US residents accepted on DXtrade and TradeLocker",
+  "Published route to live capital through Alpha Prime",
+  "Scaling up to $2M cumulative on Pro and Swing; Serbia is selectable at checkout"
+ ],
+ "cons": [
+  "Trustpilot rating removed for a guidelines breach, with fake reviews removed",
+  "Default split is 80%; no evaluation fee refund is published ('All sales are final')",
+  "Pro Qualified accounts cannot hold over the weekend, and Qualified accounts have a ±5-minute news ban",
+  "Max Risk Rule (2% per asset on 50K since 2026-07-21) and a 40% best-day rule on on-demand payouts"
+ ],
+ "best_for": "Forex/CFD traders who want a UK-registered firm with static-drawdown 2-step plans, a choice of four platforms and a published path to a live account.",
+ "sources": [
+  {
+   "url": "https://alphacapitalgroup.uk/",
+   "supports": "group companies, platforms, instruments, 80%/90% split, MYALPHA banner, US checkbox"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/product",
+   "supports": "plan list, sizes, 'from $27', payout choice sets price, 10KFOR40 banner"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/about",
+   "supports": "launched November 2021, founders, London-based"
+  },
+  {
+   "url": "https://find-and-update.company-information.service.gov.uk/company/13719951",
+   "supports": "legal entity, registered office, incorporated 2021-11-02"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/terms-and-conditions",
+   "supports": "entity, alternative address, English law, refund/cooling-off"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/return-policy",
+   "supports": "'All sales are final'"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/8420429-alpha-pro-8-10",
+   "supports": "Pro 8%/10% rules, leverage, lot limits, $400K allocation"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/11378706-alpha-pro-6",
+   "supports": "Pro 6% rules, sizes $5K-$300K"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/10097421-alpha-one-6-10-12",
+   "supports": "Alpha One rules, trailing drawdown"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/16003693-alpha-direct",
+   "supports": "Alpha Direct rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/9789907-alpha-swing",
+   "supports": "Swing rules, on-demand only"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/6934210-what-are-the-daily-risk-limits-and-how-do-they-work",
+   "supports": "daily loss basis per plan, reset time"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/7060937-what-do-qualified-analysts-earn-from-account-profits",
+   "supports": "80% split, 90% add-on"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/10570531-bi-weekly-performance-fee",
+   "supports": "bi-weekly payout rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/10102634-on-demand-performance-fee",
+   "supports": "on-demand payout rules, best-day rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/6933755-how-do-i-get-paid-performance-fees",
+   "supports": "payout methods, 2 business days"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/8420537-what-is-the-performance-fee-bonus",
+   "supports": "0.25% bonus on 4th payout"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/15888623-what-is-the-max-risk-rule-and-how-does-it-work",
+   "supports": "Max Risk Rule"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/9293522-can-i-trade-news",
+   "supports": "news rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/6934247-can-i-hold-trades-over-the-weekend",
+   "supports": "weekend rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/15701381-can-i-hold-trades-overnight",
+   "supports": "overnight rule"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/6934236-can-i-use-an-expert-advisor-ea",
+   "supports": "EA rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/8786973-is-copy-trading-allowed",
+   "supports": "copy trading rules"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/6933883-what-trading-platforms-are-available-for-use",
+   "supports": "platforms, US availability per platform"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/8775575-countries-with-limitations",
+   "supports": "restricted countries"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/resources/alpha-capital-country-availability-2026",
+   "supports": "restricted list, Serbia selectable at checkout, US platform policy"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/6933852-how-does-the-scaling-plan-work",
+   "supports": "scaling to $2M"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/10965278-alpha-prime",
+   "supports": "path to live via Alpha Prime"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
+   "supports": "official October 2026 codes"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/posts/alpha-capital-rules-explained-drawdown-profit-targets-daily-loss-and-evaluation-rules-2026",
+   "supports": "plan summary, Alpha Three discontinued"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/resources/best-forex-prop-firm-for-uae-traders-2026",
+   "supports": "payout methods, 90% add-on scope, $400K allocation"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/alphacapitalgroup.uk",
+   "supports": "rating unavailable, 21,970 reviews, fake-review warning"
+  },
+  {
+   "url": "https://alphacapitalgroup.uk/",
+   "supports": "50K prices in the order form: Alpha Pro 8% $297, Alpha One 10% $277, Alpha Direct $257 (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K prices confirmed in Alpha Capital's order form on 2026-10-19.",
+  "us_residents_accepted set true from the help center (DXtrade and TradeLocker available to US residents), but the homepage checkout shows an 'I'm not a US resident or citizen' checkbox (shown with MT5 selected)",
+  "Registered address: Companies House and the site footer give 1 Allied Business Centre, Harpenden; the Terms give 6-7 Waterside Station Road, Harpenden"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://alphacapitalgroup.uk/",
+ "facets": {
+  "market": "forex",
+  "price50": 297,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 4000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": null,
+  "split": "80% (90% add-on)",
+  "payouts": "Bi-weekly or on demand",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ },
+ "price_note": "Prices are the ones Alpha Capital's order form shows first for each 50K plan; they can change with the payout option you choose."
+}

@@ -1,0 +1,273 @@
+{
+ "slug": "funding-traders",
+ "name": "Funding Traders",
+ "website": "https://fundingtraders.com/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for Funding Traders: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026). Some of its own pages also disagree with each other on Instant account splits, payout timing and news windows.",
+ "market": "forex",
+ "legal_entity_and_hq": "FT US Inc, 901 Pennsylvania Ave, Suite 3-440, Miami Beach, FL 33139, USA; Funding Traders Group Ltd., Saint Lucia corporation (Company No. 2025-00298), The Sotheby Building, Ground Floor, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia. Terms of Service governed by UAE law",
+ "founded_year": 2023,
+ "trustpilot": {
+  "score": null,
+  "reviews": 3285,
+  "url": "https://www.trustpilot.com/review/fundingtraders.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "TradeLocker"
+ ],
+ "instruments": "Forex, indices, metals, oil and crypto CFDs (simulated)",
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000,
+  400000
+ ],
+ "programs": [
+  {
+   "name": "2-Step Pro10",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 430,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (10% of account size; does not trail)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "none on 2-Step",
+   "min_trading_days": 4,
+   "max_contracts_50k": null,
+   "profit_split": "80% default; 90% or 100% with paid add-ons",
+   "payout_frequency": "first payout 21 days after the first funded trade, then every 21 days; every 14 days with the 14-Day Payout add-on",
+   "payout_rules_note": "Minimum payout $200 via Rise or $50 via USDT-ERC20 (crypto only if Rise is not an option). Evaluation fee refunded once: with the second payout for accounts bought on or after 2026-05-08 (first payout before that). If the account fails within 48 hours of a payout request, the payout is denied and credited back to the balance. Funded phase: max risk per trade idea 2% of initial balance ($1,000 on 50K); news-influenced profits capped at 30% of total profit (payout delayed until below). Payout Guarantee: $500 cash + $500 credit if a payout is not processed within 2 business days (exclusions apply).",
+   "notes": "Phase 1 target 10% ($5,000), Phase 2 5% ($2,500). Daily loss 5% of the day's starting balance; equity or balance must not reach it. Minimum 4 trading days per phase (8 total) and 2 in the funded phase. Leverage 1:50 on FX majors. Homepage shows $430 and $215 (50% lower) for 50K; $430 is treated as list because the checkout shows the first homepage figure as the regular price for Instant. Variant 2-Step Pro6: targets 6%/6%, daily 3%, max 6% static, 50K list $259. A newer help article describes '2-Step Day' (same targets/limits, no minimum days in the challenge, weekend closing required except crypto) and '2-Step Swing' (weekend holding allowed, split 70%/80%/90% on 1st/2nd/3rd+ payout); prices for these were not shown. Reset after failing Phase 1 costs 60% off the original cost (one reset per challenge)."
+  },
+  {
+   "name": "1-Step (1-Step Pro)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 329,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "trailing on balance (10% below the highest recorded balance)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "largest profit day must be at most 50% of total profit; if exceeded you keep trading until compliant",
+   "min_trading_days": 2,
+   "max_contracts_50k": null,
+   "profit_split": "90% default; up to 100% with add-ons",
+   "payout_frequency": "first payout 21 days after the first funded trade, then every 21 days; every 14 days with the add-on",
+   "payout_rules_note": "Minimum payout $200 (Rise) or $50 (USDT-ERC20). Evaluation fee refunded once with the second payout for accounts bought on or after 2026-05-08. Max risk per trade idea 2% of initial balance ($1,000 on 50K) in both challenge and funded phases. Funded commissions $3 per lot round trip (except indices) unless the Zero Fees add-on is bought. Payout denied and credited back if the account fails within 48 hours of the request.",
+   "notes": "Daily loss 3% of account size measured from the day's starting equity. The help article (dated 2026-09-18) gives 2 minimum trading days in Phase 1 and 2 in the funded phase; the homepage pricing card says 4. Help article does not say whether the trailing max loss stops trailing. Homepage shows $329 and $165 for 50K."
+  },
+  {
+   "name": "Instant Funded",
+   "steps": "instant/direct funding",
+   "billing": "one-time",
+   "price_50k_list": 479,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": null,
+   "max_loss_50k": 3000,
+   "drawdown_type": "trailing from highest recorded balance until the account is 3% in profit, then locked at the initial account size; does not reset on payout",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "largest profit day must be at most 15% of total profit",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "100% (help article for accounts bought on or after 2026-10-08); homepage card says 90-100%, Terms of Service say 90% (100% with add-on)",
+   "payout_frequency": "on demand once eligible (help article for accounts from 2026-10-08); Terms of Service and the add-ons article describe a 14-day cycle with an On-Demand add-on",
+   "payout_rules_note": "To request a payout the balance must be at least 3.5% above the initial size (3% cushion stays in the account and is not withdrawable; 0.5% withdrawable), consistency score 15% or lower, no open positions. Minimum $200 (Rise) or $50 (USDT-ERC20). Max risk per trade 1% of initial balance ($500 on 50K). Fee is not refundable by default; the help article describes a 200% refund bonus paid with the second payout, and checkout lists '200% Refund Bonus' as a +20% add-on.",
+   "notes": "No evaluation. Daily loss 3% of account size from the higher of the day's starting balance or equity. Opening or closing a trade within 5 minutes before or after a high-impact (red folder) release leads to termination (Terms of Service say 10 minutes). Weekend holding allowed per the 2026-10-08 rules (the older General Trading Guidelines required closing before Friday). Terms of Service cap lots at 20 per trade. Checkout (app.fundingtraders.com) lists Instant 50K at $479; homepage shows $479 and $240. Sizes $5K-$400K."
+  }
+ ],
+ "news_trading": "Restricted: challenge phases unrestricted. 1-Step/2-Step funded accounts: trades opened, held or closed within 5 minutes of a high-impact release count as news trades and may make up at most 30% of total profit (payout delayed until below; trades opened 5+ hours before the release are exempt). Instant Funded: no opening or closing within 5 minutes before/after high-impact news (termination); a News Holding add-on allows holding through events",
+ "ea_bots_allowed": "Restricted: only EAs/bots used for risk management; EAs that place trades are not permitted unless personally developed by the trader (help center) or approved by the Risk Team (Terms); grid, hedge, martingale, arbitrage and off-the-shelf bots prohibited",
+ "copy_trading": "Restricted: allowed between your own FundingTraders accounts under the same verified profile; copying other traders or signal services and sharing signals are prohibited",
+ "overnight_weekend_holding": "1-Step, 2-Step Pro and 2-Step Swing: overnight and weekend allowed. 2-Step Day: forex, gold, indices and oil must be closed before Friday close (crypto may stay open). Instant Funded (2026-10-08 rules): overnight and weekend allowed. Trades of 15 seconds or less and a volume-weighted average hold time under 2 minutes are prohibited",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Serbia: NO, Serbia is not on the restricted list (checked both lists 2026-10-19). Terms of Service: no applications from Afghanistan, Kazakhstan, Mongolia, Morocco, Poland, Taiwan, Ukraine, Venezuela, Vietnam, Central African Republic, North Korea, Congo, Zaire, Iran, Iraq, Libya, Mali, Saipan, Somalia, South Sudan, Yemen, Ontario, Myanmar, Russian Federation (https://fundingtraders.com/terms-of-service). The help-center article (dated 2026-07-14) lists only Afghanistan, Kazakhstan, Mongolia, Venezuela, Myanmar (https://fundingtraders.com/help/en/articles/10505376-are-there-any-restricted-countries-for-fundingtraders-services). MT5 services are 'not intended for U.S. citizens/residents'.",
+ "payout_methods": [
+  "Rise (bank transfer, min $200)",
+  "Crypto USDT-ERC20 via Coinbase Commerce (min $50, only if Rise is not an option)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "TRICK",
+  "discount": "50% off plus a free matching account",
+  "applies_to": "Accounts at checkout, per the banner on Funding Traders' site (code TREAT adds a bundle)",
+  "source_url": "https://fundingtraders.com/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Tier 1 Starter: 15% new / 10% recurring / 5% influenced / 5% assisted; Tier 2 Ambassador (50 referrals, $300 one-time bonus): 20% / 10% / 7% / 5%; Tier 3 VIP (100 referrals, $1,000 bonus, lifetime attribution): 25% / 15% / 10% / 7%",
+  "url": "https://fundingtraders.com/help/en/articles/14489635-your-earnings-explained",
+  "notes": "Participation subject to FundingTraders approval. $100 minimum withdrawal, once every 14 days, KYC required; commissions pending 7 days. Attribution 90 days (Starter), 180 days (Ambassador), lifetime (VIP). Paid ads (Google Ads, YouTube Ads, Facebook/Instagram Ads, sponsored placements) and self-referrals are prohibited. Serbia: the partner terms and partner help articles do not mention Serbia or any country eligibility rule; Serbia is not on the site-wide restricted list, so not stated either way for affiliates. Partner terms: https://fundingtraders.com/partners-terms-of-service"
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-05-08",
+   "change": "Evaluation fee refund for 1-Step and 2-Step moved from the first payout to the second payout for accounts bought on or after this date",
+   "source": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro"
+  },
+  {
+   "date": "2026-09-01",
+   "change": "New Terms of Service version effective (FT US Inc and Funding Traders Group Ltd., Saint Lucia)",
+   "source": "https://fundingtraders.com/terms-of-service"
+  },
+  {
+   "date": "2026-10-08",
+   "change": "New Instant Funding rules for accounts bought from this date: 100% split, on-demand payouts, 15% consistency, 6% max loss that trails until +3% then locks, weekend holding allowed",
+   "source": "https://fundingtraders.com/help/en/articles/17459915-instant-funding"
+  },
+  {
+   "date": "2026-10",
+   "change": "Help center adds '2-Step Day & Swing' variants (no exact date; article shows 'Updated this week')",
+   "source": "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing"
+  }
+ ],
+ "pros": [
+  "2-Step Pro10 uses a static 10% max loss and a 5% daily limit, with no consistency rule",
+  "1-Step pays 90% by default; Instant Funded pays 100% under the October 2026 rules",
+  "Wide size range from $5K to $400K (Instant) and two platforms (MT5, TradeLocker)",
+  "Published Payout Guarantee: $500 cash + $500 credit if a payout is not processed within 2 business days",
+  "Serbia is not on either restricted-country list"
+ ],
+ "cons": [
+  "Trustpilot rating removed for a guidelines breach, with fake reviews removed",
+  "Evaluation fee is refunded only with the second payout (accounts from 2026-05-08) and payouts start 21 days after the first funded trade",
+  "2-Step default split is 80%; higher splits and faster payouts cost extra add-ons",
+  "Official pages contradict each other on several rules (Instant split/payout cycle, 1-Step min days, restricted countries, news window)",
+  "1-Step uses a trailing 10% max loss; Instant uses a 6% trailing max loss, a 15% consistency rule and 1% max risk per trade"
+ ],
+ "best_for": "Forex/CFD traders outside the US who want cheap static-drawdown 2-step evaluations or a 100%-split instant account and accept add-on pricing and a firm with a flagged Trustpilot profile.",
+ "sources": [
+  {
+   "url": "https://fundingtraders.com/",
+   "supports": "programs, list and discounted prices per size, homepage banner INSTANT70, entities, platforms"
+  },
+  {
+   "url": "https://app.fundingtraders.com/express_checkout",
+   "supports": "Instant prices $5K-$400K (50K $479), TRICK/TREAT codes, add-ons list"
+  },
+  {
+   "url": "https://fundingtraders.com/terms-of-service",
+   "supports": "entities, governing law, restricted countries, US MT5 note, prohibited practices, payout rules, refund terms, effective date 2026-09-01"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/13399206-2-step-pro",
+   "supports": "2-Step Pro6/Pro10 rules, payouts, refund timing, news rule, leverage"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/17589312-2-step-day-swing",
+   "supports": "2-Step Day and Swing variants, sizes, weekend rules, Swing split"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/13615032-1-step-pro",
+   "supports": "1-Step rules, trailing max loss, 50% consistency, 2 min days, commissions"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/17459915-instant-funding",
+   "supports": "Instant Funding rules from 2026-10-08"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/17333842-all-add-ons",
+   "supports": "add-ons, Instant 14-day default cycle"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/11936660-reset-account-feature",
+   "supports": "reset pricing (percentages)"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/12838492-general-trading-guidelines",
+   "supports": "EAs, copy trading, holding, HFT, min hold time, inactivity"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/10505376-are-there-any-restricted-countries-for-fundingtraders-services",
+   "supports": "help-center restricted list (5 countries), Serbia not listed"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/8050987-what-instruments-are-available-to-trade",
+   "supports": "instrument categories"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/13224028-payout-guarantee",
+   "supports": "payout guarantee terms"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/13134581-promotions",
+   "supports": "MATRIX promo (expired 2026-09-30)"
+  },
+  {
+   "url": "https://fundingtraders.com/prop-trading",
+   "supports": "'TRICK or TREAT' banner, default 80% split"
+  },
+  {
+   "url": "https://fundingtraders.com/prop-trading-firm",
+   "supports": "simulated trading services, FT US Inc address, MT5 not for US"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/14489502-inside-our-partner-program",
+   "supports": "partner tiers, attribution"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/14489635-your-earnings-explained",
+   "supports": "affiliate commission rates, $100 minimum"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/14489817-rules-attribution-compliance",
+   "supports": "affiliate paid-ads ban, self-referral ban"
+  },
+  {
+   "url": "https://fundingtraders.com/partners-terms-of-service",
+   "supports": "affiliate approval, payout terms, no country rule"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/fundingtraders.com",
+   "supports": "rating unavailable, 3,285 reviews, fake-review warning"
+  },
+  {
+   "url": "https://fundingtraders.com/",
+   "supports": "50K list prices: 2-Step Pro10 $430, 1-Step $329, Instant $479; rules; code (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K list prices confirmed on fundingtraders.com on 2026-10-19.",
+  "Instant Funded split and payout cycle conflict: help article (2026-10-08) says 100% and on demand; Terms of Service say 90% and 14 days; homepage card says 90-100% and 7 days",
+  "1-Step minimum trading days: help article says 2, homepage card says 4",
+  "Instant news window: help article says 5 minutes, Terms of Service say 10 minutes",
+  "Restricted countries: Terms list 24 jurisdictions, help center lists 5; Serbia is on neither",
+  "path_to_live: no live-account route is published (an invite-only Elite program for $1M-$2M accounts exists; the page does not say it is live capital)",
+  "Promo codes vary by page (homepage INSTANT70, checkout TRICK/TREAT, older cached pages MATRIX); terms and expiry of INSTANT70 not stated",
+  "max_contracts: not applicable (CFD lots); Instant capped at 20 lots per trade per Terms"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://fundingtraders.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 430,
+  "monthly": false,
+  "target50": 5000,
+  "maxloss50": 5000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80% (up to 100% add-ons)",
+  "payouts": "Every 21 days",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}

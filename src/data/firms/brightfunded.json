@@ -1,0 +1,333 @@
+{
+ "slug": "brightfunded",
+ "name": "BrightFunded",
+ "website": "https://brightfunded.com/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for BrightFunded: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
+ "market": "forex",
+ "legal_entity_and_hq": "Bright Global FZCO (trading as BrightFunded), Building A1, Dubai Digital Park, Dubai Silicon Oasis, Dubai, UAE (HQ). Also BrightFunded Ltd. (Saint Lucia, reg. 2025-00358, CFD simulated trading), BrightFunded LLC (Wyoming, USA; address 2000 Cedar Bend Dr, Austin, TX 78758; futures services) and Bright Transact Ltd. (Cyprus, reg. HE 478945). Hubs in Amsterdam and Warsaw",
+ "founded_year": 2023,
+ "trustpilot": {
+  "score": null,
+  "reviews": 576,
+  "url": "https://www.trustpilot.com/review/brightfunded.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "cTrader",
+  "DXtrade"
+ ],
+ "instruments": "Forex (majors, minors, exotics), indices, commodities (metals) and crypto CFDs, all simulated. Leverage 1:100 forex, 1:40 gold/commodities, 1:20 indices, 1:5 crypto (same in Challenge and Funded)",
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "2-Step Bright",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 277,
+   "price_50k_currency": "EUR",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "static (8% of initial balance, does not trail)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "none (help center: 'we do not currently enforce a consistency rule')",
+   "min_trading_days": 5,
+   "max_contracts_50k": null,
+   "profit_split": "80% by default; 90% with the paid 90% Profit Split add-on; 90% after the 1st Scaling Plan scale-up and 100% from the 3rd scale-up",
+   "payout_frequency": "first request 30 days after the first trade on the Funded Account, then every 14 days; weekly (every 7 days) with a paid add-on. Requests processed by finance within 1 day ('24-Hour Guaranteed Payouts')",
+   "payout_rules_note": "No minimum payout (any positive amount). All trades and pending orders must be closed before requesting. Paid in EUR by bank transfer or USDC (ERC-20). 15% Evaluation Profit Reward: 15% of Phase 1 + Phase 2 profit is added to the starting balance of a new Funded Account after reaching 10% growth and a payout (paid challenges only). Scaling Plan: +30% account size every 4 months if profitable in 2 of 4 months, at least 10% total profit and 2 payouts in the period; no stated cap.",
+   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 4% of the original account size, measured from the higher of balance or equity at the daily rollover (23:30-23:59 CET). Min 5 trading days per phase (a day counts if a trade stays open 60+ seconds); a paid add-on removes the minimum days. No time limit. Inactivity: an account is deactivated if no trade is placed for 30 days. List price €277; €207.75 with the 25% DOUBLE25 offer (seen 2026-10-19). One-time fee; no activation fee is mentioned in the official fee article. Fee refund only with a paid '100% Challenge Fee Refund' add-on (conditions not published)."
+  },
+  {
+   "name": "2-Step Classic",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 297,
+   "price_50k_currency": "EUR",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (10% of initial balance, does not trail)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "none",
+   "min_trading_days": 5,
+   "max_contracts_50k": null,
+   "profit_split": "80% by default; 90% with the paid add-on; 90% after the 1st scale-up and 100% from the 3rd scale-up",
+   "payout_frequency": "first request 30 days after the first funded trade, then every 14 days; weekly with a paid add-on; processed within 1 day",
+   "payout_rules_note": "Same payout rules as 2-Step Bright: no minimum, all positions closed before requesting, bank transfer (EUR) or USDC (ERC-20), 15% Evaluation Profit Reward, Scaling Plan +30% every 4 months.",
+   "notes": "Targets: Phase 1 10% ($5,000), Phase 2 5% ($2,500). Daily loss is 5% of the original account size, measured from the higher of balance or equity at rollover. Min 5 trading days per phase. No time limit. List price €297; €222.75 with DOUBLE25 (seen 2026-10-19)."
+  },
+  {
+   "name": "1-Step",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 297,
+   "price_50k_currency": "EUR",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "intraday trailing on equity (6%, follows the equity high-water mark in real time; locks at the initial balance once equity is 6% above it)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "none",
+   "min_trading_days": 5,
+   "max_contracts_50k": null,
+   "profit_split": "80% by default; 90% with the paid add-on; 90% after the 1st scale-up and 100% from the 3rd scale-up",
+   "payout_frequency": "first request 30 days after the first funded trade, then every 14 days; weekly with a paid add-on; processed within 1 day",
+   "payout_rules_note": "Same payout rules as the 2-Step plans. The 15% Evaluation Profit Reward is based on the single phase's profit.",
+   "notes": "Target 10% ($5,000). Daily loss 3% of the original account size, measured from the higher of balance or equity at rollover. Min 5 trading days. No time limit. List price €297; €222.75 with DOUBLE25 (seen 2026-10-19)."
+  }
+ ],
+ "news_trading": "Restricted on Funded accounts only: no order executions (market, limit, SL/TP, stop orders) from 5 minutes before to 5 minutes after significant news on the affected instruments. Profits from trades executed in the window are deducted (soft breach, account not failed); take profits on trades held 48+ hours are exempt. No news restriction in Phase 1/Phase 2",
+ "ea_bots_allowed": "Allowed within the rules, but not on DXtrade (no API/automated trading there). Prohibited: HFT, tick scalping, grid trading, arbitrage, and bots/AI that trade at 'superhuman' speed or exploit platform delays",
+ "copy_trading": "Restricted: allowed only between accounts owned by the same person (BrightFunded, other evaluation firms or retail brokers); copying between different people (incl. family/friends), account management for others and trading community signals are prohibited",
+ "overnight_weekend_holding": "Allowed (overnight and weekend); swap fees apply unless the Swap-Free add-on is bought",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Serbia: NOT on the restricted list (checked 2026-10-19). Not served: residents and nationals of Cuba, Iran, North Korea, Syria, Vietnam and Pakistan (existing Pakistani accounts may continue). US and UAE residents cannot use MT5; US residents also cannot use cTrader, so US traders are limited to DXtrade. https://help.brightfunded.com/en/articles/9286630-what-countries-are-restricted-at-brightfunded",
+ "payout_methods": [
+  "Bank transfer (paid in EUR)",
+  "Crypto (USDC, ERC-20)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "DOUBLE25",
+  "discount": "25% off",
+  "applies_to": "All challenge plans, per the banner on BrightFunded's site",
+  "source_url": "https://brightfunded.com/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Bronze 10%, Silver 12.5% (€1,000 commission in a month), Gold 15% (€2,000 commission in a month) of every challenge purchase, including repeat purchases",
+  "url": "https://brightfunded.com/affiliate",
+  "notes": "Serbia: residents of Serbia CAN join (Serbia is not on the affiliate restricted list, which covers Belarus, Cuba, Iran, Myanmar, North Korea, Russia, Sudan, Syria, the occupied Ukrainian regions and Vietnam; https://help.brightfunded.com/en/articles/9662025-who-can-become-a-brightfunded-affiliate). Must be 18+, pass KYC and sign the Affiliate Contract. Apply from the Trader Dashboard. Affiliates get a 10% discount code and a referral link (session-based tracking). Tier changes on the 1st of the month; missing a tier threshold drops you one level. Minimum payout €50; requests by 12:00 CET on the 15th, paid 15th-17th. Own code may not be used for own purchases."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-01-03",
+   "change": "15% Evaluation Profit Reward introduced: 15% of evaluation profit added to a new Funded Account after 10% funded growth and a payout (paid challenges only)",
+   "source": "https://help.brightfunded.com/en/articles/13367202-15-evaluation-profit-reward"
+  },
+  {
+   "date": "2026-04-13",
+   "change": "'BrightFunded 2.0': new 2-Step Bright (8%/5%, 4% daily, 8% static), 2-Step Classic (10%/5%, 5% daily, 10% static) and 1-Step (10%, 3% daily, 6% trailing) plans. Accounts bought before keep the Original 2-Step rules (8%/5%, 5% daily, 10% static)",
+   "source": "https://help.brightfunded.com/en/articles/14285762-brightfunded-original-accounts"
+  },
+  {
+   "date": "2026-08",
+   "change": "Free $1K Challenge (F1KC) offered: free 1-phase evaluation with 1-Step rules, 80% split, no 15% profit reward (help article dated 2026-08-26; launch date not stated)",
+   "source": "https://help.brightfunded.com/en/articles/15946298-brightfunded-free-1k-challenge-f1kc"
+  }
+ ],
+ "pros": [
+  "Static max loss on both 2-Step plans (8% Bright, 10% Classic) and no consistency rule",
+  "No time limit and no news restriction during the evaluation phases",
+  "Fast processing: payouts processed within 1 day, no minimum payout amount",
+  "Scaling Plan of +30% every 4 months with no stated cap, and 100% split from the 3rd scale-up",
+  "Serbia is not restricted, for trading or for the affiliate program"
+ ],
+ "cons": [
+  "Trustpilot shows a warning: rating unavailable due to a breach of guidelines, and fake reviews were removed",
+  "Default split is 80%; 90% needs a paid add-on or a scale-up",
+  "First payout only 30 days after the first funded trade, then every 14 days unless a weekly add-on is bought",
+  "1-Step uses an intraday trailing 6% max loss with a 3% daily limit",
+  "30-day inactivity rule deactivates accounts; US traders are limited to DXtrade (no MT5/cTrader)"
+ ],
+ "best_for": "Forex/CFD traders outside the restricted countries who want a static-drawdown 2-step evaluation with no time limit and no consistency rule, and who are fine with an 80% default split.",
+ "sources": [
+  {
+   "url": "https://brightfunded.com/",
+   "supports": "programs, sizes, EUR list/discount prices, DOUBLE25 promo, platforms, entities, founded 2023"
+  },
+  {
+   "url": "https://brightfunded.com/2-step-bright",
+   "supports": "2-Step Bright prices €277/€207.75, targets, limits"
+  },
+  {
+   "url": "https://brightfunded.com/2-step-classic",
+   "supports": "2-Step Classic prices €297/€222.75, targets, limits"
+  },
+  {
+   "url": "https://brightfunded.com/1-step",
+   "supports": "1-Step prices €297/€222.75, targets, limits, DOUBLE25 text"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/14284817-brightfunded-2-step-bright",
+   "supports": "2-Step Bright static drawdown, daily loss method"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/14284844-brightfunded-2-step-classic",
+   "supports": "2-Step Classic static drawdown, daily loss method"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/14284743-brightfunded-1-step",
+   "supports": "1-Step trailing drawdown and lock"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241611-what-are-the-current-rules-for-the-evaluation-process",
+   "supports": "min trading days, rules table, rollover time"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/12291765-how-does-my-daily-permitted-loss-work",
+   "supports": "daily loss calculation"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/12577176-does-brightfunded-have-a-consistency-rule",
+   "supports": "no consistency rule"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9268736-how-does-my-reward-split-work-on-my-funded-account",
+   "supports": "80/90/100% split, 30-day first payout, bi-weekly/weekly, no minimum, payout methods"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/11468668-how-can-i-request-my-payout",
+   "supports": "close positions before request, processed within 1 day"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241681-how-can-i-get-paid",
+   "supports": "payout methods and currencies"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241687-what-other-fees-do-i-need-to-pay-is-the-fee-recurrent",
+   "supports": "one-time fee, no recurring fees"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9460023-can-i-get-a-refund-for-my-brightfunded-challenge",
+   "supports": "refund only for untraded accounts within 30 days"
+  },
+  {
+   "url": "https://brightfunded.com/scaling-plan",
+   "supports": "scaling plan"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/13367202-15-evaluation-profit-reward",
+   "supports": "15% evaluation profit reward, effective 2026-01-03"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/14285762-brightfunded-original-accounts",
+   "supports": "BrightFunded 2.0 cutoff 2026-04-13, Original rules"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/15946298-brightfunded-free-1k-challenge-f1kc",
+   "supports": "Free $1K Challenge"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/11774572-inactivity-rule-policy",
+   "supports": "30-day inactivity rule"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241694-can-i-trade-news",
+   "supports": "news rule"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241699-can-i-use-ea",
+   "supports": "EAs, no automation on DXtrade"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241704-which-strategies-are-prohibited-at-brightfunded",
+   "supports": "prohibited strategies"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241709-is-copy-trading-allowed",
+   "supports": "copy trading"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9268424-do-i-need-to-close-my-positions-overnight",
+   "supports": "overnight holding"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9268323-is-it-allowed-to-hold-positions-over-the-weekend",
+   "supports": "weekend holding, swap-free add-on"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9268749-what-trading-assets-instruments-offers-brightfunded",
+   "supports": "instrument classes"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9268380-what-is-the-leverage-in-brightfunded-s-simulated-trading-environment",
+   "supports": "leverage"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/10855521-what-trading-platform-does-brightfunded-offer",
+   "supports": "platforms, MT5/cTrader not for US residents"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9286630-what-countries-are-restricted-at-brightfunded",
+   "supports": "restricted countries, Serbia not listed"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/8205805-who-can-join-brightfunded",
+   "supports": "eligibility, restricted countries"
+  },
+  {
+   "url": "https://brightfunded.com/terms-and-conditions",
+   "supports": "legal entities, restricted jurisdictions, MT5 not for US/UAE, UAE law"
+  },
+  {
+   "url": "https://brightfunded.com/about-us",
+   "supports": "founded 2023 (launched Sept 2023), Dubai HQ since Jan 2025, founders"
+  },
+  {
+   "url": "https://brightfunded.com/futures-waitlist",
+   "supports": "futures waitlist, no launch date"
+  },
+  {
+   "url": "https://brightfunded.com/affiliate",
+   "supports": "affiliate tiers 10/12.5/15%"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/11809042-what-s-new-in-the-brightfunded-affiliate-program",
+   "supports": "affiliate tier thresholds, €50 minimum, payout schedule"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9662025-who-can-become-a-brightfunded-affiliate",
+   "supports": "affiliate eligibility and restricted countries (Serbia not listed)"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/brightfunded.com",
+   "supports": "Trustpilot warning, 576 reviews, no score"
+  },
+  {
+   "url": "https://brightfunded.com/",
+   "supports": "50K prices (EUR): 2-Step Bright €277, 2-Step Classic €297, 1-Step €297; code (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K prices for all three plans confirmed on brightfunded.com on 2026-10-19.",
+  "us_residents_accepted: US is not on the restricted list, but MT5 and cTrader are not available to US residents; only DXtrade has no stated restriction. Confirm with support before saying 'US accepted' without that caveat",
+  "path_to_live: the site says all accounts are demo accounts with simulated funds; no live-capital route is published",
+  "Free $1K Challenge launch date is not stated (help article dated 2026-08-26)",
+  "max_contracts: not applicable (CFD lots)"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://brightfunded.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 277,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 4000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80% (up to 100% scaling)",
+  "payouts": "Every 14 days after day 30",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": null,
+  "ccy": "EUR",
+  "instant": false
+ }
+}

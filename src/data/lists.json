@@ -11,7 +11,7 @@
     "multi"
    ]
   },
-  "limit": 10,
+  "limit": 12,
   "intro": "Ten futures prop firms ranked on how their 50K drawdown works, what you keep from payouts and what the evaluation costs. End-of-day drawdown and no activation fee move a firm up; payout caps and recent rule churn move it down.",
   "why": {
    "tradeify": "One-time fee from $145, no activation fee, end-of-day drawdown on every plan, news trading allowed.",
@@ -50,7 +50,7 @@
     "multi"
    ]
   },
-  "limit": 10,
+  "limit": 15,
   "intro": "Forex and CFD prop firms ranked on drawdown type, track record, payout terms and price for a 50K account. Static max loss and a long payout history count most; suspended Trustpilot ratings and floating-loss rules count against a firm.",
   "why": {
    "ftmo": "Running since 2015, static 10% max loss on the 2-Step and the fee refunded with the first reward.",
@@ -120,7 +120,7 @@
     "Allowed"
    ]
   },
-  "limit": 10,
+  "limit": 30,
   "intro": "Many futures firms ban or tightly restrict automation. These firms allow it, each with its own limits: high-frequency trading and copying the same bot across users are banned almost everywhere. Read the firm's rules on your own bot before you buy.",
   "why": {}
  },
@@ -133,7 +133,7 @@
   "where": {
    "consistency_eval": false
   },
-  "limit": 10,
+  "limit": 30,
   "intro": "These firms do not cap your best day in the evaluation. Several still add a consistency rule once you are funded, before a payout; the table shows where.",
   "why": {}
  },
@@ -149,7 +149,7 @@
     "mixed"
    ]
   },
-  "limit": 10,
+  "limit": 30,
   "intro": "With end-of-day trailing drawdown, your loss limit moves only at the daily close, so profit you give back during the day does not tighten it. Firms marked \"depends on plan\" also sell an intraday version. See <a href=\"/guides/trailing-drawdown/\">how trailing drawdown works</a>.",
   "why": {}
  },
@@ -162,7 +162,7 @@
   "where": {
    "instant": true
   },
-  "limit": 10,
+  "limit": 30,
   "intro": "Instant funding skips the evaluation: you pay more up front and trade a funded account from day one. The rules are usually stricter, with consistency requirements and lower payout caps. These firms sell an instant or direct account alongside their evaluations; open each review for the instant plan's terms.",
   "why": {}
  },
@@ -175,7 +175,7 @@
   "where": {
    "us": true
   },
-  "limit": 15,
+  "limit": 30,
   "intro": "Every firm below either says on its own pages that it accepts US residents or leaves the US off its restricted-country list. Most are futures firms, which trade regulated US exchanges. Some forex firms serve US clients through a separate entity or a reduced set of platforms; the review for each firm says how.",
   "why": {}
  }

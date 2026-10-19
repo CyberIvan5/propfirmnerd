@@ -1,0 +1,279 @@
+{
+ "slug": "hola-prime",
+ "name": "Hola Prime",
+ "website": "https://holaprime.com/",
+ "status": "active",
+ "status_note": null,
+ "market": "multi",
+ "legal_entity_and_hq": "Hola Prime Limited, Hong Kong (owner of the website; office L1, Shaw House, 201 Wan Po Road, Tseung Kwan O, Hong Kong). Group entities named in the site footer: Hola Prime Limited Cyprus (reg. HE 454359, subsidiary); Hola Prime Ltd Mauritius (reg. 220248, FSC Mauritius Investment Dealer licence GB24203729, for MT5 services). Match-Trader services by Gooey Trade / GT Tech LLC, Boca Raton, Florida, USA. Other listed offices: Dubai, Limassol, Mohali (India), Milton Keynes (UK), Anjouan (Comoros)",
+ "founded_year": 2024,
+ "trustpilot": {
+  "score": 4.5,
+  "reviews": 4017,
+  "url": "https://www.trustpilot.com/review/holaprime.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "cTrader",
+  "Match-Trader",
+  "TradeLocker",
+  "Tradovate",
+  "NinjaTrader",
+  "WealthCharts",
+  "DX Futures"
+ ],
+ "instruments": "Forex: forex majors/minors/exotics, commodities, indices, metals and crypto CFDs (simulated; leverage up to 50:1 FX on Prime, 100x on Pro). Futures: 50+ CME Group futures (equity index incl. micros, FX, energy, metals, agricultural, micro Bitcoin/Ether, interest-rate futures)",
+ "account_sizes": [
+  2000,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "2-Step Prime Challenge (Forex)",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 319,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (10% of initial balance)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "None on the Bi-Weekly or Monthly payout cycles; 40% consistency score (best day / total profit) on the On-Demand cycle (funded stage)",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "80% (Bi-Weekly or On-Demand cycle) or 95% (Monthly cycle, +20% on the fee); cycle chosen at purchase and cannot be changed",
+   "payout_frequency": "Bi-weekly (every 14 days) by default; Monthly or On-Demand chosen at purchase. Requests processed within 1 hour after an account review of up to 24 business hours",
+   "payout_rules_note": "Bi-weekly: at least 3 profitable days (each >= 0.5% of initial balance) in 14 days. Monthly: 7 profitable days in 30 days. On-Demand: 40% consistency and at least 2% total profit. Minimum payout $50 (bank wire/crypto) or $500 (Rise), excluding the firm's share. 2.5% processing fee on all methods (min $25 bank/Rise, $5 crypto). Mandatory KYC video interview before the first payout. Challenge fee refunded 100% with the 4th successful payout from the same account (Forex only). Funded stage: 2% max risk per trade idea and stop loss mandatory on every trade.",
+   "notes": "Price $319 is for $50K, MT5, Bi-Weekly @80% (site default). Same 50K costs $339 with On-Demand and $383 with Monthly @95%; cTrader +$20; Swap-free and EA add-ons +10% each. Targets 8% ($4,000) Phase 1 and 5% ($2,500) Phase 2; minimum 3 trading days per phase. Daily loss 5% of previous day's closing balance (4% / 8% max on $200K). Leverage 50x. News trading and weekend holding allowed in both phases. Inactivity: 30 days."
+  },
+  {
+   "name": "1-Step Prime Challenge (Forex)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 329,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "static (6% of initial balance)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "None on the Bi-Weekly or Monthly payout cycles; 40% on the On-Demand cycle (funded stage)",
+   "min_trading_days": 2,
+   "max_contracts_50k": null,
+   "profit_split": "80% (Bi-Weekly or On-Demand) or 95% (Monthly, +20% on the fee)",
+   "payout_frequency": "Bi-weekly by default; Monthly or On-Demand chosen at purchase",
+   "payout_rules_note": "Same payout policy as 2-Step Prime: profitable-day requirements per cycle, $50 minimum (bank/crypto) or $500 (Rise), 2.5% fee, KYC interview before first payout, fee refunded with the 4th payout, 2% max risk per trade idea and mandatory stop loss in the funded stage.",
+   "notes": "Price $329 for $50K, MT5, Bi-Weekly @80%; $349 On-Demand, $395 Monthly @95%. Target 10%, daily loss 3% of previous day's closing balance, max loss 6% static, 50x leverage, min 2 trading days. News and weekend holding allowed. Other forex plans: 2-Step Pro ($384 for 50K, 100x leverage, 5%/10%, news and weekend holding restricted on funded accounts, 20-lot max position on 50K) and Direct (no evaluation, 7% EOD trailing max loss, 20% consistency)."
+  },
+  {
+   "name": "1-Step Prime Challenge (Futures)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 159,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD trailing (4% of initial balance on 25K/50K; trails highest end-of-day balance and locks at the starting balance once the account is +4%)",
+   "daily_loss_limit_50k": null,
+   "consistency_rule": "40% in the challenge (needed to pass); 35% in the funded account (needed for each payout)",
+   "min_trading_days": null,
+   "max_contracts_50k": 3,
+   "profit_split": "90%",
+   "payout_frequency": "weekly (every 7 calendar days after the first trade following the previous payout); processed within 1 hour after review",
+   "payout_rules_note": "At least 5 profitable days (non-consecutive) of >= $150 each on 50K before every payout. Minimum payout $500 on 50K. Payout caps on 50K: $1,500 (1st), $2,000 (2nd), $2,500 (3rd), $3,000 (4th onwards). After a payout the max loss limit resets to the starting balance. 2.5% processing fee. Funded stage: 2% max risk per trade idea (1% on DX Futures) and stop loss mandatory. Current 'Limited Deal' on the futures page: $0 activation and challenge fee refunded with the first four payouts.",
+   "notes": "Hola Prime's futures page says 'no monthly subscriptions', while its help center describes a monthly subscription; check at checkout."
+  }
+ ],
+ "news_trading": "Restricted by plan: allowed in all challenges and on Forex Prime and Futures funded accounts; on Forex 2-Step Pro and Forex Direct funded accounts, no opening, closing or modifying trades from 5 minutes before to 5 minutes after high-impact news",
+ "ea_bots_allowed": "Restricted: third-party EAs and bots only on MT5 with the paid EA add-on (+10%); not allowed on cTrader, Match-Trader, TradeLocker or Direct accounts; the EA strategy must be declared; passing with an EA and then trading manually (or the reverse) is prohibited. Futures rules page lists EAs as 'Restricted'",
+ "copy_trading": "Restricted: only between Hola Prime accounts owned by the same person. Forex funded accounts: maximum one master and one copier account (accounts bought on or after 15 Sep 2026). Futures: own accounts only, and the lead account must have the lowest position limit. Copying from other prop firms or other people is prohibited",
+ "overnight_weekend_holding": "Forex: overnight allowed on all accounts; weekend holding allowed on Prime challenges and Prime funded accounts, not on 2-Step Pro or Direct funded accounts (close before 15:45 EST Friday). Futures: no overnight or weekend holding; close by 3:30 PM CT daily",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Serbia: NO, it is not on the restricted list. Restricted: Afghanistan, Belarus, Burundi, Central African Republic, China, Cuba, North Korea, DR Congo, Eritrea, Guinea, Guinea-Bissau, Haiti, Hong Kong, India, Iran, Iraq, Laos, Libya, Mali, Moldova, Myanmar, Nicaragua, Oman, Pakistan, Russia, Somalia, Syria, Tunisia, Ukraine, Vietnam, Yemen, Zimbabwe. US clients accepted (forex: Match-Trader and TradeLocker only, no MT5/cTrader). 11 countries (e.g. Nigeria, Malaysia, Indonesia, Israel) are capped at $90K forex allocation. https://holaprime.com/forex/faq/about-hola-prime/who-is-eligible-to-join-hola-prime/",
+ "payout_methods": [
+  "Bank wire",
+  "Crypto (BTC, USDC, ETH, USDT ERC-20/TRC-20)",
+  "Rise"
+ ],
+ "path_to_live": "Futures only: invite-only Hola Prime Live Account for traders with at least 10 payouts totalling $50,000+ from a sim-funded account. Up to 15% of the account size moves over as starting equity ($7,500 for 50K); no daily or max loss limits; 90% split with daily rewards; max 4/40 contracts on 50K; one live account per trader. No live route published for forex",
+ "current_public_promo": {
+  "code": "SPOOKY40",
+  "discount": "40% off",
+  "applies_to": "All forex accounts, new users only (not futures)",
+  "source_url": "https://holaprime.com/forex/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Flat 30% of the first order of each new referred trader only; repeat purchases earn nothing; no tiers",
+  "url": "https://holaprime.com/best-prop-firm-affiliate-program/",
+  "notes": "Sign up from the trader dashboard; KYC and a signed Affiliate Agreement required, then approval. Monthly payouts (30-day cycle), $100 minimum, paid in USD/EUR/GBP/USDT. Says it 'supports affiliates from over 170+ countries'. Serbia: not stated explicitly for affiliates; Serbia is not on the trader restricted-country list. No purchase or trading experience required."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-01-19",
+   "change": "Futures 1-Step Prime: max loss set at 4% EOD trailing for $25K and $50K accounts bought on or after 19 Jan 2026 (3% on $100K/$150K)",
+   "source": "https://holaprime.com/futures/faq/hola-prime-plans/hola-prime-1-step-prime-challenge/"
+  },
+  {
+   "date": "2026-05-10",
+   "change": "Announced a 'Zero Payout Denials Policy' applying to all accounts",
+   "source": "https://holaprime.com/news-media/"
+  },
+  {
+   "date": "2026-09-15",
+   "change": "Forex copy trading on funded accounts limited to one master and one copier account, for accounts bought on or after 15 Sep 2026",
+   "source": "https://holaprime.com/terms-conditions/"
+  }
+ ],
+ "pros": [
+  "Offers both forex/CFD (MT5, cTrader, Match-Trader, TradeLocker) and CME futures (Tradovate, NinjaTrader, WealthCharts) from one account",
+  "Forex Prime challenges use a static max loss (10% on 2-Step, 6% on 1-Step) and allow news trading and weekend holding",
+  "Forex challenge fee is refunded with the 4th payout; payouts are processed within 1 hour once the review (up to 24 business hours) is done",
+  "Futures 1-Step Prime has no daily loss limit, a 90% split and weekly payouts; a published invite-only live-capital route exists for futures",
+  "Accepts US clients; Serbia is not on the restricted list"
+ ],
+ "cons": [
+  "Trustpilot removed about 1,300 fake reviews from its profile in March 2025; the firm only launched in late 2024",
+  "Funded accounts have a 2% max risk per trade idea with a mandatory stop loss; the forex split is 80% unless you pay 20% more for the monthly 95% cycle",
+  "Futures payouts are capped ($1,500 first payout on 50K) and need 5 profitable days of $150+ plus a 35% consistency score each time",
+  "Futures billing is described as a monthly subscription in the help center but as 'no monthly subscriptions' on the landing page",
+  "Terms include a non-disparagement clause and say support correspondence may not be shared publicly without consent"
+ ],
+ "best_for": "Traders who want forex/CFD and CME futures challenges under one firm, with static-drawdown forex evaluations and weekly 90% futures payouts, and who accept a 2% per-trade risk cap on funded accounts.",
+ "sources": [
+  {
+   "url": "https://holaprime.com/forex/",
+   "supports": "forex plans, 50K prices by payout cycle, SPOOKY40 promo, platforms, leverage"
+  },
+  {
+   "url": "https://holaprime.com/forex/forex-trading-rules/",
+   "supports": "forex targets, daily/max loss, min days, payout cycles, profitable-day rules, payout fee, allocation limits"
+  },
+  {
+   "url": "https://holaprime.com/futures/",
+   "supports": "futures plans, 1-Step Prime 50K price $159, contracts 3/30, consistency, Limited Deal ($0 activation, refund with first four payouts)"
+  },
+  {
+   "url": "https://holaprime.com/futures/direct-account/",
+   "supports": "futures Direct 50K price $548 and rules"
+  },
+  {
+   "url": "https://holaprime.com/futures/1-step-prime/",
+   "supports": "futures 1-Step Prime rules, $99 starting fee"
+  },
+  {
+   "url": "https://holaprime.com/futures/futures-trading-rules/",
+   "supports": "futures EOD trailing drawdown, payout cycle, profitable days, min payout, caps, payout methods, EAs restricted"
+  },
+  {
+   "url": "https://holaprime.com/futures/faq/hola-prime-plans/hola-prime-1-step-prime-challenge/",
+   "supports": "monthly subscription billing, Jan 19 2026 drawdown change, instruments, trading hours, trade copier rules"
+  },
+  {
+   "url": "https://holaprime.com/futures/faq/monthly-membership/monthly-membership/",
+   "supports": "futures challenge billed monthly until passed"
+  },
+  {
+   "url": "https://holaprime.com/futures/faq/payouts/profit-split-payout-cycle/",
+   "supports": "futures 90% weekly split, consistency, caps, MLL reset after payout"
+  },
+  {
+   "url": "https://holaprime.com/futures/faq/live-account/hola-prime-live-account/",
+   "supports": "invite-only live account program"
+  },
+  {
+   "url": "https://holaprime.com/terms-conditions/",
+   "supports": "targets, min days, loss limits, news/weekend/overnight tables, position sizes, consistency, EAs, copy trading, fee refund (forex 4th payout), governing law, non-disparagement clause"
+  },
+  {
+   "url": "https://holaprime.com/forex/faq/payouts/hola-prime-payout-policy-eligibility/",
+   "supports": "payout minimums, methods, fees, KYC interview, cycles"
+  },
+  {
+   "url": "https://holaprime.com/forex/faq/about-hola-prime/who-is-eligible-to-join-hola-prime/",
+   "supports": "restricted countries (Serbia not listed), US accepted, US platforms"
+  },
+  {
+   "url": "https://holaprime.com/futures/faq/about-hola-prime/who-is-eligible-to-join-hola-prime/",
+   "supports": "same restricted-country list for futures"
+  },
+  {
+   "url": "https://holaprime.com/forex/faq/about-hola-prime/what-is-hola-prime-who-is-it-designed-for-and-where-is-the-company-registered-and-located/",
+   "supports": "office addresses"
+  },
+  {
+   "url": "https://holaprime.com/forex/faq/about-hola-prime/challenge-fee-refund-policy-and-eligibility/",
+   "supports": "14-day refund before trading"
+  },
+  {
+   "url": "https://holaprime.com/best-prop-firm-affiliate-program/",
+   "supports": "30% flat commission, monthly payouts, $100 minimum, 170+ countries"
+  },
+  {
+   "url": "https://holaprime.com/faq/affiliate/affiliate-program-overview/",
+   "supports": "affiliate sign-up, KYC, first-order-only commission"
+  },
+  {
+   "url": "https://holaprime.com/faq/affiliate/affiliate-commission-framework/",
+   "supports": "commission on first order only"
+  },
+  {
+   "url": "https://holaprime.com/news-media/",
+   "supports": "futures launch July 2025, Zero Payout Denials Policy May 2026"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/holaprime.com",
+   "supports": "Trustpilot 4.5 / 4,017 reviews"
+  },
+  {
+   "url": "https://holaprime.com/forex/",
+   "supports": "50K forex prices: 2-Step Prime $319, 1-Step Prime $329; rules; code (checked in browser)"
+  },
+  {
+   "url": "https://holaprime.com/futures/",
+   "supports": "50K futures 1-Step Prime $159, 6% target, 4% trailing drawdown, consistency (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K forex and futures prices and rules confirmed on holaprime.com on 2026-10-19.",
+  "Futures billing: the help center (1-Step Prime FAQ and Monthly Membership article) says the challenge is a monthly subscription renewing every 30 days, but the futures landing page 'Limited Deal' says 'no monthly subscriptions'. Recorded as monthly; confirm before publishing",
+  "Futures EA policy: futures rules page only says 'Restricted' with no detail",
+  "Futures 'challenge fee refunded with your first four payouts' is shown as a 'Limited Deal' on the futures page; T&C 20.13 says the fee refund is 'Forex Only'",
+  "Affiliate eligibility for Serbian residents is not stated; only '170+ countries' is published",
+  "Forex path to live: none found on the forex pages",
+  "WebFetch could not load holaprime.com subpages; all Hola Prime pages were read in a browser"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://holaprime.com/",
+ "facets": {
+  "market": "multi",
+  "price50": 319,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 5000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": null,
+  "split": "80% (95% monthly)",
+  "payouts": "Every 14 days",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": true,
+  "tp": 4.5,
+  "ccy": "USD",
+  "instant": true
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "slug": "funderpro",
+ "name": "FunderPro",
+ "website": "https://funderpro.com/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for FunderPro: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
+ "market": "forex",
+ "legal_entity_and_hq": "FunderPro Ltd (Malta, reg. no. C 104558), Cali House, Level 3, Vjal ir-Riħan, San Gwann SGN 9020, Malta; FunderPro Saint Lucia Ltd (reg. no. 2025-00393), The Sotheby Building, Ground Floor, Rodney Bay, Gros-Islet, Saint Lucia, which the site footer says provides the simulated trading services",
+ "founded_year": null,
+ "trustpilot": {
+  "score": null,
+  "reviews": 1561,
+  "url": "https://www.trustpilot.com/review/funderpro.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "TradeLocker",
+  "MT5",
+  "cTrader"
+ ],
+ "instruments": "Forex (majors, minors, exotics), metals and energy (gold, silver, platinum, oil, natural gas, copper), indices (US30, NAS100, SPX500, DAX, UK100, etc.) and crypto CFDs (BTC, ETH, SOL, XRP, etc.), all simulated",
+ "account_sizes": [
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  150000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "One Phase",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 319,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "static (6% of initial balance; equity may not fall below it)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "40% in the challenge: best day may be at most 40% of total profit (equity-based). No consistency rule on funded accounts",
+   "min_trading_days": 1,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with the paid '90% Performance Reward' add-on (+20% of fee; +$63.80 on the 50K at checkout)",
+   "payout_frequency": "bi-weekly (every 14 days); first reward 14 days after funding, or 7 days with the paid 'First Reward in 7 Days' add-on",
+   "payout_rules_note": "At least $100 profit needed before any reward request. Challenge fee credited back with the first reward. FunderPro says it aims to process funded rewards within 1 working day of approval.",
+   "notes": "Leverage 1:50 forex, 1:10 metals/oil/indices, 1:2 crypto. Daily loss is 3% of the balance at the start of the trading day (5 PM EST snapshot). Checkout (seen 2026-10-19) shows $319.00 for this 50K configuration with no strikethrough price. Weekend holding only with the Swing add-on."
+  },
+  {
+   "name": "Classic (2-Phase)",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 319,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (10% of initial balance)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "none (challenge or funded)",
+   "min_trading_days": 4,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with the paid '90% Performance Reward' add-on",
+   "payout_frequency": "bi-weekly (every 14 days); first reward 14 days after funding, or 7 days with the paid add-on",
+   "payout_rules_note": "At least $100 profit needed before any reward request. Challenge fee credited back with the first reward (within 7 days of the first reward withdrawal). 'No Minimum Trading Days' and 'Second Chance' add-ons are available for Classic only.",
+   "notes": "Targets: Phase 1 10% ($5,000), Phase 2 5% ($2,500). 4 minimum trading days in each phase. Unlimited time. Leverage 1:100 forex, 1:30 metals/oil/indices, 1:2 crypto. Daily loss 5% of start-of-day balance (5 PM EST). 50K price is SECONDARY (see uncertain)."
+  },
+  {
+   "name": "Pro (2-Phase, Weekly or Daily Rewards)",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 419,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (10% of initial balance)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "45% in Phase 1 and Phase 2 (best day at most 45% of total profit); none on funded accounts",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "90% with Weekly Rewards; 60% with Daily Rewards (chosen at checkout)",
+   "payout_frequency": "weekly (one scheduled payout per week) or daily/on demand, chosen at checkout",
+   "payout_rules_note": "A reward can be requested once the account is at least 1% above the initial balance. The challenge fee is NOT credited back on Pro. Pro Weekly funded accounts must also respect a 20% margin-usage cap.",
+   "notes": "Targets: Phase 1 10% ($5,000), Phase 2 8% ($4,000). No minimum trading days stated by FunderPro, but its blog says 3 days are effectively needed to satisfy the consistency rule (third-party sites list 3). Leverage 1:100 forex, 1:30 metals/oil/indices, 1:2 crypto. 50K price is SECONDARY (see uncertain)."
+  }
+ ],
+ "news_trading": "Restricted: allowed in all challenge phases; on funded accounts no trade may be entered within 2 minutes before or after high-impact news unless the account has the Swing add-on",
+ "ea_bots_allowed": "Allowed, restricted: you must own the EA/bot (and its source code, per the T&Cs); EAs for tick scalping, rollover scalping or HFT and anything exploiting platform gaps or latency are prohibited",
+ "copy_trading": "Restricted: only between your own accounts; copying trades or signals between different people is prohibited",
+ "overnight_weekend_holding": "Overnight allowed. Weekend holding only with the Swing Account add-on (+10% of fee, reduced leverage); without it all positions, including crypto, must be closed by Friday 16:30 EST or the challenge fails",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Serbia: NO, not on FunderPro's restricted list. Restricted: Afghanistan, Belarus, Central African Republic, DR Congo, Cuba, Haiti, Iran, Iraq, Libya, Mali, Myanmar, North Korea, Somalia, Sudan, South Sudan, Syria, Russia, Donetsk/Zaporizhzhia/Luhansk/Kherson/Crimea/Sevastopol regions of Ukraine, Venezuela, Yemen. US is not on the list, but MT5, cTrader and the Instant program are not available to US residents (TradeLocker challenges only). https://support.funderpro.com/en/articles/376945-sign-up-age-limits-and-country-restrictions",
+ "payout_methods": [
+  "USDC (ERC20)",
+  "Rise (Riseworks)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": null,
+  "discount": null,
+  "applies_to": null,
+  "source_url": null,
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Tiered by sales: $0-4,999 5% first sale / 2.5% later sales; $5,000-24,999 7% / 3.5%; $25,000-74,999 10% / 5%; $75,000-149,999 15% / 7.5%; $150,000+ 20% / 10%",
+  "url": "https://funderpro.com/become-a-funderpro-affiliate/",
+  "notes": "Paid weekly on Thursdays in USDC (ERC-20) when over $50. No approval step (accept the terms in the dashboard); 18+ and an existing registered user. Affiliate terms exclude residents/nationals of 'Restricted Jurisdictions' as listed in FunderPro's FAQ; Serbia is not on that list, but FunderPro does not explicitly state that Serbian residents can join. FunderPro may change rates without notice."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-01",
+   "change": "Trustpilot placed a warning on FunderPro's profile and the rating is shown as unavailable due to a guidelines breach; FunderPro published a response on 2026-01-19",
+   "source": "https://funderpro.com/blog/transparent-update-regarding-funderpro-trustpilot/"
+  },
+  {
+   "date": "2026-03",
+   "change": "Challenge T&Cs and General Terms of Use amended ('Last updated: Mar 2026'); account types named as One Phase, Classic, Pro-Daily Rewards, Pro-Weekly Rewards and an Activation-Fee account type. Specific changes not listed",
+   "source": "https://funderpro.com/terms-conditions/"
+  }
+ ],
+ "pros": [
+  "Challenge fee credited back with the first reward on One Phase and Classic",
+  "Static max loss (10% Classic/Pro, 6% One Phase) rather than trailing",
+  "Classic has no consistency rule; Pro Weekly pays a 90% split without an add-on",
+  "Pro Daily rewards can be requested any time the account is 1%+ in profit",
+  "News trading allowed in all challenge phases; EAs allowed if you own them"
+ ],
+ "cons": [
+  "Trustpilot rating is withheld for a guidelines breach and the profile carries a warning (seen 2026-10-19)",
+  "Default split is 80% on One Phase and Classic; 90% costs a paid add-on (+20% of the fee)",
+  "Weekend holding requires the paid Swing add-on; holding without it fails the account",
+  "Pro fee is not credited back; Pro Daily split is only 60%",
+  "Simulated accounts only; the T&Cs cap aggregate funded allocation at $200,000 even though the scaling plan advertises up to $5M"
+ ],
+ "best_for": "Forex/CFD traders who want a one-time-fee evaluation with a static max loss and fee credit on the first reward, or (Pro) frequent daily/weekly reward requests.",
+ "sources": [
+  {
+   "url": "https://funderpro.com/",
+   "supports": "programs, Classic rules at 100K ($539 price, targets, daily/max loss, 4 days, bi-weekly, 80%), platforms, leverage, legal entities, 7.35% pass-rate disclosure"
+  },
+  {
+   "url": "https://funderpro.com/checkout/?mode=challenge&type=classic&size=50000",
+   "supports": "One Phase 50K: $319.00, 10% target, 3% daily, 6% max loss, 1 min day, 1:50, 40% consistency, 80/20 bi-weekly, refundable fee; add-on prices; 'from' prices One Phase $69 / Classic $29 / Pro $75; account sizes"
+  },
+  {
+   "url": "https://funderpro.com/the-challenge/",
+   "supports": "challenge types, leverage, account sizes 5K-200K, 4 min days, unlimited time"
+  },
+  {
+   "url": "https://funderpro.com/pro-challenge/",
+   "supports": "Pro targets 10%/8%, 60% daily / 90% weekly split, 1% reward threshold, 15% off promo, PRO15"
+  },
+  {
+   "url": "https://funderpro.com/trading-rules/",
+   "supports": "Pro targets 10% / 8%"
+  },
+  {
+   "url": "https://funderpro.com/blog/1-phase-vs-2-phase-which-funderpro-challenge-fits-you/",
+   "supports": "comparison of One Phase / Classic / Pro rules (targets, daily/max loss, min days, consistency)"
+  },
+  {
+   "url": "https://funderpro.com/terms-conditions/",
+   "supports": "legal entities, news rule, EA/copy/HFT rules, $200K aggregate allocation cap, 20% margin limit, 30-day inactivity, 14-day refund policy, Mar 2026 update"
+  },
+  {
+   "url": "https://funderpro.com/general-terms-of-use/",
+   "supports": "legal entity, Mar 2026 update"
+  },
+  {
+   "url": "https://funderpro.com/trading-platforms/",
+   "supports": "MT5, TradeLocker, cTrader; MT5 not for US"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/376945-sign-up-age-limits-and-country-restrictions",
+   "supports": "restricted country list (Serbia not on it), 18+"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/413218-what-is-ctrader-and-how-does-it-enhance-the-trading-experience",
+   "supports": "cTrader not available to US residents (search snippet)"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/528063-instant-is-the-instant-funding-product-available-in-the-united-states",
+   "supports": "Instant program not available in the US (search snippet)"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/377860-what-is-the-drawdown-rule-and-how-does-it-apply-to-funded-account-challenges",
+   "supports": "daily drawdown on start-of-day balance at 5 PM EST; max drawdown fixed on initial balance"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/377852-what-is-the-consistency-rule-and-how-does-it-affect-my-challenge",
+   "supports": "consistency 40% One Phase, 45% Pro, none Classic/funded"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/419844-how-does-reward-frequency-and-eligibility-work-for-funderpro-challenges",
+   "supports": "reward frequency, 14-day first reward, $100 / 1% minimums, Pro 60%/90%, Pro Weekly 20% margin cap"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/377983-will-my-challenge-fee-be-credited-back",
+   "supports": "fee credit on One Phase/Classic, not Pro"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/412020-what-add-ons-can-i-choose-with-my-challenge",
+   "supports": "add-ons (7-day first reward, 90% split, no min days, second chance, swing)"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/377864-how-to-reset-my-funded-account-challenge",
+   "supports": "reset process, 30% restart discount within 24h"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/409956-can-funded-traders-scale-their-accounts",
+   "supports": "scaling +50% after 3 months of 10%, up to $5M; simulated"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/378023-are-news-holding-and-news-trading-allowed",
+   "supports": "news rules"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/377999-can-i-open-close-a-position-or-hold-trades-over-the-weekend",
+   "supports": "weekend rule, Friday 16:30 EST"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/378021-can-i-use-eas-or-bots-while-participating-in-the-funded-account-challenge",
+   "supports": "EA rules"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/378022-is-copy-trading-allowed",
+   "supports": "copy trading rules"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/378025-what-instruments-can-i-trade",
+   "supports": "instruments"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/378136-how-can-i-receive-my-rewards",
+   "supports": "payout methods USDC ERC20 and Riseworks, ~24h processing"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/378181-affiliate-program-overview",
+   "supports": "affiliate $50 minimum, Thursday USDC payouts"
+  },
+  {
+   "url": "https://funderpro.com/become-a-funderpro-affiliate/",
+   "supports": "affiliate tiers"
+  },
+  {
+   "url": "https://funderpro.com/affiliate-terms-and-conditions/",
+   "supports": "affiliate eligibility (18+, restricted jurisdictions), commission table"
+  },
+  {
+   "url": "https://funderpro.com/blog/transparent-update-regarding-funderpro-trustpilot/",
+   "supports": "FunderPro's response to Trustpilot warning, 2026-01-19"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/funderpro.com",
+   "supports": "rating withheld, 1,561 reviews, warning"
+  },
+  {
+   "url": "https://funderpro.com/checkout/?mode=challenge&type=classic&size=50000",
+   "supports": "50K prices: One Phase $319, Classic $319, Pro $419 (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K prices for One Phase, Classic and Pro confirmed in FunderPro's checkout on 2026-10-19.",
+  "The official checkout lists Classic as 'from $29' while third-party tables list the 5K Classic at $69; the $29 figure could not be explained",
+  "PRO15 15% Pro discount: shown on the official /pro-challenge/ page with no end date or publish date; the checkout text did not show a discount, so it may be outdated",
+  "us_residents_accepted: the US is not on the restricted list and only MT5, cTrader and Instant are stated as unavailable to US residents; FunderPro does not state explicitly that US residents may buy TradeLocker challenges",
+  "Pro min_trading_days: FunderPro's blog says no minimum (3 days effectively needed for the consistency rule); propfirmmap lists 3",
+  "path_to_live: none published; all accounts are simulated",
+  "Affiliate eligibility for Serbia: not explicitly stated; Serbia is simply absent from the restricted list the affiliate terms point to",
+  "max_contracts: not applicable (CFD lots); a 20% margin-usage limit per asset class applies instead"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://funderpro.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 319,
+  "monthly": false,
+  "target50": 5000,
+  "maxloss50": 5000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80% (90% add-on)",
+  "payouts": "Every 14 days",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}

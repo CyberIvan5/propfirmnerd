@@ -1,0 +1,314 @@
+{
+ "slug": "aqua-funded",
+ "name": "Aqua Funded",
+ "website": "https://www.aquafunded.com/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for Aqua Funded: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
+ "market": "forex",
+ "legal_entity_and_hq": "Aqua Funded FZCO (t/a AquaFunded), IFZA Business Park, DDP, Premises No. 35882-001, Dubai Silicon Oasis, Dubai, UAE (operates the site); AquaFunded LTD, Saint Lucia company no. 2004-00597, The Sotheby Building, Rodney Bay, Gros-Islet, St. Lucia (simulated trading services). Owned by holding company AquaFunds",
+ "founded_year": 2023,
+ "trustpilot": {
+  "score": null,
+  "reviews": 1210,
+  "url": "https://www.trustpilot.com/review/aquafunded.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "cTrader",
+  "TradeLocker",
+  "Match-Trader"
+ ],
+ "instruments": "Forex, indices, commodities and crypto CFDs (simulated); futures only via the separate AquaFutures brand",
+ "account_sizes": [
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000,
+  300000,
+  400000
+ ],
+ "programs": [
+  {
+   "name": "Instant Funding Pro",
+   "steps": "instant/direct funding",
+   "billing": "one-time",
+   "price_50k_list": 305,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": null,
+   "max_loss_50k": 3000,
+   "drawdown_type": "trailing (6% below the highest equity reached, incl. floating P&L; never moves down)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "20% for accounts bought on or after 8 Sep 2026 (described as limited-time; 15% for earlier accounts): highest profitable day must be under 20% of total profit before a reward request; not a breach",
+   "min_trading_days": 5,
+   "max_contracts_50k": null,
+   "profit_split": "90%; 100% with a paid 'Lifetime Profit Split 100%' add-on",
+   "payout_frequency": "bi-weekly (every 14 days); 'Rewards On Demand' add-on available",
+   "payout_rules_note": "5 qualifying days of at least 0.5% profit each. Floating loss on open trades may not reach 2% of starting balance ($1,000 on 50K) or the account is permanently closed. Firm-wide: $100 minimum payout, 3% processing fee on every payout, first reward 14 days after the first funded trade.",
+   "notes": "Shown as the 'Most Popular' model on the site. Daily loss 3% from the higher of balance or equity at 00:00 UTC. Leverage 1:50 FX, 1:10 indices/commodities, 1:2 crypto. Sizes up to $400K ($300K/$400K have a stricter 1% floating-loss limit). Other instant models at 50K: Instant Standard $278 (3% daily, 5% trailing, 15% consistency, 1% floating-loss strike rule), Instant Flex $625 (2% daily, 4% trailing, 7 days, 5% payout cap per cycle). Prices read from the official pricing widget on 2026-10-19."
+  },
+  {
+   "name": "2 Step Standard",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 239,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "static (8% of initial balance, incl. floating losses)",
+   "daily_loss_limit_50k": 2500,
+   "consistency_rule": "none listed",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "90%; 100% with a paid add-on",
+   "payout_frequency": "bi-weekly (every 14 days); 'Rewards in 7 Days' add-on available",
+   "payout_rules_note": "Funded account needs 3 trading days. Fee refunded with the fourth payout. Firm-wide: $100 minimum payout, 3% processing fee on every payout; on 100K+ accounts the first two rewards are capped at $10,000 each.",
+   "notes": "Phase 1 8% ($4,000), Phase 2 5% ($2,500); 3 minimum trading days per step. Daily loss 5% from the higher of the previous day's ending balance or equity, reset 00:00 UTC. Leverage 1:100 in evaluation, 1:50 FX funded. Other 2-step models at 50K: 2 Step Pro $143 (10%/5%, 5% daily, 10% trailing, 50% funded consistency rule) and 2 Step Elite $221 (8%/5%, 4% daily, 10% max)."
+  },
+  {
+   "name": "1 Step Standard",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 261,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4500,
+   "max_loss_50k": 3000,
+   "drawdown_type": "trailing (6% below the highest recorded balance/equity)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "none stated",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "90%; 100% with a paid add-on",
+   "payout_frequency": "bi-weekly (every 14 days); first-payout-in-7-days add-on available",
+   "payout_rules_note": "3 trading days of at least 0.5% profit each. Fee refunded with the fourth payout. Firm-wide: $100 minimum payout, 3% processing fee on every payout.",
+   "notes": "9% target. Daily loss 3% of the previous day's ending balance/equity (higher of the two), reset 00:00 UTC. Leverage 1:100 evaluation, 1:50 FX funded. The other 1-step model, 1 Step Flex, costs $279 at 50K (10% target, 3% daily, 12% static max loss for purchases from 31 Aug 2026, no minimum days to pass, 1% floating-loss 'WaveStop' strikes when funded)."
+  }
+ ],
+ "news_trading": "Allowed with a cap (accounts from 27 Apr 2026): profit from trades opened or closed within 5 minutes of red-folder news or FOMC events is capped at 0.5% of starting balance per payout cycle; excess removed, no breach. Older accounts: no news trading on funded accounts",
+ "ea_bots_allowed": "Allowed, if used as part of your own personal strategy; trade copiers allowed between your own AquaFunded accounts",
+ "copy_trading": "Restricted: only from personal accounts legally bound to the account holder; copy trading between other traders' accounts is prohibited",
+ "overnight_weekend_holding": "Allowed overnight and over the weekend with no restrictions",
+ "us_residents_accepted": null,
+ "restricted_countries_note": "Serbia: NO, not on the restricted list. Restricted: Cuba, Iran, Syria, Vietnam, Kenya, Albania, Algeria, North Korea, Senegal, Myanmar, Russia, Belarus, Sudan, South Sudan, Venezuela, Crimea, Donetsk, Luhansk. The United States is not on the list, but no official page explicitly says US residents are accepted. https://help.aquafunded.com/en/articles/9251052-are-there-any-countries-we-cannot-trade-from",
+ "payout_methods": [
+  "Crypto (under $5,000)",
+  "Rise (bank transfer or crypto, $500 and above)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "SPOOKY",
+  "discount": "25% off",
+  "applies_to": "Challenges, per the banner on AquaFunded's site; the pricing table shows code AUTUMN for the same 25%",
+  "source_url": "https://www.aquafunded.com/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "15% to start; 17.5% after 100 referrals; 20% after 250 referrals; tier 4 (1,000 referrals) adds a $2,500 bonus or a Dubai trip",
+  "url": "https://help.aquafunded.com/en/articles/12883804-complete-affiliate-program-tiers-explained",
+  "notes": "Whether commission is recurring is not stated. $100 minimum withdrawal; first payout on demand, then every 14 days; under $1,000 paid in crypto only, $1,000+ via Rise. Google Ads/PPC on AquaFunded keywords is strictly prohibited. Serbia: the affiliate articles state no country eligibility rules, so Serbian eligibility could not be confirmed (Serbia is not on the trader restricted list)."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-04-27",
+   "change": "News trading allowed on accounts from this date, with news-window profit capped at 0.5% of starting balance per payout cycle (previously banned on funded accounts)",
+   "source": "https://help.aquafunded.com/en/articles/14785740-is-news-trading-allowed"
+  },
+  {
+   "date": "2026-08-31",
+   "change": "1 Step Flex max loss raised from 10% to 12% static; 2 Step Pro funded consistency rule changed from 25% to 50% (new purchases)",
+   "source": "https://help.aquafunded.com/en/articles/10476451-1-step-flex"
+  },
+  {
+   "date": "2026-09-08",
+   "change": "Instant Funding Pro consistency rule eased from 15% to 20% for new purchases (described as limited-time)",
+   "source": "https://help.aquafunded.com/en/articles/15281078-instant-funding-pro"
+  }
+ ],
+ "pros": [
+  "Low list prices at 50K ($143-$305 for the main models) plus a 25% public code",
+  "90% split on all main models, 100% available as an add-on",
+  "News trading (with a 0.5% profit cap), weekend holding, EAs and own-account trade copiers allowed",
+  "Evaluation fee refunded with the fourth payout; 24-business-hour payout guarantee or an extra $1,000",
+  "Four platforms: MT5, cTrader, TradeLocker, Match-Trader"
+ ],
+ "cons": [
+  "Trustpilot shows no score: rating unavailable for a guideline breach and fake reviews removed (1,210 reviews, 39% one-star)",
+  "3% processing fee on every payout; first two rewards capped at $10,000 on 100K+ accounts",
+  "Trailing drawdown on 1 Step Standard (6%) and Instant Pro (6%), plus floating-loss-per-trade limits on instant models",
+  "Fee refund only at the fourth payout, although the checkout says '100% refundable'",
+  "Many models with rules that change by purchase date; US eligibility not stated"
+ ],
+ "best_for": "Price-sensitive forex/CFD traders who want cheap 2-step or instant accounts with news, weekend and EA freedom, and accept trailing drawdowns, payout fees and a weak Trustpilot record.",
+ "sources": [
+  {
+   "url": "https://www.aquafunded.com/",
+   "supports": "pricing widget (50K prices and rules per model, read in a browser 2026-10-19), promo codes, model list, platforms, account sizes"
+  },
+  {
+   "url": "https://www.aquafunded.com/forex-rules",
+   "supports": "general rules, leverage, news cap, weekend, EAs, hedging, prohibited practices"
+  },
+  {
+   "url": "https://www.aquafunded.com/about-us",
+   "supports": "established 2023, entities, Dubai HQ, AquaFunds holding"
+  },
+  {
+   "url": "https://www.aquafunded.com/legal/terms-and-conditions",
+   "supports": "legal entities, UAE law"
+  },
+  {
+   "url": "https://www.aquafunded.com/legal/refund-policy",
+   "supports": "fee refunded at fourth profit split"
+  },
+  {
+   "url": "https://www.aquafunded.com/trader-plan",
+   "supports": "scaling to $4M, Aqua Elite"
+  },
+  {
+   "url": "https://www.aquafunded.com/forex-funded-account",
+   "supports": "cTrader +$15 platform fee"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/15281078-instant-funding-pro",
+   "supports": "Instant Pro rules"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/10476448-new-instant-funding-standard",
+   "supports": "Instant Standard rules"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/17066639-instant-flex",
+   "supports": "Instant Flex rules"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/15281226-2-step-standard",
+   "supports": "2 Step Standard rules"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/15281229-2-step-pro",
+   "supports": "2 Step Pro rules, Aug 2026 consistency change"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/15281183-1-step-standard",
+   "supports": "1 Step Standard rules"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/10476451-1-step-flex",
+   "supports": "1 Step Flex rules, Aug 2026 max-loss change"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11875903-consistency-rule",
+   "supports": "consistency rules per model"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11875895-maximum-loss-per-trade-policy",
+   "supports": "floating loss limits on instant models"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9250906-how-do-rewards-work",
+   "supports": "payout timing, $100 minimum, 3% fee, methods, $10K caps"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9395678-do-you-have-a-reward-guarantee",
+   "supports": "24-hour guarantee"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/10494335-reward-add-ons",
+   "supports": "add-ons"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9251069-is-the-evaluation-fee-refundable",
+   "supports": "refund at fourth payout"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9251050-am-i-trading-real-money",
+   "supports": "simulated accounts"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9251044-do-you-offer-a-scaling-plan",
+   "supports": "scaling plan"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9251052-are-there-any-countries-we-cannot-trade-from",
+   "supports": "restricted countries, Serbia not listed"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9250960-what-platforms-are-available",
+   "supports": "platforms"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/14785740-is-news-trading-allowed",
+   "supports": "news rule and Apr 2026 change"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11831659-are-eas-trade-copiers-allowed",
+   "supports": "EAs and copiers"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11877755-is-copy-trading-allowed",
+   "supports": "copy trading"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11831680-can-i-hold-trades-overnight-and-over-the-weekend",
+   "supports": "holding"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/12883804-complete-affiliate-program-tiers-explained",
+   "supports": "affiliate tiers"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11207234-affiliate-payouts-how-and-when-you-get-paid",
+   "supports": "affiliate payouts"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/11208099-rules-compliance",
+   "supports": "affiliate rules, PPC ban"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/aquafunded.com",
+   "supports": "Trustpilot: no score (guideline breach), 1,210 reviews"
+  },
+  {
+   "url": "https://www.aquafunded.com/",
+   "supports": "50K Instant Pro $305 and its rules (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K Instant Pro price and rules confirmed on aquafunded.com on 2026-10-19; other 50K prices were read on the same page by our researcher.",
+  "path_to_live: none described; all accounts are simulated (the homepage calls the Flex model 'no path to live' but describes no live route for other models)",
+  "Promo: two different 25% codes are shown at the same time (SPOOKY in the banner, AUTUMN in the pricing widget); the '150% Refund' wording is not explained",
+  "Instant Funding Standard consistency is given as 15% in one place and 20% in an example on the same help page",
+  "Affiliate: recurring vs one-time commission and Serbian eligibility not stated",
+  "max_contracts: not applicable (CFD lots)"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://www.aquafunded.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 239,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 4000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "90%",
+  "payouts": "Every 14 days",
+  "news": "restricted",
+  "ea": "Allowed",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}

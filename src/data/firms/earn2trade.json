@@ -1,0 +1,282 @@
+{
+ "slug": "earn2trade",
+ "name": "Earn2Trade",
+ "website": "https://www.earn2trade.com/",
+ "status": "active",
+ "status_note": null,
+ "market": "futures",
+ "legal_entity_and_hq": "Earn2Trade LLC, 30 N Gould St STE 4000, Sheridan, WY 82801, USA. Franchise partner: Bahia Education Services LLC, 2nd Floor, Supreme Court Complex, Umm Hurair 2, Dubai, UAE (KHDA licence 1053489)",
+ "founded_year": 2016,
+ "trustpilot": {
+  "score": 4.5,
+  "reviews": 5026,
+  "url": "https://www.trustpilot.com/review/earn2trade.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "NinjaTrader",
+  "Tradovate",
+  "TradingView",
+  "Rithmic (R|Trader / R|Trader Pro)",
+  "Finamark",
+  "BlackArrow One",
+  "DeepCharts",
+  "Quantower",
+  "Volumetrica",
+  "Sierra Chart",
+  "ATAS",
+  "Bookmap",
+  "MultiCharts",
+  "MotiveWave",
+  "Jigsaw"
+ ],
+ "instruments": "Futures only on CME, CBOT, NYMEX and COMEX; no stocks, options, forex, crypto or CFDs",
+ "account_sizes": [
+  25000,
+  50000,
+  100000,
+  150000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "Trader Career Path (TCP50)",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 190,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 139,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD in the evaluation and on LiveSim accounts; intraday trailing on Live accounts (stops rising at the starting balance)",
+   "daily_loss_limit_50k": 1100,
+   "consistency_rule": "30% in evaluation only (no single day may be 30% or more of total PnL; exceeding it is not a fail, you keep trading). None on LiveSim/Live accounts",
+   "min_trading_days": null,
+   "max_contracts_50k": 6,
+   "profit_split": "Per withdrawal: 50% if the withdrawal is under $2,250, 80% if it is $2,250 or more",
+   "payout_frequency": "weekly (processed on Wednesdays; request by email by 2:00 PM CT the preceding Friday)",
+   "payout_rules_note": "Minimum net withdrawal $100; no buffer requirement. $139 activation fee (LiveSim, non-professional CME status) is deducted from the first withdrawal; Live accounts have no activation fee but pay market data of $140/month/exchange (Rithmic) or $156 (NinjaTrader). LiveSim max cumulative withdrawal on TCP50 is $3,000, after which the trader is moved to a Live account. Growth plan: hitting the $3,000 goal and withdrawing moves the trader to a $100K Live account, and so on up to $400K (TCP400 has a fixed 60/40 split).",
+   "notes": "Sold in 25K/50K/100K starting sizes (TCP25 $150/mo, TCP100 per help center price list). 50K price seen on the /non-us product page. Free reset after every monthly rebill (from the first rebill). Contracts follow a progression ladder up to 6; exceeding the allowed size is a hard fail. Positions must be closed by 3:50 PM CT. Up to 5 concurrent evaluations; up to 3 funded accounts, only 1 of them Live."
+  },
+  {
+   "name": "Gauntlet Mini (GAU50)",
+   "steps": "1-step",
+   "billing": "monthly",
+   "price_50k_list": 170,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 139,
+   "reset_fee_50k": null,
+   "profit_target_50k": 3000,
+   "max_loss_50k": 2000,
+   "drawdown_type": "EOD in the evaluation and on LiveSim accounts; intraday trailing on Live accounts",
+   "daily_loss_limit_50k": 1100,
+   "consistency_rule": "30% in evaluation only; none on funded accounts",
+   "min_trading_days": null,
+   "max_contracts_50k": 6,
+   "profit_split": "Per withdrawal: 50% if under $2,250, 80% if $2,250 or more",
+   "payout_frequency": "weekly (processed on Wednesdays)",
+   "payout_rules_note": "Minimum net withdrawal $100. LiveSim max cumulative withdrawal on GM50 is $5,000, after which the trader is moved to a Live account. $139 LiveSim activation fee from the first withdrawal; Live accounts pay monthly data fees instead. No growth plan: funded account stays at the evaluation size.",
+   "notes": "Sizes 50K/100K/150K/200K. Contracts follow the Gauntlet Mini progression ladder up to 6 on 50K. Fixed reset prices for larger sizes: $100 (100K), $130 (150K), $155 (200K); 50K reset price is dynamic and below the current new-subscription price."
+  }
+ ],
+ "news_trading": "Allowed (no restrictions around economic announcements)",
+ "ea_bots_allowed": null,
+ "copy_trading": "Not allowed: trade copiers are banned on all programs, before and after funding; accounts passed with a copier can be denied and are not refunded",
+ "overnight_weekend_holding": "Evaluations: no overnight holding; all positions and orders closed by 3:50 PM CT (earlier for some agricultural and livestock contracts). Weekend holding not separately addressed but implied not allowed. Funded-account holding rules not confirmed",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Serbia: NO, it is not on the list. Citizens of these countries cannot get funded: Afghanistan, Albania, Azerbaijan, Burma (Myanmar), Central African Republic, Cuba, Gibraltar, Iran, Iraq, Kenya, Libya, Mali, Nauru, Nigeria, North Korea, Pakistan, Russia, Somalia, South Sudan, Sudan, Syria, Turkmenistan, Ukraine, Venezuela, Yemen. The list restricts funding (not the evaluation purchase); non-US citizens need a W-8BEN with a foreign tax ID. Rise payouts are not available in Iowa, Minnesota, South Carolina, Guam, Puerto Rico, USVI or Haiti. https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+ "payout_methods": [
+  "Rise ($50 per withdrawal non-US, 1.5% US)",
+  "Deel ($50)",
+  "Bayzat ($5-$40)",
+  "Direct crypto (select cases, 0.735%)"
+ ],
+ "path_to_live": "After passing, the trader chooses a LiveSim (simulated, EOD drawdown) or a Live account (real brokerage account with a partner prop firm, trailing drawdown, own data fees). LiveSim traders are moved to Live after reaching the LiveSim max withdrawal ($3,000 on TCP50, $5,000 on GM50). TCP Live accounts grow by profit goal: $50K -> $100K -> ... up to $400K",
+ "current_public_promo": {
+  "code": "BOTH50",
+  "discount": "50% off evaluations and resets",
+  "applies_to": "Shown on Earn2Trade's US site; the non-US site showed a different offer without a code",
+  "source_url": "https://www.earn2trade.com/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "20% on all sales of all products, for as long as the referred customer stays (lifetime)",
+  "url": "https://www.earn2trade.com/non-us/affiliates",
+  "notes": "Application with approval; affiliates get a personalised 20% discount link and coupon for referrals. Monthly payouts, $300 minimum. Serbia: eligibility of Serbian residents is not stated on the affiliate page."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-06",
+   "change": "Up to 5 simultaneous evaluations per email; up to 3 funded accounts (1 Live) (reported by a third-party tracker)",
+   "source": "https://thegodfunded.com/en/news/earn2trade-now-allows-up-to-5-simultaneous-evaluations-and-launches-a-60-discount"
+  },
+  {
+   "date": "2026-07",
+   "change": "10-day minimum dropped; funded profit split changed from a flat 80% to 50% below / 80% at or above a per-account threshold ($2,250 on 50K per the official withdrawal policy) (reported by a third-party tracker)",
+   "source": "https://www.eltraderfinanciado.com/en/news/earn2trade/earn2trade-drops-10-day-minimum-scaling-split-jul-2026"
+  },
+  {
+   "date": "2026-07-06",
+   "change": "Help center article dated 6 Jul 2026 states that exceeding the TCP progression ladder contract limit is a hard fail that ends the evaluation",
+   "source": "https://help.earn2trade.com/en/articles/5922873-what-is-the-progression-ladder-on-the-trader-career-path"
+  }
+ ],
+ "pros": [
+  "In business since 2016; Trustpilot 4.5 from 5,026 reviews",
+  "Option to trade a real Live brokerage account right after passing, and the TCP growth plan scales Live accounts up to $400K",
+  "No minimum trading days, news trading allowed, no consistency rule or buffer on funded accounts",
+  "Weekly withdrawals from $100; activation fee ($139) is taken from the first withdrawal, not paid upfront",
+  "Accepts US traders; Serbia is not on the restricted list"
+ ],
+ "cons": [
+  "Funded split is only 50% on any withdrawal under $2,250 (50K); 80% needs a larger single withdrawal",
+  "Evaluations are monthly subscriptions ($190 TCP50, $170 GAU50 list) that renew until cancelled",
+  "Live accounts use an intraday trailing drawdown and carry monthly data fees ($140/exchange on Rithmic)",
+  "No overnight holding in evaluations (flat by 3:50 PM CT); trade copiers banned; ladder breaches are a hard fail",
+  "Firm-published 2025 pass rate was 8.89%, and only about 18% of funded accounts had a withdrawal"
+ ],
+ "best_for": "Futures day traders who want a path from a monthly-billed evaluation to a real Live brokerage account, with a scaling plan up to $400K and no minimum trading days.",
+ "sources": [
+  {
+   "url": "https://www.earn2trade.com/",
+   "supports": "programs, 'From' prices, platforms, BOTH50 promo, legal entity, instruments, 2025 pass statistics"
+  },
+  {
+   "url": "https://www.earn2trade.com/non-us/trader-career-path",
+   "supports": "TCP50 $190/mo, profit goal, EOD drawdown, daily loss, contracts, consistency, split tiers, $139 activation fee, Live data fees, growth plan, concurrent accounts"
+  },
+  {
+   "url": "https://www.earn2trade.com/non-us/gauntlet-mini",
+   "supports": "GAU50 $170/mo and rules, sizes, 60% off banner on /non-us"
+  },
+  {
+   "url": "https://www.earn2trade.com/trader-career-path",
+   "supports": "US site: TCP25 from $150/mo, BOTH50 banner, Earn2Trade LLC footer"
+  },
+  {
+   "url": "https://www.earn2trade.com/non-us/affiliates",
+   "supports": "affiliate 20% commission, in business since 2016, $300 monthly payout minimum"
+  },
+  {
+   "url": "https://www.earn2trade.com/non-us/terms-and-conditions",
+   "supports": "trade copiers forbidden, sanctioned countries policy, subscription auto-renewal"
+  },
+  {
+   "url": "https://www.earn2trade.com/non-us/about-us",
+   "supports": "team, live account focus"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/5452472-what-is-the-withdrawal-policy",
+   "supports": "weekly payouts, $100 minimum, split tiers, LiveSim caps, payout methods and fees"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/1795200-what-costs-am-i-responsible-for-once-i-become-funded-with-a-live-livesim-account",
+   "supports": "$139 activation fee, Live data fees (updated 7 Jan 2026)"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/2547638-i-m-not-an-american-us-citizen-can-i-still-get-funded",
+   "supports": "restricted countries list (Serbia not listed)"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/16295753-earn2trade-eligibility-requirements",
+   "supports": "age 18, legal name, W-8BEN for non-US"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/1518606-where-are-you-based",
+   "supports": "Earn2Trade LLC address, Bahia franchise partner"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/16295637-what-is-earn2trade",
+   "supports": "programs, LiveSim vs Live, Bahia licence"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/1585409-which-proprietary-trading-firm-will-contact-me-after-i-pass-my-evaluation",
+   "supports": "partner prop firms"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/6877364-what-happens-when-i-complete-my-evaluation",
+   "supports": "LiveSim EOD vs Live trailing, max 3 funded accounts (1 Live)"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/8117088-drawdown-types",
+   "supports": "EOD vs intraday trailing drawdown"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/3849975-what-is-the-maintain-consistency-rule",
+   "supports": "30% consistency, evaluation only"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/5922873-what-is-the-progression-ladder-on-the-trader-career-path",
+   "supports": "ladder hard fail"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/2090496-can-i-hold-positions-overnight-on-the-trader-career-path-gauntlet-mini",
+   "supports": "no overnight, close by 3:50 PM CT"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/3224526-are-there-any-restrictions-on-when-i-can-trade-in-my-evaluation-account",
+   "supports": "news trading allowed, trading hours"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/12034590-am-i-allowed-to-copy-trades-across-multiple-accounts",
+   "supports": "trade copier ban"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/9286647-prohibited-conduct-in-earn2trade-evaluations-and-in-the-livesim-live-trading-environment",
+   "supports": "prohibited conduct (software/AI/ultra-fast data entry, spoofing, etc.)"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/2159050-what-is-the-cost-of-your-packages",
+   "supports": "subscription price set $150/$170/$190/$315/$350/$550"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/11183609-reset-pricing-for-earn2trade-accounts",
+   "supports": "reset prices"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/6863801-do-you-provide-free-resets",
+   "supports": "free reset after each TCP rebill"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/3494861-when-is-my-gauntlet-mini-trader-career-path-subscription-billed",
+   "supports": "billed every 30 days"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/2090521-what-platforms-can-i-use-for-the-gauntlet-mini-trader-career-path",
+   "supports": "platform list and which are free"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/earn2trade.com",
+   "supports": "Trustpilot 4.5 / 5,026 reviews"
+  }
+ ],
+ "uncertain": [
+  "50K prices read on Earn2Trade's own pages in a browser on 2026-10-19.",
+  "steps: each program is a single evaluation phase; recorded as 1-step",
+  "The restricted-countries help article is dated March 2025; the newer eligibility article (Aug 2026) only refers to 'certain sanctioned countries'",
+  "Affiliate eligibility for Serbian residents is not stated",
+  "Platforms list combines the homepage logos (incl. Volumetrica) and the help center platform list; some require the trader's own licence"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://www.earn2trade.com/",
+ "facets": {
+  "market": "futures",
+  "price50": 190,
+  "monthly": true,
+  "target50": 3000,
+  "maxloss50": 2000,
+  "dd": "mixed",
+  "consistency_eval": true,
+  "consistency_funded": false,
+  "split": "50% under $2,250, 80% above",
+  "payouts": "Weekly",
+  "news": "allowed",
+  "ea": null,
+  "us": true,
+  "tp": 4.5,
+  "ccy": "USD",
+  "instant": false
+ }
+}

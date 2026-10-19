@@ -1,0 +1,321 @@
+{
+ "slug": "blueberry-funded",
+ "name": "Blueberry Funded",
+ "website": "https://blueberryfunded.com/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for Blueberry Funded: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
+ "market": "forex",
+ "legal_entity_and_hq": "Blueberry Markets (SVG) LLC (2090 LLC 2022), Euro House, Richmond Hill Road, P.O. Box 2897, Kingstown, Saint Vincent and the Grenadines; treasury services by BBF Treasury Pty Ltd. Part of the Blueberry Markets group (broker Blueberry Markets); the firm says it is not a brokerage",
+ "founded_year": 2024,
+ "trustpilot": {
+  "score": null,
+  "reviews": 1752,
+  "url": "https://www.trustpilot.com/review/blueberryfunded.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "TradeLocker"
+ ],
+ "instruments": "Forex, metals, indices, energies and crypto CFDs (simulated); separate Synthetic programs trade 24/7 synthetic indices (Boom, Crash, Flip, Step, FX Vol families from 8 Oct 2026)",
+ "account_sizes": [
+  1250,
+  2500,
+  5000,
+  10000,
+  25000,
+  50000,
+  100000,
+  200000
+ ],
+ "programs": [
+  {
+   "name": "Flex 1-Step (1 Step Flex Challenge)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 490,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 343,
+   "profit_target_50k": 6000,
+   "max_loss_50k": 6000,
+   "drawdown_type": "static (12% below initial balance, includes floating P&L)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "No consistency rule. Concentration check at the end of the evaluation: if one trade idea made more than 60% of the profit target, the funded account needs 4 trading days (each closing up at least 0.5%) before a payout can be requested",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "85%; drops to 60% after a second news-trading strike",
+   "payout_frequency": "every 14 days; first reward 14 days after the first trade on the funded (earnings) account",
+   "payout_rules_note": "Minimum payout is 1% of initial balance ($500 on 50K). Risk per trade idea must stay under 1% of initial balance (first breach: positions closed; second breach: account closed). No high-impact news trades within 5 minutes of the event (strike 1: profit deducted; strike 2: profit deducted and split cut to 60%; strike 3: account closed). Fee refund not stated.",
+   "notes": "Launched 17 Aug 2026. Sizes $5K-$100K (the store also lists a $200K variant at $1,600). Daily loss is 3% from the higher of opening balance or equity. No minimum trading days to pass, no time limit. Weekend holding NOT allowed (positions may be closed). Leverage 1:30 FX, 1:10 metals/indices/commodities, 1:2 crypto. 30-day inactivity breach. Reset of 50K Phase 1 is $343 (30% off), funded reset $980; reset must be bought within 7 days of the breach, once per account."
+  },
+  {
+   "name": "Prime Challenge (shown on the site as 'Prime 2-Step Elite')",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 406,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 285,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 5000,
+   "drawdown_type": "static (10% of initial balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "none",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "80%",
+   "payout_frequency": "every 14 days once funded",
+   "payout_rules_note": "Each 14-day reward cycle needs 3 active trading days (accounts bought from 17 Aug 2026; 5 for earlier accounts); an active day needs closed trades of at least 0.5% profit. No lot size restriction and no risk-per-trade limit on Prime. Minimum payout and fee refund not stated.",
+   "notes": "Phase 1 target 8% ($4,000), Phase 2 6% ($3,000). Daily drawdown 4% of initial balance measured from the higher of balance or equity at day start. Sizes $2.5K-$200K. Leverage 1:30. News: no new positions within 2 minutes before/after scheduled high-impact news; managing or closing existing trades is allowed. The 3-day minimum applies per phase per the Oct 2026 Outline & Fees PDF ('3 or 5'). Store lists DXtrade at a lower $325, but DXtrade accounts were migrated to MT5 in April 2026; MT5/TradeLocker price is $406. Phase 1 reset $285, Phase 2 reset $406, funded reset $812."
+  },
+  {
+   "name": "1-Step Challenge (Classic 1-Step)",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 302.5,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": 211,
+   "profit_target_50k": 5000,
+   "max_loss_50k": 3000,
+   "drawdown_type": "static (6% of initial balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "none",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "80% (fixed)",
+   "payout_frequency": "every 14 days; 7-day and on-demand reward add-ons available",
+   "payout_rules_note": "Reward needs at least $100 realized profit and 3 active trading days in the cycle. Funded accounts have a 1.5% risk-per-trade-idea hard limit ($750 on 50K). The 7-day reward add-on costs 20% on top of the challenge price.",
+   "notes": "Sizes $5K-$200K. Daily loss 4% of starting balance from the higher of balance or equity, resets 5:00 PM EST. No high-impact news trading. Weekend holding allowed. Leverage 1:30. The Outline & Fees PDF says the 1-Step closed to new sales on 17 Aug 2026, but a 24 Aug 2026 correction in the help center says it remains available, and it is still sold on the homepage. Homepage and help center show $302.50; the store API shows $302.00."
+  }
+ ],
+ "news_trading": "Restricted: general rule (all evaluation and funded accounts) bans opening or closing trades from 2 minutes before to 2 minutes after high-impact (red folder) news; stop-loss hits are allowed if the position was opened 6+ hours before. Prime: no new positions within 2 minutes of scheduled high-impact news; closing allowed. Flex 1-Step: 5-minute window with a strike system (profit deduction, split cut to 60%, then closure)",
+ "ea_bots_allowed": "Restricted: only proprietary EAs that encode your own strategy and are disclosed to and approved by the firm before use; commercial/third-party EAs not allowed. Synthetic plans bought from 8 Oct 2026 allow EAs under the same conditions; older synthetic accounts do not",
+ "copy_trading": "Restricted: only between your own Blueberry Funded accounts; copy trading with third parties or third-party account management is prohibited (immediate termination)",
+ "overnight_weekend_holding": "Overnight holding allowed on all account types. Weekend holding allowed on all account types except Flex 1-Step (positions may be closed automatically before the weekend)",
+ "us_residents_accepted": false,
+ "restricted_countries_note": "Serbia: NO, not on the restricted list. Restricted: Afghanistan, American Samoa, Australia, Belarus, Cuba, Guam, Iran, Iraq, Myanmar, North Korea, Russia, Somalia, Syria, United States, US Minor Outlying Islands, Yemen. https://help.blueberryfunded.com/en/articles/9550574-are-any-countries-restricted-from-purchasing-an-evaluation (the Oct 2026 Outline & Fees PDF gives a shorter list that also excludes Serbia)",
+ "payout_methods": [
+  "RiseWorks (Rise)",
+  "Crypto USDC / USDT-TRC20 (up to $2,000)",
+  "Broker Rewards: transfer approved rewards to a personal Blueberry Markets account"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "PRIME30",
+  "discount": "30% off the Prime challenge (FLEX30 gives 30% off Flex 1-Step)",
+  "applies_to": "Prime and Flex 1-Step challenges, per Blueberry's homepage",
+  "source_url": "https://blueberryfunded.com/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "First purchase: 12.5% (0-25 lifetime referrals), 15% (26-75), 17.5% (76-150), 20% (151-225 and 226+); 10% lifetime commission on repeat purchases by referred clients",
+  "url": "https://help.blueberryfunded.com/en/articles/9563907-what-can-i-get-paid-as-a-blueberry-funded-affiliate",
+  "notes": "Higher tiers add challenge/giveaway accounts and personal discount codes. Withdrawals can be requested any time and are paid in weekly batches (usually Thursdays; 12:00 PM EST cutoff) via RiseWorks or crypto; no minimum stated. Serbia: the help center articles do not mention country eligibility for affiliates, and the affiliate page (blueberryfunded.com/affiliate/) was behind a bot-protection screen and could not be read, so Serbian eligibility could not be confirmed."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-03-12",
+   "change": "Rule overhaul for new accounts: 1.5% risk-per-trade-idea hard limit on funded accounts; martingale/grid, position stacking, all-in trading, lot size restriction and others removed from the prohibited list; Rapid Evaluation discontinued",
+   "source": "https://help.blueberryfunded.com/en/articles/9714626-prohibited-strategies-after-march-12-2026"
+  },
+  {
+   "date": "2026-04-25",
+   "change": "All MT4 and DXtrade accounts migrated to MT5",
+   "source": "https://help.blueberryfunded.com/en/articles/14734054-faq-migration-of-mt4-and-dxtrade-accounts-to-mt5"
+  },
+  {
+   "date": "2026-08-17",
+   "change": "Flex 1-Step launched (12% target, 12% static max loss, 85% split); 2-Step Challenge retired for new purchases; Prime minimum active days cut to 3; Instant Lite relaunched with no minimum days and a 15% consistency check",
+   "source": "https://help.blueberryfunded.com/en/articles/16390779-what-s-changing-on-17-august-2026"
+  },
+  {
+   "date": "2026-08-18",
+   "change": "Help center notice: some rewards taking up to 7-14 business days while payment infrastructure is upgraded (normal 1-2 business days)",
+   "source": "https://help.blueberryfunded.com/en/articles/9550905-processing-time-for-performance-rewards"
+  },
+  {
+   "date": "2026-10-08",
+   "change": "Synthetic Challenge replaced by Synthetic 1-Step, 2-Step and Instant Funding; 24 new synthetic instruments; EAs allowed but grid/martingale banned; 25% funded consistency rule and 5-minute minimum hold",
+   "source": "https://help.blueberryfunded.com/en/articles/16969211-what-is-changing-on-our-synthetic-plans-from-8-october-2026"
+  }
+ ],
+ "pros": [
+  "Static max loss on Flex 1-Step (12%), Prime (10%) and 1-Step (6%)",
+  "Flex 1-Step pays 85% and has no minimum trading days to pass and no time limit",
+  "Prime has no consistency rule, no lot size limit and no risk-per-trade cap",
+  "Official 30% codes on the homepage bring the 50K Flex to $343 and 50K Prime to $284.20",
+  "Backed by the Blueberry Markets broker group; rewards can be moved to a Blueberry Markets account"
+ ],
+ "cons": [
+  "Trustpilot shows no score: rating unavailable for a guideline breach and fake reviews removed (1,752 reviews, 35% one-star)",
+  "Help center says some rewards take up to 7-14 business days during a payment infrastructure upgrade (notice dated 18 Aug 2026)",
+  "Not available to US or Australian residents",
+  "Prime and 1-Step pay 80%; news trading restricted on all programs, and Flex uses a strike system that can cut the split to 60%",
+  "Frequent rule and product changes in 2026, with different rules by purchase date"
+ ],
+ "best_for": "Non-US forex/CFD traders who want a static-drawdown 1-step (Flex, 85%) or 2-step (Prime) evaluation on MT5 or TradeLocker and can trade around news restrictions.",
+ "sources": [
+  {
+   "url": "https://blueberryfunded.com/",
+   "supports": "programs, homepage 50K prices, promo codes, legal entity, scaling"
+  },
+  {
+   "url": "https://blueberryfunded.com/wp-content/uploads/2026/10/bbf-outline-and-fees.pdf",
+   "supports": "Oct 2026 product outline: status of each program, targets, drawdowns, sizes, restricted territories"
+  },
+  {
+   "url": "https://blueberryfunded.com/wp-json/wc/store/v1/products?type=variation&parent=6019&per_page=100",
+   "supports": "store prices per program/size/platform (Flex 50K $490, Prime 50K $406, 1-Step 50K $302)"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/15285827-account-resets",
+   "supports": "50K prices and reset fees for Prime, 1-Step, Flex"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/16390472-what-are-the-rules-on-a-flex-1-step-account",
+   "supports": "Flex rules"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/16387798-how-do-payouts-work-on-a-flex-1-step-account",
+   "supports": "Flex payouts, 1% minimum"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/12136509-what-is-the-prime-challenge",
+   "supports": "Prime rules, sizes, split, news"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/12136586-what-are-the-drawdown-limits-on-a-prime-account",
+   "supports": "Prime drawdown"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/12136624-prime-reward-structure",
+   "supports": "Prime payouts"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/14051815-prime-lot-size-restriction-rule",
+   "supports": "no lot size restriction on Prime"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/12140938-news-trading-policy-for-prime-challenge",
+   "supports": "Prime news rule"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/14070623-1-step-challenge-complete-guide",
+   "supports": "1-Step rules and payouts"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/16390779-what-s-changing-on-17-august-2026",
+   "supports": "Aug 2026 changes, 1-Step still available"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/16969211-what-is-changing-on-our-synthetic-plans-from-8-october-2026",
+   "supports": "Oct 2026 synthetic changes"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/14734054-faq-migration-of-mt4-and-dxtrade-accounts-to-mt5",
+   "supports": "MT5 migration"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/10741972-platform-downloads",
+   "supports": "platforms MT5 and TradeLocker"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/17139695-about-blueberry-funded",
+   "supports": "founded 2024, Blueberry Markets group, SVG contracting entity"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550574-are-any-countries-restricted-from-purchasing-an-evaluation",
+   "supports": "restricted countries, US excluded, Serbia not listed"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9715375-do-you-allow-news-trading",
+   "supports": "general news rule"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550892-do-you-allow-bots-and-ea-expert-advisor-trading",
+   "supports": "EA rule"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550602-am-i-allowed-to-copy-trade",
+   "supports": "copy trading"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9714626-prohibited-strategies-after-march-12-2026",
+   "supports": "prohibited strategies, hedging, March 2026 changes"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550589-can-i-hold-positions-over-the-weekend-and-overnight",
+   "supports": "overnight/weekend holding"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550911-frequency-of-performance-rewards",
+   "supports": "first reward 14 days after first funded trade"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550905-processing-time-for-performance-rewards",
+   "supports": "processing time, 7-14 business day delay notice"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9550906-what-payment-methods-are-available-for-rewards",
+   "supports": "payout methods"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/11404662-what-are-broker-rewards-on-blueberry-funded",
+   "supports": "Broker Rewards to Blueberry Markets"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/10537925-the-7-day-reward-add-on",
+   "supports": "7-day add-on +20%"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9563907-what-can-i-get-paid-as-a-blueberry-funded-affiliate",
+   "supports": "affiliate tiers"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9563964-can-i-earn-on-repeat-purchases",
+   "supports": "10% lifetime on repeat purchases"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9563855-how-often-can-i-withdraw-my-affiliate-commissions",
+   "supports": "affiliate withdrawals"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/blueberryfunded.com",
+   "supports": "Trustpilot: no score (guideline breach), 1,752 reviews"
+  },
+  {
+   "url": "https://blueberryfunded.com/",
+   "supports": "50K prices and rules: Flex 1-Step $490, Prime $406, 1-Step $302.50; codes (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K prices and rules for Flex 1-Step, Prime and 1-Step confirmed on blueberryfunded.com on 2026-10-19.",
+  "path_to_live: no live-capital route is described; accounts are virtual. Broker Rewards only lets traders move approved rewards to their own Blueberry Markets account",
+  "Prime minimum payout and whether any challenge fee is refunded are not stated in the help center",
+  "account_sizes lists every size sold across programs; Flex is $5K-$100K (store also has $200K), Prime $2.5K-$200K, 1-Step $5K-$200K, Instant Lite from $1.25K",
+  "max_contracts: not applicable (CFD lots)"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://blueberryfunded.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 302.5,
+  "monthly": false,
+  "target50": 5000,
+  "maxloss50": 3000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80% (85% on Flex)",
+  "payouts": "Every 14 days",
+  "news": "restricted",
+  "ea": "Restricted",
+  "us": false,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "slug": "maven-trading",
+ "name": "Maven Trading",
+ "website": "https://maventrading.com/",
+ "status": "active",
+ "status_note": "Trustpilot currently shows no rating for Maven Trading: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
+ "market": "forex",
+ "legal_entity_and_hq": "Maven LLC (UAE, DIEZ free zone, reg. no. 105072496000001, named in the T&Cs) and Maven Edu - FZCO (UAE, reg. no. 006-0060823-070425), DSO-IFZA, IFZA Properties, Dubai Silicon Oasis, Dubai, UAE; the site footer also names Maventrade LTD, The Sotheby Building, Rodney Village, Rodney Bay, Gros-Islet, Saint Lucia",
+ "founded_year": 2022,
+ "trustpilot": {
+  "score": null,
+  "reviews": 5219,
+  "url": "https://www.trustpilot.com/review/maventrading.com",
+  "seen": "2026-10-19"
+ },
+ "platforms": [
+  "MT5",
+  "Match Trader"
+ ],
+ "instruments": "Forex, commodities/precious metals (incl. 24/7 'Gold Eternal' gold), indices and crypto CFDs, all simulated; Maven advertises '400+ pair options'",
+ "account_sizes": [
+  2000,
+  5000,
+  10000,
+  20000,
+  50000,
+  100000
+ ],
+ "programs": [
+  {
+   "name": "Standard 2 Step",
+   "steps": "2-step",
+   "billing": "one-time",
+   "price_50k_list": 220,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "static (8% of initial balance)",
+   "daily_loss_limit_50k": 2000,
+   "consistency_rule": "none",
+   "min_trading_days": 3,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with an add-on bought at checkout",
+   "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
+   "payout_rules_note": "Minimum $20 profit (before split). At least 3 profitable days of 0.5%+ are needed in each phase AND in each funded payout cycle. Challenge fee refunded after the third reward. Payout processed after KYC.",
+   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). min_trading_days = 3 profitable days of at least 0.5% each. Daily loss 4%, calculated from the higher of balance or equity at 00:00 UTC (so the dollar limit can be above $2,000). Pricing page shows $198 with code ETERNAL (10% off) vs $220 list. Leverage 1:75 forex, 1:20 commodities/metals/indices, 1:2 digital ETFs."
+  },
+  {
+   "name": "Standard 1 Step",
+   "steps": "1-step",
+   "billing": "one-time",
+   "price_50k_list": 170,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 4000,
+   "max_loss_50k": 2500,
+   "drawdown_type": "intraday trailing on equity (5%; follows highest running equity including unrealized profit; no lock level stated)",
+   "daily_loss_limit_50k": 1500,
+   "consistency_rule": "none",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with an add-on bought at checkout",
+   "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
+   "payout_rules_note": "Minimum $20 profit (before split). Challenge fee refunded after the third reward. Payout processed after KYC.",
+   "notes": "Target 8% ($4,000). No minimum trading days ('You may pass the challenge in a day'). Daily loss 3% from the higher of balance or equity at 00:00 UTC. Pricing page shows $153 with code ETERNAL vs $170 list."
+  },
+  {
+   "name": "Standard 3 Step",
+   "steps": "3-step",
+   "billing": "one-time",
+   "price_50k_list": 190,
+   "price_50k_currency": "USD",
+   "activation_fee_50k": 0,
+   "reset_fee_50k": null,
+   "profit_target_50k": 1500,
+   "max_loss_50k": 1500,
+   "drawdown_type": "static (3% of initial balance)",
+   "daily_loss_limit_50k": 1000,
+   "consistency_rule": "none",
+   "min_trading_days": null,
+   "max_contracts_50k": null,
+   "profit_split": "80%; 90% with an add-on bought at checkout",
+   "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
+   "payout_rules_note": "Minimum $20 profit (before split). Challenge fee refunded after the third reward.",
+   "notes": "Target 3% ($1,500) in each of the three phases. No minimum trading days. Daily loss 2% from the higher of balance or equity at 00:00 UTC. Pricing page shows $171 with code ETERNAL vs $190 list."
+  }
+ ],
+ "news_trading": "Restricted: on Standard 1/2/3 Step, no opening or closing trades on affected instruments from 2 minutes before to 2 minutes after Forex Factory 'Red Folder' releases (a hard breach in the challenge); positions opened earlier may be held. 2 Step Omo: unrestricted in evaluation, funded profit per news event capped at 0.5% of balance. Instant, Instant Mini, BNPL and Prediction Markets: no news restriction",
+ "ea_bots_allowed": "Not allowed: 'EAs and automated trading are prohibited across all Maven platforms. All trades must be executed manually.' (the T&Cs elsewhere mention prior approval for automated trading, which conflicts)",
+ "copy_trading": "Restricted: only copying your own trades between your own accounts; copying another person breaches both accounts",
+ "overnight_weekend_holding": "Allowed: positions may be held overnight and over the weekend",
+ "us_residents_accepted": true,
+ "restricted_countries_note": "Serbia: NO, not on Maven's restricted list. Restricted (25): Afghanistan, Belarus, Burkina Faso, Burundi, Central African Republic, Republic of the Congo, Cuba, Eritrea, Guinea, Guinea-Bissau, Guyana, Haiti, Iran, Mali, North Korea, Russia, Saint Lucia, Sierra Leone, Somalia, South Sudan, Sudan, Ukraine, Vanuatu, Venezuela, Yemen. US and Canada are not on the list, but MetaTrader is not available there (Match Trader only). List on https://maventrading.com/terms-and-conditions and https://maventrading.com/faqs",
+ "payout_methods": [
+  "USDT (BSC)",
+  "USDC (ERC20)",
+  "Rise Pay",
+  "Direct bank transfer (Nigeria, Kenya, Ghana only)"
+ ],
+ "path_to_live": null,
+ "current_public_promo": {
+  "code": "ETERNAL",
+  "discount": "10% off",
+  "applies_to": "Challenges, per the banner on Maven's site",
+  "source_url": "https://maventrading.com/",
+  "seen": "2026-10-19"
+ },
+ "affiliate_program": {
+  "exists": true,
+  "commission": "Silver (0-9 referrals) 5%, Gold (10-49) 7.5%, Platinum (50-99) 10%, Diamond (100+) 12.5% (must stay active); sub-affiliate bonus +2% level 2, +1% level 3",
+  "url": "https://maventrading.com/affiliates",
+  "notes": "Application reviewed; requires 500+ social followers or a website with measurable traffic. Paid monthly once 10 referrals or $200 in sales is reached; KYC before first payout. The affiliate page shows the same 25-country restricted list; Serbia is not on it, but Maven does not explicitly state that Serbian residents can join. Sign-up at affiliates.maventrading.com/signup/."
+ },
+ "recent_changes_2026": [
+  {
+   "date": "2026-03",
+   "change": "'Gold Eternals' 24/7 gold trading added on MT5 and Match Trader at no cost (reported by a third-party tracker)",
+   "source": "https://thegodfunded.com/en/news/?firm=Maven"
+  },
+  {
+   "date": "2026-07",
+   "change": "2 Step Omo challenge described on Maven's blog (6% / 8% targets, 4% daily, 8% static, 4 profitable days, M2 Account Saver); launch date not stated",
+   "source": "https://maventrading.com/blog/two-step-omo-challenge-what-it-is-how-it-works"
+  }
+ ],
+ "pros": [
+  "Low entry prices: 50K Standard 2 Step $220 list ($198 with the published ETERNAL code); sizes from $2K",
+  "Static 8% max loss on the 2 Step and no consistency rule on Standard plans",
+  "Overnight and weekend holding allowed on all plans",
+  "Several payout routes (USDT, USDC, Rise Pay) with a $20 minimum",
+  "Operating since 2022; 1-, 2- and 3-step formats"
+ ],
+ "cons": [
+  "Trustpilot rating is withheld for a guidelines breach, with fake reviews removed (seen 2026-10-19)",
+  "T&Cs require traders not to 'defame' Maven on social media and review sites, with account termination as the stated consequence",
+  "EAs/bots are prohibited; news trading is restricted ±2 minutes on Standard plans",
+  "Fee is refunded only after the third reward; 1 Step uses an equity-based trailing max loss with no stated lock",
+  "Funded accounts merge to at most $200,000 combined; no scaling plan or live-capital route published"
+ ],
+ "best_for": "Low-budget forex/CFD traders who trade manually and want small, cheap static-drawdown 2-step or 3-step evaluations with weekend holding.",
+ "sources": [
+  {
+   "url": "https://maventrading.com/",
+   "supports": "programs, account sizes, prices, promo banners, legal entities, restricted countries, MetaTrader US/Canada note"
+  },
+  {
+   "url": "https://maventrading.com/pricing",
+   "supports": "50K list and coupon prices, targets, daily/max loss, splits, payout timing, refund on third withdrawal, ETERNAL and OMO codes"
+  },
+  {
+   "url": "https://maventrading.com/faqs",
+   "supports": "drawdown types, daily loss calculation, min days, consistency, splits/add-on, payout timing and minimums, payout methods, refund, news, EAs, copy trading, holding, platforms, leverage, $200K merge cap, inactivity, Prediction Markets, operating since 2022"
+  },
+  {
+   "url": "https://maventrading.com/terms-and-conditions",
+   "supports": "Maven LLC entity, last amended 22/10/2025, restricted list, prohibited strategies, Section 14 defamation clause, refunds, simulated accounts"
+  },
+  {
+   "url": "https://maventrading.com/affiliates",
+   "supports": "affiliate tiers, requirements, payout threshold, restricted list"
+  },
+  {
+   "url": "https://maventrading.com/about",
+   "supports": "CEO Jon Alex and leadership; UAE registration"
+  },
+  {
+   "url": "https://maventrading.com/blog",
+   "supports": "2026 blog posts"
+  },
+  {
+   "url": "https://maventrading.com/blog/two-step-omo-challenge-what-it-is-how-it-works",
+   "supports": "Omo rules, post dated 2026-07-07"
+  },
+  {
+   "url": "https://www.trustpilot.com/review/maventrading.com",
+   "supports": "rating withheld, 5,219 reviews, fake reviews removed"
+  },
+  {
+   "url": "https://maventrading.com/pricing",
+   "supports": "50K prices and rules: 2 Step $220, 1 Step $170, 3 Step $190 (checked in browser)"
+  }
+ ],
+ "uncertain": [
+  "50K prices and rules for Standard 1, 2 and 3 Step confirmed on maventrading.com/pricing on 2026-10-19.",
+  "us_residents_accepted: US and Canada are not on the restricted list and Maven only says MetaTrader is unavailable there; Maven does not state explicitly that US residents can trade on Match Trader",
+  "Legal entity: the T&Cs name Maven LLC (reg. 105072496000001) while the footer names Maven Edu - FZCO (reg. 006-0060823-070425) and Maventrade LTD (Saint Lucia); the site does not explain how they relate, and Saint Lucia itself is on the restricted list",
+  "Standard 1 Step trailing drawdown: Maven does not say whether it ever stops trailing",
+  "Payout processing time after approval not stated",
+  "path_to_live: none published; all accounts are simulated",
+  "Gold Eternals date (2026-03) is from a third-party news page; Omo launch date not stated (blog post 2026-07-07)",
+  "Affiliate eligibility for Serbia: not explicitly stated; Serbia is only absent from the restricted list",
+  "max_contracts: not applicable (CFD lots)"
+ ],
+ "checked": "2026-10-19",
+ "link": "https://maventrading.com/",
+ "facets": {
+  "market": "forex",
+  "price50": 220,
+  "monthly": false,
+  "target50": 4000,
+  "maxloss50": 4000,
+  "dd": "static",
+  "consistency_eval": false,
+  "consistency_funded": false,
+  "split": "80% (90% add-on)",
+  "payouts": "Every 10 business days",
+  "news": "restricted",
+  "ea": "Not allowed",
+  "us": null,
+  "tp": null,
+  "ccy": "USD",
+  "instant": true
+ }
+}
