@@ -748,8 +748,22 @@ def pick_list(l, firms):
         out.sort(key=lambda f: order.index(f["slug"]) if f["slug"] in order else 999)
     else:
         key = l.get("sort", "price50")
-        out.sort(key=lambda f: (fac(f, key) is None, fac(f, key) or 0))
+        val = (lambda f: (biggest_maxloss(f) or (None,))[0]) if key == "maxloss_max" else (lambda f: fac(f, key))
+        if key == "maxloss_max":
+            out = [f for f in out if val(f) is not None]
+        sign = -1 if l.get("desc") else 1
+        out.sort(key=lambda f: (val(f) is None, sign * (val(f) or 0)))
     return out[: l.get("limit", 10)]
+
+
+def biggest_maxloss(f):
+    """(amount, program) for the program with the largest numeric 50K max loss."""
+    best = None
+    for p in f.get("programs") or []:
+        v = p.get("max_loss_50k")
+        if isinstance(v, (int, float)) and (best is None or v > best[0]):
+            best = (v, p)
+    return best
 
 
 def build_lists(site, firms, lists):
@@ -761,6 +775,11 @@ def build_lists(site, firms, lists):
         items = ""
         for f in picks:
             why = (l.get("why") or {}).get(f["slug"]) or (f["_ed_meta"].get("one_liner") or f.get("best_for") or "")
+            if l.get("why_auto") == "maxloss" and biggest_maxloss(f):
+                v, pr = biggest_maxloss(f)
+                dd = re.split(r"[(;,]", pr.get("drawdown_type") or "")[0].strip()
+                why = (f"Largest 50K max loss: {strip_tags(money(v, fac(f, 'acc_ccy', fac(f, 'ccy', 'USD'))))} "
+                       f"({v / 500:g}% of the account) on {pr['name']}" + (f", {dd[0].lower() + dd[1:]}" if dd else "") + ".")
             ccy = fac(f, "ccy", "USD")
             lead = (f"50K for {strip_tags(money(fac(f, 'price50'), ccy))}{'/mo' if fac(f, 'monthly') else ''}, "
                     if fac(f, 'price50') is not None else "50K price not published, ")

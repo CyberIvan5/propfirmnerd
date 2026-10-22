@@ -168,15 +168,59 @@
  },
  {
   "slug": "prop-firms-that-accept-us-traders",
-  "h1": "Prop firms that accept US traders",
-  "title": "Prop Firms That Accept US Traders ({month})",
-  "description": "Futures and forex prop firms that accept US residents, checked against each firm's own country rules, with 50K prices and drawdown.",
+  "h1": "Prop firms for US traders",
+  "title": "Prop Firms for US Traders: Which Accept US Residents ({month})",
+  "description": "Which futures and forex prop firms accept US residents, which platforms US traders can use at each, and which firms do not serve the US. Checked against each firm's own pages.",
   "blurb": "US residents accepted, per each firm's own pages",
   "where": {
    "us": true
   },
   "limit": 30,
-  "intro": "Every firm below either says on its own pages that it accepts US residents or leaves the US off its restricted-country list. Most are futures firms, which trade regulated US exchanges. Some forex firms serve US clients through a separate entity or a reduced set of platforms; the review for each firm says how.",
-  "why": {}
+  "intro": "Every firm below says on its own pages that it accepts US residents, or leaves the US off its restricted-country list. Futures firms are the simplest option for US traders. Forex firms often do accept US residents, but usually not on MetaTrader 5, so check the platform before you buy.",
+  "why": {},
+  "body": "<h2>Futures or forex?</h2>\n<p>Futures prop firms such as Topstep, Apex, Tradeify, Lucid, MyFundedFutures, Alpha Futures, Phidias, TradeDay, Funded Futures Network and Earn2Trade all accept US residents. Their evaluations run on US futures platforms like Tradovate, NinjaTrader and Rithmic, so there is no platform catch.</p>\n<p>Forex and CFD firms are different. Several of them say MetaTrader 5 is not available to US residents, so US traders get a smaller set of platforms:</p>\n<ul>\n<li><a href=\"/firms/ftmo/\">FTMO</a>: US clients are served through a separate US offering at ftmo.oanda.com.</li>\n<li><a href=\"/firms/e8-markets/\">E8 Markets</a>: no MT5 for US citizens; US traders use TradeLocker, cTrader or Match-Trader through E8's US entity.</li>\n<li><a href=\"/firms/goat-funded-trader/\">Goat Funded Trader</a>: no MT5 or cTrader for US clients; TradeLocker, Match-Trader and Volumetrica are available.</li>\n<li><a href=\"/firms/hola-prime/\">Hola Prime</a>: US clients can trade forex on Match-Trader and TradeLocker only.</li>\n</ul>\n<h2>Firms where US access is limited or unclear</h2>\n<p>These firms do not list the US as restricted, but limit what US residents can use, or do not say clearly: <a href=\"/firms/funderpro/\">FunderPro</a> (TradeLocker challenges only), <a href=\"/firms/maven-trading/\">Maven Trading</a> (Match Trader only), <a href=\"/firms/brightfunded/\">BrightFunded</a> (DXtrade only), <a href=\"/firms/the5ers/\">The5ers</a> (no MT5 for US residents) <a href=\"/firms/funding-traders/\">Funding Traders</a> (MT5 not intended for US residents) and <a href=\"/firms/alpha-capital-group/\">Alpha Capital Group</a> (its help center says US residents can use DXtrade and TradeLocker, but its order form asks you to confirm you are not a US resident). For <a href=\"/firms/aqua-funded/\">Aqua Funded</a>, <a href=\"/firms/fundingpips/\">FundingPips</a>, <a href=\"/firms/blue-guardian/\">Blue Guardian</a>, <a href=\"/firms/bulenox/\">Bulenox</a>, <a href=\"/firms/take-profit-trader/\">Take Profit Trader</a> and <a href=\"/firms/top-one-futures/\">Top One Futures</a>, we could not find a clear statement either way. Ask the firm before you pay.</p>\n<h2>Firms that do not accept US residents</h2>\n<p><a href=\"/firms/fxify/\">FXIFY</a> and <a href=\"/firms/blueberry-funded/\">Blueberry Funded</a> list the United States as a restricted country.</p>",
+  "faq": [
+   [
+    "Can US residents use prop firms?",
+    "Yes. Most futures prop firms accept US residents, including Topstep, Apex, Tradeify, Lucid and MyFundedFutures. Many forex prop firms accept them too, but often not on MetaTrader 5."
+   ],
+   [
+    "Why can't US traders use MT5 at some prop firms?",
+    "Several forex prop firms, including E8, Goat Funded Trader, FunderPro and The5ers, say MetaTrader 5 is not available to US residents. They offer other platforms such as TradeLocker, Match-Trader, cTrader or DXtrade instead. The firms do not all give a reason."
+   ],
+   [
+    "Which prop firms do not accept US traders?",
+    "Among the firms we track, FXIFY and Blueberry Funded list the United States as restricted."
+   ],
+   [
+    "Is FTMO available in the US?",
+    "Yes, through a separate US offering run with OANDA at ftmo.oanda.com."
+   ]
+  ],
+  "published": "2026-10-16"
+ },
+ {
+  "slug": "prop-firms-with-biggest-drawdown",
+  "h1": "Prop firms with the biggest drawdown",
+  "title": "Prop Firms With the Biggest Drawdown on a 50K Account ({month})",
+  "description": "Which prop firms give the largest max loss (drawdown) on a 50K account, ranked by dollar amount, with the plan and drawdown type for each.",
+  "blurb": "Ranked by the largest 50K max loss",
+  "sort": "maxloss_max",
+  "desc": true,
+  "limit": 15,
+  "why_auto": "maxloss",
+  "intro": "These firms are ranked by the largest maximum loss they allow on a 50K account, across all of their plans. A bigger drawdown gives you more room before the account fails, but the type matters as much as the size: a static limit stays put, while a trailing limit follows your profits up.",
+  "body": "<h2>Bigger is not always looser</h2>\n<p>Compare drawdowns of the same type. A $5,000 static max loss never moves, so every dollar of profit widens your cushion. A $2,000 end-of-day trailing drawdown rises with your best closing balance, so the cushion can shrink after a good day. Intraday trailing is the tightest, because it also follows open profit. See <a href=\"/guides/trailing-drawdown/\">trailing drawdown explained</a>, or try the <a href=\"/tools/drawdown-simulator/\">drawdown simulator</a> with your own days.</p>\n<h2>Check the daily loss limit too</h2>\n<p>Most forex firms with a large max loss also have a daily loss limit, often 4% or 5% of the account. On a 50K account that is $2,000 to $2,500 in one day, whatever the overall drawdown. Each review lists both.</p>\n<h2>Futures vs forex</h2>\n<p>Forex and CFD firms usually set the max loss as a percentage of the account, often 8% to 12%. Futures firms usually set a fixed dollar amount instead, typically $2,000 (sometimes $2,500) on a 50K account, usually trailing.</p>",
+  "faq": [
+   [
+    "Which prop firm has the biggest drawdown?",
+    "Among the firms we track, the largest 50K max loss is at the top of the list on this page, with the plan it applies to. Rankings change when firms change their rules, so check the date at the top."
+   ],
+   [
+    "Is a static or trailing drawdown better?",
+    "For the same dollar amount, static is easier: the limit never moves, so profits add to your cushion. A trailing drawdown follows your highest balance up, which can leave you with less room after a good run."
+   ]
+  ],
+  "published": "2026-10-22"
  }
 ]
