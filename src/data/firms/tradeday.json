@@ -238,7 +238,7 @@
   "Weekend holding is not addressed explicitly; it is inferred from the 'flat before the daily close' rule",
   "Help-center 'modified' dates show no year"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-10-26",
  "link": "https://www.tradeday.com/",
  "facets": {
   "market": "futures",

@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20261022">
+<link rel="stylesheet" href="/assets/style.css?v=20261026">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Drawdown simulator", "url": "https://propfirmnerd.com/tools/drawdown-simulator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does intraday trailing fail me earlier?", "acceptedAnswer": {"@type": "Answer", "text": "Intraday trailing raises your limit as soon as open profit makes a new high, even if you give that profit back before the close. End-of-day trailing only moves the limit at the close, and static never moves it."}}, {"@type": "Question", "name": "What does 'stops trailing at the starting balance' mean?", "acceptedAnswer": {"@type": "Answer", "text": "Many futures firms stop moving the limit once it reaches your starting balance (sometimes starting balance plus a small amount). After that, the limit stays fixed. Tick the box to model this."}}, {"@type": "Question", "name": "Why does the simulator assume the high came before the low?", "acceptedAnswer": {"@type": "Answer", "text": "With only the day's high, low and close, we cannot know the order. Assuming the high came first is the worst case for intraday trailing, which is how a firm's system would treat it if it happened."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://propfirmnerd.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Drawdown simulator", "item": "https://propfirmnerd.com/tools/drawdown-simulator/"}]}]}</script>
 </head>
 <body>
@@ -74,7 +74,7 @@
 </div>
 <p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
 </div></footer>
-<script src="/assets/js/tools.js?v=20261022"></script>
+<script src="/assets/js/tools.js?v=20261026"></script>
 <script>
 (function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
 b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});

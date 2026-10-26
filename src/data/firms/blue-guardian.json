@@ -85,7 +85,7 @@
    "profit_target_50k": null,
    "max_loss_50k": 3000,
    "drawdown_type": "Trailing",
-   "daily_loss_limit_50k": null,
+   "daily_loss_limit_50k": 1500,
    "consistency_rule": "20%",
    "min_trading_days": null,
    "max_contracts_50k": null,
@@ -107,11 +107,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "HALLOWEEN",
-  "discount": "About 35% off",
-  "applies_to": "Forex challenges (shown on Blue Guardian's site)",
-  "source_url": "https://blueguardian.com/forex",
-  "seen": "2026-10-16"
+  "code": "SPOOKY",
+  "discount": "25% off",
+  "applies_to": "All accounts, CFDs and futures (site-wide banner on Blue Guardian's site)",
+  "source_url": "https://blueguardian.com/blogs/blue-guardian-forex-accounts-explained",
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": true,

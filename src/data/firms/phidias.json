@@ -100,11 +100,11 @@
  ],
  "path_to_live": "E2L: automatic. Hit the target and click 'Switch to Live' for a LIVE account at Dorman Trading. Fundamental/Premium: discretionary review from 5 payouts or $100,000 cumulative profit; the earlier 3 payouts / $75,000 threshold is marked deprecated. Further tiers: ELITE LIVE (60 days + $125K balance) and MASTER LIVE (120 days + $250K). One LIVE account per trader.",
  "current_public_promo": {
-  "code": "BIG50",
-  "discount": "60% off monthly plans, 85% off one-time plans",
-  "applies_to": "Shown in the account configurator on Phidias' homepage",
-  "source_url": "https://phidiaspropfirm.com/",
-  "seen": "2026-10-16"
+  "code": null,
+  "discount": null,
+  "applies_to": null,
+  "source_url": null,
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": true,

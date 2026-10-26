@@ -36,13 +36,13 @@
    "reset_fee_50k": null,
    "profit_target_50k": 4000,
    "max_loss_50k": 5000,
-   "drawdown_type": null,
+   "drawdown_type": "Static (10% of the starting balance, never moves)",
    "daily_loss_limit_50k": 2500,
-   "consistency_rule": "None on bi-weekly payouts; 35% on the monthly 100% option",
+   "consistency_rule": "None on weekly or bi-weekly rewards; 35% on the On Demand 100% option",
    "min_trading_days": "3 per phase (per the plan page)",
    "max_contracts_50k": null,
-   "profit_split": "80% bi-weekly; 100% monthly",
-   "payout_frequency": "Bi-weekly or monthly (trader's choice)",
+   "profit_split": "60% weekly; 80% bi-weekly; 100% on demand",
+   "payout_frequency": "Weekly, bi-weekly or on demand (trader's choice)",
    "payout_rules_note": null,
    "notes": "Targets are 8% in phase 1 and 5% in phase 2. Price shown is with the 5% daily loss option; a 3% option is also sold."
   }
@@ -68,9 +68,15 @@
   "url": "https://help.fundingpips.com/hc/en-us/articles/34447107645841",
   "notes": "Help center links a 'Become an Affiliate' article; it could not be read (rate limit)."
  },
- "recent_changes_2026": [],
+ "recent_changes_2026": [
+  {
+   "date": "2026-10",
+   "change": "Reward cycles listed as Weekly (60%), Bi-Weekly (80%) and On Demand (100%, 35% consistency); no monthly option shown",
+   "source": "https://help.fundingpips.com/hc/en-us/articles/34501809112081-2-Step-Standard"
+  }
+ ],
  "pros": [
-  "Trader picks the payout schedule, up to 100% split on monthly payouts",
+  "Trader picks the reward cycle, up to 100% split on the On Demand option",
   "Evaluation allows overnight/weekend holding and holding through news",
   "Personal fully automated EAs allowed with proof of ownership",
   "First-purchase discount published by the firm (HELLO, 20%)"
@@ -127,11 +133,11 @@
   "monthly": false,
   "target50": 4000,
   "maxloss50": 5000,
-  "dd": null,
+  "dd": "static",
   "consistency_eval": false,
   "consistency_funded": null,
-  "split": "80% (100% monthly)",
-  "payouts": "Bi-weekly or monthly",
+  "split": "80% (100% on demand)",
+  "payouts": "Weekly, bi-weekly or on demand",
   "news": "restricted",
   "ea": "Restricted",
   "us": null,

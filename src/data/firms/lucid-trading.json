@@ -47,13 +47,13 @@
    "max_loss_50k": 2000,
    "drawdown_type": "EOD trailing (trails highest closing balance); locks at $50,100 once the $52,100 initial trail balance is reached or a payout is requested",
    "daily_loss_limit_50k": null,
-   "consistency_rule": "Evaluation: 50% (built-in cushion, can pass in two days). Funded: none.",
+   "consistency_rule": "Evaluation: 40% (50% as a paid add-on). Funded: none.",
    "min_trading_days": null,
    "max_contracts_50k": 4,
    "profit_split": "90/10",
    "payout_frequency": "Any day after 5 days of $150+ profit since the last payout (count resets after each approved payout)",
    "payout_rules_note": "50K: minimum $500; maximum 50% of profit, capped at $2,000 per request (cap does not increase); cycle must be net positive; no buffer required. Up to 5 payouts per account, after which the account is moved to live. Funded scaling: 2 minis ($0-$999 profit), 3 ($1,000-$1,999), 4 ($2,000+).",
-   "notes": "Daily loss limit is optional, chosen at purchase (DLL On = lower price, DLL Off = higher price); amount for 50K not stated. Price shown is the store's single listed price for 'LucidFlex 50K' (same on Tradovate/NinjaTrader and Rithmic); the store does not label it DLL On or Off."
+   "notes": "Daily loss limit is optional, chosen at purchase (DLL On = lower price, DLL Off = higher price); amount for 50K not stated. Price shown is the store's single listed price for 'LucidFlex 50K' (same on Tradovate/NinjaTrader and Rithmic); the store does not label it DLL On or Off. The 50% consistency option is a paid add-on at checkout, so the listed price is the standard 40% version."
   },
   {
    "name": "LucidPro (Evaluation -> LucidPro Funded)",
@@ -111,6 +111,11 @@
    "date": "2026",
    "change": "New live structure: one live account per funded account with a payout, starting at $0 with daily payouts, plus a cash-out option.",
    "source": "https://support.lucidtrading.com/en/articles/16558826-new-live-structure"
+  },
+  {
+   "date": "2026-10",
+   "change": "LucidFlex evaluation consistency is 40% as standard; 50% is now a paid add-on",
+   "source": "https://support.lucidtrading.com/en/articles/16226050-lucidflex-customization"
   }
  ],
  "pros": [

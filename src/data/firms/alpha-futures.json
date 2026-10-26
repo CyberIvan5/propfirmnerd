@@ -104,11 +104,11 @@
  ],
  "path_to_live": "Risk/Alpha Prime teams may call a trader to live after e.g. 5 performance fees on one Qualified account or significant lifetime payouts. Live 50K: $0 start, $2,000 EOD drawdown, daily payouts, no consistency or news limits. Two options: Alpha Futures Live (80% split, daily uncapped withdrawals) or Alpha Prime (60% split plus a 12-month salary funded by 50% of Qualified sim profit, capped at $75,000). All Qualified accounts close when called to live.",
  "current_public_promo": {
-  "code": "ALPHA50",
+  "code": "MYALPHA50",
   "discount": "50% off",
-  "applies_to": "Standard, Advanced and Direct (ALPHA40 gives 40% off Zero); valid October 6 to 31, 2026",
-  "source_url": "https://alpha-futures.com/",
-  "seen": "2026-10-16"
+  "applies_to": "Standard, Advanced and Direct (MYALPHA40 gives 40% off Zero); valid October 19 to 31, 2026",
+  "source_url": "https://alpha-futures.com/alpha-futures-discount-codes",
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": true,
@@ -264,7 +264,7 @@
   "Terms list a London notices address (10 Lower Thames Street) different from the Harpenden registered office",
   "Trustpilot shows location 'United States' although the company is UK-registered"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-10-26",
  "link": "https://alpha-futures.com/",
  "facets": {
   "market": "futures",

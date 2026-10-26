@@ -57,13 +57,13 @@
    "name": "E8 Pro",
    "steps": "1-step",
    "billing": "one-time",
-   "price_50k_list": 218,
+   "price_50k_list": 228,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
    "reset_fee_50k": null,
-   "profit_target_50k": 3000,
-   "max_loss_50k": 3000,
-   "drawdown_type": "Static",
+   "profit_target_50k": 4000,
+   "max_loss_50k": 4000,
+   "drawdown_type": "Static (8% of the initial balance, never trails)",
    "daily_loss_limit_50k": 1250,
    "consistency_rule": "None, but a $1,000 daily profit cap",
    "min_trading_days": null,
@@ -134,6 +134,11 @@
    "date": "2025-12",
    "change": "Lineup cut to E8 One and a rebuilt 1-step E8 Signature; older programs removed (reported by a third-party tracker)",
    "source": "https://forexpropreviews.com/major-update-e8-markets-rebuilds-removes-all-other-programs/"
+  },
+  {
+   "date": "2026-10",
+   "change": "E8 Pro 50K list price shown as $228 (was $218); 8% profit target ($4,000) and 8% static drawdown ($4,000)",
+   "source": "https://e8markets.com/e8-pro"
   }
  ],
  "pros": [

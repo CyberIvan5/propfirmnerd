@@ -102,11 +102,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "ETERNAL",
-  "discount": "10% off",
-  "applies_to": "Challenges, per the banner on Maven's site",
-  "source_url": "https://maventrading.com/",
-  "seen": "2026-10-19"
+  "code": "DIAMOND",
+  "discount": "5% off",
+  "applies_to": "Challenges, per Maven's challenge pages (no end date shown)",
+  "source_url": "https://maventrading.com/challenges/2-step",
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": true,

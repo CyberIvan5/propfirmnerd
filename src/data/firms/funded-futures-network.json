@@ -79,11 +79,11 @@
  ],
  "path_to_live": "After 5 consecutive payouts on an account the trader can apply to their risk manager (final decision is the risk manager's). Live accounts: 90/10 split, no consistency rule, no maximum payout, same-day payouts. For accounts bought after 2026-07-01 sim-funded profits are forfeited and live starts at account size plus original buffer.",
  "current_public_promo": {
-  "code": null,
-  "discount": null,
-  "applies_to": null,
-  "source_url": null,
-  "seen": "2026-10-16"
+  "code": "DOUBLE50",
+  "discount": "50% off plus a free second account (buy 1 get 1)",
+  "applies_to": "STEADY evaluations, new purchases; free account must be claimed within 45 days; no end date shown",
+  "source_url": "https://steady.fundedfuturesnetwork.com/",
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": null,

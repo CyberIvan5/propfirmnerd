@@ -101,11 +101,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "DOUBLE25",
-  "discount": "25% off",
-  "applies_to": "All challenge plans, per the banner on BrightFunded's site",
+  "code": "HW30",
+  "discount": "30% off",
+  "applies_to": "All challenge plans (Halloween offer), per the banner on BrightFunded's site; no end date shown",
   "source_url": "https://brightfunded.com/",
-  "seen": "2026-10-19"
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": true,
@@ -309,7 +309,7 @@
   "Free $1K Challenge launch date is not stated (help article dated 2026-08-26)",
   "max_contracts: not applicable (CFD lots)"
  ],
- "checked": "2026-10-19",
+ "checked": "2026-10-26",
  "link": "https://brightfunded.com/",
  "facets": {
   "market": "forex",

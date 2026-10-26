@@ -94,9 +94,9 @@
  "current_public_promo": {
   "code": "GFT45",
   "discount": "45% off",
-  "applies_to": "All accounts (a separate code, FIRST, gives new customers 50% off their first account)",
+  "applies_to": "All accounts (a separate code, FIRSTGFT, gives new customers 50% off their first account)",
   "source_url": "https://www.goatfundedtrader.com/",
-  "seen": "2026-10-16"
+  "seen": "2026-10-26"
  },
  "affiliate_program": {
   "exists": true,
