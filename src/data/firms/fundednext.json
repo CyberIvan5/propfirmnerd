@@ -51,7 +51,7 @@
    "profit_split": "80% default (21-day cycle); 60% (3 Profitable Days option); 90% (On-Demand option); 90% after Scale-Up; 95% with paid Lifetime add-on",
    "payout_frequency": "first reward after 21 days, then every 14 days (default)",
    "payout_rules_note": "Fee refunded with the first reward. A 15% challenge reward (of the Phase 1 + 2 targets) is paid once Scale-Up criteria are met (accounts bought from 2026-01-12); not available to US traders. On funded: max 3% open risk at any time; profits from trades within ±5 min of high-impact news count at 40% only; Quick Strike (trades closed within 30s) must stay below 30% of profit.",
-   "notes": "Sizes: 6K, 15K, 25K, 50K, 100K, 200K. 50K targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 5% of initial balance. EAs are NOT allowed at $50K and above. The October promo (STRTN) covers only the 6K size."
+   "notes": "Sizes: 6K, 15K, 25K, 50K, 100K, 200K. 50K targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 5% of initial balance. EAs are NOT allowed at $50K and above."
   },
   {
    "name": "Stellar 1-Step (CFD)",
@@ -111,11 +111,11 @@
  ],
  "path_to_live": "Futures: review after 15 Performance Rewards across the trader profile (then every 5 for returning traders), not guaranteed; up to 5 live accounts; Challenge accounts closed on transfer. CFD: no live route published (Scale-Up program raises split to 90%).",
  "current_public_promo": {
-  "code": "STRTN",
-  "discount": "Up to 33% off (up to 20% for US traders)",
-  "applies_to": "Only the 6K CFD challenge, from October 12, 2026; FundedNext says it may end at any time",
+  "code": null,
+  "discount": null,
+  "applies_to": null,
   "source_url": "https://fundednext.com/",
-  "seen": "2026-10-16"
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": true,

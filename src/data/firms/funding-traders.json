@@ -101,11 +101,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "TRICK",
-  "discount": "50% off plus a free matching account",
-  "applies_to": "Accounts at checkout, per the banner on Funding Traders' site (code TREAT adds a bundle)",
+  "code": "HALLOWIN",
+  "discount": "70% off",
+  "applies_to": "Per the top banner on Funding Traders' site (accounts and end date not stated); code TRYFT gives 50% off a first challenge",
   "source_url": "https://fundingtraders.com/",
-  "seen": "2026-10-19"
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": true,
@@ -246,7 +246,7 @@
   "Instant news window: help article says 5 minutes, Terms of Service say 10 minutes",
   "Restricted countries: Terms list 24 jurisdictions, help center lists 5; Serbia is on neither",
   "path_to_live: no live-account route is published (an invite-only Elite program for $1M-$2M accounts exists; the page does not say it is live capital)",
-  "Promo codes vary by page (homepage INSTANT70, checkout TRICK/TREAT, older cached pages MATRIX); terms and expiry of INSTANT70 not stated",
+  "Promo codes vary over time (on 2026-11-01 the homepage showed HALLOWIN 70% off and TRYFT 50% off a first challenge); accounts covered and expiry not stated",
   "max_contracts: not applicable (CFD lots); Instant capped at 20 lots per trade per Terms"
  ],
  "checked": "2026-10-19",

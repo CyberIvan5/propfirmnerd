@@ -86,10 +86,10 @@
  "path_to_live": null,
  "current_public_promo": {
   "code": null,
-  "discount": "$100K High Stakes for $149",
-  "applies_to": "Limited-time offer shown on The5ers' High Stakes page",
+  "discount": null,
+  "applies_to": null,
   "source_url": "https://the5ers.com/high-stakes/",
-  "seen": "2026-10-16"
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": true,

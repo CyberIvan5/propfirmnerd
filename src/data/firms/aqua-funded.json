@@ -105,11 +105,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "SPOOKY",
-  "discount": "25% off",
-  "applies_to": "Challenges, per the banner on AquaFunded's site; the pricing table shows code AUTUMN for the same 25%",
+  "code": "HALLOWEEN",
+  "discount": "35% off",
+  "applies_to": "First account, per the banner and pricing table on AquaFunded's site (\"Limited Time\", no end date shown)",
   "source_url": "https://www.aquafunded.com/",
-  "seen": "2026-10-19"
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": true,
@@ -286,7 +286,7 @@
  "uncertain": [
   "50K Instant Pro price and rules confirmed on aquafunded.com on 2026-10-19; other 50K prices were read on the same page by our researcher.",
   "path_to_live: none described; all accounts are simulated (the homepage calls the Flex model 'no path to live' but describes no live route for other models)",
-  "Promo: two different 25% codes are shown at the same time (SPOOKY in the banner, AUTUMN in the pricing widget); the '150% Refund' wording is not explained",
+  "Promo: on 2026-11-01 the site showed HALLOWEEN (35% off, also '35% OFF + 200% Refund'), WELCOME (new customers) and SUMMERCLEAR (CFDs only); the '200% Refund' wording is not explained",
   "Instant Funding Standard consistency is given as 15% in one place and 20% in an example on the same help page",
   "Affiliate: recurring vs one-time commission and Serbian eligibility not stated",
   "max_contracts: not applicable (CFD lots)"

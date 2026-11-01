@@ -106,11 +106,11 @@
  ],
  "path_to_live": "Alpha Prime (London prop firm in the same group): traders are reviewed after a $40,000 single payout, five payouts from one Qualified account, or $100,000 lifetime payouts; qualified traders move from simulated accounts to Alpha Prime live accounts with a 60% split plus a monthly salary",
  "current_public_promo": {
-  "code": "ALPHA20",
-  "discount": "20% off",
-  "applies_to": "All accounts, valid October 1-31, 2026, per Alpha Capital's promo codes page",
-  "source_url": "https://alphacapitalgroup.uk/alpha-capital-discount-codes",
-  "seen": "2026-10-19"
+  "code": null,
+  "discount": null,
+  "applies_to": null,
+  "source_url": "https://alphacapitalgroup.uk/",
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": null,

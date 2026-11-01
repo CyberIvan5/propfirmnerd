@@ -107,11 +107,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "SPOOKY",
-  "discount": "25% off",
-  "applies_to": "All accounts, CFDs and futures (site-wide banner on Blue Guardian's site)",
-  "source_url": "https://blueguardian.com/blogs/blue-guardian-forex-accounts-explained",
-  "seen": "2026-10-26"
+  "code": "HALLOWEEN",
+  "discount": "35% off",
+  "applies_to": "All accounts, CFDs and futures (site-wide banner on Blue Guardian's site; no end date shown)",
+  "source_url": "https://blueguardian.com/",
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": true,

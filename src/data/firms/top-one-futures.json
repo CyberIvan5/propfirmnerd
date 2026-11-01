@@ -52,11 +52,11 @@
  "payout_methods": [],
  "path_to_live": "After 3 payouts, per the homepage comparison table",
  "current_public_promo": {
-  "code": "30M",
+  "code": "BOO",
   "discount": "50% off",
-  "applies_to": "Elite Daily and Ignite instant funding (site banner)",
+  "applies_to": "Elite Daily and Ignite instant funding (site banner; 45% off Instant Sim Funded)",
   "source_url": "https://www.toponefutures.com/",
-  "seen": "2026-10-16"
+  "seen": "2026-11-01"
  },
  "affiliate_program": {
   "exists": null,
