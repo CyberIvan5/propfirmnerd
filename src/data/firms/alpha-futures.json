@@ -52,7 +52,7 @@
    "name": "Zero",
    "steps": "1-step",
    "billing": "monthly",
-   "price_50k_list": 139,
+   "price_50k_list": 169,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
    "reset_fee_50k": 119,
@@ -108,7 +108,7 @@
   "discount": null,
   "applies_to": null,
   "source_url": "https://alpha-futures.com",
-  "seen": "2026-11-01"
+  "seen": "2026-11-02"
  },
  "affiliate_program": {
   "exists": true,
@@ -141,6 +141,11 @@
    "date": "2026-08-21",
    "change": "Path to Live structure updated (Alpha Prime 60% + salary vs Live 80%)",
    "source": "https://help.alpha-futures.com/en/articles/10743344-path-to-live-structure"
+  },
+  {
+   "date": "2026-11",
+   "change": "Zero 50K evaluation price is now $169/month (was $139)",
+   "source": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview"
   }
  ],
  "pros": [
@@ -264,7 +269,7 @@
   "Terms list a London notices address (10 Lower Thames Street) different from the Harpenden registered office",
   "Trustpilot shows location 'United States' although the company is UK-registered"
  ],
- "checked": "2026-10-26",
+ "checked": "2026-11-02",
  "link": "https://alpha-futures.com/",
  "facets": {
   "market": "futures",

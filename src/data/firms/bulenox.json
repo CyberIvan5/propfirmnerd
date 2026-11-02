@@ -81,7 +81,7 @@
   "discount": "Best available discount (amount not stated)",
   "applies_to": "Qualification, Fast Track and Momentum accounts; Bulenox says the code never expires",
   "source_url": "https://bulenox.com/accounts-pricing",
-  "seen": "2026-11-01"
+  "seen": "2026-11-02"
  },
  "affiliate_program": {
   "exists": true,
@@ -191,7 +191,7 @@
   "affiliate commission unknown (signup page blocks fetching)",
   "Value of BULENOX discount not stated"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-02",
  "link": "https://bulenox.com/",
  "facets": {
   "market": "futures",

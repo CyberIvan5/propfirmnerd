@@ -126,9 +126,9 @@
  "current_public_promo": {
   "code": "CLUB",
   "discount": "40% off",
-  "applies_to": "Evaluations (the site shows 40%-lower promotional prices)",
+  "applies_to": "Any plan, per the homepage (\"Save 40% On Any Plan With Code CLUB\")",
   "source_url": "https://myfundedfutures.com/",
-  "seen": "2026-11-01"
+  "seen": "2026-11-02"
  },
  "affiliate_program": {
   "exists": true,
@@ -288,7 +288,7 @@
   "50K prices for all four plans confirmed by selecting 50K on myfundedfutures.com on 2026-10-16.",
   "Pro payout cap wording inconsistent on the plan page ('$100,000 per payout cycle' vs '$100,000 total sim-funded payouts per user'); help center says per user"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-02",
  "link": "https://myfundedfutures.com/",
  "facets": {
   "market": "futures",

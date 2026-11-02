@@ -101,11 +101,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "HALLOWIN",
-  "discount": "70% off",
+  "code": "LOCKIN",
+  "discount": "50% off",
   "applies_to": "Per the top banner on Funding Traders' site (accounts and end date not stated); code TRYFT gives 50% off a first challenge",
   "source_url": "https://fundingtraders.com/",
-  "seen": "2026-11-01"
+  "seen": "2026-11-02"
  },
  "affiliate_program": {
   "exists": true,

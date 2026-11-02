@@ -45,7 +45,7 @@
    "profit_split": "80%; 90% with an add-on bought at checkout",
    "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
    "payout_rules_note": "Minimum $20 profit (before split). At least 3 profitable days of 0.5%+ are needed in each phase AND in each funded payout cycle. Challenge fee refunded after the third reward. Payout processed after KYC.",
-   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). min_trading_days = 3 profitable days of at least 0.5% each. Daily loss 4%, calculated from the higher of balance or equity at 00:00 UTC (so the dollar limit can be above $2,000). Pricing page shows $198 with code ETERNAL (10% off) vs $220 list. Leverage 1:75 forex, 1:20 commodities/metals/indices, 1:2 digital ETFs."
+   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). min_trading_days = 3 profitable days of at least 0.5% each. Daily loss 4%, calculated from the higher of balance or equity at 00:00 UTC (so the dollar limit can be above $2,000). Pricing page shows $209 with code DIAMOND (5% off) vs $220 list. Leverage 1:75 forex, 1:20 commodities/metals/indices, 1:2 digital ETFs."
   },
   {
    "name": "Standard 1 Step",
@@ -65,7 +65,7 @@
    "profit_split": "80%; 90% with an add-on bought at checkout",
    "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
    "payout_rules_note": "Minimum $20 profit (before split). Challenge fee refunded after the third reward. Payout processed after KYC.",
-   "notes": "Target 8% ($4,000). No minimum trading days ('You may pass the challenge in a day'). Daily loss 3% from the higher of balance or equity at 00:00 UTC. Pricing page shows $153 with code ETERNAL vs $170 list."
+   "notes": "Target 8% ($4,000). No minimum trading days ('You may pass the challenge in a day'). Daily loss 3% from the higher of balance or equity at 00:00 UTC. Pricing page shows $162 with code DIAMOND vs $170 list."
   },
   {
    "name": "Standard 3 Step",
@@ -85,7 +85,7 @@
    "profit_split": "80%; 90% with an add-on bought at checkout",
    "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
    "payout_rules_note": "Minimum $20 profit (before split). Challenge fee refunded after the third reward.",
-   "notes": "Target 3% ($1,500) in each of the three phases. No minimum trading days. Daily loss 2% from the higher of balance or equity at 00:00 UTC. Pricing page shows $171 with code ETERNAL vs $190 list."
+   "notes": "Target 3% ($1,500) in each of the three phases. No minimum trading days. Daily loss 2% from the higher of balance or equity at 00:00 UTC. Pricing page shows $181 with code DIAMOND vs $190 list."
   }
  ],
  "news_trading": "Restricted: on Standard 1/2/3 Step, no opening or closing trades on affected instruments from 2 minutes before to 2 minutes after Forex Factory 'Red Folder' releases (a hard breach in the challenge); positions opened earlier may be held. 2 Step Omo: unrestricted in evaluation, funded profit per news event capped at 0.5% of balance. Instant, Instant Mini, BNPL and Prediction Markets: no news restriction",
@@ -106,7 +106,7 @@
   "discount": "5% off",
   "applies_to": "Challenges, per Maven's challenge pages (no end date shown)",
   "source_url": "https://maventrading.com/challenges/2-step",
-  "seen": "2026-11-01"
+  "seen": "2026-11-02"
  },
  "affiliate_program": {
   "exists": true,
@@ -189,7 +189,7 @@
   "Affiliate eligibility for Serbia: not explicitly stated; Serbia is only absent from the restricted list",
   "max_contracts: not applicable (CFD lots)"
  ],
- "checked": "2026-10-19",
+ "checked": "2026-11-02",
  "link": "https://maventrading.com/",
  "facets": {
   "market": "forex",

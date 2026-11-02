@@ -115,7 +115,7 @@
   "discount": null,
   "applies_to": null,
   "source_url": "https://fundednext.com/",
-  "seen": "2026-11-01"
+  "seen": "2026-11-02"
  },
  "affiliate_program": {
   "exists": true,
@@ -297,7 +297,7 @@
   "Affiliate base-tier ('Star') rate not confirmed",
   "account_sizes merges CFD (6K-200K) and futures (25K-150K) sizes"
  ],
- "checked": "2026-10-26",
+ "checked": "2026-11-02",
  "link": "https://fundednext.com/",
  "facets": {
   "market": "multi",
