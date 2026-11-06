@@ -259,6 +259,14 @@
   {
    "url": "https://propfirmmap.com/trust-check/alphafutures",
    "supports": "secondary: dated 2026 rule-change timeline"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492088-maximum-allocation",
+   "supports": "Qualified account limits per account type"
+  },
+  {
+   "url": "https://help.alpha-futures.com/en/articles/9492025-scaling-plan",
+   "supports": "contract scaling plan"
   }
  ],
  "uncertain": [
@@ -288,5 +296,17 @@
   "tp": 4.4,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Standard, Advanced and Direct",
+  "max_allocation": 750000,
+  "max_allocation_text": "Up to $750,000 in funded accounts, as stated on the homepage (five 150K Qualified accounts). Evaluations are not capped.",
+  "max_accounts": "Qualified accounts: up to 5 each on Zero, Standard and Direct, and 3 on Advanced. Holding any Advanced Qualified account limits you to 3. One trader per household.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling; contract limits rise with profit.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

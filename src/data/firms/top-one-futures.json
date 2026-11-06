@@ -82,6 +82,14 @@
   {
    "url": "https://www.toponefutures.com/",
    "supports": "50K Elite Daily price, rules, reset fee, codes (checked in browser)"
+  },
+  {
+   "url": "https://intercom.help/top-one-futures/en/articles/10907463-what-is-the-maximum-number-of-accounts-i-can-trade",
+   "supports": "funded account limits per category"
+  },
+  {
+   "url": "https://intercom.help/top-one-futures/en/articles/11003130-path-to-trading-live",
+   "supports": "live accounts, up to 5"
   }
  ],
  "uncertain": [
@@ -106,5 +114,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Elite, Instant and Ignite programs",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Limits per account type (for example 5 Elite Daily funded accounts), up to 38 funded accounts in total per household. All accounts in a type must be the same size.",
+  "max_funded_accounts": 38,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling; contract limits rise with profit. Live traders get another live account at set balances, up to 5.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

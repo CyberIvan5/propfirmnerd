@@ -238,6 +238,18 @@
   {
    "url": "https://blueguardian.com/forex",
    "supports": "50K prices for 2 Step, 1 Step and Instant Standard, targets, daily loss, drawdown (checked in browser)"
+  },
+  {
+   "url": "https://help.blueguardian.com/en/articles/15846933-can-i-purchase-more-accounts-than-the-maximum-allocation-limit",
+   "supports": "$400,000 forex funded allocation"
+  },
+  {
+   "url": "https://helpfutures.blueguardian.com/en/articles/14110436-how-many-funded-accounts-am-i-allowed-at-once",
+   "supports": "futures: 5 funded accounts at once"
+  },
+  {
+   "url": "https://blueguardian.com/blogs/blue-guardian-forex-accounts-explained",
+   "supports": "largest forex account $400K (Instant Standard)"
   }
  ],
  "uncertain": [
@@ -264,5 +276,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 400000,
+  "largest_account_program": "Instant Standard (forex)",
+  "max_allocation": 400000,
+  "max_allocation_text": "Forex and CFD: up to $400,000 in active funded accounts, Instant Funded included; challenges are unlimited. Futures: up to 5 funded accounts at once (the firm's blog puts this at $750,000).",
+  "max_accounts": "Futures: 5 funded accounts traded at once; evaluations unlimited.",
+  "max_funded_accounts": 5,
+  "scaling_max": 4000000,
+  "scaling_text": "Forex: 12% profit within 3 months adds 30% of the starting balance, up to $4,000,000.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

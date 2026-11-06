@@ -242,6 +242,18 @@
   {
    "url": "https://www.goatfundedtrader.com/",
    "supports": "50K prices for 2 Step GOAT and 1 Step GOAT, targets, daily and max loss, codes (checked in browser)"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/en/articles/10742191-what-is-the-maximum-simulated-capital-you-can-have-with-goatfundedtrader",
+   "supports": "$400,000 maximum"
+  },
+  {
+   "url": "https://help.goatfundedtrader.com/en/articles/10831213-how-does-the-scaling-plan-work",
+   "supports": "scaling levels"
+  },
+  {
+   "url": "https://www.goatfundedtrader.com/model",
+   "supports": "sizes up to 400K"
   }
  ],
  "uncertain": [
@@ -270,5 +282,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 400000,
+  "largest_account_program": null,
+  "max_allocation": 400000,
+  "max_allocation_text": "$400,000 across simulated funded accounts.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": null,
+  "scaling_text": "Four levels based on time funded and payouts, adding 15% to 50% of the original account size.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

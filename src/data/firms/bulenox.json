@@ -210,5 +210,17 @@
   "tp": 4.7,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Qualification 150K",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 5 Master-level funded accounts at once, across Master, Fast Track and Momentum. Qualification accounts are unlimited.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling plan.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

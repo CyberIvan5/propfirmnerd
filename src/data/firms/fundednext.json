@@ -284,6 +284,18 @@
   {
    "url": "https://thegodfunded.com/en/news/fundednext-reinstates-weekend-holding-for-trading-accounts",
    "supports": "SECONDARY: weekend-holding pause/reinstatement dates"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/8027523-how-many-accounts-can-i-have-with-fundednext",
+   "supports": "CFD $300,000 funded cap"
+  },
+  {
+   "url": "https://helpfutures.fundednext.com/en/articles/17225812-how-many-accounts-can-i-hold-with-fundednext-futures-and-what-is-the-maximum-allocation-available",
+   "supports": "futures account limits"
+  },
+  {
+   "url": "https://help.fundednext.com/en/articles/13349186-fundednext-pro-the-scale-up-program",
+   "supports": "Scale-Up up to $4 million"
   }
  ],
  "uncertain": [
@@ -316,5 +328,17 @@
   "tp": 4.5,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "Stellar (CFD); futures go up to $150K",
+  "max_allocation": 300000,
+  "max_allocation_text": "CFD: up to $300,000 in funded accounts; challenge purchases are not limited. Residents of some countries are capped at $50,000. Futures: up to 5 funded accounts.",
+  "max_accounts": "Futures: 5 active funded accounts per user and household, at most 10 new funded accounts a month, and up to $750,000 in challenges.",
+  "max_funded_accounts": 5,
+  "scaling_max": 4000000,
+  "scaling_text": "CFD: +25% after four reward cycles with at least 4% growth each, up to $4 million. Not on Stellar Lite.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

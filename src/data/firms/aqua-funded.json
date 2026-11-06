@@ -281,6 +281,14 @@
   {
    "url": "https://www.aquafunded.com/",
    "supports": "50K Instant Pro $305 and its rules (checked in browser)"
+  },
+  {
+   "url": "https://help.aquafunded.com/en/articles/9251037-how-many-accounts-can-i-trade",
+   "supports": "maximum active funded allocation of $400,000"
+  },
+  {
+   "url": "https://www.aquafunded.com/instant-pro",
+   "supports": "Instant Pro sizes up to $400K"
   }
  ],
  "uncertain": [
@@ -310,5 +318,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 400000,
+  "largest_account_program": "Instant Pro",
+  "max_allocation": 400000,
+  "max_allocation_text": "Maximum active funded allocation of $400,000. Several evaluations can be bought and traded at once.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 4000000,
+  "scaling_text": "12% profit within 3 months adds 25% of the starting balance, repeatable up to $4,000,000, subject to approval.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

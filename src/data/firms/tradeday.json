@@ -257,5 +257,17 @@
   "tp": 4.5,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Quick Pay and Fast Pass",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 10 evaluations, 5 Funded Sim and 5 Funded Live accounts.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling plan.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

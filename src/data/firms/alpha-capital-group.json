@@ -27,8 +27,7 @@
   25000,
   50000,
   100000,
-  200000,
-  300000
+  200000
  ],
  "programs": [
   {
@@ -280,6 +279,10 @@
   {
    "url": "https://alphacapitalgroup.uk/",
    "supports": "50K prices in the order form: Alpha Pro 8% $297, Alpha One 10% $277, Alpha Direct $257 (checked in browser)"
+  },
+  {
+   "url": "https://help.alphacapitalgroup.uk/en/articles/8804535-how-many-accounts-can-i-have-what-is-the-maximum-allocation-per-strategy",
+   "supports": "maximum allocation per household and per asset"
   }
  ],
  "uncertain": [
@@ -307,5 +310,17 @@
   "ccy": "USD",
   "instant": true
  },
- "price_note": "Prices are the ones Alpha Capital's order form shows first for each 50K plan; they can change with the payout option you choose."
+ "price_note": "Prices are the ones Alpha Capital's order form shows first for each 50K plan; they can change with the payout option you choose.",
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "Alpha One, Pro, Swing and Direct",
+  "max_allocation": 400000,
+  "max_allocation_text": "$400,000 per household across funded (Qualified) accounts on all plans. One asset may not be traded on accounts totalling more than $300,000. Evaluations are unlimited.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 2000000,
+  "scaling_text": "Alpha Pro and Alpha Swing: each 10% of growth lets you scale the account by 10% of its starting balance, capped at a cumulative $2 million across scaled accounts.",
+  "currency": "USD",
+  "checked": "2026-11-06"
+ }
 }

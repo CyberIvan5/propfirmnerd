@@ -237,6 +237,14 @@
   {
    "url": "https://fundingtraders.com/",
    "supports": "50K list prices: 2-Step Pro10 $430, 1-Step $329, Instant $479; rules; code (checked in browser)"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/8050973-what-is-the-maximum-number-of-accounts-allowed",
+   "supports": "funded caps per program"
+  },
+  {
+   "url": "https://fundingtraders.com/help/en/articles/8055210-how-can-i-scale-my-funded-account",
+   "supports": "scaling up to $2,000,000"
   }
  ],
  "uncertain": [
@@ -268,5 +276,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 400000,
+  "largest_account_program": "Instant Funded",
+  "max_allocation": null,
+  "max_allocation_text": "No single cap across programs. Instant Funded accounts are capped at $400,000 combined; evaluations are unlimited.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 2000000,
+  "scaling_text": "+25% of the starting balance for 8% profit over 2 profitable months, up to $2,000,000.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

@@ -252,6 +252,10 @@
   {
    "url": "https://holaprime.com/futures/",
    "supports": "50K futures 1-Step Prime $159, 6% target, 4% trailing drawdown, consistency (checked in browser)"
+  },
+  {
+   "url": "https://holaprime.com/forex/scaling/",
+   "supports": "scaling plan up to $4 million"
   }
  ],
  "uncertain": [
@@ -282,5 +286,17 @@
   "tp": 4.5,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "Forex challenges; futures go up to $150K",
+  "max_allocation": 800000,
+  "max_allocation_text": "Forex: $400,000 across funded accounts. Futures: 5 accounts or $500,000, whichever comes first. Holding both: $800,000 combined. Challenges are unlimited. Traders from 11 listed countries are capped at $90,000.",
+  "max_accounts": "Futures: 5 funded accounts or $500,000. Forex Direct accounts: 2 traded at a time.",
+  "max_funded_accounts": 5,
+  "scaling_max": 4000000,
+  "scaling_text": "Forex: after a 4-month cycle with 10% profit, 2 profitable months and 2 payouts, the account grows by 25%, then 40%, then 50% of its starting balance, up to $4 million.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

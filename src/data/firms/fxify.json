@@ -163,6 +163,14 @@
   {
    "url": "https://fxify.com/",
    "supports": "50K prices and rules for One, Two and Three Phase; code (checked in browser)"
+  },
+  {
+   "url": "https://fxify.com/faqs/all-faqs/what-the-max-allocation/",
+   "supports": "one active account per size"
+  },
+  {
+   "url": "https://fxify.com/faqs/all-faqs/how-does-your-scaling-plan-work/",
+   "supports": "scaling plan"
   }
  ],
  "uncertain": [
@@ -190,5 +198,17 @@
   "tp": 4.3,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 400000,
+  "largest_account_program": "Evaluation programs",
+  "max_allocation": null,
+  "max_allocation_text": "No firm-wide dollar cap. You can hold one active account per account size ($5K to $400K), counting challenge and funded accounts.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 4000000,
+  "scaling_text": "10% profit over 3 months with 2 of them profitable: +25% the first time, then the balance doubles, up to 4 times. FXIFY's example takes $400K to $4M.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

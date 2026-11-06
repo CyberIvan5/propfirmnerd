@@ -241,6 +241,10 @@
   {
    "url": "https://www.trustpilot.com/review/lucidtrading.com",
    "supports": "Trustpilot score and count"
+  },
+  {
+   "url": "https://support.lucidtrading.com/en/articles/11404617",
+   "supports": "maximum number of accounts"
   }
  ],
  "uncertain": [
@@ -274,5 +278,17 @@
   "ccy": "USD",
   "instant": true
  },
- "price_note": "Lucid's pricing section does not load from every country; 50K prices are the base prices in Lucid's own online store. Optional add-ons such as a daily loss limit change the price."
+ "price_note": "Lucid's pricing section does not load from every country; 50K prices are the base prices in Lucid's own online store. Optional add-ons such as a daily loss limit change the price.",
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "LucidFlex",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 5 funded accounts per household and 10 accounts in total, evaluations included.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling; contract limits rise with profit.",
+  "currency": "USD",
+  "checked": "2026-11-06"
+ }
 }

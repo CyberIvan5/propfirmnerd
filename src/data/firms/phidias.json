@@ -210,5 +210,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Fundamental, Premium and Express to Live",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 15 funded accounts: 5 each on Premium, Fundamental and Express to Live. A 150K Fundamental or Premium account takes two slots. Limits are per person, address and IP.",
+  "max_funded_accounts": 15,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling plan.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

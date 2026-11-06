@@ -263,6 +263,10 @@
   {
    "url": "https://funderpro.com/checkout/?mode=challenge&type=classic&size=50000",
    "supports": "50K prices: One Phase $319, Classic $319, Pro $419 (checked in browser)"
+  },
+  {
+   "url": "https://support.funderpro.com/en/articles/377857-what-is-the-maximum-trading-capital-i-can-access-with-funderpro",
+   "supports": "$200,000 funded cap"
   }
  ],
  "uncertain": [
@@ -294,5 +298,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "Challenge programs",
+  "max_allocation": 200000,
+  "max_allocation_text": "$200,000 of starting equity across all funded accounts; challenges are unlimited.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 5000000,
+  "scaling_text": "10% profit in each of 3 consecutive months adds 50% to the balance, up to $5 million.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

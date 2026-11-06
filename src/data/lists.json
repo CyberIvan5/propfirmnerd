@@ -274,5 +274,37 @@
    ]
   ],
   "published": "2026-10-22"
+ },
+ {
+  "slug": "prop-firms-highest-capital-allocation",
+  "h1": "Prop firms with the highest capital allocation per trader",
+  "title": "Prop Firms With the Highest Capital Allocation per Trader ({month})",
+  "description": "The most capital one trader can hold at a prop firm at the same time, as each firm states it: E8, Hola Prime, Topstep, FTMO and more, with account limits and scaling plans.",
+  "blurb": "Ranked by the maximum capital one trader can hold",
+  "sort": "alloc",
+  "desc": true,
+  "limit": 15,
+  "why_auto": "alloc",
+  "intro": "Most prop firms cap how much capital one trader can hold at the same time, no matter how many accounts you buy. The firms below publish that cap as a dollar figure, and they are ranked by it. Futures firms that limit the number of accounts instead are in the full table further down.",
+  "body": "<h2>Every firm we track</h2>\n<p>The table covers all firms where we could confirm the rules on the firm's own pages. \"Largest account\" is the biggest single account sold today. \"Max capital\" is the firm's own stated limit across all your accounts, usually counting funded accounts only. Scaling is how far a funded account can grow later.</p>\n{{ALLOC_TABLE}}\n<p class=\"muted\">From each firm's own help center, terms or pricing pages, checked November 6, 2026. Apex Trader Funding is not included because we could not open its official pages to confirm its limits.</p>\n<h2>Dollar caps vs account limits</h2>\n<p>Forex and CFD firms usually cap capital in dollars: FTMO allows $400,000 per trader across all accounts, FundedNext $300,000 in funded accounts and FunderPro $200,000. Futures firms usually cap the number of funded accounts instead, most often 5. Some state a dollar total for that (Topstep and Alpha Futures both say up to $750,000). Others, such as Tradeify, Lucid and TradeDay, only give the account count, so we don't list a dollar figure for them.</p>\n<h2>What the cap usually counts</h2>\n<ul>\n<li><strong>Funded accounts, not evaluations.</strong> Most firms let you buy as many challenges as you like; the cap applies once accounts are funded.</li>\n<li><strong>Per household, not just per person.</strong> Alpha Capital Group, Blueberry Funded, E8 Markets and most futures firms apply the limit to everyone at the same address or IP.</li>\n<li><strong>Per strategy.</strong> FTMO and Hola Prime count identical trading across accounts together, so copying one strategy onto extra registrations can get all of them closed.</li>\n</ul>\n<h2>More capital is not more payout</h2>\n<p>Several firms also cap what you can withdraw, whatever your total balance. Maven Trading's terms (amended November 5, 2026) limit withdrawals to $10,000 of profit per trader across two payouts or any rolling 30 days, all accounts combined. Funded Futures Network caps each payout at $10,000 across all accounts. Check the payout rules in each <a href=\"/firms/\">review</a>, and see <a href=\"/guides/how-prop-firm-payouts-work/\">how prop firm payouts work</a>.</p>",
+  "faq": [
+   [
+    "Which prop firm gives the most capital to one trader?",
+    "Among the firms we track, E8 Markets states the highest figure: up to $3,900,000 in funded (Performance) accounts at the same time, per household, built from per-product limits. Hola Prime allows $800,000 if you hold both forex and futures accounts. Topstep and Alpha Futures both say up to $750,000 across five funded accounts."
+   ],
+   [
+    "What is the maximum fund allocation for a trader at FTMO?",
+    "FTMO caps total capital at $400,000 per trader or strategy across all accounts and products, before scaling. Its Premium Programme raises this to $600,000 or $1 million, and the scaling plan can take accounts up to $2,000,000."
+   ],
+   [
+    "Can I buy several prop firm accounts to get more capital?",
+    "Yes, up to the firm's limit. Most firms let you hold several funded accounts as long as the total stays under their cap, such as $400,000 at FTMO or 5 funded accounts at most futures firms. Opening extra registrations to get around the cap is prohibited and can get every account closed."
+   ],
+   [
+    "Does the allocation cap include evaluation accounts?",
+    "Usually not. FundedNext, FunderPro, Blue Guardian and Topstep, among others, say evaluations are unlimited and only funded accounts count. FundingPips is an exception: its $400,000 cap counts challenge and funded accounts together."
+   ]
+  ],
+  "published": "2026-11-06"
  }
 ]

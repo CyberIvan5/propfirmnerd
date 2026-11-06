@@ -282,6 +282,10 @@
   {
    "url": "https://myfundedfutures.com/",
    "supports": "50K prices for Builder, Rapid, Rapid EOD and Pro; targets; drawdown; splits (checked in browser)"
+  },
+  {
+   "url": "https://help.myfundedfutures.com/en/articles/16498635-moving-from-evaluation-to-sim-funded-account",
+   "supports": "account limits"
   }
  ],
  "uncertain": [
@@ -307,5 +311,17 @@
   "tp": 4.9,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Pro and Rapid",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 5 funded accounts if all are 25K or 50K; 3 if any is 100K or 150K. Up to 10 active evaluations.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling plan.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

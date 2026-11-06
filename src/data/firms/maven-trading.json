@@ -119,6 +119,11 @@
    "date": "2026-07",
    "change": "2 Step Omo challenge described on Maven's blog (6% / 8% targets, 4% daily, 8% static, 4 profitable days, M2 Account Saver); launch date not stated",
    "source": "https://maventrading.com/blog/two-step-omo-challenge-what-it-is-how-it-works"
+  },
+  {
+   "date": "2026-11-05",
+   "change": "Terms v2026.3: at most $10,000 of profit (before the split) can be withdrawn per trader across two payouts or any rolling 30-day period, combined across Standard, BNPL and Instant accounts; profit above the cap is removed",
+   "source": "https://maventrading.com/terms-and-conditions"
   }
  ],
  "pros": [
@@ -133,7 +138,8 @@
   "T&Cs require traders not to 'defame' Maven on social media and review sites, with account termination as the stated consequence",
   "EAs/bots are prohibited; news trading is restricted ±2 minutes on Standard plans",
   "Fee is refunded only after the third reward; 1 Step uses an equity-based trailing max loss with no stated lock",
-  "Funded accounts merge to at most $200,000 combined; no scaling plan or live-capital route published"
+  "Funded accounts merge to at most $200,000 combined; no scaling plan or live-capital route published",
+  "Since Nov 5, 2026, withdrawals are capped at $10,000 of profit per trader across two payouts or any rolling 30 days, all accounts combined; profit above the cap is removed"
  ],
  "best_for": "Low-budget forex/CFD traders who trade manually and want small, cheap static-drawdown 2-step or 3-step evaluations with weekend holding.",
  "sources": [
@@ -208,5 +214,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 100000,
+  "largest_account_program": "Standard 1, 2 and 3 Step",
+  "max_allocation": null,
+  "max_allocation_text": "No cap stated on the capital you can hold. Funded accounts on the same plan can be merged up to $200,000. Since November 5, 2026, at most $10,000 of profit (before the split) can be withdrawn per trader across two payouts or any rolling 30-day period, combined across all accounts; profit above that is removed.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": null,
+  "scaling_text": null,
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

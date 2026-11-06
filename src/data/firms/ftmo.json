@@ -226,6 +226,18 @@
   {
    "url": "https://ftmo.com/en/",
    "supports": "50K prices (EUR), targets, daily and max loss, minimum days, refund, consistency for 2-Step and 1-Step (checked in browser)"
+  },
+  {
+   "url": "https://ftmo.com/faq/how-many-accounts-can-i-have/",
+   "supports": "$400,000 per trader or strategy"
+  },
+  {
+   "url": "https://ftmo.com/en/premium-programme/",
+   "supports": "Premium Programme: $600,000 and $1M"
+  },
+  {
+   "url": "https://ftmo.com/reward-growth-and-scaling-plan/",
+   "supports": "scaling plan up to $2,000,000"
   }
  ],
  "uncertain": [
@@ -253,5 +265,17 @@
   "tp": 4.8,
   "ccy": "EUR",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "FTMO Challenge, 1-Step and 2-Step",
+  "max_allocation": 400000,
+  "max_allocation_text": "$400,000 per trader or strategy across all accounts and products, before scaling. Raised to $600,000 or $1 million in the Premium Programme.",
+  "max_accounts": "No limit on the number of accounts; one active FTMO Instant Account at a time.",
+  "max_funded_accounts": null,
+  "scaling_max": 2000000,
+  "scaling_text": "+25% every 4 months with 10% net profit and 2 rewards, up to $2,000,000. Not on Instant accounts.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

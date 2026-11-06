@@ -239,6 +239,18 @@
   {
    "url": "https://www.trustpilot.com/review/earn2trade.com",
    "supports": "Trustpilot 4.5 / 5,026 reviews"
+  },
+  {
+   "url": "https://help.earn2trade.com/en/articles/5660666-can-i-have-multiple-trader-career-path-gauntlet-mini-and-live-livesim-accounts",
+   "supports": "5 evaluations, 3 funded accounts"
+  },
+  {
+   "url": "https://www.earn2trade.com/gauntlet-mini",
+   "supports": "Gauntlet Mini sizes up to 200K"
+  },
+  {
+   "url": "https://www.earn2trade.com/blog/trader-career-path-explained/",
+   "supports": "Trader Career Path growth to $400,000"
   }
  ],
  "uncertain": [
@@ -267,5 +279,17 @@
   "tp": 4.5,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "Gauntlet Mini",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 5 evaluations and 3 funded accounts at once (at most 1 of them Live).",
+  "max_funded_accounts": 3,
+  "scaling_max": 400000,
+  "scaling_text": "Trader Career Path: withdraw the profit target to move to a larger account; TCP50 and TCP100 can reach $400,000.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

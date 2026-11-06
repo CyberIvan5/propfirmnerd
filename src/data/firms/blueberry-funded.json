@@ -293,6 +293,14 @@
   {
    "url": "https://blueberryfunded.com/",
    "supports": "50K prices and rules: Flex 1-Step $490, Prime $406, 1-Step $302.50; codes (checked in browser)"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9564023-what-is-your-maximum-simulated-capital-allocation",
+   "supports": "$400,000 per trader or household"
+  },
+  {
+   "url": "https://help.blueberryfunded.com/en/articles/9762548-blueberry-funded-account-scaling",
+   "supports": "scaling plan up to $2 million"
   }
  ],
  "uncertain": [
@@ -321,5 +329,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": null,
+  "max_allocation": 400000,
+  "max_allocation_text": "$400,000 per trader or household across all plans, in any mix of account sizes.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 2000000,
+  "scaling_text": "10% net profit over 3 months plus at least 4 payouts adds 25% every 3 months, up to $2 million. Instant plans are excluded.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

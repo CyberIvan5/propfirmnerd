@@ -238,6 +238,14 @@
   {
    "url": "https://propfirmmap.com/blog/prop-firm-news-may-10-17-2026-trading-pit-topstep-discount-codes",
    "supports": "secondary: May 2026 reversion to EOD trailing report"
+  },
+  {
+   "url": "https://intercom.help/topstep-llc/en/articles/8284218-multiple-express-funded-accounts",
+   "supports": "5 XFAs, up to $750K buying power"
+  },
+  {
+   "url": "https://help.topstep.com/en/articles/8284223-what-is-the-scaling-plan",
+   "supports": "scaling plan sets contract limits"
   }
  ],
  "uncertain": [
@@ -269,5 +277,17 @@
   "tp": 3.7,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Trading Combine 150K",
+  "max_allocation": 750000,
+  "max_allocation_text": "Up to 5 Express Funded Accounts at once, in any mix of sizes; Topstep calls this up to $750K of buying power with a trade copier. Trading Combines are unlimited.",
+  "max_accounts": "5 active Express Funded Accounts; 1 Live Funded Account, and moving to Live closes the others.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling; the scaling plan sets contract limits by balance.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

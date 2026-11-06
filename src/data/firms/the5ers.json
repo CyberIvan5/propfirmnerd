@@ -217,5 +217,17 @@
   "tp": 4.7,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 250000,
+  "largest_account_program": "Bootcamp",
+  "max_allocation": null,
+  "max_allocation_text": "No firm-wide cap. Each program limits how many accounts of each size you can hold; for example Bootcamp allows one $250K, one $100K and two $20K accounts at once. Programs can be combined.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": 4000000,
+  "scaling_text": "Bootcamp scales at each 5% target, up to $4M. High Stakes scales at each 10% target, up to $500,000.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

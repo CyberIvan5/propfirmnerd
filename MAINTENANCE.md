@@ -13,6 +13,10 @@ leave it as is and report it.**
   - `checked`: ISO date of the last full verification. **Page titles show this month**, so only bump it after
     re-verifying the firm's core numbers.
   - `sources[]`, `recent_changes_2026[]`, `status`, `status_note`, `price_note`.
+  - `allocation`: max capital per trader (`largest_account`, `max_allocation` = only a dollar figure the firm itself states,
+    `max_allocation_text`, `max_accounts`, `scaling_max`, `scaling_text`, `checked`). Feeds the review rows and
+    /best/prop-firms-highest-capital-allocation/. Never multiply account count by size to invent a cap. If a firm
+    changes its cap or account limit, update the block and its `checked` date. Apex has no block (pages unreachable).
 - `src/editorial/<slug>.html`: hand-written review text (META JSON header + body + optional `<!--RULES-->` rules page).
   It repeats some numbers, so update it when a number changes.
 - `src/data/lists.json`, `src/data/compares.json`, `src/pages/*.html`: lists, comparisons and guides that may

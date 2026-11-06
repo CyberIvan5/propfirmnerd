@@ -124,6 +124,10 @@
   {
    "url": "https://takeprofittrader.com/",
    "supports": "50K price ($170/month), target, drawdown, contract limit, PRO fee, splits (checked in browser)"
+  },
+  {
+   "url": "https://takeprofittrader.crunch.help/en/faq-s/how-many-account-can-i-have",
+   "supports": "account limits"
   }
  ],
  "uncertain": [
@@ -154,5 +158,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 150000,
+  "largest_account_program": "Test 150K",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Test accounts are unlimited. PRO accounts are limited in number; Take Profit Trader's own pages give different limits (3 or 5), so check with support.",
+  "max_funded_accounts": null,
+  "scaling_max": null,
+  "scaling_text": "No scaling plan on any account.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

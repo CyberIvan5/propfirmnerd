@@ -116,6 +116,10 @@
   {
    "url": "https://fundingpips.com/trading-objectives",
    "supports": "2 Step Standard rules, news and holding rules, reward cycles (checked in browser)"
+  },
+  {
+   "url": "https://fundingpips.com/blog/fundingpips-maximum-allocation",
+   "supports": "$400K across challenge and Master accounts"
   }
  ],
  "uncertain": [
@@ -144,5 +148,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "Zero, 1-Step and 2-Step",
+  "max_allocation": 400000,
+  "max_allocation_text": "$400,000 combined across challenge and funded (Master) accounts, in any mix of sizes.",
+  "max_accounts": null,
+  "max_funded_accounts": null,
+  "scaling_max": null,
+  "scaling_text": null,
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

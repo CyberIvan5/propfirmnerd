@@ -264,6 +264,14 @@
   {
    "url": "https://e8markets.com/compare-simfi-funded-accounts",
    "supports": "50K prices for E8 One, Pro and Signature, targets, drawdown, daily limits (checked in browser)"
+  },
+  {
+   "url": "https://intercom.help/e8/en/articles/5515039-how-many-accounts-can-i-apply-for-at-once",
+   "supports": "$3,900,000 total and per-product limits (updated Oct 2, 2026)"
+  },
+  {
+   "url": "https://e8markets.com/e8-one",
+   "supports": "E8 One sizes up to $500K"
   }
  ],
  "uncertain": [
@@ -291,5 +299,17 @@
   "tp": null,
   "ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 500000,
+  "largest_account_program": "E8 One",
+  "max_allocation": 3900000,
+  "max_allocation_text": "Up to $3,900,000 in funded (Performance) accounts at the same time, per household. This is the total of per-product limits: $500,000 per market on E8 One and on E8 Pro, plus account limits on E8 Zero and E8 Signature. Challenges are unlimited.",
+  "max_accounts": "Performance accounts: E8 Zero up to 3, E8 Signature up to 5 per market. Limits are shared by everyone at the same address or IP.",
+  "max_funded_accounts": null,
+  "scaling_max": null,
+  "scaling_text": null,
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

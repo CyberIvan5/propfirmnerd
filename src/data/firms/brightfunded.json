@@ -128,6 +128,11 @@
    "date": "2026-08",
    "change": "Free $1K Challenge (F1KC) offered: free 1-phase evaluation with 1-Step rules, 80% split, no 15% profit reward (help article dated 2026-08-26; launch date not stated)",
    "source": "https://help.brightfunded.com/en/articles/15946298-brightfunded-free-1k-challenge-f1kc"
+  },
+  {
+   "date": "2026-11",
+   "change": "BrightFunded Futures is live: BrightPlus and BrightCore plans from $25K to $150K, up to 5 funded accounts and $750,000 per household (seen 2026-11-06; launch date not stated)",
+   "source": "https://brightfunded.com/futures"
   }
  ],
  "pros": [
@@ -278,10 +283,6 @@
    "supports": "founded 2023 (launched Sept 2023), Dubai HQ since Jan 2025, founders"
   },
   {
-   "url": "https://brightfunded.com/futures-waitlist",
-   "supports": "futures waitlist, no launch date"
-  },
-  {
    "url": "https://brightfunded.com/affiliate",
    "supports": "affiliate tiers 10/12.5/15%"
   },
@@ -300,6 +301,18 @@
   {
    "url": "https://brightfunded.com/",
    "supports": "50K prices (EUR): 2-Step Bright €277, 2-Step Classic €297, 1-Step €297; code (checked in browser)"
+  },
+  {
+   "url": "https://help.brightfunded.com/en/articles/9241621-what-capital-will-i-trade-at-brightfunded",
+   "supports": "CFD: $400,000 funded allocation per trader"
+  },
+  {
+   "url": "https://brightfunded.com/futures",
+   "supports": "futures programs BrightPlus and BrightCore, $25K-$150K"
+  },
+  {
+   "url": "https://futures-help.brightfunded.com/en/articles/17507352-how-many-sim-funded-accounts-can-i-have",
+   "supports": "futures: 5 funded accounts per household, $750,000 total"
   }
  ],
  "uncertain": [
@@ -329,5 +342,17 @@
   "ccy": "EUR",
   "acc_ccy": "USD",
   "instant": false
+ },
+ "allocation": {
+  "largest_account": 200000,
+  "largest_account_program": "CFD challenges; futures go up to $150K",
+  "max_allocation": 400000,
+  "max_allocation_text": "CFD: $400,000 per trader in funded accounts; challenges are unlimited. Futures: up to 5 funded accounts per household and $750,000 in total.",
+  "max_accounts": "Futures: 5 active funded accounts per household; evaluations unlimited.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "CFD: funded accounts grow 30% every four months with 10% profit, 2 payouts and at least 2 profitable months; BrightFunded states no upper limit.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }

@@ -253,6 +253,14 @@
   {
    "url": "https://www.financemagnates.com/executives/tradeify-co-founders-difficult-to-enter-futures-prop-subscription-ditch-barely-moved-revenue/",
    "supports": "secondary: founders Brett Simberkoff and Vinan Mistry, founded 2024"
+  },
+  {
+   "url": "https://intercom.help/tradeify/en/articles/14369021-tradeify-pricing-reference",
+   "supports": "sizes, 300K limits"
+  },
+  {
+   "url": "https://intercom.help/tradeify/en/articles/12268494-common-faqs",
+   "supports": "5 funded accounts per household"
   }
  ],
  "uncertain": [
@@ -282,5 +290,17 @@
   "tp": 4.4,
   "ccy": "USD",
   "instant": true
+ },
+ "allocation": {
+  "largest_account": 300000,
+  "largest_account_program": "Select 300K",
+  "max_allocation": null,
+  "max_allocation_text": null,
+  "max_accounts": "Up to 5 funded accounts per household in any mix of plans; up to 3 of them can be 300K.",
+  "max_funded_accounts": 5,
+  "scaling_max": null,
+  "scaling_text": "No account-size scaling; contract limits rise with profit.",
+  "currency": "USD",
+  "checked": "2026-11-06"
  }
 }
