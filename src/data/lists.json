@@ -128,14 +128,29 @@
   "slug": "prop-firms-no-consistency-rule",
   "h1": "Prop firms with no consistency rule",
   "title": "Prop Firms With No Consistency Rule ({month})",
-  "description": "Prop firms that do not cap your best day in the evaluation, and which of them add a consistency rule later for payouts.",
+  "description": "Prop firms with no consistency rule in the evaluation, which also have none on funded payouts, and the payout caps each one sets.",
   "blurb": "No best-day cap in the evaluation",
   "where": {
    "consistency_eval": false
   },
   "limit": 30,
-  "intro": "These firms do not cap your best day in the evaluation. Several still add a consistency rule once you are funded, before a payout; the table shows where.",
-  "why": {}
+  "intro": "Every firm below has at least one plan with no consistency rule in the evaluation, so one big day cannot fail you or raise your target. If you also want no consistency rule on funded payouts, the forex firms are the easier pick: FTMO's 2-Step, Goat Funded Trader, Maven, BrightFunded, Blueberry Funded's Prime and 1-Step, FunderPro's Classic and Funding Traders' 2-Step Pro10 have none at either stage. Most futures firms add one once you are funded, before a payout; the table shows where.",
+  "why": {},
+  "body": "<h2>No consistency rule and no payout cap?</h2>\n<p>Futures firms almost always cap how much you can take out per payout, even when they have no consistency rule. These are the 50K caps their own payout pages state:</p>\n<div class=\"tbl-wrap\"><table class=\"data\"><thead><tr><th scope=\"col\">Firm and plan</th><th scope=\"col\">Consistency rule on payouts</th><th scope=\"col\">Max per payout (50K)</th></tr></thead><tbody>\n<tr><td><a href=\"/firms/apex-trader-funding/\">Apex</a> (EOD PA)</td><td>50% (no day 50% or more of profit since last payout)</td><td>$1,500, rising to $3,000 by payout 6; 6 payouts per account</td></tr>\n<tr><td><a href=\"/firms/tradeify/\">Tradeify</a> Growth</td><td>35% on every payout request</td><td>$1,500, rising to $3,000 from payout 4</td></tr>\n<tr><td><a href=\"/firms/tradeify/\">Tradeify</a> Select Flex</td><td>None once funded (40% in the evaluation)</td><td>$2,500 and up to 50% of profit</td></tr>\n<tr><td><a href=\"/firms/lucid-trading/\">Lucid</a> LucidFlex</td><td>None once funded (40% in the evaluation)</td><td>$2,000 and up to 50% of profit; 5 payouts per account</td></tr>\n<tr><td><a href=\"/firms/topstep/\">Topstep</a> XFA Standard</td><td>None once funded (55% best-day limit in the Combine)</td><td>$2,000 and up to 50% of balance</td></tr>\n<tr><td><a href=\"/firms/alpha-futures/\">Alpha Futures</a> Standard</td><td>40% in the Qualified account</td><td>$3,000 and up to 50% of profit</td></tr>\n<tr><td><a href=\"/firms/hola-prime/\">Hola Prime</a> futures</td><td>35% on each funded payout</td><td>$1,500, rising to $3,000 from payout 4</td></tr>\n<tr><td><a href=\"/firms/fundednext/\">FundedNext</a> Futures Rapid Pro</td><td>40% on the funded account</td><td>$1,200 per cycle</td></tr>\n<tr><td><a href=\"/firms/the5ers/\">The5ers</a> High Stakes</td><td>None stated</td><td>$3,000 per request</td></tr>\n</tbody></table></div>\n<p>For the forex firms named at the top, we did not find a fixed dollar cap per payout in the rules we checked. Their limits work differently: a minimum profit before a request, a fixed payout cycle (every 10 to 21 days) or a minimum number of profitable days. Confirm on the firm's own payout page before you rely on it, and see <a href=\"/guides/how-prop-firm-payouts-work/\">how prop firm payouts work</a>.</p>",
+  "faq": [
+   [
+    "Which prop firm does not have a consistency rule?",
+    "Among the firms we track, FTMO's 2-Step, Goat Funded Trader, Maven, BrightFunded, Blueberry Funded (Prime and 1-Step), FunderPro Classic and Funding Traders' 2-Step Pro10 have no consistency rule in the evaluation or on funded payouts. Apex, Tradeify Growth, MyFundedFutures, Phidias and Bulenox have none in the evaluation, but most of them add one before funded payouts."
+   ],
+   [
+    "Which prop firm has no consistency rule and no payout cap?",
+    "Futures firms usually cap each payout: for example $2,000 at Topstep (XFA Standard) and Lucid, and $1,500 to $3,000 at Apex and Tradeify Growth on 50K. Forex firms with no consistency rule, such as FTMO's 2-Step, Goat Funded Trader and BrightFunded, use payout cycles and minimums instead; we did not find a fixed per-payout dollar cap in their rules, but check the firm's payout page."
+   ],
+   [
+    "What is a consistency rule?",
+    "A limit on how much of your total profit can come from your best day, for example 40% or 50%. Break it in the evaluation and you either fail or have to keep trading until your other days catch up; break it on a funded account and the payout is usually delayed. See our consistency rule guide."
+   ]
+  ]
  },
  {
   "slug": "end-of-day-drawdown-prop-firms",
@@ -151,7 +166,22 @@
   },
   "limit": 30,
   "intro": "With end-of-day trailing drawdown, your loss limit moves only at the daily close, so profit you give back during the day does not tighten it. Firms marked \"depends on plan\" also sell an intraday version. See <a href=\"/guides/trailing-drawdown/\">how trailing drawdown works</a>.",
-  "why": {}
+  "why": {},
+  "faq": [
+   [
+    "Which futures prop firms offer end-of-day trailing drawdown?",
+    "Among the firms we track: Topstep, Tradeify, Lucid, Alpha Futures, Funded Futures Network, MyFundedFutures (Builder, Rapid EOD and Pro), Phidias (Fundamental and Premium), Top One Futures, Hola Prime futures and Bulenox (end-of-day option). Apex and TradeDay let you choose end-of-day or intraday."
+   ],
+   [
+    "Which futures prop firms have intraday trailing drawdown?",
+    "Apex sells an intraday trailing evaluation and performance account alongside its end-of-day one, and TradeDay lets you choose intraday in the evaluation. Take Profit Trader uses end-of-day in the Test but intraday on PRO accounts, MyFundedFutures' Rapid plan switches to intraday once funded, and Earn2Trade uses intraday trailing on Live accounts."
+   ],
+   [
+    "Which prop firm has the lowest drawdown?",
+    "The smallest 50K max loss we track is Phidias' Express to Live account: $650, static. Maven's Standard 3 Step allows 3% ($1,500), also static. A smaller drawdown is cheaper or faster to pass but leaves very little room; see the biggest-drawdown list for the other end."
+   ]
+  ],
+  "body": "<p>Looking for the most room instead? See <a href=\"/best/prop-firms-with-biggest-drawdown/\">prop firms with the biggest drawdown</a>. To see how end-of-day and intraday trailing behave on the same trades, try the <a href=\"/tools/drawdown-simulator/\">drawdown simulator</a>.</p>"
  },
  {
   "slug": "instant-funding-prop-firms",
@@ -163,8 +193,22 @@
    "instant": true
   },
   "limit": 30,
-  "intro": "Instant funding skips the evaluation: you pay more up front and trade a funded account from day one. The rules are usually stricter, with consistency requirements and lower payout caps. These firms sell an instant or direct account alongside their evaluations; open each review for the instant plan's terms.",
-  "why": {}
+  "intro": "Yes, these firms sell a funded account with no evaluation phase: you pay more up front and trade for payouts from day one. The catch is stricter rules, usually a consistency requirement, a profit buffer you must build before the first payout, or lower payout caps. These firms sell an instant or direct account alongside their evaluations; open each review for the instant plan's terms.",
+  "why": {},
+  "faq": [
+   [
+    "Which instant funding prop firms skip the evaluation phase?",
+    "All firms on this page sell at least one account with no evaluation, including Tradeify (Lightning Funded), Alpha Futures (Direct), Funding Traders, Aqua Funded, Alpha Capital Group (Alpha Direct) and FTMO. The account is funded from the start, but you still have to meet payout conditions."
+   ],
+   [
+    "What is the catch with instant funding?",
+    "Stricter payout rules. For example, Tradeify's Lightning Funded applies a 20% consistency rule to the first payout and has a $1,000 minimum payout on 50K; Funding Traders' Instant account needs the balance 3.5% above the starting size and a 15% consistency score; Alpha Capital's Alpha Direct needs a 3% profit buffer and a 15% best-day rule; Aqua Funded's Instant Pro uses a 20% consistency rule."
+   ],
+   [
+    "Is instant funding worth it?",
+    "It costs more than an evaluation for the same account size, and the payout rules are tighter. It suits traders who are confident in their consistency and want to skip paying for a test first. Compare the total cost with the challenge cost calculator."
+   ]
+  ]
  },
  {
   "slug": "prop-firms-that-accept-us-traders",
@@ -195,6 +239,14 @@
    [
     "Is FTMO available in the US?",
     "Yes, through a separate US offering run with OANDA at ftmo.oanda.com."
+   ],
+   [
+    "Can I trade gold and crypto with a funded account from the US?",
+    "Yes, most simply through futures prop firms: Topstep, MyFundedFutures and Phidias list COMEX metals (gold futures) and CME crypto micros such as Micro Bitcoin and Micro Ether among their instruments, and Alpha Futures lists Micro Bitcoin and Micro Ether. On the forex side, FTMO's US version lists gold, silver and BTCUSD."
+   ],
+   [
+    "Which prop firm has the best payouts for US traders?",
+    "It depends on what you value. Apex pays 100% of approved payouts on its performance accounts; Topstep, Tradeify, Lucid and Alpha Futures pay 90%. MyFundedFutures pays every 48 hours on Builder and daily on Rapid, but most firms also cap each payout, for example $2,000 at Topstep (XFA Standard) and Lucid on 50K. See how prop firm payouts work for the full rules."
    ]
   ],
   "published": "2026-10-16"
