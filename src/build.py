@@ -490,6 +490,49 @@ def program_table(f):
             f'<div class="tbl-wrap"><table class="data kv-multi"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>{size_note}')
 
 
+def alloc_largest(f):
+    a = f.get("allocation") or {}
+    if not a.get("largest_account"):
+        return None
+    t = strip_tags(money(a["largest_account"], a.get("currency") or "USD"))
+    return t + (f" ({a['largest_account_program']})" if a.get("largest_account_program") else "")
+
+
+def alloc_capacity(f):
+    """(amount, basis_text) for ranking: stated max allocation, else funded-account limit x largest account."""
+    a = f.get("allocation") or {}
+    ccy = a.get("currency") or "USD"
+    if a.get("max_allocation"):
+        return a["max_allocation"], "stated limit"
+    if a.get("max_funded_accounts") and a.get("largest_account"):
+        return a["max_funded_accounts"] * a["largest_account"], (
+            f"{a['max_funded_accounts']} funded accounts of up to {strip_tags(money(a['largest_account'], ccy))}")
+    return None, None
+
+
+def alloc_table(firms):
+    rows = []
+    for f in firms.values():
+        a = f.get("allocation") or {}
+        cap, basis = alloc_capacity(f)
+        if not (cap or a.get("largest_account") or a.get("scaling_max")):
+            continue
+        rows.append((cap or 0, f, a, basis))
+    rows.sort(key=lambda r: (-r[0], -((r[2].get("largest_account") or 0))))
+    out = ""
+    for cap, f, a, basis in rows:
+        ccy = a.get("currency") or "USD"
+        capcell = (strip_tags(money(cap, ccy)) + (f'<small>{esc(basis)}</small>' if basis and basis != "stated limit" else "")) if cap else "Not published"
+        out += (f'<tr><td><a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></td>'
+                f'<td class="n">{strip_tags(money(a["largest_account"], ccy)) if a.get("largest_account") else "—"}</td>'
+                f'<td class="n">{capcell}</td>'
+                f'<td>{esc(a.get("max_allocation_text") or a.get("max_accounts") or "—")}</td>'
+                f'<td>{esc(a.get("scaling_text") or "No scaling plan published")}</td></tr>')
+    return ('<div class="tbl-wrap"><table class="data"><thead><tr><th scope="col">Firm</th><th scope="col">Largest account</th>'
+            '<th scope="col">Max at once</th><th scope="col">Allocation rule</th><th scope="col">Scaling</th></tr></thead>'
+            f'<tbody>{out}</tbody></table></div>')
+
+
 def rules_kv(f):
     items = [
         ("News trading", f.get("news_trading")),
@@ -501,6 +544,10 @@ def rules_kv(f):
         ("US traders", yn(f.get("us_residents_accepted"), "Accepted", "Not accepted") if f.get("us_residents_accepted") is not None else None),
         ("Restricted countries", f.get("restricted_countries_note")),
         ("Payout methods", ", ".join(f.get("payout_methods") or []) or None),
+        ("Largest account", alloc_largest(f)),
+        ("Max capital per trader", (f.get("allocation") or {}).get("max_allocation_text")),
+        ("Account limit", (f.get("allocation") or {}).get("max_accounts")),
+        ("Scaling plan", (f.get("allocation") or {}).get("scaling_text")),
         ("Path to a live account", f.get("path_to_live")),
         ("Company", f.get("legal_entity_and_hq")),
         ("Founded", str(f["founded_year"]) if f.get("founded_year") else None),
@@ -748,8 +795,9 @@ def pick_list(l, firms):
         out.sort(key=lambda f: order.index(f["slug"]) if f["slug"] in order else 999)
     else:
         key = l.get("sort", "price50")
-        val = (lambda f: (biggest_maxloss(f) or (None,))[0]) if key == "maxloss_max" else (lambda f: fac(f, key))
-        if key == "maxloss_max":
+        val = ((lambda f: (biggest_maxloss(f) or (None,))[0]) if key == "maxloss_max"
+               else (lambda f: alloc_capacity(f)[0]) if key == "alloc" else (lambda f: fac(f, key)))
+        if key in ("maxloss_max", "alloc"):
             out = [f for f in out if val(f) is not None]
         sign = -1 if l.get("desc") else 1
         out.sort(key=lambda f: (val(f) is None, sign * (val(f) or 0)))
@@ -775,6 +823,12 @@ def build_lists(site, firms, lists):
         items = ""
         for f in picks:
             why = (l.get("why") or {}).get(f["slug"]) or (f["_ed_meta"].get("one_liner") or f.get("best_for") or "")
+            if l.get("why_auto") == "alloc" and alloc_capacity(f)[0]:
+                cap, basis = alloc_capacity(f)
+                a = f["allocation"]
+                why = (f"Up to {strip_tags(money(cap, a.get('currency') or 'USD'))} at once"
+                       + (f" ({basis})" if basis != "stated limit" else "") + "."
+                       + (f" Scaling: {a['scaling_text']}" if a.get("scaling_text") else ""))
             if l.get("why_auto") == "maxloss" and biggest_maxloss(f):
                 v, pr = biggest_maxloss(f)
                 dd = re.split(r"[(;,]", pr.get("drawdown_type") or "")[0].strip()
@@ -793,7 +847,7 @@ def build_lists(site, firms, lists):
                 f'Facts checked against each firm\'s own pages. <a href="/methodology/">How we rank</a></p></header>'
                 f'<div class="content"><p class="lede">{l["intro"]}</p></div>'
                 f'<ol class="rank">{items}</ol><h2>Side by side</h2>{firm_table(picks, cols)}'
-                f'<div class="content">{l.get("body", "")}</div>')
+                f'<div class="content">{l.get("body", "").replace("{{ALLOC_TABLE}}", alloc_table(firms) if "{{ALLOC_TABLE}}" in l.get("body", "") else "")}</div>')
         faq = l.get("faq") or []
         desc = l["description"]
         graph = [article_schema(l["h1"], desc, SITE + path, l.get("published", mod), mod),
