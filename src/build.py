@@ -499,14 +499,10 @@ def alloc_largest(f):
 
 
 def alloc_capacity(f):
-    """(amount, basis_text) for ranking: stated max allocation, else funded-account limit x largest account."""
+    """(amount, basis) only when the firm itself states a maximum capital figure."""
     a = f.get("allocation") or {}
-    ccy = a.get("currency") or "USD"
     if a.get("max_allocation"):
         return a["max_allocation"], "stated limit"
-    if a.get("max_funded_accounts") and a.get("largest_account"):
-        return a["max_funded_accounts"] * a["largest_account"], (
-            f"{a['max_funded_accounts']} funded accounts of up to {strip_tags(money(a['largest_account'], ccy))}")
     return None, None
 
 
@@ -522,14 +518,14 @@ def alloc_table(firms):
     out = ""
     for cap, f, a, basis in rows:
         ccy = a.get("currency") or "USD"
-        capcell = (strip_tags(money(cap, ccy)) + (f'<small>{esc(basis)}</small>' if basis and basis != "stated limit" else "")) if cap else "Not published"
+        capcell = strip_tags(money(cap, ccy)) if cap else "No dollar cap stated"
         out += (f'<tr><td><a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></td>'
                 f'<td class="n">{strip_tags(money(a["largest_account"], ccy)) if a.get("largest_account") else "—"}</td>'
                 f'<td class="n">{capcell}</td>'
                 f'<td>{esc(a.get("max_allocation_text") or a.get("max_accounts") or "—")}</td>'
                 f'<td>{esc(a.get("scaling_text") or "No scaling plan published")}</td></tr>')
     return ('<div class="tbl-wrap"><table class="data"><thead><tr><th scope="col">Firm</th><th scope="col">Largest account</th>'
-            '<th scope="col">Max at once</th><th scope="col">Allocation rule</th><th scope="col">Scaling</th></tr></thead>'
+            '<th scope="col">Max capital stated by firm</th><th scope="col">Allocation rule</th><th scope="col">Scaling</th></tr></thead>'
             f'<tbody>{out}</tbody></table></div>')
 
 
