@@ -47,7 +47,7 @@
    "max_contracts_50k": null,
    "profit_split": "80%, rising to 100% on the scaling plan",
    "payout_frequency": "First after 14 days, then every 2 weeks",
-   "payout_rules_note": "Payouts capped at $3,000 per request on 50K; $300 minimum.",
+   "payout_rules_note": "Payouts capped at $3,000 per request on 50K; $150 minimum (after the profit split).",
    "notes": "Targets are 10% in phase 1 and 5% in phase 2."
   },
   {
@@ -89,7 +89,7 @@
   "discount": null,
   "applies_to": null,
   "source_url": "https://the5ers.com/high-stakes/",
-  "seen": "2026-11-01"
+  "seen": "2026-11-09"
  },
  "affiliate_program": {
   "exists": true,
@@ -192,6 +192,10 @@
   {
    "url": "https://the5ers.com/high-stakes/",
    "supports": "50K High Stakes New and Classic prices, targets, daily and max loss, payout cap (checked in browser)"
+  },
+  {
+   "url": "https://the5ers.com/faqs/payout-policy-and-hub-credit-in-the-high-stakes-program/",
+   "supports": "High Stakes payout minimum $150 after split, $3,000 cap on 50K, bi-weekly payouts (checked 2026-11-09)"
   }
  ],
  "uncertain": [

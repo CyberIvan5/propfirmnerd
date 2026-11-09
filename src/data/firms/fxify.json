@@ -97,11 +97,11 @@
  "payout_methods": [],
  "path_to_live": "Firm markets itself as 'backed by a broker'; the program pages call funded accounts 'live accounts'. How funded trading is executed was not confirmed.",
  "current_public_promo": {
-  "code": "AGHHH35",
-  "discount": "35% off",
-  "applies_to": "All programs except Instant Lite (Halloween sale, ends November 2, 2026)",
+  "code": "FUNDED25",
+  "discount": "25% off plus 2 free add-ons (90% split and bi-weekly payouts)",
+  "applies_to": "November sale, all programs except Instant Funding Lite; expires 24 November 2026. FXIFY also shows ONESTEP35 (35% off 1-Phase, new traders only, until 31 Dec 2026)",
   "source_url": "https://fxify.com/",
-  "seen": "2026-11-02"
+  "seen": "2026-11-09"
  },
  "affiliate_program": {
   "exists": true,

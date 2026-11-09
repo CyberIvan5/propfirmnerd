@@ -111,11 +111,11 @@
  ],
  "path_to_live": "Futures: review after 15 Performance Rewards across the trader profile (then every 5 for returning traders), not guaranteed; up to 5 live accounts; Challenge accounts closed on transfer. CFD: no live route published (Scale-Up program raises split to 90%).",
  "current_public_promo": {
-  "code": null,
-  "discount": null,
-  "applies_to": null,
-  "source_url": "https://fundednext.com/",
-  "seen": "2026-11-02"
+  "code": "RAPID",
+  "discount": "Up to 47% off first purchase for new futures users; 40% off repeat purchases",
+  "applies_to": "Futures Rapid Daily and Rapid Pro, 25K/50K/100K; from 5 Nov 2026 \"until further notice\"",
+  "source_url": "https://helpfutures.fundednext.com/en/articles/16295692-fundednext-futures-rapid-daily-rapid-pro-up-to-50-discount-offer",
+  "seen": "2026-11-09"
  },
  "affiliate_program": {
   "exists": true,
@@ -309,7 +309,7 @@
   "Affiliate base-tier ('Star') rate not confirmed",
   "account_sizes merges CFD (6K-200K) and futures (25K-150K) sizes"
  ],
- "checked": "2026-11-02",
+ "checked": "2026-11-09",
  "link": "https://fundednext.com/",
  "facets": {
   "market": "multi",

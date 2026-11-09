@@ -53,11 +53,11 @@
    "daily_loss_limit_50k": 1100,
    "consistency_rule": "30% in evaluation only (no single day may be 30% or more of total PnL; exceeding it is not a fail, you keep trading). None on LiveSim/Live accounts",
    "min_trading_days": null,
-   "max_contracts_50k": 6,
+   "max_contracts_50k": 4,
    "profit_split": "Per withdrawal: 50% if the withdrawal is under $2,250, 80% if it is $2,250 or more",
    "payout_frequency": "weekly (processed on Wednesdays; request by email by 2:00 PM CT the preceding Friday)",
-   "payout_rules_note": "Minimum net withdrawal $100; no buffer requirement. $139 activation fee (LiveSim, non-professional CME status) is deducted from the first withdrawal; Live accounts have no activation fee but pay market data of $140/month/exchange (Rithmic) or $156 (NinjaTrader). LiveSim max cumulative withdrawal on TCP50 is $3,000, after which the trader is moved to a Live account. Growth plan: hitting the $3,000 goal and withdrawing moves the trader to a $100K Live account, and so on up to $400K (TCP400 has a fixed 60/40 split).",
-   "notes": "Sold in 25K/50K/100K starting sizes (TCP25 $150/mo, TCP100 per help center price list). 50K price seen on the /non-us product page. Free reset after every monthly rebill (from the first rebill). Contracts follow a progression ladder up to 6; exceeding the allowed size is a hard fail. Positions must be closed by 3:50 PM CT. Up to 5 concurrent evaluations; up to 3 funded accounts, only 1 of them Live."
+   "payout_rules_note": "Minimum net withdrawal $100; for subscriptions bought from 2 Nov 2026, 5 profitable trading days of $150+ each are needed before every withdrawal request (LiveSim and Live); no buffer requirement. $139 activation fee (LiveSim, non-professional CME status) is deducted from the first withdrawal; Live accounts have no activation fee but pay market data of $140/month/exchange (Rithmic) or $156 (NinjaTrader). LiveSim max cumulative withdrawal on TCP50 is $3,000, after which the trader is moved to a Live account. Growth plan: hitting the $3,000 goal and withdrawing moves the trader to a $100K Live account, and so on up to $400K (TCP400 has a fixed 60/40 split).",
+   "notes": "Sold in 25K/50K/100K starting sizes (TCP25 $150/mo, TCP100 per help center price list). 50K price seen on the /non-us product page. Free reset after every monthly rebill (from the first rebill). Fixed limit of 4 contracts / 40 micros on 50K for subscriptions bought from 2 Nov 2026 (the progression ladder was retired; older subscriptions keep the old rules). Positions must be closed by 3:50 PM CT. Up to 5 concurrent evaluations; up to 3 funded accounts, only 1 of them Live."
   },
   {
    "name": "Gauntlet Mini (GAU50)",
@@ -73,11 +73,11 @@
    "daily_loss_limit_50k": 1100,
    "consistency_rule": "30% in evaluation only; none on funded accounts",
    "min_trading_days": null,
-   "max_contracts_50k": 6,
+   "max_contracts_50k": 4,
    "profit_split": "Per withdrawal: 50% if under $2,250, 80% if $2,250 or more",
    "payout_frequency": "weekly (processed on Wednesdays)",
-   "payout_rules_note": "Minimum net withdrawal $100. LiveSim max cumulative withdrawal on GM50 is $5,000, after which the trader is moved to a Live account. $139 LiveSim activation fee from the first withdrawal; Live accounts pay monthly data fees instead. No growth plan: funded account stays at the evaluation size.",
-   "notes": "Sizes 50K/100K/150K/200K. Contracts follow the Gauntlet Mini progression ladder up to 6 on 50K. Fixed reset prices for larger sizes: $100 (100K), $130 (150K), $155 (200K); 50K reset price is dynamic and below the current new-subscription price."
+   "payout_rules_note": "Minimum net withdrawal $100; for subscriptions bought from 2 Nov 2026, 5 profitable trading days of $150+ each are needed before every withdrawal request (LiveSim and Live). LiveSim max cumulative withdrawal on GM50 is $5,000, after which the trader is moved to a Live account. $139 LiveSim activation fee from the first withdrawal; Live accounts pay monthly data fees instead. No growth plan: funded account stays at the evaluation size.",
+   "notes": "Sizes 50K/100K/150K/200K. Fixed limit of 4 contracts / 40 micros on 50K for subscriptions bought from 2 Nov 2026 (progression ladder retired). Fixed reset prices for larger sizes: $100 (100K), $130 (150K), $155 (200K); 50K reset price is dynamic and below the current new-subscription price."
   }
  ],
  "news_trading": "Allowed (no restrictions around economic announcements)",
@@ -94,11 +94,11 @@
  ],
  "path_to_live": "After passing, the trader chooses a LiveSim (simulated, EOD drawdown) or a Live account (real brokerage account with a partner prop firm, trailing drawdown, own data fees). LiveSim traders are moved to Live after reaching the LiveSim max withdrawal ($3,000 on TCP50, $5,000 on GM50). TCP Live accounts grow by profit goal: $50K -> $100K -> ... up to $400K",
  "current_public_promo": {
-  "code": "BOTH50",
-  "discount": "50% off evaluations and resets",
-  "applies_to": "Shown on Earn2Trade's US site; the non-US site showed a different offer without a code",
+  "code": "NEXTSTEP50",
+  "discount": "50% off",
+  "applies_to": "New evaluations, per the banner on Earn2Trade's site (no end date shown)",
   "source_url": "https://www.earn2trade.com/",
-  "seen": "2026-11-02"
+  "seen": "2026-11-09"
  },
  "affiliate_program": {
   "exists": true,
@@ -111,6 +111,11 @@
    "date": "2026-07-06",
    "change": "Help center article dated 6 Jul 2026 states that exceeding the TCP progression ladder contract limit is a hard fail that ends the evaluation",
    "source": "https://help.earn2trade.com/en/articles/5922873-what-is-the-progression-ladder-on-the-trader-career-path"
+  },
+  {
+   "date": "2026-11",
+   "change": "Progression Ladder retired for subscriptions bought from 2 Nov 2026: fixed 4 contracts / 40 micros on 50K; funded traders now need 5 profitable days of $150+ (50K) before each withdrawal",
+   "source": "https://www.earn2trade.com/blog/earn2trade-rule-updates-november-2026"
   }
  ],
  "pros": [
@@ -123,7 +128,7 @@
   "Funded split is only 50% on any withdrawal under $2,250 (50K); 80% needs a larger single withdrawal",
   "Evaluations are monthly subscriptions ($190 TCP50, $170 GAU50 list) that renew until cancelled",
   "Live accounts use an intraday trailing drawdown and carry monthly data fees ($140/exchange on Rithmic)",
-  "No overnight holding in evaluations (flat by 3:50 PM CT); trade copiers banned; ladder breaches are a hard fail",
+  "No overnight holding in evaluations (flat by 3:50 PM CT); trade copiers banned",
   "Firm-published 2025 pass rate was 8.89%, and only about 18% of funded accounts had a withdrawal"
  ],
  "best_for": "Futures day traders who want a path from a monthly-billed evaluation to a real Live brokerage account, with a scaling plan up to $400K and no minimum trading days.",

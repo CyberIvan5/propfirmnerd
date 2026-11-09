@@ -55,7 +55,7 @@
    "price_50k_list": 169,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
-   "reset_fee_50k": 119,
+   "reset_fee_50k": 149,
    "profit_target_50k": 3000,
    "max_loss_50k": 2000,
    "drawdown_type": "EOD trailing, stops at starting balance",
@@ -108,7 +108,7 @@
   "discount": null,
   "applies_to": null,
   "source_url": "https://alpha-futures.com",
-  "seen": "2026-11-02"
+  "seen": "2026-11-09"
  },
  "affiliate_program": {
   "exists": true,
@@ -277,7 +277,7 @@
   "Terms list a London notices address (10 Lower Thames Street) different from the Harpenden registered office",
   "Trustpilot shows location 'United States' although the company is UK-registered"
  ],
- "checked": "2026-11-02",
+ "checked": "2026-11-09",
  "link": "https://alpha-futures.com/",
  "facets": {
   "market": "futures",
