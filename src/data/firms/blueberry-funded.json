@@ -2,7 +2,6 @@
  "slug": "blueberry-funded",
  "name": "Blueberry Funded",
  "website": "https://blueberryfunded.com/",
- "link": "https://affiliates.blueberryfunded.com/Tracking/click/?affid=52750&campaign=12961&product_id=1&t_type=HomePage&t_lang=EN",
  "status": "active",
  "status_note": "Trustpilot currently shows no rating for Blueberry Funded: it says the rating is unavailable because of a breach of its guidelines and that it removed fake reviews (seen October 19, 2026).",
  "market": "forex",
@@ -312,7 +311,7 @@
   "max_contracts: not applicable (CFD lots)"
  ],
  "checked": "2026-11-09",
- "link": "https://blueberryfunded.com/",
+ "link": "https://affiliates.blueberryfunded.com/Tracking/click/?affid=52750&campaign=12961&product_id=1&t_type=HomePage&t_lang=EN",
  "facets": {
   "market": "forex",
   "price50": 302.5,
