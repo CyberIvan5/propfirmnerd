@@ -21,6 +21,9 @@ leave it as is and report it.**
   It repeats some numbers, so update it when a number changes.
 - `src/data/lists.json`, `src/data/compares.json`, `src/pages/*.html`: lists, comparisons and guides that may
   quote numbers too. Search them (`grep -rn '<old value>' src/`) after any change.
+  List FAQ answers in `lists.json` may use placeholders the builder fills from current data ({top1}, {top1_why},
+  {cheapest_once}, {cheapest_month}, {eod}, {static}, {nocons}, {codes}, {names}, {n}); keep them, don't hard-code names.
+  Comparison pages get their FAQ from firm data automatically. Page titles must stay at 60 characters or fewer.
 - Do NOT run `research/*.py` (local-only, not in the repo).
 
 ## Steps

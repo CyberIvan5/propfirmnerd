@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prop Firm Pass Probability Calculator (Monte Carlo) | PropFirmNerd</title>
+<title>Prop Firm Pass Probability Calculator (Monte Carlo)</title>
 <meta name="description" content="Estimate your chance of passing a prop firm evaluation from your win rate, average win and loss, trades per day, profit target and max loss.">
 <link rel="canonical" href="https://propfirmnerd.com/tools/pass-probability-calculator/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PropFirmNerd">
-<meta property="og:title" content="Prop Firm Pass Probability Calculator (Monte Carlo) | PropFirmNerd">
+<meta property="og:title" content="Prop Firm Pass Probability Calculator (Monte Carlo)">
 <meta property="og:description" content="Estimate your chance of passing a prop firm evaluation from your win rate, average win and loss, trades per day, profit target and max loss.">
 <meta property="og:url" content="https://propfirmnerd.com/tools/pass-probability-calculator/">
 <meta property="og:image" content="https://propfirmnerd.com/assets/og.png">
@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20261109">
+<link rel="stylesheet" href="/assets/style.css?v=20261110">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Pass probability calculator", "url": "https://propfirmnerd.com/tools/pass-probability-calculator/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How accurate is this?", "acceptedAnswer": {"@type": "Answer", "text": "It is only as good as your inputs. It assumes each trade is independent with the win rate and sizes you enter. Real results cluster: losing streaks, tilt and news days make failure more likely than a simple model suggests."}}, {"@type": "Question", "name": "Why can a strategy with a positive expectancy still fail most of the time?", "acceptedAnswer": {"@type": "Answer", "text": "Because the max loss is usually small next to the profit target, a normal losing streak can end the account before the edge shows up. Smaller size lowers the chance of busting but makes reaching the target take longer."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://propfirmnerd.com/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://propfirmnerd.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Pass probability calculator", "item": "https://propfirmnerd.com/tools/pass-probability-calculator/"}]}]}</script>
 </head>
 <body>
@@ -80,14 +80,6 @@
 </div>
 <p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
 </div></footer>
-<script src="/assets/js/tools.js?v=20261109"></script>
-<script>
-(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
-b&&b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="/go/"]');if(a&&window.gtag){gtag('event','affiliate_click',{firm:a.getAttribute('href').split('/')[2],page:location.pathname});}});
-document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){window.gtag&&gtag('event','code_copy',{code:btn.getAttribute('data-copy'),page:location.pathname});})});
-document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
-var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){btn.textContent='Copied'},function(){btn.textContent=t});})});})();
-</script>
+<script src="/assets/js/site.js?v=20261110" defer></script><script src="/assets/js/tools.js?v=20261110" defer></script>
 </body>
 </html>

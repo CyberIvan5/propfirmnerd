@@ -80,6 +80,30 @@ def read_meta_file(path):
     return meta, raw[m.end():].strip()
 
 
+def fit_title(*cands, limit=60):
+    """First candidate that fits in a search result title; the last one is the fallback."""
+    for c in cands:
+        if len(c) <= limit:
+            return c
+    return cands[-1]
+
+
+def avatar(f):
+    """Initials tile used next to firm names (we don't reproduce firm logos)."""
+    words = re.findall(r"[A-Za-z0-9]+", f["name"])
+    ini = (words[0][0] + (words[1][0] if len(words) > 1 else words[0][1:2])).upper()
+    hue = sum(ord(c) for c in f["slug"]) * 37 % 360
+    return f'<span class="av" style="--h:{hue}" aria-hidden="true">{esc(ini)}</span>'
+
+
+def go_link(f, label=None, cls="btn", place=""):
+    return (f'<a class="{cls}" href="/go/{f["slug"]}/" rel="nofollow sponsored"{" data-place=" + place if place else ""}>'
+            f'{esc(label or "Visit " + f["name"])}</a>')
+
+
+DISCLOSE = 'Some links earn us a commission. <a href="/affiliate-disclosure/">Disclosure</a>'
+
+
 def domain(url):
     return re.sub(r"^https?://(www\.)?", "", url or "").split("/")[0]
 
@@ -227,7 +251,7 @@ def sources_html(firm):
                   f'{(" — " + esc(clean_supports(s.get("supports", "")))) if s.get("supports") else ""}</li>' for s in srcs)
     return (f'<section class="sources"><h2>Sources</h2><p>Checked {fmt_date(firm["checked"])}. '
             f'We link the firm\'s own pages wherever we can. If something changed, '
-            f'<a href="/contact/">tell us</a>.</p><ol>{lis}</ol></section>')
+            f'<a href="/contact/">tell us</a>.</p><details><summary>Show all {len(srcs)} sources</summary><ol>{lis}</ol></details></section>')
 
 
 def schema_json(graph):
@@ -305,15 +329,7 @@ LAYOUT = """<!doctype html>
 </div>
 <p class="disclaimer">PropFirmNerd is independent and is not owned by any prop firm. Some links earn us a commission, which never changes the facts we publish; see our <a href="/affiliate-disclosure/">disclosure</a>. Prop firm evaluations are paid products, most traders do not pass them, and the fee is not refunded when you fail. Funded accounts at most firms are simulated. Nothing here is financial advice. Rules and prices change often, so check the firm's site before you buy.</p>
 </div></footer>
-{scripts}
-<script>
-(function(){{var b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
-b&&b.addEventListener('click',function(){{var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)}});
-document.addEventListener('click',function(e){{var a=e.target.closest&&e.target.closest('a[href^="/go/"]');if(a&&window.gtag){{gtag('event','affiliate_click',{{firm:a.getAttribute('href').split('/')[2],page:location.pathname}});}}}});
-document.querySelectorAll('[data-copy]').forEach(function(btn){{btn.addEventListener('click',function(){{window.gtag&&gtag('event','code_copy',{{code:btn.getAttribute('data-copy'),page:location.pathname}});}})}});
-document.querySelectorAll('[data-copy]').forEach(function(btn){{btn.addEventListener('click',function(){{
-var t=btn.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{btn.textContent='Copied'}},function(){{btn.textContent=t}});}})}});}})();
-</script>
+<script src="/assets/js/site.js?v={ver}" defer></script>{scripts}
 </body>
 </html>
 """
@@ -341,7 +357,7 @@ class Site:
             ogtype="article" if kind == "article" else "website", ver=self.ver,
             schema=schema_json(g), logo=LOGO, nav=nav_html(section), mainclass=f"kind-{kind}",
             crumbs=crumbs_html(trail) if trail else "", body=body,
-            scripts="".join(f'<script src="/assets/js/{s}?v={self.ver}"></script>' for s in scripts))
+            scripts="".join(f'<script src="/assets/js/{s}?v={self.ver}" defer></script>' for s in scripts))
         self.pages.append((path, page, priority, lastmod or TODAY, not noindex))
 
     def write(self):
@@ -389,19 +405,24 @@ def cons_label(f):
 def code_cell(f):
     p = f.get("current_public_promo") or {}
     if p.get("code"):
-        return f'<code>{esc(p["code"])}</code>'
+        return (f'<button class="codebtn" type="button" data-copy="{esc(p["code"])}" '
+                f'title="Copy code {esc(p["code"])}">{esc(p["code"])}</button>')
     return '<span class="muted">—</span>'
+
+
+def num(v):
+    return v if isinstance(v, (int, float)) else ""
 
 
 def firm_row(f, cols):
     s = f["slug"]
     ccy = fac(f, "ccy", "USD")
     cells = {
-        "firm": f'<th scope="row"><a href="/firms/{s}/">{esc(f["name"])}</a></th>',
+        "firm": f'<th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{s}/">{avatar(f)}{esc(f["name"])}</a></th>',
         "market": f'<td>{esc(MARKET_LABEL.get(fac(f, "market"), "—"))}</td>',
-        "price": f'<td class="n">{money(fac(f, "price50"), ccy)}{"<small>/mo</small>" if fac(f, "monthly") else ""}</td>',
-        "target": f'<td class="n gain">{money(fac(f, "target50"), fac(f, "acc_ccy", ccy))}</td>',
-        "maxloss": f'<td class="n loss">{money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy))}</td>',
+        "price": f'<td class="n" data-v="{num(fac(f, "price50"))}">{money(fac(f, "price50"), ccy)}{"<small>/mo</small>" if fac(f, "monthly") else ""}</td>',
+        "target": f'<td class="n gain" data-v="{num(fac(f, "target50"))}">{money(fac(f, "target50"), fac(f, "acc_ccy", ccy))}</td>',
+        "maxloss": f'<td class="n loss" data-v="{num(fac(f, "maxloss50"))}">{money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy))}</td>',
         "dd": f'<td>{esc(DD_LABEL.get(fac(f, "dd"), "—"))}</td>',
         "cons": f'<td>{esc(cons_label(f))}</td>',
         "split": f'<td>{esc(fac(f, "split") or "—")}</td>',
@@ -409,8 +430,11 @@ def firm_row(f, cols):
         "news": f'<td>{esc((fac(f, "news") or "—").capitalize())}</td>',
         "ea": f'<td>{esc(fac(f, "ea") if isinstance(fac(f, "ea"), str) else yn(fac(f, "ea"), "Allowed", "Not allowed"))}</td>',
         "us": f'<td>{yn(fac(f, "us"))}</td>',
-        "tp": f'<td class="n">{fac(f, "tp") or "—"}</td>',
+        "tp": f'<td class="n" data-v="{num(fac(f, "tp"))}">{fac(f, "tp") or "—"}</td>',
         "code": f'<td>{code_cell(f)}</td>',
+        "go": f'<td class="go">{go_link(f, "Visit", "btn sm", "table")}</td>',
+        "deal": (f'<td class="deal"><div>{code_cell(f) if (f.get("current_public_promo") or {}).get("code") else ""}'
+                 f'{go_link(f, "Visit", "btn sm", "table")}</div></td>'),
     }
     attrs = (f'data-market="{fac(f, "market", "")}" data-dd="{fac(f, "dd", "")}" '
              f'data-cons="{"none" if cons_label(f) == "None" else "some"}" data-us="{1 if fac(f, "us") else 0}"')
@@ -420,12 +444,21 @@ def firm_row(f, cols):
 COLS = {"firm": "Firm", "market": "Market", "price": "50K price", "target": "Profit target",
         "maxloss": "Max loss", "dd": "Drawdown", "cons": "Consistency rule", "split": "Profit split",
         "payouts": "Payouts", "news": "News trading", "ea": "Bots/EAs", "us": "US traders",
-        "tp": "Trustpilot", "code": "Public code"}
+        "tp": "Trustpilot", "code": "Public code", "go": '<span class="sr">Visit site</span>', "deal": "Code and site"}
 NUMCOLS = {"price", "target", "maxloss", "tp"}
+SORTCOLS = {"firm": "text", "price": "num", "target": "num", "maxloss": "num", "tp": "num"}
+
+
+def th_html(c):
+    cls = ' class="n"' if c in NUMCOLS else ""
+    if c in SORTCOLS:
+        return (f'<th scope="col"{cls} data-sort="{SORTCOLS[c]}"><button type="button" class="sort" '
+                f'title="Sort by {COLS[c].lower()}">{COLS[c]}</button></th>')
+    return f'<th scope="col"{cls}>{COLS[c]}</th>'
 
 
 def firm_table(firms, cols, cls="cmp data"):
-    head = "".join(f'<th scope="col"{" class=n" if c in NUMCOLS else ""}>{COLS[c]}</th>' for c in cols)
+    head = "".join(th_html(c) for c in cols)
     body = "".join(firm_row(f, cols) for f in firms)
     return f'<div class="tbl-wrap"><table class="{cls}"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
 
@@ -615,9 +648,13 @@ def firm_head(f, h1, sub):
     nsrc = len(f.get("sources") or [])
     by = (f'<p class="byline">Checked {fmt_date(f["checked"])} against {nsrc} official and public pages. '
           f'<a href="/methodology/">How we check</a></p>')
-    cta = (f'<div class="cta-col"><a class="btn" href="/go/{f["slug"]}/" rel="nofollow sponsored">Visit {esc(f["name"])}</a>'
+    cta = (f'<div class="cta-col">{go_link(f, place="head")}'
            f'<p class="btn-note">Opens {esc(domain(f.get("link") or f.get("website")))}</p></div>')
-    return f'<div class="firm-head"><div>{tag}<h1>{esc(h1)}</h1>{by}{sub}</div>{cta}</div>'
+    code = (f.get("current_public_promo") or {}).get("code")
+    left = (f'<span>Code <button class="codebtn" type="button" data-copy="{esc(code)}">{esc(code)}</button></span>' if code
+            else f'<span>{esc(f["name"])}</span>')
+    sticky = f'<div class="sticky-cta">{left}{go_link(f, place="sticky")}</div>'
+    return f'<div class="firm-head"><div>{tag}<h1>{esc(h1)}</h1>{by}{sub}</div>{cta}</div>{sticky}'
 
 
 def firm_faq(f):
@@ -655,17 +692,22 @@ def build_firm_pages(site, firms, lists, compares):
         path = f"/firms/{s}/"
         trail = [("Firm reviews", "/firms/"), (f"{n} review", path)]
         h1 = ed.get("h1", f"{n} review")
-        title = ed.get("title", f"{n} Review ({month_year(mod)}): Rules, Prices, Payouts")
+        title = ed.get("title") or fit_title(f"{n} Review ({month_year(mod)}): Rules, Prices, Payouts",
+                                             f"{n} Review ({month_year(mod)}): Rules & Prices",
+                                             f"{n} Review ({month_year(mod)}): Rules, Prices", limit=59)
         desc = ed.get("description", f"{n} rules, 50K prices, drawdown, consistency and payout rules, checked {fmt_date(mod)} against {n}'s own pages.")
         verdict = f'<p class="lede">{ed["verdict"]}</p>' if ed.get("verdict") else ""
-        promo_link = f'<p><a href="/firms/{s}/promo-code/">{n} promo code and current discount</a></p>'
+        promo_link = (f'<p class="cta-row">{go_link(f, place="end")} '
+                      f'<a class="btn ghost" href="/firms/{s}/promo-code/">{esc(n)} promo code</a></p>')
+        mid_cta = (f'<p class="cta-row">{go_link(f, f"See plans at {n}", place="plans")} '
+                   f'<span class="btn-note">Opens {esc(domain(f.get("link") or f.get("website")))}. {DISCLOSE}</span></p>')
         rules_link = f'<p><a href="/firms/{s}/rules/">Every {n} rule explained</a></p>' if ed.get("rules_page") else ""
         pnote = f'<p class="muted" style="margin-top:-18px">{esc(f["price_note"])}</p>' if f.get("price_note") else ""
         body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + pnote + dd_block(fac(f, "dd"))
                 + f'<div class="content">{ticket_html(f)}' + (body_ed.split("<!--RULES-->")[0] if body_ed else "")
-                + "</div>" + program_table(f)
+                + "</div>" + program_table(f) + mid_cta
                 + f'<h2 id="rules">Trading rules and fine print</h2>{rules_kv(f)}{rules_link}'
-                + pros_cons(f) + changes_html(f) + promo_link + sources_html(f) + faq_html(firm_faq(f)))
+                + pros_cons(f) + changes_html(f) + promo_link + faq_html(firm_faq(f)) + sources_html(f))
         rel = [(f"/firms/{s}/promo-code/", f"{n} promo code", "Current discount and what it covers")]
         if ed.get("rules_page"):
             rel.append((f"/firms/{s}/rules/", f"{n} rules explained", "Drawdown, consistency, payouts, banned strategies"))
@@ -718,7 +760,10 @@ def build_firm_pages(site, firms, lists, compares):
             path = f"/firms/{s}/rules/"
             trail = [("Firm reviews", "/firms/"), (f"{n} review", f"/firms/{s}/"), (f"{n} rules", path)]
             h1 = f"{n} rules explained"
-            title = f"{n} Rules Explained ({month_year(mod)}): Drawdown, Consistency, Payouts"
+            title = fit_title(f"{n} Rules Explained ({month_year(mod)}): Drawdown, Consistency, Payouts",
+                              f"{n} Rules Explained ({month_year(mod)}): Drawdown, Payouts",
+                              f"{n} Rules ({month_year(mod)}): Drawdown, Payouts",
+                              f"{n} Rules Explained ({month_year(mod)})")
             desc = f"Every {n} rule in plain English: drawdown, daily loss, consistency, payout rules and banned strategies, checked {fmt_date(mod)}."
             rules_body = body_ed.split("<!--RULES-->")[1] if "<!--RULES-->" in body_ed else ""
             body = (firm_head(f, h1, "") + status_note(f) + strip_html(f) + dd_block(fac(f, "dd"))
@@ -811,6 +856,89 @@ def biggest_maxloss(f):
     return best
 
 
+def names_join(fs):
+    ns = [f["name"] for f in fs]
+    if not ns:
+        return "none"
+    return ns[0] if len(ns) == 1 else ", ".join(ns[:-1]) + " and " + ns[-1]
+
+
+def price_txt(f):
+    return strip_tags(money(fac(f, "price50"), fac(f, "ccy", "USD"))) + (" a month" if fac(f, "monthly") else "")
+
+
+def list_faq_fill(a, picks, whys):
+    """FAQ answers in lists.json may use placeholders that are filled from the current data, so they stay true
+    when prices or the ranking change: {top1} {top1_why} {top2} {top3} {n} {names} {cheapest_once} {cheapest_month}
+    {eod} {static} {nocons} {codes}."""
+    if "{" not in a:
+        return a
+    usd = [f for f in picks if fac(f, "price50") is not None and fac(f, "ccy", "USD") == "USD"]
+    once = sorted([f for f in usd if not fac(f, "monthly")], key=lambda f: fac(f, "price50"))
+    monthly = sorted([f for f in usd if fac(f, "monthly")], key=lambda f: fac(f, "price50"))
+    rep = {
+        "{n}": str(len(picks)),
+        "{names}": names_join(picks),
+        "{top1}": picks[0]["name"] if picks else "",
+        "{top1_why}": whys.get(picks[0]["slug"], "") if picks else "",
+        "{top2}": picks[1]["name"] if len(picks) > 1 else "",
+        "{top3}": picks[2]["name"] if len(picks) > 2 else "",
+        "{cheapest_once}": f"{once[0]['name']} at {price_txt(once[0])}" if once else "none",
+        "{cheapest_month}": f"{monthly[0]['name']} at {price_txt(monthly[0])}" if monthly else "none",
+        "{eod}": names_join([f for f in picks if fac(f, "dd") == "eod"]),
+        "{static}": names_join([f for f in picks if fac(f, "dd") == "static"]),
+        "{nocons}": names_join([f for f in picks if cons_label(f) == "None"]),
+        "{codes}": names_join([f for f in picks if (f.get("current_public_promo") or {}).get("code")]),
+    }
+    for k, v in rep.items():
+        a = a.replace(k, esc(v))
+    return a
+
+
+def compare_faq(a, b):
+    """Data-driven questions for X vs Y pages."""
+    d = fmt_date(max(a["checked"], b["checked"]))
+    A, B = a["name"], b["name"]
+    out = []
+    pa, pb = fac(a, "price50"), fac(b, "price50")
+    if pa is not None and pb is not None:
+        txt = f"{A}'s main 50K plan lists at {price_txt(a)} and {B}'s at {price_txt(b)}, before discounts, as of {d}."
+        same_ccy = fac(a, "ccy", "USD") == fac(b, "ccy", "USD")
+        same_bill = bool(fac(a, "monthly")) == bool(fac(b, "monthly"))
+        if same_ccy and same_bill and pa != pb:
+            txt += f" {A if pa < pb else B} has the lower list price."
+        elif not same_ccy:
+            txt += " The prices are in different currencies, so convert before you compare."
+        elif not same_bill:
+            txt += " One is a monthly fee and the other a one-time fee, so the cheaper one depends on how long you take to pass."
+        out.append([f"Is {A} or {B} cheaper?", txt + ' Use the <a href="/tools/challenge-cost-calculator/">true cost calculator</a> for the full cost.'])
+    if fac(a, "dd") and fac(b, "dd") and fac(a, "maxloss50") and fac(b, "maxloss50"):
+        def ddt(f):
+            kind = ("a drawdown type that depends on the plan" if fac(f, "dd") == "mixed"
+                    else DD_LABEL[fac(f, "dd")].lower() + " drawdown")
+            return (f"{f['name']} uses {kind} with a 50K max loss of "
+                    f"{strip_tags(money(fac(f, 'maxloss50'), fac(f, 'acc_ccy', fac(f, 'ccy', 'USD'))))} on its main plan")
+        out.append([f"What is the difference between {A} and {B} drawdown?", f"{ddt(a)}. {ddt(b)}. Both as of {d}."])
+    ca, cb = cons_label(a), cons_label(b)
+    if "—" not in (ca, cb):
+        def ct(f, c):
+            where = {"Eval only": "in the evaluation only", "Funded only": "on funded accounts only",
+                     "Eval + funded": "in the evaluation and on funded accounts"}[c] if c != "None" else ""
+            return (f"{f['name']} has no consistency rule on its main plan" if c == "None"
+                    else f"{f['name']} applies a consistency rule {where}")
+        out.append([f"Does {A} or {B} have a consistency rule?", f"{ct(a, ca)}. {ct(b, cb)}."])
+    ua, ub = a.get("us_residents_accepted"), b.get("us_residents_accepted")
+    if ua is not None and ub is not None:
+        if ua and ub:
+            t = f"Yes. Both {A} and {B} accept US residents, according to their own pages as of {d}."
+        elif not ua and not ub:
+            t = f"No. Neither {A} nor {B} accepts US residents, according to their own pages as of {d}."
+        else:
+            t = f"{A if ua else B} accepts US residents and {B if ua else A} does not, according to their own pages as of {d}."
+        out.append([f"Do {A} and {B} accept US traders?", t])
+    return out
+
+
 def build_lists(site, firms, lists):
     for l in lists:
         picks = pick_list(l, firms)
@@ -818,7 +946,7 @@ def build_lists(site, firms, lists):
         trail = [("Best prop firms", "/best/"), (l["h1"], path)]
         mod = max([f["checked"] for f in picks] + ([(f.get("allocation") or {}).get("checked") or "" for f in picks]
                                                     if l.get("why_auto") == "alloc" else []) or [TODAY])
-        items = ""
+        items, whys = "", {}
         for f in picks:
             why = (l.get("why") or {}).get(f["slug"]) or (f["_ed_meta"].get("one_liner") or f.get("best_for") or "")
             if l.get("why_auto") == "alloc" and alloc_capacity(f)[0]:
@@ -835,16 +963,21 @@ def build_lists(site, firms, lists):
                     if fac(f, 'price50') is not None else "50K price not published, ")
             facts = (lead + f"target {strip_tags(money(fac(f, 'target50'), fac(f, 'acc_ccy', ccy)))}, max loss {strip_tags(money(fac(f, 'maxloss50'), fac(f, 'acc_ccy', ccy)))}, "
                      f"{DD_LABEL.get(fac(f, 'dd'), '').lower()} drawdown")
-            items += (f'<li><div><h3><a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></h3><p>{esc(why)}</p></div>'
-                      f'<a class="btn ghost" href="/firms/{f["slug"]}/">Read review</a>'
-                      f'<div class="facts">{esc(facts)}</div></li>')
+            code = (f.get("current_public_promo") or {}).get("code")
+            codeline = (f'<span class="codeline">Code <button class="codebtn" type="button" data-copy="{esc(code)}">{esc(code)}</button></span>'
+                        if code else "")
+            whys[f["slug"]] = why
+            items += (f'<li><div><h3>{avatar(f)}<a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></h3><p>{esc(why)}</p>'
+                      f'<div class="facts">{esc(facts)}</div></div>'
+                      f'<div class="acts">{go_link(f, place="list")}{codeline}'
+                      f'<a class="rv" href="/firms/{f["slug"]}/">Read {esc(f["name"])} review</a></div></li>')
         cols = l.get("cols", ["firm", "price", "target", "maxloss", "dd", "cons", "split", "payouts"])
         body = (f'<header class="art-head"><h1>{esc(l["h1"])}</h1><p class="byline">Updated {fmt_date(mod)}. '
-                f'Facts checked against each firm\'s own pages. <a href="/methodology/">How we rank</a></p></header>'
+                f'Facts checked against each firm\'s own pages. <a href="/methodology/">How we rank</a>. {DISCLOSE}</p></header>'
                 f'<div class="content"><p class="lede">{l["intro"]}</p></div>'
                 f'<ol class="rank">{items}</ol><h2>Side by side</h2>{firm_table(picks, cols)}'
                 f'<div class="content">{l.get("body", "").replace("{{ALLOC_TABLE}}", "</div>" + alloc_table(firms) + "<div class=\"content\">") if "{{ALLOC_TABLE}}" in l.get("body", "") else l.get("body", "")}</div>')
-        faq = l.get("faq") or []
+        faq = [[q, list_faq_fill(a, picks, whys)] for q, a in (l.get("faq") or [])]
         desc = l["description"]
         graph = [article_schema(l["h1"], desc, SITE + path, l.get("published", mod), mod),
                  {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f["name"],
@@ -881,17 +1014,20 @@ def build_compares(site, firms, compares):
             row("US traders", lambda f: yn(f.get("us_residents_accepted"))),
             row("Platforms", lambda f: esc(", ".join(f.get("platforms") or []) or "—")),
             row("Public code", lambda f: code_cell(f)),
+            row("", lambda f: go_link(f, cls="btn sm", place="compare-table")),
         ])
         tbl = (f'<div class="tbl-wrap"><table class="kv data"><thead><tr><th scope="col"></th>'
                f'<th scope="col"><a href="/firms/{a["slug"]}/">{esc(a["name"])}</a></th>'
                f'<th scope="col"><a href="/firms/{b["slug"]}/">{esc(b["name"])}</a></th></tr></thead><tbody>{rows}</tbody></table></div>')
         desc = c.get("description", f"{a['name']} vs {b['name']}: 50K prices, drawdown, consistency rules and payouts side by side, checked {fmt_date(mod)}.")
-        body = (f'<header class="art-head"><h1>{esc(h1)}</h1><p class="byline">Checked {fmt_date(mod)} against both firms\' own pages.</p></header>'
+        body = (f'<header class="art-head"><h1>{esc(h1)}</h1><p class="byline">Checked {fmt_date(mod)} against both firms\' own pages. {DISCLOSE}</p></header>'
                 f'<div class="content"><p class="lede">{c["verdict"]}</p></div>{tbl}<div class="content">{c.get("body", "")}</div>'
-                f'<p><a class="btn" href="/go/{a["slug"]}/" rel="nofollow sponsored">Visit {esc(a["name"])}</a> '
-                f'<a class="btn ghost" href="/go/{b["slug"]}/" rel="nofollow sponsored">Visit {esc(b["name"])}</a></p>')
-        faq = c.get("faq") or []
-        site.add(path, title=c.get("title", f"{h1} ({month_year(mod)}): Rules & Prices Compared"), description=desc,
+                f'<p class="cta-row">{go_link(a, place="compare")} {go_link(b, place="compare")}</p>')
+        have = {q.lower() for q, _ in (c.get("faq") or [])}
+        faq = (c.get("faq") or []) + [qa for qa in compare_faq(a, b) if qa[0].lower() not in have]
+        ctitle = c.get("title") or fit_title(f"{h1} ({month_year(mod)}): Rules & Prices Compared",
+                                             f"{h1}: Rules & Prices ({month_year(mod)})", f"{h1} ({month_year(mod)})")
+        site.add(path, title=ctitle, description=desc,
                  body=body + faq_html(faq) + related_html([(f"/firms/{a['slug']}/", f"{a['name']} review", "Full rules"),
                                                           (f"/firms/{b['slug']}/", f"{b['name']} review", "Full rules")]),
                  section="compare", trail=trail, kind="article", priority="0.8", lastmod=mod,
@@ -904,6 +1040,8 @@ def build_static_pages(site, firms, lists, compares, contracts):
         meta, body = read_meta_file(p)
         for k in ("title", "description"):
             meta[k] = meta[k].replace("{{FIRM_COUNT}}", str(len(firms)))
+        if len(meta["title"]) > 60 and meta["title"].endswith(" | PropFirmNerd"):
+            meta["title"] = meta["title"][: -len(" | PropFirmNerd")]
         slug = p.stem
         path = "/" if slug == "home" else f"/{slug.replace('__', '/')}/"
         body = expand(body, firms, lists, compares, contracts)
@@ -942,8 +1080,8 @@ def expand(body, firms, lists, compares, contracts):
     allf = sorted(firms.values(), key=lambda f: f["name"].lower())
     rep = {
         "{{FIRM_COUNT}}": str(len(firms)),
-        "{{HOME_TABLE}}": filtered_table(allf, ["firm", "market", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "code"], "t-home"),
-        "{{COMPARE_TABLE}}": filtered_table(allf, ["firm", "market", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "news", "ea", "us", "tp", "code"], "t-all"),
+        "{{HOME_TABLE}}": filtered_table(allf, ["firm", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "deal"], "t-home"),
+        "{{COMPARE_TABLE}}": filtered_table(allf, ["firm", "market", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "news", "ea", "us", "tp", "deal"], "t-all"),
         "{{FIRM_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf]),
         "{{FUTURES_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf if fac(f, "market") in ("futures", "multi")]),
         "{{FOREX_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf if fac(f, "market") in ("forex", "multi")]),
@@ -969,11 +1107,15 @@ def promo_table(allf):
     rows = ""
     for f in allf:
         p = f.get("current_public_promo") or {}
-        rows += (f'<tr><th scope="row"><a href="/firms/{f["slug"]}/promo-code/">{esc(f["name"])}</a></th>'
+        seen = p.get("seen") or f["checked"]
+        rows += (f'<tr><th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{f["slug"]}/promo-code/">{avatar(f)}{esc(f["name"])}</a></th>'
                  f'<td>{code_cell(f)}</td><td>{esc(p.get("discount") or "No public discount found")}</td>'
-                 f'<td class="n">{fmt_date(p.get("seen") or f["checked"])}</td></tr>')
-    return (f'<div class="tbl-wrap"><table class="cmp data"><thead><tr><th scope="col">Firm</th><th scope="col">Code</th>'
-            f'<th scope="col">Discount</th><th scope="col" class="n">Seen</th></tr></thead><tbody>{rows}</tbody></table></div>')
+                 f'<td class="n" data-v="{seen}">{fmt_date(seen)}</td>'
+                 f'<td class="go">{go_link(f, "Get deal" if p.get("code") or p.get("discount") else "Visit", "btn sm", "promo-table")}</td></tr>')
+    return (f'<div class="tbl-wrap"><table class="cmp data promo"><thead><tr>'
+            f'<th scope="col" data-sort="text"><button type="button" class="sort" title="Sort by firm">Firm</button></th><th scope="col">Code</th>'
+            f'<th scope="col">Discount</th><th scope="col" class="n" data-sort="text"><button type="button" class="sort" title="Sort by date">Seen</button></th>'
+            f'<th scope="col"><span class="sr">Visit site</span></th></tr></thead><tbody>{rows}</tbody></table></div>')
 
 
 def contract_table(contracts, syms):

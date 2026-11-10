@@ -2,7 +2,7 @@
  {
   "slug": "futures-prop-firms",
   "h1": "Best futures prop firms",
-  "title": "Best Futures Prop Firms ({month}): Rules & Prices Compared",
+  "title": "Best Futures Prop Firms ({month}): Rules & Prices",
   "description": "The futures prop firms worth shortlisting, ranked on drawdown type, max loss vs target, payout rules and price, with every rule checked against the firm's own pages.",
   "blurb": "Ranked on drawdown, payout rules and price",
   "where": {
@@ -36,12 +36,26 @@
    "phidias",
    "bulenox",
    "tradeday"
+  ],
+  "faq": [
+   [
+    "What is the best futures prop firm?",
+    "We rank {top1} first. {top1_why} {top2} and {top3} follow. The ranking weighs how the 50K drawdown works, the payout rules and the cost, so the right firm still depends on how you trade."
+   ],
+   [
+    "What is the cheapest futures prop firm?",
+    "Among the {n} firms in this list, the lowest one-time 50K list price is {cheapest_once} and the lowest monthly price is {cheapest_month}, before discounts. Activation and reset fees change the total, so check it with the <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>."
+   ],
+   [
+    "Which futures prop firms use end-of-day drawdown?",
+    "In this list, {eod} use end-of-day trailing drawdown on their main 50K plan. At the others it is intraday trailing or depends on the plan you pick, so check the plan table in each review."
+   ]
   ]
  },
  {
   "slug": "forex-prop-firms",
   "h1": "Best forex prop firms",
-  "title": "Best Forex Prop Firms ({month}): Rules & Prices Compared",
+  "title": "Best Forex Prop Firms ({month}): Rules & Prices",
   "description": "Forex and CFD prop firms compared on price, profit targets, daily and max loss, payout rules and track record, checked against each firm's own pages.",
   "blurb": "Two-step and one-step CFD challenges compared",
   "where": {
@@ -71,6 +85,20 @@
    "e8-markets",
    "blue-guardian",
    "goat-funded-trader"
+  ],
+  "faq": [
+   [
+    "What is the best forex prop firm?",
+    "We rank {top1} first. {top1_why} {top2} and {top3} follow. The ranking weighs the drawdown rules, payout terms, track record and cost, so the right firm still depends on how you trade."
+   ],
+   [
+    "Which forex prop firms use static drawdown?",
+    "In this list, {static} use static drawdown on their main 50K plan. A static limit stays at a fixed level below your starting balance and does not follow your profits up."
+   ],
+   [
+    "Which forex prop firms have no consistency rule?",
+    "In this list, {nocons} have no consistency rule on their main 50K plan, according to their own pages. See the full list of <a href=\"/best/prop-firms-no-consistency-rule/\">prop firms with no consistency rule</a>."
+   ]
   ]
  },
  {
@@ -82,7 +110,21 @@
   "sort": "price50",
   "limit": 10,
   "intro": "Each firm's main 50K plan, sorted by list price before discounts; some firms also sell cheaper plans, listed on their reviews. Monthly plans look cheap until they rebill, and some firms add an activation fee when you pass, so check both columns and run the numbers in our <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>. FTMO's price is in euros.",
-  "why": {}
+  "why": {},
+  "faq": [
+   [
+    "What is the cheapest prop firm for a 50K account?",
+    "By list price in US dollars, the cheapest one-time 50K evaluation we track is {cheapest_once}, and the cheapest monthly plan is {cheapest_month}, before discounts."
+   ],
+   [
+    "Is the cheapest prop firm the best choice?",
+    "Not always. The evaluation fee is only part of the cost: monthly plans bill again if you need more time, and some firms add an activation fee when you pass or charge for resets. A cheaper evaluation can also come with a tighter max loss or a drawdown that trails intraday. Compare the target, max loss and drawdown type before the price, and add up the fees with the <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>."
+   ],
+   [
+    "Do promo codes make prop firm evaluations cheaper?",
+    "Often. Of the firms in this list, {codes} had a public discount code when we last checked. A code usually lowers the evaluation fee only, not activation or reset fees. See all <a href=\"/promo-codes/\">current prop firm promo codes</a>."
+   ]
+  ]
  },
  {
   "slug": "prop-firms-for-beginners",
@@ -107,7 +149,21 @@
    "the5ers": "Static drawdown and unlimited time to pass.",
    "lucid-trading": "Low one-time price and end-of-day drawdown.",
    "fundednext": "Static max loss on the Stellar 2-Step and the fee back with your first reward."
-  }
+  },
+  "faq": [
+   [
+    "What is the best prop firm for beginners?",
+    "We put {top1} first for beginners. {top1_why} {top2} and {top3} follow."
+   ],
+   [
+    "What should a beginner look for in a prop firm?",
+    "A loss limit that does not trail intraday (static or end-of-day drawdown), a max loss that is large next to the profit target, rules written out clearly on the firm's own site, and a low cost to try again. Be careful with plans where a consistency rule pushes you to trade bigger than you planned."
+   ],
+   [
+    "How much money do I need to start with a prop firm?",
+    "You pay the evaluation fee, not the account size. In this list the lowest 50K list prices in US dollars are {cheapest_once} (one-time) and {cheapest_month} (monthly), before discounts. Most traders do not pass on the first attempt, so budget for more than one."
+   ]
+  ]
  },
  {
   "slug": "prop-firms-that-allow-bots",
@@ -122,7 +178,17 @@
   },
   "limit": 30,
   "intro": "Many futures firms ban or tightly restrict automation. These firms allow it, each with its own limits: high-frequency trading and copying the same bot across users are banned almost everywhere. Read the firm's rules on your own bot before you buy.",
-  "why": {}
+  "why": {},
+  "faq": [
+   [
+    "Which prop firms allow bots and EAs?",
+    "{n} of the firms we track clearly allow bots and EAs: {names}. Several others allow them with restrictions; the Bots/EAs column in the <a href=\"/compare/\">full comparison</a> shows each firm's rule."
+   ],
+   [
+    "What kinds of automation do prop firms ban?",
+    "Many firms that allow bots still ban high-frequency trading, and each firm lists its own prohibited strategies in its terms. If a bot breaks those terms, the firm can close the account and withhold payouts, so check the banned-strategies row in each review."
+   ]
+  ]
  },
  {
   "slug": "prop-firms-no-consistency-rule",
@@ -186,7 +252,7 @@
  {
   "slug": "instant-funding-prop-firms",
   "h1": "Instant funding prop firms",
-  "title": "Instant Funding Prop Firms ({month}): Skip the Evaluation",
+  "title": "Instant Funding Prop Firms ({month}): No Evaluation",
   "description": "Prop firms that sell a funded account with no evaluation, what they cost and the stricter rules that usually come with them.",
   "blurb": "Funded account without an evaluation, and the catch",
   "where": {
@@ -213,7 +279,7 @@
  {
   "slug": "prop-firms-that-accept-us-traders",
   "h1": "Prop firms for US traders",
-  "title": "Prop Firms for US Traders: Which Accept US Residents ({month})",
+  "title": "Prop Firms for US Traders & Residents ({month})",
   "description": "Which futures and forex prop firms accept US residents, which platforms US traders can use at each, and which firms do not serve the US. Checked against each firm's own pages.",
   "blurb": "US residents accepted, per each firm's own pages",
   "where": {
@@ -254,7 +320,7 @@
  {
   "slug": "prop-firms-with-biggest-drawdown",
   "h1": "Prop firms with the biggest drawdown",
-  "title": "Prop Firms With the Biggest Drawdown on a 50K Account ({month})",
+  "title": "Prop Firms With the Biggest Drawdown ({month})",
   "description": "Which prop firms give the largest max loss (drawdown) on a 50K account, ranked by dollar amount, with the plan and drawdown type for each.",
   "blurb": "Ranked by the largest 50K max loss",
   "sort": "maxloss_max",
@@ -278,7 +344,7 @@
  {
   "slug": "prop-firms-highest-capital-allocation",
   "h1": "Prop firms with the highest capital allocation per trader",
-  "title": "Prop Firms With the Highest Capital Allocation per Trader ({month})",
+  "title": "Prop Firms With the Most Capital per Trader ({month})",
   "description": "The most capital one trader can hold at a prop firm at the same time, as each firm states it: E8, Hola Prime, Topstep, FTMO and more, with account limits and scaling plans.",
   "blurb": "Ranked by the maximum capital one trader can hold",
   "sort": "alloc",
