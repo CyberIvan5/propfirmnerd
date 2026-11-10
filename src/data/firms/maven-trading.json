@@ -45,7 +45,18 @@
    "profit_split": "80%; 90% with an add-on bought at checkout",
    "payout_frequency": "every 10 business days; first payout 10 business days after the first trade on the funded account",
    "payout_rules_note": "Minimum $20 profit (before split). At least 3 profitable days of 0.5%+ are needed in each phase AND in each funded payout cycle. Challenge fee refunded after the third reward. Payout processed after KYC.",
-   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). min_trading_days = 3 profitable days of at least 0.5% each. Daily loss 4%, calculated from the higher of balance or equity at 00:00 UTC (so the dollar limit can be above $2,000). Pricing page shows $209 with code DIAMOND (5% off) vs $220 list. Leverage 1:75 forex, 1:20 commodities/metals/indices, 1:2 digital ETFs."
+   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). min_trading_days = 3 profitable days of at least 0.5% each. Daily loss 4%, calculated from the higher of balance or equity at 00:00 UTC (so the dollar limit can be above $2,000). Pricing page shows $209 with code DIAMOND (5% off) vs $220 list. Leverage 1:75 forex, 1:20 commodities/metals/indices, 1:2 digital ETFs.",
+   "prices_by_size": {
+    "2000": 19,
+    "5000": 22,
+    "10000": 44,
+    "20000": 88,
+    "50000": 220,
+    "100000": 440
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://maventrading.com/pricing"
   },
   {
    "name": "Standard 1 Step",
@@ -149,7 +160,7 @@
   },
   {
    "url": "https://maventrading.com/pricing",
-   "supports": "50K list and coupon prices, targets, daily/max loss, splits, payout timing, refund on third withdrawal, ETERNAL and OMO codes"
+   "supports": "50K list and coupon prices, targets, daily/max loss, splits, payout timing, refund on third withdrawal, ETERNAL and OMO codes; prices by account size"
   },
   {
    "url": "https://maventrading.com/faqs",

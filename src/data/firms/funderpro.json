@@ -67,7 +67,17 @@
    "profit_split": "80%; 90% with the paid '90% Performance Reward' add-on",
    "payout_frequency": "bi-weekly (every 14 days); first reward 14 days after funding, or 7 days with the paid add-on",
    "payout_rules_note": "At least $100 profit needed before any reward request. Challenge fee credited back with the first reward (within 7 days of the first reward withdrawal). 'No Minimum Trading Days' and 'Second Chance' add-ons are available for Classic only.",
-   "notes": "Targets: Phase 1 10% ($5,000), Phase 2 5% ($2,500). 4 minimum trading days in each phase. Unlimited time. Leverage 1:100 forex, 1:30 metals/oil/indices, 1:2 crypto. Daily loss 5% of start-of-day balance (5 PM EST). 50K price is SECONDARY (see uncertain)."
+   "notes": "Targets: Phase 1 10% ($5,000), Phase 2 5% ($2,500). 4 minimum trading days in each phase. Unlimited time. Leverage 1:100 forex, 1:30 metals/oil/indices, 1:2 crypto. Daily loss 5% of start-of-day balance (5 PM EST). 50K price is SECONDARY (see uncertain).",
+   "prices_by_size": {
+    "25000": 219,
+    "50000": 319,
+    "100000": 539,
+    "150000": 799,
+    "200000": 989
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://funderpro.com/"
   },
   {
    "name": "Pro (2-Phase, Weekly or Daily Rewards)",
@@ -142,7 +152,7 @@
  "sources": [
   {
    "url": "https://funderpro.com/",
-   "supports": "programs, Classic rules at 100K ($539 price, targets, daily/max loss, 4 days, bi-weekly, 80%), platforms, leverage, legal entities, 7.35% pass-rate disclosure"
+   "supports": "programs, Classic rules at 100K ($539 price, targets, daily/max loss, 4 days, bi-weekly, 80%), platforms, leverage, legal entities, 7.35% pass-rate disclosure; prices by account size"
   },
   {
    "url": "https://funderpro.com/checkout/?mode=challenge&type=classic&size=50000",

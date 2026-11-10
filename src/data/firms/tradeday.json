@@ -57,7 +57,18 @@
    "profit_split": "Per account: 50/50 on profit below $4,000, 80/20 above $4,000; 90/10 in Funded Live",
    "payout_frequency": "From day one of the funded account, whenever the balance is in profit (minimum 1 day)",
    "payout_rules_note": "Min payout request $250. No payout buffer. Requests before 5:30 pm CT are processed within 24h on business days. Funded Sim accounts are reviewed for a move to Live at $10,000 gross profit; profit above $10,000 is removed and forfeited at the threshold. Up to 5 active Funded Sim accounts. Wire fees: international $15, US free; L1 crypto $2.50 + gas.",
-   "notes": "50K list prices: Intraday $131/month ($59 now), EOD $175/month ($79 now), 55% off, seen 2026-10-16. The reset fee shown ($59) is the intraday-version figure on the pricing card; the EOD version is $79. Monthly billing stops when you pass. No activation fee. Positions must be closed 10 minutes before the daily close, and the account is auto-flattened 2 minutes before Tier 1 data releases."
+   "notes": "50K list prices: Intraday $131/month ($59 now), EOD $175/month ($79 now), 55% off, seen 2026-10-16. The reset fee shown ($59) is the intraday-version figure on the pricing card; the EOD version is $79. Monthly billing stops when you pass. No activation fee. Positions must be closed 10 minutes before the daily close, and the account is auto-flattened 2 minutes before Tier 1 data releases.",
+   "prices_by_size": {
+    "25000": 100,
+    "50000": 131,
+    "100000": 240,
+    "150000": 360
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Prices for the intraday drawdown option, per month, before the current sale.",
+   "prices_by_size_monthly": true,
+   "prices_by_size_source": "https://www.tradeday.com/"
   },
   {
    "name": "Fast Pass",
@@ -139,7 +150,7 @@
  "sources": [
   {
    "url": "https://www.tradeday.com/",
-   "supports": "pricing (list/discounted, per month), targets, drawdowns, contracts, consistency, resets, funded terms, promo TDNEW"
+   "supports": "pricing (list/discounted, per month), targets, drawdowns, contracts, consistency, resets, funded terms, promo TDNEW; prices by account size"
   },
   {
    "url": "https://www.tradeday.com/about",

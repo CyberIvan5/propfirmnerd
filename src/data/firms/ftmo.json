@@ -46,7 +46,18 @@
    "profit_split": "80% (90% with the Scaling Plan)",
    "payout_frequency": "First reward from day 14, then on request",
    "payout_rules_note": null,
-   "notes": "Targets are 10% in phase 1 and 5% in phase 2. The fee is refunded with the first reward."
+   "notes": "Targets are 10% in phase 1 and 5% in phase 2. The fee is refunded with the first reward.",
+   "prices_by_size": {
+    "10000": 89,
+    "25000": 250,
+    "50000": 345,
+    "100000": 540,
+    "200000": 1080
+   },
+   "prices_by_size_ccy": "EUR",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "100K shown at €439 in a current offer (list €540).",
+   "prices_by_size_source": "https://ftmo.com/en/"
   },
   {
    "name": "FTMO Challenge 1-Step",
@@ -125,7 +136,7 @@
  "sources": [
   {
    "url": "https://ftmo.com/en/",
-   "supports": "programs, platforms, sizes up to $200K"
+   "supports": "programs, platforms, sizes up to $200K; prices by account size"
   },
   {
    "url": "https://ftmo.com/en/trading-objectives/",
@@ -225,7 +236,7 @@
   },
   {
    "url": "https://ftmo.com/en/",
-   "supports": "50K prices (EUR), targets, daily and max loss, minimum days, refund, consistency for 2-Step and 1-Step (checked in browser)"
+   "supports": "50K prices (EUR), targets, daily and max loss, minimum days, refund, consistency for 2-Step and 1-Step (checked in browser); prices by account size"
   },
   {
    "url": "https://ftmo.com/faq/how-many-accounts-can-i-have/",

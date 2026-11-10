@@ -16,7 +16,7 @@
   "why": {
    "tradeify": "One-time fee from $145, no activation fee, end-of-day drawdown on every plan, news trading allowed.",
    "topstep": "$49 a month for 50K, end-of-day drawdown, optional daily limit and a published route to live trading.",
-   "lucid-trading": "Cheapest one-time 50K we track ($136), bots allowed, no consistency rule once funded on LucidFlex.",
+   "lucid-trading": "Cheapest one-time 50K we track ($115), bots allowed, no consistency rule once funded on LucidFlex.",
    "myfundedfutures": "One-time fees with no activation fee; Rapid plans pay daily at 90/10.",
    "apex-trader-funding": "One-time evaluation with no consistency rule, but each funded account closes after six payouts.",
    "alpha-futures": "90% split and end-of-day drawdown; monthly billing and a ban on bots.",
@@ -372,5 +372,33 @@
    ]
   ],
   "published": "2026-11-06"
+ },
+ {
+  "slug": "cheapest-100k-prop-firms",
+  "h1": "Cheapest 100K prop firms",
+  "title": "Cheapest 100K Prop Firms ({month}): Prices by Size",
+  "description": "What a 100K prop firm account costs at each firm we track, plus 25K, 50K, 150K and 200K prices, from each firm's own pricing pages.",
+  "blurb": "100K list prices from low to high, plus every other size",
+  "sort": "p100k",
+  "desc": false,
+  "limit": 30,
+  "why_auto": "p100k",
+  "intro": "These are the list prices for a 100K account on each firm's main plan, lowest first, before discount codes. Monthly plans are marked: they bill again every month until you pass, so a monthly price is not directly comparable with a one-time fee. Prices in euros are listed in the full table below but not ranked.",
+  "body": "<h2>Prices by account size</h2><p>The same plan at every size the firm sells, so you can see how the price scales. Click a column to sort. The plan shown is the one we use for each firm's 50K figures; most firms sell other plans at different prices.</p>{{SIZE_TABLE}}<p class=\"muted\">List prices from each firm's own site or checkout, checked November 10, 2026. Discount codes, activation fees and resets are not included. Apex Trader Funding, Earn2Trade, Funded Futures Network, FundingPips, Goat Funded Trader and Phidias are missing because their sites did not show prices by size when we checked.</p><h2>What the price leaves out</h2><ul><li><strong>Monthly billing.</strong> Topstep, Alpha Futures, TradeDay, Take Profit Trader and Top One Futures charge every month until you pass.</li><li><strong>Activation fees.</strong> Topstep charges $149 per funded account on its Standard path, and Take Profit Trader $130 for a PRO account.</li><li><strong>Bigger accounts, bigger limits.</strong> A 100K account usually doubles the profit target and raises the max loss, but not always in proportion. Check the rules for the size you buy in each review.</li></ul><p>Add up the full cost with the <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a>, and see the <a href=\"/best/cheapest-prop-firms/\">cheapest 50K prop firms</a>.</p>",
+  "faq": [
+   [
+    "What is the cheapest 100K prop firm?",
+    "By list price in US dollars, the cheapest 100K account we track is {top1}: {top1_why} Monthly and one-time prices are ranked together, so check which kind you are buying."
+   ],
+   [
+    "How much does a 100K prop firm account cost?",
+    "Among the firms we track, 100K list prices run from {p100_min} to {p100_max}, before discount codes. A one-time 100K evaluation usually costs between 1.5 and 2 times the same firm's 50K price."
+   ],
+   [
+    "Is a 100K prop firm account worth it over 50K?",
+    "Only if the larger loss limit suits your trading. A 100K account gives a bigger max loss and usually higher payout caps, but the profit target rises too, and the fee is usually 1.5 to 2 times the 50K price. Compare the rules at each size in the firm's review."
+   ]
+  ],
+  "published": "2026-11-10"
  }
 ]

@@ -46,7 +46,19 @@
    "profit_split": "80% default; 90% or 100% with paid add-ons",
    "payout_frequency": "first payout 21 days after the first funded trade, then every 21 days; every 14 days with the 14-Day Payout add-on",
    "payout_rules_note": "Minimum payout $200 via Rise or $50 via USDT-ERC20 (crypto only if Rise is not an option). Evaluation fee refunded once: with the second payout for accounts bought on or after 2026-05-08 (first payout before that). If the account fails within 48 hours of a payout request, the payout is denied and credited back to the balance. Funded phase: max risk per trade idea 2% of initial balance ($1,000 on 50K); news-influenced profits capped at 30% of total profit (payout delayed until below). Payout Guarantee: $500 cash + $500 credit if a payout is not processed within 2 business days (exclusions apply).",
-   "notes": "Phase 1 target 10% ($5,000), Phase 2 5% ($2,500). Daily loss 5% of the day's starting balance; equity or balance must not reach it. Minimum 4 trading days per phase (8 total) and 2 in the funded phase. Leverage 1:50 on FX majors. Homepage shows $430 and $215 (50% lower) for 50K; $430 is treated as list because the checkout shows the first homepage figure as the regular price for Instant. Variant 2-Step Pro6: targets 6%/6%, daily 3%, max 6% static, 50K list $259. A newer help article describes '2-Step Day' (same targets/limits, no minimum days in the challenge, weekend closing required except crypto) and '2-Step Swing' (weekend holding allowed, split 70%/80%/90% on 1st/2nd/3rd+ payout); prices for these were not shown. Reset after failing Phase 1 costs 60% off the original cost (one reset per challenge)."
+   "notes": "Phase 1 target 10% ($5,000), Phase 2 5% ($2,500). Daily loss 5% of the day's starting balance; equity or balance must not reach it. Minimum 4 trading days per phase (8 total) and 2 in the funded phase. Leverage 1:50 on FX majors. Homepage shows $430 and $215 (50% lower) for 50K; $430 is treated as list because the checkout shows the first homepage figure as the regular price for Instant. Variant 2-Step Pro6: targets 6%/6%, daily 3%, max 6% static, 50K list $259. A newer help article describes '2-Step Day' (same targets/limits, no minimum days in the challenge, weekend closing required except crypto) and '2-Step Swing' (weekend holding allowed, split 70%/80%/90% on 1st/2nd/3rd+ payout); prices for these were not shown. Reset after failing Phase 1 costs 60% off the original cost (one reset per challenge).",
+   "prices_by_size": {
+    "5000": 90,
+    "10000": 150,
+    "25000": 290,
+    "50000": 430,
+    "100000": 750,
+    "200000": 1250
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "The homepage shows each price with a 50% lower figure next to it.",
+   "prices_by_size_source": "https://fundingtraders.com/"
   },
   {
    "name": "1-Step (1-Step Pro)",
@@ -152,7 +164,7 @@
  "sources": [
   {
    "url": "https://fundingtraders.com/",
-   "supports": "programs, list and discounted prices per size, homepage banner INSTANT70, entities, platforms"
+   "supports": "programs, list and discounted prices per size, homepage banner INSTANT70, entities, platforms; prices by account size"
   },
   {
    "url": "https://app.fundingtraders.com/express_checkout",

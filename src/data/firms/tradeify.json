@@ -70,7 +70,23 @@
    "profit_split": "90/10",
    "payout_frequency": "When eligible: at least 5 trading days with $150+ profit since the last payout",
    "payout_rules_note": "50K funded (bought on/after Sep 12, 2025): balance must be at least $53,000; minimum payout $500; max per request $1,500 / $2,000 / $2,500 / $3,000 (payout 4 onward). Paid in 24-48 hours.",
-   "notes": "DLL of $1,250 is a soft breach (stops trading for the day, does not fail). 50K accounts bought before Sep 12, 2025 allowed 5 contracts."
+   "notes": "DLL of $1,250 is a soft breach (stops trading for the day, does not fail). 50K accounts bought before Sep 12, 2025 allowed 5 contracts.",
+   "prices_by_size": {
+    "25000": 99,
+    "50000": 145,
+    "100000": 255,
+    "150000": 369
+   },
+   "resets_by_size": {
+    "25000": 60,
+    "50000": 95,
+    "100000": 169,
+    "150000": 229
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Select: $109, $165, $265, $369 and $570 for 300K.",
+   "prices_by_size_source": "https://help.tradeify.co/en/articles/14369021-tradeify-pricing-reference"
   },
   {
    "name": "Lightning Funded (instant funding)",
@@ -156,7 +172,7 @@
   },
   {
    "url": "https://help.tradeify.co/en/articles/14369021-tradeify-pricing-reference",
-   "supports": "all prices, reset fees, one-time billing, no activation fees"
+   "supports": "all prices, reset fees, one-time billing, no activation fees; prices by account size"
   },
   {
    "url": "https://help.tradeify.co/en/articles/12853921-select-evaluation-accounts",

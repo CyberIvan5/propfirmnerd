@@ -39,10 +39,10 @@
    "name": "LucidFlex (Evaluation -> LucidFlex Funded)",
    "steps": "1-step",
    "billing": "one-time",
-   "price_50k_list": 136,
+   "price_50k_list": 115,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
-   "reset_fee_50k": 95,
+   "reset_fee_50k": 80,
    "profit_target_50k": 3000,
    "max_loss_50k": 2000,
    "drawdown_type": "EOD trailing (trails highest closing balance); locks at $50,100 once the $52,100 initial trail balance is reached or a payout is requested",
@@ -53,7 +53,22 @@
    "profit_split": "90/10",
    "payout_frequency": "Any day after 5 days of $150+ profit since the last payout (count resets after each approved payout)",
    "payout_rules_note": "50K: minimum $500; maximum 50% of profit, capped at $2,000 per request (cap does not increase); cycle must be net positive; no buffer required. Up to 5 payouts per account, after which the account is moved to live. Funded scaling: 2 minis ($0-$999 profit), 3 ($1,000-$1,999), 4 ($2,000+).",
-   "notes": "Daily loss limit is optional, chosen at purchase (DLL On = lower price, DLL Off = higher price); amount for 50K not stated. Price shown is the store's single listed price for 'LucidFlex 50K' (same on Tradovate/NinjaTrader and Rithmic); the store does not label it DLL On or Off. The 50% consistency option is a paid add-on at checkout, so the listed price is the standard 40% version."
+   "notes": "Daily loss limit is optional, chosen at purchase (DLL On = lower price, DLL Off = higher price); amount for 50K not stated. Price shown is the store's single listed price for 'LucidFlex 50K' (same on Tradovate/NinjaTrader and Rithmic); the store does not label it DLL On or Off. The 50% consistency option is a paid add-on at checkout, so the listed price is the standard 40% version.",
+   "prices_by_size": {
+    "25000": 65,
+    "50000": 115,
+    "100000": 215,
+    "150000": 323
+   },
+   "resets_by_size": {
+    "25000": 45,
+    "50000": 80,
+    "100000": 150,
+    "150000": 225
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://lucidtrading.com/wp-json/wc/store/v1/products?search=Flex&per_page=100"
   },
   {
    "name": "LucidPro (Evaluation -> LucidPro Funded)",
@@ -116,11 +131,16 @@
    "date": "2026-10",
    "change": "LucidFlex evaluation consistency is 40% as standard; 50% is now a paid add-on",
    "source": "https://support.lucidtrading.com/en/articles/16226050-lucidflex-customization"
+  },
+  {
+   "date": "2026-11",
+   "change": "LucidFlex 50K list price lowered to $115 (from $136) and its reset to $80 (from $95), per Lucid's own store (seen 2026-11-10)",
+   "source": "https://lucidtrading.com/wp-json/wc/store/v1/products?search=Flex&per_page=100"
   }
  ],
  "pros": [
   "One-time fee and no funded activation fee.",
-  "Low 50K entry: LucidFlex $136.",
+  "Low 50K entry: LucidFlex $115.",
   "No consistency rule on LucidFlex funded accounts and no buffer requirement.",
   "Automated systems and trade copiers are explicitly permitted.",
   "Wide platform support across CQG and Rithmic."
@@ -140,7 +160,7 @@
   },
   {
    "url": "https://lucidtrading.com/wp-json/wc/store/v1/products?search=Flex&per_page=100",
-   "supports": "LucidFlex prices and reset prices by size (store API)"
+   "supports": "LucidFlex prices and reset prices by size (store API); prices by account size"
   },
   {
    "url": "https://lucidtrading.com/wp-json/wc/store/v1/products?search=Pro&per_page=100",
@@ -248,7 +268,7 @@
   }
  ],
  "uncertain": [
-  "price_50k_list: $136 (Flex) and $172 (Pro) come from Lucid's own WooCommerce store API; whether these are DLL-On or DLL-Off prices is not stated (DLL Off is described as more expensive). A third-party page (damnpropfirms.com, secondary) lists Flex 50K at $150 with no DLL.",
+  "price_50k_list: $115 (Flex, was $136 until Nov 2026) and $172 (Pro) come from Lucid's own WooCommerce store API; whether these are DLL-On or DLL-Off prices is not stated (DLL Off is described as more expensive). A third-party page (damnpropfirms.com, secondary) lists Flex 50K at $150 with no DLL.",
   "LucidFlex 50K DLL amount (when DLL On) not stated in its articles.",
   "LucidPro DLL: the DLL article (dated July 26, 2026) shows a fixed $1,200; the later customization article says DLL can be turned off. Recorded $1,200 as the DLL-On value.",
   "LucidPro evaluation consistency and both programs' minimum trading days: not stated.",
@@ -262,7 +282,7 @@
  "link": "https://lucidtrading.com/",
  "facets": {
   "market": "futures",
-  "price50": 136,
+  "price50": 115,
   "monthly": false,
   "target50": 3000,
   "maxloss50": 2000,

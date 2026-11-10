@@ -51,7 +51,17 @@
    "profit_split": "80% (90% or 100% at checkout)",
    "payout_frequency": "On demand",
    "payout_rules_note": null,
-   "notes": "Rules shown are the default configuration (6% max drawdown); E8 One is configurable at checkout."
+   "notes": "Rules shown are the default configuration (6% max drawdown); E8 One is configurable at checkout.",
+   "prices_by_size": {
+    "25000": 188,
+    "50000": 288,
+    "100000": 488,
+    "200000": 798
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Default configuration (6% drawdown); E8 One is configurable at checkout and the price changes with the options.",
+   "prices_by_size_source": "https://e8markets.com/e8-one"
   },
   {
    "name": "E8 Pro",
@@ -271,7 +281,7 @@
   },
   {
    "url": "https://e8markets.com/e8-one",
-   "supports": "E8 One sizes up to $500K"
+   "supports": "E8 One sizes up to $500K; prices by account size"
   }
  ],
  "uncertain": [

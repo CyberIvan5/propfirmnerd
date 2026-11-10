@@ -56,7 +56,7 @@
    "name": "2 Step Standard",
    "steps": "2-step",
    "billing": "one-time",
-   "price_50k_list": 239,
+   "price_50k_list": 279,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
    "reset_fee_50k": null,
@@ -70,7 +70,17 @@
    "profit_split": "90%; 100% with a paid add-on",
    "payout_frequency": "bi-weekly (every 14 days); 'Rewards in 7 Days' add-on available",
    "payout_rules_note": "Funded account needs 3 trading days. Fee refunded with the fourth payout. Firm-wide: $100 minimum payout, 3% processing fee on every payout; on 100K+ accounts the first two rewards are capped at $10,000 each.",
-   "notes": "Phase 1 8% ($4,000), Phase 2 5% ($2,500); 3 minimum trading days per step. Daily loss 5% from the higher of the previous day's ending balance or equity, reset 00:00 UTC. Leverage 1:100 in evaluation, 1:50 FX funded. Other 2-step models at 50K: 2 Step Pro $143 (10%/5%, 5% daily, 10% trailing, 50% funded consistency rule) and 2 Step Elite $221 (8%/5%, 4% daily, 10% max)."
+   "notes": "Phase 1 8% ($4,000), Phase 2 5% ($2,500); 3 minimum trading days per step. Daily loss 5% from the higher of the previous day's ending balance or equity, reset 00:00 UTC. Leverage 1:100 in evaluation, 1:50 FX funded. Other 2-step models at 50K: 2 Step Pro $143 (10%/5%, 5% daily, 10% trailing, 50% funded consistency rule) and 2 Step Elite $221 (8%/5%, 4% daily, 10% max).",
+   "prices_by_size": {
+    "25000": 132,
+    "50000": 279,
+    "100000": 439,
+    "200000": 799
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "List prices; the widget showed 25% off with code HONOR.",
+   "prices_by_size_source": "https://www.aquafunded.com/"
   },
   {
    "name": "1 Step Standard",
@@ -132,6 +142,11 @@
    "date": "2026-09-08",
    "change": "Instant Funding Pro consistency rule eased from 15% to 20% for new purchases (described as limited-time)",
    "source": "https://help.aquafunded.com/en/articles/15281078-instant-funding-pro"
+  },
+  {
+   "date": "2026-11",
+   "change": "2 Step Standard 50K list price raised to $279 (from $239), per Aqua Funded's own pricing widget (seen 2026-11-10)",
+   "source": "https://www.aquafunded.com/"
   }
  ],
  "pros": [
@@ -139,7 +154,7 @@
   "News trading (with a 0.5% profit cap), weekend holding, EAs and own-account trade copiers allowed",
   "Evaluation fee refunded with the fourth payout; 24-business-hour payout guarantee or an extra $1,000",
   "Four platforms: MT5, cTrader, TradeLocker, Match-Trader",
-  "Low list prices at 50K ($239 to $305 for the main models) plus a 25% public code"
+  "List prices at 50K from $261 to $305 for the main models, plus a 25% public code"
  ],
  "cons": [
   "Trustpilot shows no score: rating unavailable for a guideline breach and fake reviews removed (1,210 reviews, 39% one-star)",
@@ -303,7 +318,7 @@
  "link": "https://www.aquafunded.com/?afmc=11hp",
  "facets": {
   "market": "forex",
-  "price50": 239,
+  "price50": 279,
   "monthly": false,
   "target50": 4000,
   "maxloss50": 4000,

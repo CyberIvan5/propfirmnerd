@@ -46,7 +46,21 @@
    "profit_split": "90/10",
    "payout_frequency": "up to 4 requests per month, each after 5 winning days of $200+",
    "payout_rules_note": "Min $500, max $3,000 per request (50K); up to 50% of account profit per request; MLL does not reset to $0 after payout. Terms say payments typically processed within 3 business days (up to 14 with extra verification).",
-   "notes": "Qualified 50K has a $1,000 Daily Loss Guard (soft lock until next session). Evaluation rebills monthly until passed or cancelled. Alpha also sells a no-evaluation 'Direct' account (50K: $519 one-time, $2,000 MLL, $1,000 daily loss guard, 20% consistency, withdrawal targets $3,000 then $2,000, max $2,000 per withdrawal, 90% split)."
+   "notes": "Qualified 50K has a $1,000 Daily Loss Guard (soft lock until next session). Evaluation rebills monthly until passed or cancelled. Alpha also sells a no-evaluation 'Direct' account (50K: $519 one-time, $2,000 MLL, $1,000 daily loss guard, 20% consistency, withdrawal targets $3,000 then $2,000, max $2,000 per withdrawal, 90% split).",
+   "prices_by_size": {
+    "50000": 129,
+    "100000": 239,
+    "150000": 349
+   },
+   "resets_by_size": {
+    "50000": 109,
+    "100000": 199,
+    "150000": 289
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_monthly": true,
+   "prices_by_size_source": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview"
   },
   {
    "name": "Zero",
@@ -182,7 +196,7 @@
   },
   {
    "url": "https://help.alpha-futures.com/en/articles/11632512-standard-account-overview",
-   "supports": "Standard 50K rules"
+   "supports": "Standard 50K rules; prices by account size"
   },
   {
    "url": "https://help.alpha-futures.com/en/articles/11771813-zero-account-overview",

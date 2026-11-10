@@ -62,7 +62,17 @@
    "profit_split": null,
    "payout_frequency": null,
    "payout_rules_note": null,
-   "notes": "Access valid for 30 days. A trailing (intraday) option is sold at the same sizes; the choice is locked for the life of the account. Passing leads to a Master account, which Bulenox charges an activation fee for; the amount is not shown on the pricing page."
+   "notes": "Access valid for 30 days. A trailing (intraday) option is sold at the same sizes; the choice is locked for the life of the account. Passing leads to a Master account, which Bulenox charges an activation fee for; the amount is not shown on the pricing page.",
+   "prices_by_size": {
+    "25000": 145,
+    "50000": 175,
+    "100000": 215,
+    "150000": 325
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Same prices for the end-of-day and intraday trailing options.",
+   "prices_by_size_source": "https://bulenox.com/accounts-pricing"
   }
  ],
  "news_trading": "Allowed (homepage: CPI, FOMC, NFP, no blackout windows)",
@@ -127,7 +137,7 @@
   },
   {
    "url": "https://bulenox.com/accounts-pricing",
-   "supports": "Qualification prices, targets, max drawdown, contracts, 30-day access, up to 5 Master accounts"
+   "supports": "Qualification prices, targets, max drawdown, contracts, 30-day access, up to 5 Master accounts; prices by account size"
   },
   {
    "url": "https://bulenox.com/help-center/fast-track",

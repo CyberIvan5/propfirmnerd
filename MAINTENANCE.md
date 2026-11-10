@@ -12,6 +12,10 @@ leave it as is and report it.**
   - `current_public_promo`: `{code, discount, applies_to, source_url, seen}`. Only codes the firm itself publishes.
     A promo with `"partner": true` is the owner's own partner code (currently The5ers J1EFIHY, 5% off). Keep it unless the firm
     publishes a LARGER public discount; then show the public code instead (readers must see the best real price) and note it in the report.
+  - `prices_by_size` (on one program per firm, with `prices_by_size_ccy/_seen/_source/_note/_monthly` and optional
+    `resets_by_size`): list price at each account size, from the firm's own pricing page. Feeds the size table in each
+    review and /best/cheapest-100k-prop-firms/. When a firm's 50K price changes, re-check the other sizes too and update
+    `prices_by_size_seen`.
   - `link`: the URL `/go/<slug>/` redirects to. Several are the owner's partner tracking links (Blueberry Funded, Funding Traders,
     Aqua Funded, The5ers, FXIFY). Never replace or strip them; `website` is the plain official URL.
   - `checked`: ISO date of the last full verification. **Page titles show this month**, so only bump it after

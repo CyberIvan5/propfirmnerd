@@ -53,7 +53,19 @@
    "profit_split": "80% (Bi-Weekly or On-Demand cycle) or 95% (Monthly cycle, +20% on the fee); cycle chosen at purchase and cannot be changed",
    "payout_frequency": "Bi-weekly (every 14 days) by default; Monthly or On-Demand chosen at purchase. Requests processed within 1 hour after an account review of up to 24 business hours",
    "payout_rules_note": "Bi-weekly: at least 3 profitable days (each >= 0.5% of initial balance) in 14 days. Monthly: 7 profitable days in 30 days. On-Demand: 40% consistency and at least 2% total profit. Minimum payout $50 (bank wire/crypto) or $500 (Rise), excluding the firm's share. 2.5% processing fee on all methods (min $25 bank/Rise, $5 crypto). Mandatory KYC video interview before the first payout. Challenge fee refunded 100% with the 4th successful payout from the same account (Forex only). Funded stage: 2% max risk per trade idea and stop loss mandatory on every trade.",
-   "notes": "Price $319 is for $50K, MT5, Bi-Weekly @80% (site default). Same 50K costs $339 with On-Demand and $383 with Monthly @95%; cTrader +$20; Swap-free and EA add-ons +10% each. Targets 8% ($4,000) Phase 1 and 5% ($2,500) Phase 2; minimum 3 trading days per phase. Daily loss 5% of previous day's closing balance (4% / 8% max on $200K). Leverage 50x. News trading and weekend holding allowed in both phases. Inactivity: 30 days."
+   "notes": "Price $319 is for $50K, MT5, Bi-Weekly @80% (site default). Same 50K costs $339 with On-Demand and $383 with Monthly @95%; cTrader +$20; Swap-free and EA add-ons +10% each. Targets 8% ($4,000) Phase 1 and 5% ($2,500) Phase 2; minimum 3 trading days per phase. Daily loss 5% of previous day's closing balance (4% / 8% max on $200K). Leverage 50x. News trading and weekend holding allowed in both phases. Inactivity: 30 days.",
+   "prices_by_size": {
+    "5000": 39,
+    "10000": 79,
+    "25000": 169,
+    "50000": 299,
+    "100000": 529,
+    "200000": 1109
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Prices shown on Hola Prime forex page; checkout adds cost for the payout cycle and platform you choose (50K was $319 at checkout with MT5 and bi-weekly payouts on 2026-10-19).",
+   "prices_by_size_source": "https://holaprime.com/forex/"
   },
   {
    "name": "1-Step Prime Challenge (Forex)",
@@ -159,7 +171,7 @@
  "sources": [
   {
    "url": "https://holaprime.com/forex/",
-   "supports": "forex plans, 50K prices by payout cycle, SPOOKY40 promo, platforms, leverage"
+   "supports": "forex plans, 50K prices by payout cycle, SPOOKY40 promo, platforms, leverage; prices by account size"
   },
   {
    "url": "https://holaprime.com/forex/forex-trading-rules/",

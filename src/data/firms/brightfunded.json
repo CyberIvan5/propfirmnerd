@@ -46,7 +46,18 @@
    "profit_split": "80% by default; 90% with the paid 90% Profit Split add-on; 90% after the 1st Scaling Plan scale-up and 100% from the 3rd scale-up",
    "payout_frequency": "first request 30 days after the first trade on the Funded Account, then every 14 days; weekly (every 7 days) with a paid add-on. Requests processed by finance within 1 day ('24-Hour Guaranteed Payouts')",
    "payout_rules_note": "No minimum payout (any positive amount). All trades and pending orders must be closed before requesting. Paid in EUR by bank transfer or USDC (ERC-20). 15% Evaluation Profit Reward: 15% of Phase 1 + Phase 2 profit is added to the starting balance of a new Funded Account after reaching 10% growth and a payout (paid challenges only). Scaling Plan: +30% account size every 4 months if profitable in 2 of 4 months, at least 10% total profit and 2 payouts in the period; no stated cap.",
-   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 4% of the original account size, measured from the higher of balance or equity at the daily rollover (23:30-23:59 CET). Min 5 trading days per phase (a day counts if a trade stays open 60+ seconds); a paid add-on removes the minimum days. No time limit. Inactivity: an account is deactivated if no trade is placed for 30 days. List price €277; €207.75 with the 25% DOUBLE25 offer (seen 2026-10-19). One-time fee; no activation fee is mentioned in the official fee article. Fee refund only with a paid '100% Challenge Fee Refund' add-on (conditions not published)."
+   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 4% of the original account size, measured from the higher of balance or equity at the daily rollover (23:30-23:59 CET). Min 5 trading days per phase (a day counts if a trade stays open 60+ seconds); a paid add-on removes the minimum days. No time limit. Inactivity: an account is deactivated if no trade is placed for 30 days. List price €277; €207.75 with the 25% DOUBLE25 offer (seen 2026-10-19). One-time fee; no activation fee is mentioned in the official fee article. Fee refund only with a paid '100% Challenge Fee Refund' add-on (conditions not published).",
+   "prices_by_size": {
+    "5000": 47,
+    "10000": 87,
+    "25000": 187,
+    "50000": 277,
+    "100000": 477,
+    "200000": 947
+   },
+   "prices_by_size_ccy": "EUR",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://brightfunded.com/cfds/2-step-bright"
   },
   {
    "name": "2-Step Classic",
@@ -313,6 +324,10 @@
   {
    "url": "https://futures-help.brightfunded.com/en/articles/17507352-how-many-sim-funded-accounts-can-i-have",
    "supports": "futures: 5 funded accounts per household, $750,000 total"
+  },
+  {
+   "url": "https://brightfunded.com/cfds/2-step-bright",
+   "supports": "prices by account size"
   }
  ],
  "uncertain": [

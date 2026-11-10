@@ -41,7 +41,19 @@
    "profit_split": "80/20 in PRO; 90/10 in PRO+ (live)",
    "payout_frequency": "From the first PRO day, on profit above the buffer",
    "payout_rules_note": "First withdrawal needs the balance above $52,000 on 50K (buffer).",
-   "notes": "Daily loss limit removed, per Take Profit Trader's homepage."
+   "notes": "Daily loss limit removed, per Take Profit Trader's homepage.",
+   "prices_by_size": {
+    "25000": 150,
+    "50000": 170,
+    "75000": 245,
+    "100000": 330,
+    "150000": 360
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Per month, plus a one-time $130 PRO activation fee.",
+   "prices_by_size_monthly": true,
+   "prices_by_size_source": "https://takeprofittrader.com/"
   }
  ],
  "news_trading": "Restricted: in PRO accounts you must be flat (no positions or open orders) from one minute before to one minute after prohibited events, including FOMC statements, NFP and CPI",
@@ -83,7 +95,7 @@
  "sources": [
   {
    "url": "https://takeprofittrader.com/",
-   "supports": "programs, $130 PRO fee, 80/20 and 90/10 splits, PRO+ EOD/no buffer, NOFEE40 banner, legal entity and address"
+   "supports": "programs, $130 PRO fee, 80/20 and 90/10 splits, PRO+ EOD/no buffer, NOFEE40 banner, legal entity and address; prices by account size"
   },
   {
    "url": "https://takeprofittraderhelp.zendesk.com/hc/en-us/articles/15169070804125-Rule-1-Hit-Your-Profit-Target",

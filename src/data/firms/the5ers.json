@@ -48,7 +48,16 @@
    "profit_split": "80%, rising to 100% on the scaling plan",
    "payout_frequency": "First after 14 days, then every 2 weeks",
    "payout_rules_note": "Payouts capped at $3,000 per request on 50K; $150 minimum (after the profit split).",
-   "notes": "Targets are 10% in phase 1 and 5% in phase 2."
+   "notes": "Targets are 10% in phase 1 and 5% in phase 2.",
+   "prices_by_size": {
+    "25000": 176,
+    "50000": 249,
+    "100000": 405
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "25K and smaller High Stakes accounts use a 10% max loss and 5% daily limit; 50K and 100K use 8% and 4%.",
+   "prices_by_size_source": "https://the5ers.com/high-stakes/"
   },
   {
    "name": "High Stakes (Classic)",
@@ -132,7 +141,7 @@
   },
   {
    "url": "https://the5ers.com/high-stakes/",
-   "supports": "High Stakes targets, 5%/10% loss, profitable days, scaling split, news 2-minute rule, leverage, New/Classic account limits, sizes"
+   "supports": "High Stakes targets, 5%/10% loss, profitable days, scaling split, news 2-minute rule, leverage, New/Classic account limits, sizes; prices by account size"
   },
   {
    "url": "https://the5ers.com/hyper-growth/",

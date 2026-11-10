@@ -52,7 +52,18 @@
    "profit_split": "85% (90% as a paid add-on)",
    "payout_frequency": "Every 14 days",
    "payout_rules_note": null,
-   "notes": "Targets are $4,000 in phase 1 and $2,000 in phase 2."
+   "notes": "Targets are $4,000 in phase 1 and $2,000 in phase 2.",
+   "prices_by_size": {
+    "5000": 32,
+    "10000": 75,
+    "25000": 154,
+    "50000": 232,
+    "100000": 463,
+    "200000": 930
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://blueguardian.com/forex"
   },
   {
    "name": "1 Step Standard",
@@ -153,7 +164,7 @@
   },
   {
    "url": "https://blueguardian.com/forex",
-   "supports": "50K price $324 list / $211 discounted, sizes"
+   "supports": "50K price $324 list / $211 discounted, sizes; prices by account size"
   },
   {
    "url": "https://blueguardian.com/futures",

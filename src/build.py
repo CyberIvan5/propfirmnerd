@@ -707,7 +707,7 @@ def build_firm_pages(site, firms, lists, compares):
         pnote = f'<p class="muted" style="margin-top:-18px">{esc(f["price_note"])}</p>' if f.get("price_note") else ""
         body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + pnote + dd_block(fac(f, "dd"))
                 + f'<div class="content">{ticket_html(f)}' + (body_ed.split("<!--RULES-->")[0] if body_ed else "")
-                + "</div>" + program_table(f) + mid_cta
+                + "</div>" + program_table(f) + mid_cta + size_table(f)
                 + f'<h2 id="rules">Trading rules and fine print</h2>{rules_kv(f)}{rules_link}'
                 + pros_cons(f) + changes_html(f) + promo_link + faq_html(firm_faq(f)) + sources_html(f))
         rel = [(f"/firms/{s}/promo-code/", f"{n} promo code", "Current discount and what it covers")]
@@ -739,7 +739,7 @@ def build_firm_pages(site, firms, lists, compares):
                 + '<div class="content">' + promo_text(f)
                 + (f'<p>{esc(p["code"])} is our own partner code for {esc(n)}: it gives you {esc(p.get("discount") or "a discount")}, '
                    f'and we earn a commission on the purchase. {esc(n)} had no larger public code when we checked.</p>' if p.get("partner") and p.get("code") else "")
-                + "</div>" + pt
+                + "</div>" + pt + size_table(f)
                 + f'<div class="content"><h2>How to use a {esc(n)} code</h2><ol>'
                 f'<li>Open <a href="/go/{s}/" rel="nofollow sponsored">{esc(domain(f.get("website") or f.get("link")))}</a> and pick the plan and account size.</li>'
                 f'<li>At checkout, paste the code into the coupon or promo field and apply it before paying.</li>'
@@ -782,6 +782,83 @@ def build_firm_pages(site, firms, lists, compares):
                  ("/tools/drawdown-simulator/", "Drawdown simulator", "See how trailing and static limits move")]),
                      section="firms", trail=trail, graph=[article_schema(h1, desc, SITE + path, pub, mod)],
                      kind="article", priority="0.8", lastmod=mod)
+
+
+def size_program(f):
+    for pr in f.get("programs") or []:
+        if pr.get("prices_by_size"):
+            return pr
+    return None
+
+
+def size_label(n):
+    n = int(n)
+    return f"{n // 1000:g}K" if n % 1000 == 0 else f"{n / 1000:g}K"
+
+
+def size_price(f, size):
+    pr = size_program(f)
+    if not pr:
+        return None
+    return (pr["prices_by_size"] or {}).get(str(size))
+
+
+def size_table(f):
+    """Price of one plan at every account size, from the firm's own pages."""
+    pr = size_program(f)
+    if not pr:
+        return ""
+    ccy = pr.get("prices_by_size_ccy") or fac(f, "ccy", "USD")
+    mo = " /mo" if pr.get("prices_by_size_monthly") else ""
+    resets = pr.get("resets_by_size") or {}
+    head = '<th scope="col">Account size</th><th scope="col" class="n">Price</th>' + (
+        '<th scope="col" class="n">Reset</th>' if resets else "")
+    rows = "".join(
+        f'<tr><th scope="row">{size_label(k)}</th><td class="n">{money(v, ccy)}{mo}</td>'
+        + (f'<td class="n">{money(resets[k], ccy) if k in resets else "—"}</td>' if resets else "") + "</tr>"
+        for k, v in pr["prices_by_size"].items())
+    plan = re.split(r"\s*\(|\s*->", pr["name"])[0]
+    note = f'{esc(pr["prices_by_size_note"])} ' if pr.get("prices_by_size_note") else ""
+    return (f'<h2 id="sizes">{esc(f["name"])} prices by account size</h2>'
+            f'<p class="muted">{esc(plan)}, list prices before discounts. {note}From '
+            f'<a href="{esc(pr["prices_by_size_source"])}" rel="nofollow noopener" target="_blank">{esc(domain(pr["prices_by_size_source"]))}</a>, '
+            f'checked {fmt_date(pr["prices_by_size_seen"])}.</p>'
+            f'<div class="tbl-wrap"><table class="data cmp sizes"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>')
+
+
+SIZE_COLS = [25000, 50000, 100000, 150000, 200000]
+
+
+def sizes_overview(firms):
+    """All firms with published size prices, sorted by 100K price (USD first)."""
+    rows = []
+    for f in firms.values():
+        pr = size_program(f)
+        if not pr:
+            continue
+        rows.append(f)
+    def key(f):
+        pr = size_program(f)
+        v = (pr["prices_by_size"] or {}).get("100000")
+        return (pr.get("prices_by_size_ccy", "USD") != "USD", v is None, v or 0)
+    rows.sort(key=key)
+    head = ('<th scope="col" data-sort="text"><button type="button" class="sort" title="Sort by firm">Firm</button></th>'
+            '<th scope="col">Plan</th>'
+            + "".join(f'<th scope="col" class="n" data-sort="num"><button type="button" class="sort" title="Sort by {size_label(c)} price">{size_label(c)}</button></th>' for c in SIZE_COLS))
+    body = ""
+    for f in rows:
+        pr = size_program(f)
+        ccy = pr.get("prices_by_size_ccy") or "USD"
+        mo = "<small>/mo</small>" if pr.get("prices_by_size_monthly") else ""
+        plan = re.split(r"\s*\(|\s*->", pr["name"])[0]
+        cells = ""
+        for c in SIZE_COLS:
+            v = pr["prices_by_size"].get(str(c))
+            dv = v if (v is not None and ccy == "USD") else ""
+            cells += f'<td class="n" data-v="{dv}">{money(v, ccy) + mo if v is not None else "—"}</td>'
+        body += (f'<tr><th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{f["slug"]}/#sizes">{avatar(f)}{esc(f["name"])}</a></th>'
+                 f'<td>{esc(plan)}</td>{cells}</tr>')
+    return (f'<div class="tbl-wrap"><table class="cmp data sizes-all"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
 
 
 def price_table(f):
@@ -845,8 +922,10 @@ def pick_list(l, firms):
     else:
         key = l.get("sort", "price50")
         val = ((lambda f: (biggest_maxloss(f) or (None,))[0]) if key == "maxloss_max"
-               else (lambda f: alloc_capacity(f)[0]) if key == "alloc" else (lambda f: fac(f, key)))
-        if key in ("maxloss_max", "alloc"):
+               else (lambda f: alloc_capacity(f)[0]) if key == "alloc"
+               else (lambda f: size_price(f, 100000) if (size_program(f) or {}).get("prices_by_size_ccy", "USD") == "USD" else None) if key == "p100k"
+               else (lambda f: fac(f, key)))
+        if key in ("maxloss_max", "alloc", "p100k"):
             out = [f for f in out if val(f) is not None]
         sign = -1 if l.get("desc") else 1
         out.sort(key=lambda f: (val(f) is None, sign * (val(f) or 0),
@@ -898,6 +977,13 @@ def list_faq_fill(a, picks, whys):
         "{nocons}": names_join([f for f in picks if cons_label(f) == "None"]),
         "{codes}": names_join([f for f in picks if (f.get("current_public_promo") or {}).get("code")]),
     }
+    p100 = [(size_price(f, 100000), f) for f in picks if size_price(f, 100000) is not None
+            and (size_program(f) or {}).get("prices_by_size_ccy", "USD") == "USD"]
+    if p100:
+        lo, hi = min(p100, key=lambda x: x[0]), max(p100, key=lambda x: x[0])
+        per = lambda f: " a month" if (size_program(f) or {}).get("prices_by_size_monthly") else " one-time"
+        rep["{p100_min}"] = f"{strip_tags(money(lo[0], 'USD'))}{per(lo[1])} ({lo[1]['name']})"
+        rep["{p100_max}"] = f"{strip_tags(money(hi[0], 'USD'))}{per(hi[1])} ({hi[1]['name']})"
     for k, v in rep.items():
         a = a.replace(k, esc(v))
     return a
@@ -958,7 +1044,8 @@ def build_lists(site, firms, lists):
         path = f"/best/{l['slug']}/"
         trail = [("Best prop firms", "/best/"), (l["h1"], path)]
         mod = max([f["checked"] for f in picks] + ([(f.get("allocation") or {}).get("checked") or "" for f in picks]
-                                                    if l.get("why_auto") == "alloc" else []) or [TODAY])
+                                                    if l.get("why_auto") == "alloc" else [])
+                  + ([(size_program(f) or {}).get("prices_by_size_seen") or "" for f in picks] if l.get("why_auto") == "p100k" else []) or [TODAY])
         items, whys = "", {}
         for f in picks:
             why = (l.get("why") or {}).get(f["slug"]) or (f["_ed_meta"].get("one_liner") or f.get("best_for") or "")
@@ -966,6 +1053,13 @@ def build_lists(site, firms, lists):
                 cap, basis = alloc_capacity(f)
                 a = f["allocation"]
                 why = a.get("max_allocation_text") or f"Up to {strip_tags(money(cap, a.get('currency') or 'USD'))} at once."
+            if l.get("why_auto") == "p100k" and size_price(f, 100000) is not None:
+                pr = size_program(f)
+                mo = " a month" if pr.get("prices_by_size_monthly") else " one-time"
+                plan = re.split(r"\s*\(|\s*->", pr["name"])[0]
+                bigger = [(c, pr["prices_by_size"].get(str(c))) for c in (150000, 200000) if pr["prices_by_size"].get(str(c)) is not None]
+                why = (f"100K {plan} for {strip_tags(money(size_price(f, 100000), 'USD'))}{mo}"
+                       + (f"; {size_label(bigger[0][0])} for {strip_tags(money(bigger[0][1], 'USD'))}{mo}" if bigger else "") + ".")
             if l.get("why_auto") == "maxloss" and biggest_maxloss(f):
                 v, pr = biggest_maxloss(f)
                 dd = re.split(r"[(;,]", pr.get("drawdown_type") or "")[0].strip()
@@ -989,7 +1083,7 @@ def build_lists(site, firms, lists):
                 f'Facts checked against each firm\'s own pages. <a href="/methodology/">How we rank</a>. {DISCLOSE}</p></header>'
                 f'<div class="content"><p class="lede">{l["intro"]}</p></div>'
                 f'<ol class="rank">{items}</ol><h2>Side by side</h2>{firm_table(picks, cols)}'
-                f'<div class="content">{l.get("body", "").replace("{{ALLOC_TABLE}}", "</div>" + alloc_table(firms) + "<div class=\"content\">") if "{{ALLOC_TABLE}}" in l.get("body", "") else l.get("body", "")}</div>')
+                f'<div class="content">{l.get("body", "").replace("{{ALLOC_TABLE}}", "</div>" + alloc_table(firms) + "<div class=\"content\">").replace("{{SIZE_TABLE}}", "</div>" + sizes_overview(firms) + "<div class=\"content\">")}</div>')
         faq = [[q, list_faq_fill(a, picks, whys)] for q, a in (l.get("faq") or [])]
         desc = l["description"]
         graph = [article_schema(l["h1"], desc, SITE + path, l.get("published", mod), mod),

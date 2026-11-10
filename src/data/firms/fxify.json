@@ -45,7 +45,20 @@
    "profit_split": "Up to 90%",
    "payout_frequency": "First payout on demand",
    "payout_rules_note": null,
-   "notes": null
+   "notes": null,
+   "prices_by_size": {
+    "5000": 59,
+    "10000": 89,
+    "15000": 119,
+    "25000": 199,
+    "50000": 379,
+    "100000": 549,
+    "200000": 1049,
+    "400000": 2950
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://trader.fxify.com/purchasechallenge"
   },
   {
    "name": "Two Phase",
@@ -171,6 +184,10 @@
   {
    "url": "https://fxify.com/faqs/all-faqs/how-does-your-scaling-plan-work/",
    "supports": "scaling plan"
+  },
+  {
+   "url": "https://trader.fxify.com/purchasechallenge",
+   "supports": "prices by account size"
   }
  ],
  "uncertain": [

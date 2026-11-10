@@ -49,7 +49,16 @@
    "profit_split": "80/20",
    "payout_frequency": "Every 48 hours once eligible",
    "payout_rules_note": null,
-   "notes": "Max drawdown is $1,500 or $2,000 depending on the option chosen. The $1,000 daily loss limit is a soft pause, not a breach."
+   "notes": "Max drawdown is $1,500 or $2,000 depending on the option chosen. The $1,000 daily loss limit is a soft pause, not a breach.",
+   "prices_by_size": {
+    "25000": 105,
+    "50000": 153,
+    "100000": 282,
+    "150000": 398
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://myfundedfutures.com/plans/builder"
   },
   {
    "name": "Rapid",
@@ -193,7 +202,7 @@
   },
   {
    "url": "https://myfundedfutures.com/plans/builder",
-   "supports": "Builder 50K price $92/$153, payout rules, 5 payouts to live"
+   "supports": "Builder 50K price $92/$153, payout rules, 5 payouts to live; prices by account size"
   },
   {
    "url": "https://myfundedfutures.com/plans/rapid-eod",

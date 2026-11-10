@@ -40,7 +40,17 @@
    "profit_split": "90%",
    "payout_frequency": "Daily",
    "payout_rules_note": null,
-   "notes": "Daily loss limit can be switched off (No DLL option)."
+   "notes": "Daily loss limit can be switched off (No DLL option).",
+   "prices_by_size": {
+    "25000": 178,
+    "50000": 218,
+    "100000": 398,
+    "150000": 549
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_monthly": true,
+   "prices_by_size_source": "https://www.toponefutures.com/"
   }
  ],
  "news_trading": "Allowed (per Top One Futures' homepage comparison)",
@@ -81,7 +91,7 @@
  "sources": [
   {
    "url": "https://www.toponefutures.com/",
-   "supports": "50K Elite Daily price, rules, reset fee, codes (checked in browser)"
+   "supports": "50K Elite Daily price, rules, reset fee, codes (checked in browser); prices by account size"
   },
   {
    "url": "https://intercom.help/top-one-futures/en/articles/10907463-what-is-the-maximum-number-of-accounts-i-can-trade",

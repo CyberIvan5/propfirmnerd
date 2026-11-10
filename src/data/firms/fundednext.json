@@ -51,7 +51,18 @@
    "profit_split": "80% default (21-day cycle); 60% (3 Profitable Days option); 90% (On-Demand option); 90% after Scale-Up; 95% with paid Lifetime add-on",
    "payout_frequency": "first reward after 21 days, then every 14 days (default)",
    "payout_rules_note": "Fee refunded with the first reward. A 15% challenge reward (of the Phase 1 + 2 targets) is paid once Scale-Up criteria are met (accounts bought from 2026-01-12); not available to US traders. On funded: max 3% open risk at any time; profits from trades within ±5 min of high-impact news count at 40% only; Quick Strike (trades closed within 30s) must stay below 30% of profit.",
-   "notes": "Sizes: 6K, 15K, 25K, 50K, 100K, 200K. 50K targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 5% of initial balance. EAs are NOT allowed at $50K and above."
+   "notes": "Sizes: 6K, 15K, 25K, 50K, 100K, 200K. 50K targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 5% of initial balance. EAs are NOT allowed at $50K and above.",
+   "prices_by_size": {
+    "6000": 59.99,
+    "15000": 119.99,
+    "25000": 199.99,
+    "50000": 299.99,
+    "100000": 549.99,
+    "200000": 1099.99
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_source": "https://fundednext.com/cfds/stellar-2-step"
   },
   {
    "name": "Stellar 1-Step (CFD)",
@@ -171,7 +182,7 @@
   },
   {
    "url": "https://fundednext.com/cfds/stellar-2-step",
-   "supports": "2-Step prices by size, rules"
+   "supports": "2-Step prices by size, rules; prices by account size"
   },
   {
    "url": "https://fundednext.com/cfds/stellar-1-step",

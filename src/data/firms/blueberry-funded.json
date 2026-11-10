@@ -87,7 +87,17 @@
    "profit_split": "80% (fixed)",
    "payout_frequency": "every 14 days; 7-day and on-demand reward add-ons available",
    "payout_rules_note": "Reward needs at least $100 realized profit and 3 active trading days in the cycle. Funded accounts have a 1.5% risk-per-trade-idea hard limit ($750 on 50K). The 7-day reward add-on costs 20% on top of the challenge price.",
-   "notes": "Sizes $5K-$200K. Daily loss 4% of starting balance from the higher of balance or equity, resets 5:00 PM EST. No high-impact news trading. Weekend holding allowed. Leverage 1:30. The Outline & Fees PDF says the 1-Step closed to new sales on 17 Aug 2026, but a 24 Aug 2026 correction in the help center says it remains available, and it is still sold on the homepage. Homepage and help center show $302.50; the store API shows $302.00."
+   "notes": "Sizes $5K-$200K. Daily loss 4% of starting balance from the higher of balance or equity, resets 5:00 PM EST. No high-impact news trading. Weekend holding allowed. Leverage 1:30. The Outline & Fees PDF says the 1-Step closed to new sales on 17 Aug 2026, but a 24 Aug 2026 correction in the help center says it remains available, and it is still sold on the homepage. Homepage and help center show $302.50; the store API shows $302.00.",
+   "prices_by_size": {
+    "25000": 165,
+    "50000": 302.5,
+    "100000": 605,
+    "200000": 1210
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Prime 2-Step: $206, $406, $812 and $1,462. Flex 1-Step: $330, $490, $835.",
+   "prices_by_size_source": "https://blueberryfunded.com/"
   }
  ],
  "news_trading": "Restricted: general rule (all evaluation and funded accounts) bans opening or closing trades from 2 minutes before to 2 minutes after high-impact (red folder) news; stop-loss hits are allowed if the position was opened 6+ hours before. Prime: no new positions within 2 minutes of scheduled high-impact news; closing allowed. Flex 1-Step: 5-minute window with a strike system (profit deduction, split cut to 60%, then closure)",
@@ -164,7 +174,7 @@
  "sources": [
   {
    "url": "https://blueberryfunded.com/",
-   "supports": "programs, homepage 50K prices, promo codes, legal entity, scaling"
+   "supports": "programs, homepage 50K prices, promo codes, legal entity, scaling; prices by account size"
   },
   {
    "url": "https://blueberryfunded.com/wp-content/uploads/2026/10/bbf-outline-and-fees.pdf",

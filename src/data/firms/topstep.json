@@ -42,7 +42,17 @@
    "profit_split": "90/10 (traders who joined the new dashboard before Jan 12, 2026 keep 100% of their first $10,000 lifetime profit)",
    "payout_frequency": "After every 5 winning days of $150+ net P&L (not consecutive)",
    "payout_rules_note": "XFA Standard: up to 50% of account balance per request, capped at $2,000 on 50K ($4,000 if a DLL was added at checkout on a new Combine bought from June 2, 2026 - limited-time offer). Minimum payout $125. Must be net profitable since the last payout (first payout exempt). After each payout the MLL resets to $0. Up to 5 active XFAs. Back2Funded: reactivate a lost XFA (before first payout) for $599 on 50K, up to 2 times.",
-   "notes": "Daily Loss Limit is optional in the Combine/XFA, chosen at purchase ($1,000 on 50K); hitting it flattens and pauses trading, not a violation. No minimum days stated; Topstep says you can pass in as few as two days. Max position 5 minis / 50 micros. Activation fee is one-time per XFA; no monthly fee after passing. One free Reset Credit per rebill."
+   "notes": "Daily Loss Limit is optional in the Combine/XFA, chosen at purchase ($1,000 on 50K); hitting it flattens and pauses trading, not a violation. No minimum days stated; Topstep says you can pass in as few as two days. Max position 5 minis / 50 micros. Activation fee is one-time per XFA; no monthly fee after passing. One free Reset Credit per rebill.",
+   "prices_by_size": {
+    "50000": 49,
+    "100000": 99,
+    "150000": 199
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Standard path, per month, plus a $149 activation fee per funded account. No Activation Fee path: $95, $149 and $229 a month.",
+   "prices_by_size_monthly": true,
+   "prices_by_size_source": "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions"
   },
   {
    "name": "Trading Combine (No Activation Fee path) -> Express Funded Account (XFA)",
@@ -141,7 +151,7 @@
   },
   {
    "url": "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions",
-   "supports": "Standard vs No Activation Fee prices, resets, activation fee, Back2Funded fees, payment methods"
+   "supports": "Standard vs No Activation Fee prices, resets, activation fee, Back2Funded fees, payment methods; prices by account size"
   },
   {
    "url": "https://help.topstep.com/en/articles/8284197-trading-combine-parameters",

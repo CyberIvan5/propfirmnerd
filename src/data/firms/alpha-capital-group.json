@@ -48,7 +48,19 @@
    "profit_split": "80%; 90% with the optional 90% Profit Split add-on bought at purchase",
    "payout_frequency": "chosen at purchase: Bi-Weekly (first request 14 days after the first trade on the Qualified account, then every 14 days) or On-Demand (any time once eligible)",
    "payout_rules_note": "Bi-Weekly: at least 5 trading days with the same strategy before the first request, minimum $100 gross. On-Demand: minimum 2% of gross profit and the 40% best-day rule. Paid within 2 business days. A 0.25% bonus on the initial size is added to the 4th payout. No fee refund is published (return policy: 'All sales are final'). Max risk per asset 2% on 50K Qualified accounts bought after 2026-07-21 (hard breach). The payout choice also sets the base price.",
-   "notes": "Phase 1 target 8% ($4,000), Phase 2 5% ($2,500). Daily loss 4%, balance-based, reset 00:00 GMT+3. Minimum 3 trading days per phase. Leverage FX 1:100, metals 1:30, indices 1:20, oil 1:10. Max 20 lots on 50K. Weekend holding allowed in Phases 1-2 but not on the Qualified account (profits from those trades removed). Variants: Pro 6% (targets 6%/6%, 6% static, 3% daily on the greater of balance or equity) and Pro 10% (targets 10%/5%, 10% static, 5% daily balance-based). Price not published in readable form (see uncertain)."
+   "notes": "Phase 1 target 8% ($4,000), Phase 2 5% ($2,500). Daily loss 4%, balance-based, reset 00:00 GMT+3. Minimum 3 trading days per phase. Leverage FX 1:100, metals 1:30, indices 1:20, oil 1:10. Max 20 lots on 50K. Weekend holding allowed in Phases 1-2 but not on the Qualified account (profits from those trades removed). Variants: Pro 6% (targets 6%/6%, 6% static, 3% daily on the greater of balance or equity) and Pro 10% (targets 10%/5%, 10% static, 5% daily balance-based). Price not published in readable form (see uncertain).",
+   "prices_by_size": {
+    "5000": 37,
+    "10000": 57,
+    "25000": 177,
+    "50000": 297,
+    "100000": 527,
+    "200000": 997
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_note": "Prices the order form shows first; they change with the payout option you pick.",
+   "prices_by_size_source": "https://alphacapitalgroup.uk/product"
   },
   {
    "name": "Alpha One 10%",
@@ -154,7 +166,7 @@
   },
   {
    "url": "https://alphacapitalgroup.uk/product",
-   "supports": "plan list, sizes, 'from $27', payout choice sets price, 10KFOR40 banner"
+   "supports": "plan list, sizes, 'from $27', payout choice sets price, 10KFOR40 banner; prices by account size"
   },
   {
    "url": "https://alphacapitalgroup.uk/about",

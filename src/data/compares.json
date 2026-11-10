@@ -24,7 +24,7 @@
   "a": "lucid-trading",
   "b": "tradeify",
   "blurb": "Two of the cheapest one-time 50K evaluations",
-  "verdict": "Lucid ($136 for LucidFlex) and Tradeify ($145 for Growth) are two of the cheapest one-time 50K evaluations we track, both with end-of-day drawdown and no activation fee. Lucid allows bots and has no consistency rule once funded on LucidFlex; Tradeify allows only your own non-HFT bots and adds a 35% rule to Growth payouts.",
+  "verdict": "Lucid ($115 for LucidFlex) and Tradeify ($145 for Growth) are two of the cheapest one-time 50K evaluations we track, both with end-of-day drawdown and no activation fee. Lucid allows bots and has no consistency rule once funded on LucidFlex; Tradeify allows only your own non-HFT bots and adds a 35% rule to Growth payouts.",
   "body": "<h2>Which to pick</h2><p>Pick Lucid if you trade with your own automation or copiers. Pick Tradeify if you want a choice of payout styles (Select Flex or Select Daily). Lucid restricts more countries, so check that it serves yours.</p>"
  },
  {
@@ -78,8 +78,8 @@
  {
   "a": "lucid-trading",
   "b": "topstep",
-  "blurb": "One-time $136 vs $49 a month",
-  "verdict": "Lucid sells its 50K LucidFlex evaluation for a one-time $136 with no activation fee, and LucidFlex has no consistency rule once funded. Topstep costs $49 a month plus a $149 activation fee when you pass, or $95 a month with no activation fee, and publishes a route to a live account. Both use a $2,000 end-of-day trailing drawdown on 50K and pay 90%.",
+  "blurb": "One-time $115 vs $49 a month",
+  "verdict": "Lucid sells its 50K LucidFlex evaluation for a one-time $115 with no activation fee, and LucidFlex has no consistency rule once funded. Topstep costs $49 a month plus a $149 activation fee when you pass, or $95 a month with no activation fee, and publishes a route to a live account. Both use a $2,000 end-of-day trailing drawdown on 50K and pay 90%.",
   "body": "<h2>Which to pick</h2><p>Pick Lucid if you want one payment and a short path to payouts. LucidFlex pays any day after 5 days of $150 or more, up to 50% of profit and $2,000 per request, and moves the account to live after 5 payouts. Pick Topstep if you expect to pass quickly and want the lowest entry price: one month on the Standard path plus activation costs $198.</p><h2>Rules that trip people up</h2><p>Topstep's Combine has a best-day limit of 55% of the profit target; going over raises the target instead of failing you. The LucidFlex evaluation uses a 40% rule. Lucid closes open positions at 4:45 PM ET, while Topstep wants you flat by 3:10 PM CT. Lucid allows bots and trade copiers but bans HFT; Topstep allows automated strategies only through its TopstepX API, and not on live accounts.</p>",
   "published": "2026-11-10"
  },
@@ -87,7 +87,7 @@
   "a": "lucid-trading",
   "b": "apex-trader-funding",
   "blurb": "Published price vs checkout-only pricing",
-  "verdict": "Both sell one-time 50K evaluations with a $3,000 target and a $2,000 max loss. Lucid publishes its price ($136 for LucidFlex), uses end-of-day drawdown on every plan and has no consistency rule on LucidFlex once funded. Apex did not show its current 50K evaluation prices when we checked, has no consistency rule in the evaluation, and lets you choose end-of-day or intraday trailing drawdown.",
+  "verdict": "Both sell one-time 50K evaluations with a $3,000 target and a $2,000 max loss. Lucid publishes its price ($115 for LucidFlex), uses end-of-day drawdown on every plan and has no consistency rule on LucidFlex once funded. Apex did not show its current 50K evaluation prices when we checked, has no consistency rule in the evaluation, and lets you choose end-of-day or intraday trailing drawdown.",
   "body": "<h2>Which to pick</h2><p>Pick Lucid if you want a known price, end-of-day drawdown and bots allowed. Pick Apex if you want its payout ladder: the 50K end-of-day account pays $1,500 rising to $3,000 per request, but you need a $52,600 balance to request and the account closes after six payouts. LucidFlex caps each request at $2,000 and moves you to live after 5 payouts.</p><h2>Rules that trip people up</h2><p>On an Apex funded account no single day may be 50% or more of the profit since your last payout. Apex bans automation entirely; Lucid allows bots and copiers but not HFT or microscalping. Both make you close before the end of the session: Lucid at 4:45 PM ET, Apex before market close.</p>",
   "published": "2026-11-10"
  },
@@ -151,7 +151,7 @@
   "a": "aqua-funded",
   "b": "ftmo",
   "blurb": "Cheaper with payout fees vs fee refunded",
-  "verdict": "Aqua Funded's 2 Step Standard costs $239 for 50K with a static 8% max loss ($4,000) and a 90% split, but takes a 3% processing fee from every payout. FTMO's 2-Step costs €345 with a static 10% max loss, pays 80% (90% with scaling) and refunds the fee with the first reward. Aqua had no Trustpilot rating when we checked; FTMO is rated 4.8.",
+  "verdict": "Aqua Funded's 2 Step Standard costs $279 for 50K with a static 8% max loss ($4,000) and a 90% split, but takes a 3% processing fee from every payout. FTMO's 2-Step costs €345 with a static 10% max loss, pays 80% (90% with scaling) and refunds the fee with the first reward. Aqua had no Trustpilot rating when we checked; FTMO is rated 4.8.",
   "body": "<h2>Which to pick</h2><p>Pick Aqua Funded for the lower price, the higher split, instant-funding options and bots allowed for your own strategy. Pick FTMO for the larger loss limit, no withdrawal commission and the longer track record.</p><h2>Rules that trip people up</h2><p>On Aqua accounts from April 27, 2026, profit from trades within 5 minutes of red-folder news or FOMC is capped at 0.5% of the starting balance per payout cycle. FTMO funded accounts may not execute orders 2 minutes before or after selected high-impact news. Aqua allows weekend holding on every account; FTMO only in the challenge and on Swing accounts.</p>",
   "published": "2026-11-10"
  }
