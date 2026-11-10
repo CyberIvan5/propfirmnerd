@@ -85,11 +85,12 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": null,
-  "discount": null,
-  "applies_to": null,
-  "source_url": "https://the5ers.com/high-stakes/",
-  "seen": "2026-11-09"
+  "code": "J1EFIHY",
+  "discount": "5% off",
+  "applies_to": "CFD and futures programs",
+  "partner": true,
+  "source_url": "https://the5ers.com/refer-a-trader/",
+  "seen": "2026-11-10"
  },
  "affiliate_program": {
   "exists": true,

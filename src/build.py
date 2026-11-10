@@ -604,8 +604,10 @@ def ticket_html(f, big=True):
     if p.get("code"):
         return (f'<div class="ticket"><span class="code">{esc(p["code"])}</span>'
                 f'<div class="what"><strong>{esc(p.get("discount") or "Discount")}</strong>'
-                f'{esc(p.get("applies_to") or "")}<div class="seen">Published by {esc(f["name"])}, seen {fmt_date(seen)}. '
-                f'Codes change often; the price at checkout is what counts.</div></div>'
+                f'{esc(p.get("applies_to") or "")}<div class="seen">'
+                + (f'Our partner code for {esc(f["name"])}, checked {fmt_date(seen)}. We earn a commission when you use it. '
+                   if p.get("partner") else f'Published by {esc(f["name"])}, seen {fmt_date(seen)}. ')
+                + 'Codes change often; the price at checkout is what counts.</div></div>'
                 f'<button class="copy" type="button" data-copy="{esc(p["code"])}">Copy code</button></div>')
     if p.get("discount"):
         return (f'<div class="ticket"><span class="code">SALE</span><div class="what"><strong>{esc(p["discount"])}</strong>'
@@ -729,11 +731,15 @@ def build_firm_pages(site, firms, lists, compares):
         p = f.get("current_public_promo") or {}
         h1 = f"{n} promo code and discount"
         title = f"{n} Promo Code & Discount ({month_year(p.get('seen') or mod)})"
-        desc = (f"The {n} discount {('code ' + p['code'] + ' ') if p.get('code') else ''}we found on {fmt_date(p.get('seen') or mod)}, "
+        desc = (f"{n if n.startswith('The') else 'The ' + n} discount {('code ' + p['code'] + ' ') if p.get('code') else ''}"
+                f"{'we checked' if p.get('partner') else 'we found'} on {fmt_date(p.get('seen') or mod)}, "
                 f"what it covers, and the real 50K price after fees.")
         pt = price_table(f)
         body = (firm_head(f, h1, "") + status_note(f) + ticket_html(f)
-                + '<div class="content">' + promo_text(f) + "</div>" + pt
+                + '<div class="content">' + promo_text(f)
+                + (f'<p>{esc(p["code"])} is our own partner code for {esc(n)}: it gives you {esc(p.get("discount") or "a discount")}, '
+                   f'and we earn a commission on the purchase. {esc(n)} had no larger public code when we checked.</p>' if p.get("partner") and p.get("code") else "")
+                + "</div>" + pt
                 + f'<div class="content"><h2>How to use a {esc(n)} code</h2><ol>'
                 f'<li>Open <a href="/go/{s}/" rel="nofollow sponsored">{esc(domain(f.get("website") or f.get("link")))}</a> and pick the plan and account size.</li>'
                 f'<li>At checkout, paste the code into the coupon or promo field and apply it before paying.</li>'
@@ -744,7 +750,9 @@ def build_firm_pages(site, firms, lists, compares):
                 f'<a href="/risks/">Read the risks</a>.</p>'
                 f'<p><a href="/firms/{s}/">Full {esc(n)} review with every rule</a></p></div>' + sources_html(f))
         faq = [[f"Is there a {n} promo code right now?",
-                (f"Yes. {n} published the code {p['code']} ({p.get('discount') or 'discount'}), seen on {fmt_date(p.get('seen') or mod)}." if p.get("code")
+                (f"Yes. Our partner code {p['code']} gives {p.get('discount') or 'a discount'} at {n}, checked on {fmt_date(p.get('seen') or mod)}. We earn a commission when you use it."
+                 if p.get("code") and p.get("partner") else
+                 f"Yes. {n} published the code {p['code']} ({p.get('discount') or 'discount'}), seen on {fmt_date(p.get('seen') or mod)}." if p.get("code")
                  else f"We did not find a code published by {n} when we checked on {fmt_date(p.get('seen') or mod)}.")],
                [f"Does the {n} code work on resets and activation fees?",
                 "Usually not. Codes normally apply to the evaluation fee only. Check the checkout total before paying."],
@@ -1109,7 +1117,8 @@ def promo_table(allf):
         p = f.get("current_public_promo") or {}
         seen = p.get("seen") or f["checked"]
         rows += (f'<tr><th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{f["slug"]}/promo-code/">{avatar(f)}{esc(f["name"])}</a></th>'
-                 f'<td>{code_cell(f)}</td><td>{esc(p.get("discount") or "No public discount found")}</td>'
+                 f'<td>{code_cell(f)}</td><td>{esc(p.get("discount") or "No public discount found")}'
+                 f'{" <small>(our partner code)</small>" if p.get("partner") and p.get("code") else ""}</td>'
                  f'<td class="n" data-v="{seen}">{fmt_date(seen)}</td>'
                  f'<td class="go">{go_link(f, "Get deal" if p.get("code") or p.get("discount") else "Visit", "btn sm", "promo-table")}</td></tr>')
     return (f'<div class="tbl-wrap"><table class="cmp data promo"><thead><tr>'
