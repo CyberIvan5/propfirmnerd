@@ -649,7 +649,7 @@ def firm_head(f, h1, sub):
     by = (f'<p class="byline">Checked {fmt_date(f["checked"])} against {nsrc} official and public pages. '
           f'<a href="/methodology/">How we check</a></p>')
     cta = (f'<div class="cta-col">{go_link(f, place="head")}'
-           f'<p class="btn-note">Opens {esc(domain(f.get("link") or f.get("website")))}</p></div>')
+           f'<p class="btn-note">Opens {esc(domain(f.get("website") or f.get("link")))}</p></div>')
     code = (f.get("current_public_promo") or {}).get("code")
     left = (f'<span>Code <button class="codebtn" type="button" data-copy="{esc(code)}">{esc(code)}</button></span>' if code
             else f'<span>{esc(f["name"])}</span>')
@@ -700,7 +700,7 @@ def build_firm_pages(site, firms, lists, compares):
         promo_link = (f'<p class="cta-row">{go_link(f, place="end")} '
                       f'<a class="btn ghost" href="/firms/{s}/promo-code/">{esc(n)} promo code</a></p>')
         mid_cta = (f'<p class="cta-row">{go_link(f, f"See plans at {n}", place="plans")} '
-                   f'<span class="btn-note">Opens {esc(domain(f.get("link") or f.get("website")))}. {DISCLOSE}</span></p>')
+                   f'<span class="btn-note">Opens {esc(domain(f.get("website") or f.get("link")))}. {DISCLOSE}</span></p>')
         rules_link = f'<p><a href="/firms/{s}/rules/">Every {n} rule explained</a></p>' if ed.get("rules_page") else ""
         pnote = f'<p class="muted" style="margin-top:-18px">{esc(f["price_note"])}</p>' if f.get("price_note") else ""
         body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + pnote + dd_block(fac(f, "dd"))
@@ -735,7 +735,7 @@ def build_firm_pages(site, firms, lists, compares):
         body = (firm_head(f, h1, "") + status_note(f) + ticket_html(f)
                 + '<div class="content">' + promo_text(f) + "</div>" + pt
                 + f'<div class="content"><h2>How to use a {esc(n)} code</h2><ol>'
-                f'<li>Open <a href="/go/{s}/" rel="nofollow sponsored">{esc(domain(f.get("link") or f.get("website")))}</a> and pick the plan and account size.</li>'
+                f'<li>Open <a href="/go/{s}/" rel="nofollow sponsored">{esc(domain(f.get("website") or f.get("link")))}</a> and pick the plan and account size.</li>'
                 f'<li>At checkout, paste the code into the coupon or promo field and apply it before paying.</li>'
                 f'<li>Check that the total dropped. If it did not, the code has expired or does not cover that plan.</li></ol>'
                 f'<h2>What a discount does not change</h2><p>A code lowers the evaluation fee only. It does not change the profit target, '
