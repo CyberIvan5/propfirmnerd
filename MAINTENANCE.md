@@ -13,7 +13,7 @@ leave it as is and report it.**
     A promo with `"partner": true` is the owner's own partner code (currently The5ers J1EFIHY, 5% off). Keep it unless the firm
     publishes a LARGER public discount; then show the public code instead (readers must see the best real price) and note it in the report.
   - `link`: the URL `/go/<slug>/` redirects to. Several are the owner's partner tracking links (Blueberry Funded, Funding Traders,
-    Aqua Funded, The5ers). Never replace or strip them; `website` is the plain official URL.
+    Aqua Funded, The5ers, FXIFY). Never replace or strip them; `website` is the plain official URL.
   - `checked`: ISO date of the last full verification. **Page titles show this month**, so only bump it after
     re-verifying the firm's core numbers.
   - `sources[]`, `recent_changes_2026[]`, `status`, `status_note`, `price_note`.
