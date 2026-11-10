@@ -903,14 +903,19 @@ def list_faq_fill(a, picks, whys):
     return a
 
 
+def poss(n):
+    return n + ("'" if n.endswith("s") else "'s")
+
+
 def compare_faq(a, b):
     """Data-driven questions for X vs Y pages."""
-    d = fmt_date(max(a["checked"], b["checked"]))
+    da, db = fmt_date(a["checked"]), fmt_date(b["checked"])
+    d = (f"as of {da}" if da == db else f"as checked on {da} and {db}")
     A, B = a["name"], b["name"]
     out = []
     pa, pb = fac(a, "price50"), fac(b, "price50")
     if pa is not None and pb is not None:
-        txt = f"{A}'s main 50K plan lists at {price_txt(a)} and {B}'s at {price_txt(b)}, before discounts, as of {d}."
+        txt = f"{poss(A)} main 50K plan lists at {price_txt(a)} and {poss(B)} at {price_txt(b)}, before discounts, {d}."
         same_ccy = fac(a, "ccy", "USD") == fac(b, "ccy", "USD")
         same_bill = bool(fac(a, "monthly")) == bool(fac(b, "monthly"))
         if same_ccy and same_bill and pa != pb:
@@ -926,7 +931,7 @@ def compare_faq(a, b):
                     else DD_LABEL[fac(f, "dd")].lower() + " drawdown")
             return (f"{f['name']} uses {kind} with a 50K max loss of "
                     f"{strip_tags(money(fac(f, 'maxloss50'), fac(f, 'acc_ccy', fac(f, 'ccy', 'USD'))))} on its main plan")
-        out.append([f"What is the difference between {A} and {B} drawdown?", f"{ddt(a)}. {ddt(b)}. Both as of {d}."])
+        out.append([f"What is the difference between {A} and {B} drawdown?", f"{ddt(a)}. {ddt(b)}. Figures {d}."])
     ca, cb = cons_label(a), cons_label(b)
     if "—" not in (ca, cb):
         def ct(f, c):
@@ -938,11 +943,11 @@ def compare_faq(a, b):
     ua, ub = a.get("us_residents_accepted"), b.get("us_residents_accepted")
     if ua is not None and ub is not None:
         if ua and ub:
-            t = f"Yes. Both {A} and {B} accept US residents, according to their own pages as of {d}."
+            t = f"Yes. Both {A} and {B} accept US residents, according to their own pages ({d})."
         elif not ua and not ub:
-            t = f"No. Neither {A} nor {B} accepts US residents, according to their own pages as of {d}."
+            t = f"No. Neither {A} nor {B} accepts US residents, according to their own pages ({d})."
         else:
-            t = f"{A if ua else B} accepts US residents and {B if ua else A} does not, according to their own pages as of {d}."
+            t = f"{A if ua else B} accepts US residents and {B if ua else A} does not, according to their own pages ({d})."
         out.append([f"Do {A} and {B} accept US traders?", t])
     return out
 

@@ -74,5 +74,85 @@
   "published": "2026-10-19",
   "verdict": "MyFundedFutures sells one-time evaluations (from $153 for a 50K Builder) with no activation fee. Topstep charges $49 a month plus a $149 activation fee on its Standard path. Both use a $2,000 end-of-day drawdown on 50K evaluations. MyFundedFutures pays more often (every 48 hours on Builder, daily on Rapid), but Builder pays 80% against Topstep's 90%.",
   "body": "<h2>Which to pick</h2><p>Pick MyFundedFutures if you want frequent payouts and a single payment. Its Rapid plan pays 90%, but its sim funded account uses an intraday trailing drawdown. Rapid EOD keeps it at end of day for a higher price. Pick Topstep if you prefer a monthly price and an end-of-day drawdown in the funded account.</p><h2>News trading</h2><p>MyFundedFutures requires you to be flat from 2 minutes before to 2 minutes after Tier 1 releases on Rapid and Pro funded accounts. It allows news trading in every evaluation and on Builder. Topstep only bans purposely trading your full maximum size into a scheduled major news event.</p>"
+ },
+ {
+  "a": "lucid-trading",
+  "b": "topstep",
+  "blurb": "One-time $136 vs $49 a month",
+  "verdict": "Lucid sells its 50K LucidFlex evaluation for a one-time $136 with no activation fee, and LucidFlex has no consistency rule once funded. Topstep costs $49 a month plus a $149 activation fee when you pass, or $95 a month with no activation fee, and publishes a route to a live account. Both use a $2,000 end-of-day trailing drawdown on 50K and pay 90%.",
+  "body": "<h2>Which to pick</h2><p>Pick Lucid if you want one payment and a short path to payouts. LucidFlex pays any day after 5 days of $150 or more, up to 50% of profit and $2,000 per request, and moves the account to live after 5 payouts. Pick Topstep if you expect to pass quickly and want the lowest entry price: one month on the Standard path plus activation costs $198.</p><h2>Rules that trip people up</h2><p>Topstep's Combine has a best-day limit of 55% of the profit target; going over raises the target instead of failing you. The LucidFlex evaluation uses a 40% rule. Lucid closes open positions at 4:45 PM ET, while Topstep wants you flat by 3:10 PM CT. Lucid allows bots and trade copiers but bans HFT; Topstep allows automated strategies only through its TopstepX API, and not on live accounts.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "lucid-trading",
+  "b": "apex-trader-funding",
+  "blurb": "Published price vs checkout-only pricing",
+  "verdict": "Both sell one-time 50K evaluations with a $3,000 target and a $2,000 max loss. Lucid publishes its price ($136 for LucidFlex), uses end-of-day drawdown on every plan and has no consistency rule on LucidFlex once funded. Apex did not show its current 50K evaluation prices when we checked, has no consistency rule in the evaluation, and lets you choose end-of-day or intraday trailing drawdown.",
+  "body": "<h2>Which to pick</h2><p>Pick Lucid if you want a known price, end-of-day drawdown and bots allowed. Pick Apex if you want its payout ladder: the 50K end-of-day account pays $1,500 rising to $3,000 per request, but you need a $52,600 balance to request and the account closes after six payouts. LucidFlex caps each request at $2,000 and moves you to live after 5 payouts.</p><h2>Rules that trip people up</h2><p>On an Apex funded account no single day may be 50% or more of the profit since your last payout. Apex bans automation entirely; Lucid allows bots and copiers but not HFT or microscalping. Both make you close before the end of the session: Lucid at 4:45 PM ET, Apex before market close.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "ftmo",
+  "b": "e8-markets",
+  "blurb": "Static 10% vs a configurable one-step",
+  "verdict": "FTMO's 2-Step costs €345 for 50K with a static 10% max loss and no consistency rule, and the fee is refunded with your first reward. E8 One costs $288 and by default uses a 6% drawdown that trails the highest closed balance, with the rules configurable at checkout. FTMO has run since 2015 and is rated 4.8 on Trustpilot.",
+  "body": "<h2>Which to pick</h2><p>Pick FTMO for a loss limit that never moves, no consistency rule and a long track record. Its 1-Step (€319) trails end-of-day by 10% and has a 50% best-day rule. Pick E8 if you want to set drawdown, split (up to 100%) or payout speed yourself. E8 Pro ($228) has a static 8% max loss and daily payouts, but caps daily profit at $1,000.</p><h2>Rules that trip people up</h2><p>E8 One adds a 40% consistency rule in the performance stage. On news, FTMO funded accounts may not execute orders 2 minutes before or after selected high-impact releases, while E8 One performance accounts are blocked from 5 minutes before to 5 minutes after.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "fxify",
+  "b": "ftmo",
+  "blurb": "EA-friendly vs the long-running name",
+  "verdict": "FXIFY's 50K One Phase and Two Phase both cost $379, and its homepage says EAs are allowed, including grid and martingale. FTMO's 2-Step costs €345 with a static 10% max loss, no consistency rule and the fee refunded with the first reward. FXIFY does not accept US residents; FTMO does.",
+  "body": "<h2>Which to pick</h2><p>Pick FTMO for its track record (since 2015), its 4.8 Trustpilot score against FXIFY's 4.3, or if you live in the US. Pick FXIFY if you run EAs, or want a one-phase account whose 6% drawdown trails the closed balance and locks at the starting balance. FXIFY's Two Phase has a static 10% max loss, like FTMO's 2-Step.</p><h2>How much you can hold</h2><p>FTMO caps you at $400,000 per trader or strategy before scaling. FXIFY lets you hold one active account per account size, up to $400K.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "blue-guardian",
+  "b": "ftmo",
+  "blurb": "Cheaper static 2-step vs FTMO",
+  "verdict": "Blue Guardian's 2 Step Standard costs $232 for 50K against €345 for FTMO's 2-Step. Both use a static max loss: $4,000 (8%) at Blue Guardian and 10% at FTMO. Blue Guardian pays 85% every 14 days and charges 3% on payouts; FTMO pays 80% (90% with scaling) from day 14 and says it charges no withdrawal commission.",
+  "body": "<h2>Which to pick</h2><p>Pick Blue Guardian if the entry price matters most. Pick FTMO for the larger loss limit, the fee refunded with your first reward and a 4.8 Trustpilot score.</p><h2>Rules that trip people up</h2><p>On funded accounts Blue Guardian blocks opening or closing trades within 5 minutes of high-impact news and FOMC; FTMO's window is 2 minutes around selected releases. Blue Guardian flags trades shorter than 2 minutes as tick scalping and bans HFT and arbitrage bots.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "blueberry-funded",
+  "b": "ftmo",
+  "blurb": "Three static plans vs FTMO's 2-Step",
+  "verdict": "Blueberry's cheapest 50K, the 1-Step, costs $302.50 with a static 6% max loss; its Prime 2-Step costs $406 with a static 10%. FTMO's 2-Step costs €345 with a static 10% and refunds the fee with the first reward. Blueberry does not accept US residents and had no Trustpilot rating when we checked; FTMO accepts US traders and is rated 4.8.",
+  "body": "<h2>Which to pick</h2><p>Pick Blueberry Prime if you want no risk-per-trade limit and no lot restriction, with payouts every 14 days after 3 active days. Its Flex 1-Step gives a 12% static max loss ($6,000) for $490, but bans weekend holding and caps risk at 1% per trade idea. Pick FTMO for the lower price on a 10% static account, the fee refund and the longer track record.</p><h2>Rules that trip people up</h2><p>Blueberry bans opening or closing trades from 2 minutes before to 2 minutes after high-impact news on every account; on Prime only new positions are blocked. FTMO applies its 2-minute news rule on funded accounts only.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "alpha-futures",
+  "b": "apex-trader-funding",
+  "blurb": "Monthly with no activation fee vs one-time",
+  "verdict": "Alpha Futures' Standard plan costs $129 a month for 50K with no activation fee and an end-of-day drawdown that stops at the starting balance. Apex sells one-time evaluations with a choice of end-of-day or intraday drawdown, but did not show its current 50K prices when we checked. Both ban bots and full automation.",
+  "body": "<h2>Which to pick</h2><p>Pick Alpha Futures for no activation fee and up to 4 payouts a month, each after 5 winning days of $200 or more ($500 minimum, $3,000 maximum on 50K Standard). Pick Apex if you want no consistency rule in the evaluation. Its funded account pays $1,500 rising to $3,000 per request, but closes after six payouts.</p><h2>Rules that trip people up</h2><p>Alpha Futures' Standard plan has a 50% consistency rule in the evaluation and 40% once qualified. On Standard, Zero and Direct qualified accounts it bans orders from 2 minutes before to 2 minutes after red-folder news. Apex allows news trading as part of a normal strategy. Alpha closes every position by 4:20 PM ET.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "fundingpips",
+  "b": "fundednext",
+  "blurb": "Pick your payout cycle vs fee refunded",
+  "verdict": "Both sell a 50K two-step with 8% and 5% targets and a static 10% max loss ($5,000). FundingPips' 2 Step Standard costs $349 and lets you trade split for speed: 60% weekly, 80% bi-weekly or 100% on demand. FundedNext's Stellar 2-Step costs $299.99, pays 80% after 21 days and then every 14, and refunds the fee with the first reward.",
+  "body": "<h2>Which to pick</h2><p>Pick FundedNext for the lower price, the fee refund and US access; it is rated 4.5 on Trustpilot from more than 80,000 reviews. Pick FundingPips if faster payouts matter more than the split. Its on-demand option pays 100% but adds a 35% consistency rule.</p><h2>Rules that trip people up</h2><p>FundingPips funded (Master) accounts close positions every day unless you buy a holding add-on; FundedNext allows overnight and weekend holding. FundedNext does not allow EAs on accounts of $50K and above; FundingPips allows your own automated EA with proof of ownership.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "the5ers",
+  "b": "fxify",
+  "blurb": "Capped payouts vs EA-friendly",
+  "verdict": "The5ers' High Stakes costs $249 (New) or $279 (Classic) for 50K, with a static 8% max loss and payouts capped at $3,000 per request. FXIFY's Two Phase costs $379 with a static 10% max loss, and its One Phase trails the closed balance by 6%. The5ers needs written approval for any automated trading; FXIFY's homepage says EAs, including grid and martingale, are allowed.",
+  "body": "<h2>Which to pick</h2><p>Pick The5ers for the lower price, a scaling plan that lifts the split to 100%, and a record going back to 2016 with a 4.7 Trustpilot score. Pick FXIFY if you trade with EAs or want the larger 10% static loss limit.</p><h2>Rules that trip people up</h2><p>The5ers charges 3.5% on Rise, crypto and bank payouts (Hub Credits are free) and blocks new orders from 2 minutes before to 2 minutes after high-impact news. FXIFY does not accept US residents.</p>",
+  "published": "2026-11-10"
+ },
+ {
+  "a": "aqua-funded",
+  "b": "ftmo",
+  "blurb": "Cheaper with payout fees vs fee refunded",
+  "verdict": "Aqua Funded's 2 Step Standard costs $239 for 50K with a static 8% max loss ($4,000) and a 90% split, but takes a 3% processing fee from every payout. FTMO's 2-Step costs €345 with a static 10% max loss, pays 80% (90% with scaling) and refunds the fee with the first reward. Aqua had no Trustpilot rating when we checked; FTMO is rated 4.8.",
+  "body": "<h2>Which to pick</h2><p>Pick Aqua Funded for the lower price, the higher split, instant-funding options and bots allowed for your own strategy. Pick FTMO for the larger loss limit, no withdrawal commission and the longer track record.</p><h2>Rules that trip people up</h2><p>On Aqua accounts from April 27, 2026, profit from trades within 5 minutes of red-folder news or FOMC is capped at 0.5% of the starting balance per payout cycle. FTMO funded accounts may not execute orders 2 minutes before or after selected high-impact news. Aqua allows weekend holding on every account; FTMO only in the challenge and on Swing accounts.</p>",
+  "published": "2026-11-10"
  }
 ]
