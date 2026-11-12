@@ -7,30 +7,49 @@
  "scripts": ["filter.js"]
 } META-->
 <div class="home-head">
+<div class="pitch">
 <h1>Prop firm rules, side by side</h1>
-<p>The 50K numbers that decide whether you pass: price, target, max loss, drawdown type and payout rules for {{FIRM_COUNT}} futures and forex prop firms. Every figure carries its source and the date we checked it.</p>
+<p>A prop firm evaluation is a paid test: reach the profit target before you touch the loss limit. We track the price, target, max loss, drawdown type and payout rules of {{FIRM_COUNT}} futures and forex firms, each figure with its source and the date we checked it.</p>
+<p class="cta-row"><a class="btn" href="#firms">Compare {{FIRM_COUNT}} firms</a> <a class="btn ghost" href="/guides/trailing-drawdown/">How drawdown works</a></p>
+<p class="proof">{{FIRM_COUNT}} firms and {{SOURCE_COUNT}} linked sources. Latest check: {{LAST_CHECKED}}.</p>
 </div>
+<figure class="corridor">
+{{HERO_CHART}}
+<figcaption>One 50K futures evaluation with an end-of-day trailing max loss. The numbers are typical, not one firm's; every firm's own are in the table below.</figcaption>
+</figure>
+</div>
+
+<section class="sec" id="firms">
+<div class="sec-head"><h2>Every firm at the 50K size</h2><a href="/compare/">Full comparison with news, bots and US access</a></div>
 {{HOME_TABLE}}
-<p class="muted">Price is the list price of each firm's main 50K plan, usually its cheapest standard evaluation, before discounts. FTMO prices are in euros. Click a firm for every plan, the fine print and our sources. <a href="/compare/">Open the full comparison</a> for news trading, bots, US access and Trustpilot.</p>
+<p class="muted">Price is the list price of each firm's main 50K plan, usually its cheapest standard evaluation, before discounts. FTMO prices are in euros. In the bar, red is the max loss and green is the profit target, drawn to the same scale. Click a firm for every plan, the fine print and our sources.</p>
+</section>
 
-<h2>Current promo codes</h2>
+<section class="band">
+<div class="sec-head"><h2>Current promo codes</h2><a href="/promo-codes/">All codes in one table</a></div>
 <p>Codes the firms publish themselves, plus our own partner codes where marked, with the date we checked them.</p>
-{{PROMO_ROWS}}
+{{PROMO_TILES}}
+</section>
 
-<h2>Calculators</h2>
-<ul class="rows">
-<li><a href="/tools/drawdown-simulator/"><strong>Drawdown simulator</strong><span>Enter your days and see when static, end-of-day and intraday limits would have stopped you.</span></a></li>
-<li><a href="/tools/pass-probability-calculator/"><strong>Pass probability calculator</strong><span>Your win rate and trade size against a firm's target and max loss.</span></a></li>
-<li><a href="/tools/challenge-cost-calculator/"><strong>True cost calculator</strong><span>Evaluation fee, monthly rebills, resets and activation in one number.</span></a></li>
-<li><a href="/tools/tick-value-calculator/"><strong>Futures tick value calculator</strong><span>Tick and point values for ES, NQ, MNQ, CL, GC and more.</span></a></li>
-<li><a href="/tools/position-size-calculator/"><strong>Position size calculator</strong><span>How many contracts fit your stop and your risk per trade.</span></a></li>
-<li><a href="/tools/payout-calculator/"><strong>Payout calculator</strong><span>What you keep after the profit split and fees.</span></a></li>
+<section class="sec">
+<div class="sec-head"><h2>Calculators</h2><a href="/tools/">All calculators</a></div>
+<ul class="rows icons">
+<li><a href="/tools/drawdown-simulator/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l5-4 4 3 4-5 5 3"/><path d="M3 20h6v-4h6v-4h6"/></svg><strong>Drawdown simulator</strong><span>Enter your days and see when static, end-of-day and intraday limits would have stopped you.</span></a></li>
+<li><a href="/tools/pass-probability-calculator/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/></svg><strong>Pass probability calculator</strong><span>Your win rate and trade size against a firm's target and max loss.</span></a></li>
+<li><a href="/tools/challenge-cost-calculator/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><strong>True cost calculator</strong><span>Evaluation fee, monthly rebills, resets and activation in one number.</span></a></li>
+<li><a href="/tools/tick-value-calculator/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="20" height="8" rx="1.5"/><path d="M6 8v3M10 8v4M14 8v3M18 8v4"/></svg><strong>Futures tick value calculator</strong><span>Tick and point values for ES, NQ, MNQ, CL, GC and more.</span></a></li>
+<li><a href="/tools/position-size-calculator/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg><strong>Position size calculator</strong><span>How many contracts fit your stop and your risk per trade.</span></a></li>
+<li><a href="/tools/payout-calculator/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6.5 6"/></svg><strong>Payout calculator</strong><span>What you keep after the profit split and fees.</span></a></li>
 </ul>
+</section>
 
-<h2>Best prop firms by what you need</h2>
+<section class="band">
+<div class="sec-head"><h2>Best prop firms by what you need</h2><a href="/best/">All lists</a></div>
 {{LIST_ROWS}}
+</section>
 
-<h2>Before you buy an evaluation</h2>
-<div class="content">
-<p>An evaluation is a paid test. Most people who buy one do not pass, and the fee is gone when you fail. Funded accounts at most firms trade simulated money, and the firm pays you a share of simulated profits under its own rules. Firms also change rules with little notice, and some close. Read <a href="/risks/">the risks</a> and <a href="/guides/what-is-a-prop-firm/">how prop firms make money</a> before you spend anything.</p>
+<div class="caution">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg>
+<div><h2>Before you buy an evaluation</h2>
+<p>An evaluation is a paid test. Most people who buy one do not pass, and the fee is gone when you fail. Funded accounts at most firms trade simulated money, and the firm pays you a share of simulated profits under its own rules. Firms also change rules with little notice, and some close. Read <a href="/risks/">the risks</a> and <a href="/guides/what-is-a-prop-firm/">how prop firms make money</a> before you spend anything.</p></div>
 </div>

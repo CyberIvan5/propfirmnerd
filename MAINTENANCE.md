@@ -34,6 +34,13 @@ leave it as is and report it.**
   Comparison pages get their FAQ from firm data automatically. Page titles must stay at 60 characters or fewer.
 - Do NOT run `research/*.py` (local-only, not in the repo).
 
+- Design (November 2026): `static/assets/style.css` holds the whole look (navy ink, graph-paper bands, yellow
+  buttons; fonts Funnel Display and Funnel Sans from Google Fonts). The weekly check does not touch it. Things the
+  builder draws from data, so they update on their own: the home chart (`hero_svg`, an illustration with typical
+  numbers, not a firm's), the red/green "Loss vs target" bar in firm tables (`room_span`, from `maxloss50` and
+  `target50`), the price card in each firm header (`price50`, `monthly`, `current_public_promo`), the firm count,
+  source count and latest check date on the home page. Monogram colour comes from `facets.market`.
+
 ## Steps
 1. For every firm in `src/data/firms/` (skip `"hidden": true`), open its own pricing page, rules/help pages
    and homepage banner (WebFetch; the URLs are in `sources[]` and `website`). Check:

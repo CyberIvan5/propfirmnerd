@@ -88,12 +88,12 @@ def fit_title(*cands, limit=60):
     return cands[-1]
 
 
-def avatar(f):
-    """Initials tile used next to firm names (we don't reproduce firm logos)."""
+def avatar(f, lg=False):
+    """Initials tile used next to firm names (we don't reproduce firm logos). Colour shows the market."""
     words = re.findall(r"[A-Za-z0-9]+", f["name"])
     ini = (words[0][0] + (words[1][0] if len(words) > 1 else words[0][1:2])).upper()
-    hue = sum(ord(c) for c in f["slug"]) * 37 % 360
-    return f'<span class="av" style="--h:{hue}" aria-hidden="true">{esc(ini)}</span>'
+    m = (f.get("facets") or {}).get("market") or ""
+    return f'<span class="av {m}{" lg" if lg else ""}" aria-hidden="true">{esc(ini)}</span>'
 
 
 def go_link(f, label=None, cls="btn", place=""):
@@ -168,14 +168,56 @@ def dd_svg(kind):
         th = " ".join(segs)
     else:
         th = " ".join(f"{'M' if i == 0 else 'L'}{x(i):.1f},{y(v):.1f}" for i, v in enumerate(thr))
-    grid = "".join(f'<line x1="{x(i*5):.1f}" x2="{x(i*5):.1f}" y1="{T}" y2="{H-B}" stroke="#DCE1E7" stroke-dasharray="2 3"/>'
+    grid = "".join(f'<line x1="{x(i*5):.1f}" x2="{x(i*5):.1f}" y1="{T}" y2="{H-B}" stroke="#C1CBDB" stroke-dasharray="2 3"/>'
                    for i in range(1, 5))
-    labels = "".join(f'<text x="{(x(i*5)+x(min(i*5+4, n-1)))/2:.1f}" y="{H-6}" font-size="10" fill="#6E7A89" text-anchor="middle">Day {i+1}</text>'
+    labels = "".join(f'<text x="{(x(i*5)+x(min(i*5+4, n-1)))/2:.1f}" y="{H-6}" font-size="10.5" fill="#64728B" text-anchor="middle">Day {i+1}</text>'
                      for i in range(5))
-    start = f'<line x1="{L}" x2="{W-R}" y1="{y(0):.1f}" y2="{y(0):.1f}" stroke="#C5CCD5"/>'
+    start = f'<line x1="{L}" x2="{W-R}" y1="{y(0):.1f}" y2="{y(0):.1f}" stroke="#64728B" stroke-dasharray="1 3"/>'
     return (f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{esc(DD_LABEL.get(kind, ""))} drawdown illustration">'
-            f'{grid}{start}<path d="{th}" fill="none" stroke="#C2362F" stroke-width="2.2"/>'
-            f'<path d="{eq}" fill="none" stroke="#18212C" stroke-width="1.6"/>{labels}</svg>')
+            f'{grid}{start}<path d="{th}" fill="none" stroke="#CE3329" stroke-width="2.4" stroke-linejoin="round"/>'
+            f'<path d="{eq}" fill="none" stroke="#0B1B3A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>{labels}</svg>')
+
+
+def hero_svg():
+    """Home page figure: one 50K evaluation drawn to scale. Reach the green line before touching the red one."""
+    days = [[350, 150, 700, 600], [250, -150, 100, 300], [800, 1250, 1100, 1400], [1050, 700, 900, 1100],
+            [1500, 1900, 1750, 2000], [1650, 1300, 1450, 1500], [1900, 2250, 2150, 2400], [2700, 2550, 3000]]
+    target, limit = 3000, 2000
+    pts = [0] + [v for d in days for v in d]
+    n = len(pts) - 1
+    W, H, L, R, T, B = 540, 372, 66, 528, 30, 322
+    lo, hi = -2500, 3500
+    x = lambda i: L + i * (R - L) / 32
+    y = lambda v: T + (hi - v) * (B - T) / (hi - lo)
+    # end-of-day trailing limit that stops at the starting balance
+    floor, steps, i = -limit, [(0, -limit)], 0
+    for d in days:
+        i += len(d)
+        nf = min(0, max(floor, d[-1] - limit))
+        if nf != floor and i <= 28:
+            steps += [(i, floor), (i, nf)]
+            floor = nf
+    steps.append((32, floor))
+    lim = " ".join(f"{'M' if k == 0 else 'L'}{x(i):.1f},{y(v):.1f}" for k, (i, v) in enumerate(steps))
+    eq = " ".join(f"{'M' if i == 0 else 'L'}{x(i):.1f},{y(v):.1f}" for i, v in enumerate(pts))
+    grid = "".join(f'<line x1="{x(d*4):.1f}" x2="{x(d*4):.1f}" y1="{T}" y2="{B}" stroke="#C1CBDB" stroke-dasharray="2 4"/>' for d in range(1, 8))
+    dlab = "".join(f'<text x="{(x(d*4)+x(d*4+4))/2:.1f}" y="{B+20}" font-size="12.5" fill="#64728B" text-anchor="middle">Day {d+1}</text>' for d in range(8))
+    ylab = "".join(f'<text x="{L-10}" y="{y(v)+4.5:.1f}" font-size="12.5" fill="{c}" text-anchor="end" font-weight="600">{t}</text>'
+                   for v, t, c in [(target, "$53,000", "#0E8457"), (0, "$50,000", "#64728B"), (-limit, "$48,000", "#CE3329")])
+    hx, hy = x(n), y(target)
+    return (f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="A 50K evaluation over eight days: the balance climbs from $50,000 to the '
+            f'$53,000 profit target while the max loss limit trails up from $48,000 to $50,000 at each higher daily close.">'
+            f'<rect x="{L}" y="{T}" width="{R-L}" height="{y(target)-T:.1f}" fill="#0E8457" opacity=".1"/>'
+            f'<path d="{lim} L{R},{B} L{L},{B} Z" fill="#CE3329" opacity=".1"/>'
+            f'{grid}<line x1="{L}" x2="{R}" y1="{y(0):.1f}" y2="{y(0):.1f}" stroke="#64728B" stroke-dasharray="1 4"/>'
+            f'<line x1="{L}" x2="{R}" y1="{y(target):.1f}" y2="{y(target):.1f}" stroke="#0E8457" stroke-width="2.5"/>'
+            f'<path d="{lim}" fill="none" stroke="#CE3329" stroke-width="2.5" stroke-linejoin="round"/>'
+            f'<path class="eq" pathLength="1" d="{eq}" fill="none" stroke="#0B1B3A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>'
+            f'<text x="{L+10}" y="{y(target)-9:.1f}" font-size="14" font-weight="700" fill="#0E8457">Profit target: reach it and you pass</text>'
+            f'<text x="{L+10}" y="{y(-limit)+19:.1f}" font-size="14" font-weight="700" fill="#CE3329">Max loss limit: touch it and the account closes</text>'
+            f'<text x="{x(12)+8:.1f}" y="{y(-600)+18:.1f}" font-size="12.5" fill="#B02A21">It moves up when a day closes at a new high</text>'
+            f'<g class="hit"><circle cx="{hx:.1f}" cy="{hy:.1f}" r="7" fill="#FFD23F" stroke="#0B1B3A" stroke-width="2.5"/></g>'
+            f'{ylab}{dlab}</svg>')
 
 
 DD_TEXT = {
@@ -195,8 +237,8 @@ def dd_block(kind):
         return ""
     t, p = DD_TEXT[kind]
     return (f'<div class="dd">{dd_svg(kind)}<div><h3>{t}</h3><p>{p}</p>'
-            f'<p class="key"><i style="background:#18212C"></i>Account balance '
-            f'<i style="background:#C2362F;margin-left:12px"></i>Loss limit<br>'
+            f'<p class="key"><i style="background:#0B1B3A"></i>Account balance '
+            f'<i style="background:#CE3329;margin-left:12px"></i>Loss limit<br>'
             f'Illustration with a $2,000 limit, not this firm\'s exact numbers.</p></div></div>')
 
 
@@ -216,7 +258,7 @@ def crumbs_html(trail):
 def faq_html(faq):
     if not faq:
         return ""
-    out = ['<section class="faq"><h2>Questions traders ask</h2>']
+    out = ['<section class="faq" id="faq"><h2>Questions traders ask</h2>']
     for q, a in faq:
         out.append(f"<details><summary>{esc(q)}</summary><div><p>{a}</p></div></details>")
     out.append("</section>")
@@ -249,7 +291,7 @@ def sources_html(firm):
         return ""
     lis = "".join(f'<li><a href="{esc(s["url"])}" rel="nofollow noopener" target="_blank">{esc(domain(s["url"]) + "/" + s["url"].split("/", 3)[-1] if s["url"].count("/") > 2 else s["url"])}</a>'
                   f'{(" — " + esc(clean_supports(s.get("supports", "")))) if s.get("supports") else ""}</li>' for s in srcs)
-    return (f'<section class="sources"><h2>Sources</h2><p>Checked {fmt_date(firm["checked"])}. '
+    return (f'<section class="sources" id="sources"><h2>Sources</h2><p>Checked {fmt_date(firm["checked"])}. '
             f'We link the firm\'s own pages wherever we can. If something changed, '
             f'<a href="/contact/">tell us</a>.</p><details><summary>Show all {len(srcs)} sources</summary><ol>{lis}</ol></details></section>')
 
@@ -280,7 +322,7 @@ def faq_schema(faq):
 LOGO = ('<a class="logo" href="/" aria-label="PropFirmNerd home">'
         '<svg width="26" height="22" viewBox="0 0 26 22" aria-hidden="true">'
         '<path d="M1 15 L7 9 L11 12 L18 4 L25 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>'
-        '<path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#C2362F" stroke-width="2.4"/></svg>'
+        '<path d="M1 20 L9 20 L9 17 L17 17 L17 13 L25 13" fill="none" stroke="#FF6B5E" stroke-width="2.4"/></svg>'
         '<span>PropFirm<b>Nerd</b></span></a>')
 
 LAYOUT = """<!doctype html>
@@ -298,13 +340,13 @@ LAYOUT = """<!doctype html>
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{site}/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#18212C">{ga}
+<meta name="theme-color" content="#0B1B3A">{ga}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@600..800&family=Funnel+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v={ver}">
 <script type="application/ld+json">{schema}</script>
 </head>
@@ -414,24 +456,46 @@ def num(v):
     return v if isinstance(v, (int, float)) else ""
 
 
+def room_span(f):
+    t, m = fac(f, "target50"), fac(f, "maxloss50")
+    if not t or not m:
+        return "—"
+    ccy = fac(f, "acc_ccy", fac(f, "ccy", "USD"))
+    label = f"Max loss {strip_tags(money(m, ccy))} against a {strip_tags(money(t, ccy))} target"
+    return (f'<span class="rm" role="img" aria-label="{label}" title="{label}" '
+            f'style="--l:{min(m / 50, 100):.0f}%;--g:{min(t / 50, 100):.0f}%"><i class="l"></i><i class="z"></i><i class="g"></i></span>')
+
+
+def room_bar(f):
+    """Loss room against target as a small two-sided bar. Scale: $5,000 fills a side."""
+    t, m = fac(f, "target50"), fac(f, "maxloss50")
+    if not t or not m:
+        return '<td class="room" data-l="Loss vs target"><span class="muted">—</span></td>'
+    return f'<td class="room" data-l="Loss vs target" data-v="{m / t:.3f}">{room_span(f)}</td>'
+
+
 def firm_row(f, cols):
     s = f["slug"]
     ccy = fac(f, "ccy", "USD")
+    market = "" if "market" in cols else f'<small>{esc(MARKET_LABEL.get(fac(f, "market"), ""))}</small>'
+    L = lambda c: f' data-l="{esc(strip_tags(COLS[c]))}"'
     cells = {
-        "firm": f'<th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{s}/">{avatar(f)}{esc(f["name"])}</a></th>',
-        "market": f'<td>{esc(MARKET_LABEL.get(fac(f, "market"), "—"))}</td>',
-        "price": f'<td class="n" data-v="{num(fac(f, "price50"))}">{money(fac(f, "price50"), ccy)}{"<small>/mo</small>" if fac(f, "monthly") else ""}</td>',
-        "target": f'<td class="n gain" data-v="{num(fac(f, "target50"))}">{money(fac(f, "target50"), fac(f, "acc_ccy", ccy))}</td>',
-        "maxloss": f'<td class="n loss" data-v="{num(fac(f, "maxloss50"))}">{money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy))}</td>',
-        "dd": f'<td>{esc(DD_LABEL.get(fac(f, "dd"), "—"))}</td>',
-        "cons": f'<td>{esc(cons_label(f))}</td>',
-        "split": f'<td>{esc(fac(f, "split") or "—")}</td>',
-        "payouts": f'<td>{esc(fac(f, "payouts") or "—")}</td>',
-        "news": f'<td>{esc((fac(f, "news") or "—").capitalize())}</td>',
-        "ea": f'<td>{esc(fac(f, "ea") if isinstance(fac(f, "ea"), str) else yn(fac(f, "ea"), "Allowed", "Not allowed"))}</td>',
-        "us": f'<td>{yn(fac(f, "us"))}</td>',
-        "tp": f'<td class="n" data-v="{num(fac(f, "tp"))}">{fac(f, "tp") or "—"}</td>',
-        "code": f'<td>{code_cell(f)}</td>',
+        "firm": (f'<th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{s}/">{avatar(f)}'
+                 f'<span class="fn"><span>{esc(f["name"])}</span>{market}</span></a></th>'),
+        "market": f'<td{L("market")}>{esc(MARKET_LABEL.get(fac(f, "market"), "—"))}</td>',
+        "price": f'<td class="n"{L("price")} data-v="{num(fac(f, "price50"))}">{money(fac(f, "price50"), ccy)}{"<small>/mo</small>" if fac(f, "monthly") else ""}</td>',
+        "target": f'<td class="n gain"{L("target")} data-v="{num(fac(f, "target50"))}">{money(fac(f, "target50"), fac(f, "acc_ccy", ccy))}</td>',
+        "maxloss": f'<td class="n loss"{L("maxloss")} data-v="{num(fac(f, "maxloss50"))}">{money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy))}</td>',
+        "room": room_bar(f),
+        "dd": f'<td{L("dd")}>{esc(DD_LABEL.get(fac(f, "dd"), "—"))}</td>',
+        "cons": f'<td{L("cons")}>{esc(cons_label(f))}</td>',
+        "split": f'<td{L("split")}>{esc(fac(f, "split") or "—")}</td>',
+        "payouts": f'<td{L("payouts")}>{esc(fac(f, "payouts") or "—")}</td>',
+        "news": f'<td{L("news")}>{esc((fac(f, "news") or "—").capitalize())}</td>',
+        "ea": f'<td{L("ea")}>{esc(fac(f, "ea") if isinstance(fac(f, "ea"), str) else yn(fac(f, "ea"), "Allowed", "Not allowed"))}</td>',
+        "us": f'<td{L("us")}>{yn(fac(f, "us"))}</td>',
+        "tp": f'<td class="n"{L("tp")} data-v="{num(fac(f, "tp"))}">{fac(f, "tp") or "—"}</td>',
+        "code": f'<td{L("code")}>{code_cell(f)}</td>',
         "go": f'<td class="go">{go_link(f, "Visit", "btn sm", "table")}</td>',
         "deal": (f'<td class="deal"><div>{code_cell(f) if (f.get("current_public_promo") or {}).get("code") else ""}'
                  f'{go_link(f, "Visit", "btn sm", "table")}</div></td>'),
@@ -442,22 +506,23 @@ def firm_row(f, cols):
 
 
 COLS = {"firm": "Firm", "market": "Market", "price": "50K price", "target": "Profit target",
-        "maxloss": "Max loss", "dd": "Drawdown", "cons": "Consistency rule", "split": "Profit split",
+        "maxloss": "Max loss", "room": "Loss vs target", "dd": "Drawdown", "cons": "Consistency rule", "split": "Profit split",
         "payouts": "Payouts", "news": "News trading", "ea": "Bots/EAs", "us": "US traders",
-        "tp": "Trustpilot", "code": "Public code", "go": '<span class="sr">Visit site</span>', "deal": "Code and site"}
+        "tp": "Trustpilot", "code": "Public code", "go": '<span class="sr">Visit site</span>', "deal": '<span class="sr">Code and site</span>'}
 NUMCOLS = {"price", "target", "maxloss", "tp"}
-SORTCOLS = {"firm": "text", "price": "num", "target": "num", "maxloss": "num", "tp": "num"}
+SORT_TITLE = {"room": "Sort by max loss relative to the profit target"}
+SORTCOLS = {"firm": "text", "price": "num", "target": "num", "maxloss": "num", "room": "num", "tp": "num"}
 
 
 def th_html(c):
     cls = ' class="n"' if c in NUMCOLS else ""
     if c in SORTCOLS:
         return (f'<th scope="col"{cls} data-sort="{SORTCOLS[c]}"><button type="button" class="sort" '
-                f'title="Sort by {COLS[c].lower()}">{COLS[c]}</button></th>')
+                f'title="{SORT_TITLE.get(c) or "Sort by " + COLS[c].lower()}">{COLS[c]}</button></th>')
     return f'<th scope="col"{cls}>{COLS[c]}</th>'
 
 
-def firm_table(firms, cols, cls="cmp data"):
+def firm_table(firms, cols, cls="cmp data cards rows-mid"):
     head = "".join(th_html(c) for c in cols)
     body = "".join(firm_row(f, cols) for f in firms)
     return f'<div class="tbl-wrap"><table class="{cls}"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
@@ -590,7 +655,7 @@ def strip_html(f):
     cells = [("50K price", money(fac(f, "price50"), ccy), "per month" if fac(f, "monthly") else "main plan", ""),
              ("Profit target", money(fac(f, "target50"), fac(f, "acc_ccy", ccy)), "on 50K", "gain"),
              ("Max loss", money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy)), DD_LABEL.get(fac(f, "dd"), "").lower(), "loss"),
-             ("Consistency", cons_label(f), "rule applies to", ""),
+             ("Consistency rule", cons_label(f), "" if cons_label(f) in ("None", "—") else "where it applies", ""),
              ("Profit split", fac(f, "split") or "—", "to the trader", ""),
              ("Payouts", fac(f, "payouts") or "—", "", "")]
     return '<dl class="strip">' + "".join(
@@ -650,13 +715,24 @@ def firm_head(f, h1, sub):
     nsrc = len(f.get("sources") or [])
     by = (f'<p class="byline">Checked {fmt_date(f["checked"])} against {nsrc} official and public pages. '
           f'<a href="/methodology/">How we check</a></p>')
-    cta = (f'<div class="cta-col">{go_link(f, place="head")}'
+    p = f.get("current_public_promo") or {}
+    code = p.get("code")
+    price = ""
+    if fac(f, "price50") is not None:
+        price = (f'<div class="price"><span>50K evaluation, list price</span><b>{money(fac(f, "price50"), fac(f, "ccy", "USD"))}'
+                 f'{"<small>/mo</small>" if fac(f, "monthly") else ""}</b></div>')
+    deal = ""
+    if code:
+        deal = (f'<div class="deal"><button class="codebtn" type="button" data-copy="{esc(code)}" title="Copy code {esc(code)}">{esc(code)}</button>'
+                f'<span>{esc(p.get("discount") or "Discount code")}</span>'
+                f'{"<small>Our partner code. We earn a commission when you use it.</small>" if p.get("partner") else ""}</div>')
+    cta = (f'<div class="cta-col">{price}{deal}{go_link(f, place="head")}'
            f'<p class="btn-note">Opens {esc(domain(f.get("website") or f.get("link")))}</p></div>')
-    code = (f.get("current_public_promo") or {}).get("code")
     left = (f'<span>Code <button class="codebtn" type="button" data-copy="{esc(code)}">{esc(code)}</button></span>' if code
             else f'<span>{esc(f["name"])}</span>')
     sticky = f'<div class="sticky-cta">{left}{go_link(f, place="sticky")}</div>'
-    return f'<div class="firm-head"><div>{tag}<h1>{esc(h1)}</h1>{by}{sub}</div>{cta}</div>{sticky}'
+    return (f'<div class="firm-head"><div><div class="who">{avatar(f, lg=True)}{tag}</div>'
+            f'<h1>{esc(h1)}</h1>{by}{sub}</div>{cta}</div>{sticky}')
 
 
 def firm_faq(f):
@@ -705,9 +781,15 @@ def build_firm_pages(site, firms, lists, compares):
                    f'<span class="btn-note">Opens {esc(domain(f.get("website") or f.get("link")))}. {DISCLOSE}</span></p>')
         rules_link = f'<p><a href="/firms/{s}/rules/">Every {n} rule explained</a></p>' if ed.get("rules_page") else ""
         pnote = f'<p class="muted" style="margin-top:-18px">{esc(f["price_note"])}</p>' if f.get("price_note") else ""
-        body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + pnote + dd_block(fac(f, "dd"))
-                + f'<div class="content">{ticket_html(f)}' + (body_ed.split("<!--RULES-->")[0] if body_ed else "")
-                + "</div>" + program_table(f) + mid_cta + size_table(f)
+        jumps = [("plans", "Plans", bool(f.get("programs"))), ("sizes", "Prices by size", bool(size_table(f))),
+                 ("rules", "Rules and fine print", True), ("changes", "Changes in 2026", bool(f.get("recent_changes_2026"))),
+                 ("faq", "Questions", bool(firm_faq(f))), ("sources", "Sources", bool(f.get("sources")))]
+        toc = ('<nav class="jump" aria-label="On this page"><span>On this page</span>'
+               + "".join(f'<a href="#{i}">{t}</a>' for i, t, ok in jumps if ok) + "</nav>")
+        body = (firm_head(f, h1, verdict) + status_note(f) + strip_html(f) + pnote + toc + dd_block(fac(f, "dd"))
+                + f'<div class="split"><aside class="side">{ticket_html(f)}</aside><div class="content">'
+                + (body_ed.split("<!--RULES-->")[0] if body_ed else "")
+                + "</div></div>" + program_table(f) + mid_cta + size_table(f)
                 + f'<h2 id="rules">Trading rules and fine print</h2>{rules_kv(f)}{rules_link}'
                 + pros_cons(f) + changes_html(f) + promo_link + faq_html(firm_faq(f)) + sources_html(f))
         rel = [(f"/firms/{s}/promo-code/", f"{n} promo code", "Current discount and what it covers")]
@@ -1070,12 +1152,16 @@ def build_lists(site, firms, lists):
                     if fac(f, 'price50') is not None else "50K price not published, ")
             facts = (lead + f"target {strip_tags(money(fac(f, 'target50'), fac(f, 'acc_ccy', ccy)))}, max loss {strip_tags(money(fac(f, 'maxloss50'), fac(f, 'acc_ccy', ccy)))}, "
                      f"{DD_LABEL.get(fac(f, 'dd'), '').lower()} drawdown")
+            chips = (f'<li><span>50K</span>{(strip_tags(money(fac(f, "price50"), ccy)) + ("/mo" if fac(f, "monthly") else "")) if fac(f, "price50") is not None else "price not published"}</li>'
+                     f'<li class="gain"><span>Target</span>{strip_tags(money(fac(f, "target50"), fac(f, "acc_ccy", ccy)))}</li>'
+                     f'<li class="loss"><span>Max loss</span>{strip_tags(money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy)))}</li>'
+                     f'<li><span>Drawdown</span>{esc(DD_LABEL.get(fac(f, "dd"), "—"))}</li>')
             code = (f.get("current_public_promo") or {}).get("code")
             codeline = (f'<span class="codeline">Code <button class="codebtn" type="button" data-copy="{esc(code)}">{esc(code)}</button></span>'
                         if code else "")
             whys[f["slug"]] = why
             items += (f'<li><div><h3>{avatar(f)}<a href="/firms/{f["slug"]}/">{esc(f["name"])}</a></h3><p>{esc(why)}</p>'
-                      f'<div class="facts">{esc(facts)}</div></div>'
+                      f'<ul class="facts">{chips}</ul></div>'
                       f'<div class="acts">{go_link(f, place="list")}{codeline}'
                       f'<a class="rv" href="/firms/{f["slug"]}/">Read {esc(f["name"])} review</a></div></li>')
         cols = l.get("cols", ["firm", "price", "target", "maxloss", "dd", "cons", "split", "payouts"])
@@ -1105,13 +1191,15 @@ def build_compares(site, firms, compares):
         mod = max(a["checked"], b["checked"])
         trail = [("Compare", "/compare/"), (h1, path)]
 
-        def row(label, fn):
-            return f'<tr><th scope="row">{label}</th><td>{fn(a)}</td><td>{fn(b)}</td></tr>'
+        def row(label, fn, cls=""):
+            c = f' class="{cls}"' if cls else ""
+            return f'<tr><th scope="row">{label}</th><td{c}>{fn(a)}</td><td{c}>{fn(b)}</td></tr>'
         rows = "".join([
             row("Market", lambda f: esc(MARKET_LABEL.get(fac(f, "market"), "—"))),
             row("Main 50K plan", lambda f: money(fac(f, "price50"), fac(f, "ccy", "USD")) + (" /mo" if fac(f, "monthly") else "")),
-            row("Profit target (50K)", lambda f: money(fac(f, "target50"), fac(f, "acc_ccy", fac(f, "ccy", "USD")))),
-            row("Max loss (50K)", lambda f: money(fac(f, "maxloss50"), fac(f, "acc_ccy", fac(f, "ccy", "USD")))),
+            row("Profit target (50K)", lambda f: money(fac(f, "target50"), fac(f, "acc_ccy", fac(f, "ccy", "USD"))), "gain"),
+            row("Max loss (50K)", lambda f: money(fac(f, "maxloss50"), fac(f, "acc_ccy", fac(f, "ccy", "USD"))), "loss"),
+            row("Max loss against target", room_span, "room"),
             row("Drawdown", lambda f: esc(DD_LABEL.get(fac(f, "dd"), "—"))),
             row("Consistency rule", lambda f: esc(cons_label(f))),
             row("Profit split", lambda f: esc(fac(f, "split") or "—")),
@@ -1123,9 +1211,9 @@ def build_compares(site, firms, compares):
             row("Public code", lambda f: code_cell(f)),
             row("", lambda f: go_link(f, cls="btn sm", place="compare-table")),
         ])
-        tbl = (f'<div class="tbl-wrap"><table class="kv data"><thead><tr><th scope="col"></th>'
-               f'<th scope="col"><a href="/firms/{a["slug"]}/">{esc(a["name"])}</a></th>'
-               f'<th scope="col"><a href="/firms/{b["slug"]}/">{esc(b["name"])}</a></th></tr></thead><tbody>{rows}</tbody></table></div>')
+        tbl = (f'<div class="tbl-wrap"><table class="kv data duel"><thead><tr><th scope="col"></th>'
+               f'<th scope="col"><a href="/firms/{a["slug"]}/">{avatar(a)}{esc(a["name"])}</a></th>'
+               f'<th scope="col"><a href="/firms/{b["slug"]}/">{avatar(b)}{esc(b["name"])}</a></th></tr></thead><tbody>{rows}</tbody></table></div>')
         desc = c.get("description", f"{a['name']} vs {b['name']}: 50K prices, drawdown, consistency rules and payouts side by side, checked {fmt_date(mod)}.")
         body = (f'<header class="art-head"><h1>{esc(h1)}</h1><p class="byline">Checked {fmt_date(mod)} against both firms\' own pages. {DISCLOSE}</p></header>'
                 f'<div class="content"><p class="lede">{c["verdict"]}</p></div>{tbl}<div class="content">{c.get("body", "")}</div>'
@@ -1187,7 +1275,11 @@ def expand(body, firms, lists, compares, contracts):
     allf = sorted(firms.values(), key=lambda f: f["name"].lower())
     rep = {
         "{{FIRM_COUNT}}": str(len(firms)),
-        "{{HOME_TABLE}}": filtered_table(allf, ["firm", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "deal"], "t-home"),
+        "{{HERO_CHART}}": hero_svg(),
+        "{{SOURCE_COUNT}}": str(sum(len(f.get("sources") or []) for f in allf)),
+        "{{LAST_CHECKED}}": fmt_date(max(f["checked"] for f in allf)),
+        "{{PROMO_TILES}}": coupons_html(allf),
+        "{{HOME_TABLE}}": filtered_table(allf, ["firm", "price", "target", "maxloss", "room", "dd", "cons", "split", "deal"], "t-home"),
         "{{COMPARE_TABLE}}": filtered_table(allf, ["firm", "market", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "news", "ea", "us", "tp", "deal"], "t-all"),
         "{{FIRM_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf]),
         "{{FUTURES_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf if fac(f, "market") in ("futures", "multi")]),
@@ -1208,6 +1300,18 @@ def expand(body, firms, lists, compares, contracts):
         body = body.replace(k, v)
     body = re.sub(r"\{\{CONTRACT_TABLE:([A-Z0-9,]+)\}\}", lambda m: contract_table(contracts, m.group(1).split(",")), body)
     return body
+
+
+def coupons_html(allf):
+    """Home page: one tile per firm linking to its promo code page, with the code shown when there is one."""
+    out = ""
+    for f in allf:
+        p = f.get("current_public_promo") or {}
+        chip = f'<span class="codechip">{esc(p["code"])}</span>' if p.get("code") else ""
+        out += (f'<li><a href="/firms/{f["slug"]}/promo-code/">{avatar(f)}<span><strong>{esc(f["name"])} promo code</strong>'
+                f'<span class="d">{esc(p.get("discount") or ("No code needed" if p.get("discount") else "No public code right now"))}'
+                f'{" (our partner code)" if p.get("partner") and p.get("code") else ""}</span></span>{chip}</a></li>')
+    return f'<ul class="coupons">{out}</ul>'
 
 
 def promo_table(allf):
