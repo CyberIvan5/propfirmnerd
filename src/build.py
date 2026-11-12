@@ -549,8 +549,8 @@ FILTERS = """<div class="filters" data-filter-for="{tid}">
 </div>"""
 
 
-def filtered_table(firms, cols, tid):
-    t = firm_table(firms, cols).replace("<table ", f'<table id="{tid}" ', 1)
+def filtered_table(firms, cols, tid, extra=""):
+    t = firm_table(firms, cols, "cmp data cards rows-mid" + (" " + extra if extra else "")).replace("<table ", f'<table id="{tid}" ', 1)
     return FILTERS.format(tid=tid) + t
 
 
@@ -1285,7 +1285,7 @@ def expand(body, firms, lists, compares, contracts):
         "{{LAST_CHECKED}}": fmt_date(max(f["checked"] for f in allf)),
         "{{PROMO_TILES}}": coupons_html(allf),
         "{{HOME_TABLE}}": filtered_table(allf, ["firm", "price", "target", "maxloss", "room", "dd", "cons", "split", "deal"], "t-home"),
-        "{{COMPARE_TABLE}}": filtered_table(allf, ["firm", "market", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "news", "ea", "us", "tp", "deal"], "t-all"),
+        "{{COMPARE_TABLE}}": filtered_table(allf, ["firm", "price", "target", "maxloss", "dd", "cons", "split", "payouts", "news", "ea", "us", "tp", "deal"], "t-all", "big"),
         "{{FIRM_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf]),
         "{{FUTURES_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf if fac(f, "market") in ("futures", "multi")]),
         "{{FOREX_ROWS}}": rows_html([(f"/firms/{f['slug']}/", f"{f['name']} review", f["_ed_meta"].get("one_liner") or f.get("best_for") or "") for f in allf if fac(f, "market") in ("forex", "multi")]),

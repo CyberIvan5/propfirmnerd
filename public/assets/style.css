@@ -337,6 +337,24 @@ td.room{vertical-align:middle}
   table.promo td:nth-child(4){grid-row:2;grid-column:2;font-size:13px;color:var(--ink-3);font-weight:500}
 }
 
+/* the full comparison: wider page, compact cells, headings may wrap. If it still does not fit,
+   the table scrolls inside a box no taller than the screen, so the sideways scrollbar is always in view. */
+main:has(table.big) .wrap{max-width:1520px}
+@media (min-width:761px) and (max-width:1279px){
+  .tbl-wrap:has(>table.big){max-height:calc(100vh - 24px);overflow:auto;overscroll-behavior-x:contain}
+}
+@media (min-width:761px){
+  table.big{font-size:14.5px;line-height:1.4}
+  table.big th,table.big td{padding:10px 7px}
+  table.big thead th{white-space:normal;vertical-align:bottom;position:sticky;top:0;z-index:2;line-height:1.25;hyphens:manual}
+  table.big thead th button.sort{white-space:normal;text-align:left}
+  table.big thead th:first-child{left:0;z-index:3}
+  table.big th[scope=row]{position:sticky;left:0;z-index:1;background:var(--paper);min-width:160px;box-shadow:1px 0 0 var(--rule)}
+  table.big tbody tr:hover th[scope=row]{background:#FAFBFE}
+  table.big td.deal>div{flex-direction:column;align-items:stretch;gap:6px}
+  table.big td.deal .codebtn{text-align:center}
+}
+
 /* filters */
 .filters{display:flex;flex-wrap:wrap;gap:10px 8px;margin:0 0 16px;align-items:center}
 .filters fieldset{border:0;padding:0;margin:0 16px 0 0;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
