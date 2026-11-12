@@ -39,7 +39,8 @@ leave it as is and report it.**
   builder draws from data, so they update on their own: the home chart (`hero_svg`, an illustration with typical
   numbers, not a firm's), the red/green "Loss vs target" bar in firm tables (`room_span`, from `maxloss50` and
   `target50`), the price card in each firm header (`price50`, `monthly`, `current_public_promo`), the firm count,
-  source count and latest check date on the home page. Monogram colour comes from `facets.market`.
+  source count and latest check date on the home page. Firm logos are the firms' own site icons in `static/assets/logos/<slug>.webp` (120x120); a firm without a file
+  gets an initials tile coloured by `facets.market`. When adding a firm, add its icon there under the same slug.
 
 ## Steps
 1. For every firm in `src/data/firms/` (skip `"hidden": true`), open its own pricing page, rules/help pages

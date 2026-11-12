@@ -89,7 +89,12 @@ def fit_title(*cands, limit=60):
 
 
 def avatar(f, lg=False):
-    """Initials tile used next to firm names (we don't reproduce firm logos). Colour shows the market."""
+    """Firm mark next to its name: the firm's own site icon from static/assets/logos/<slug>.webp,
+    or an initials tile (coloured by market) when there is no file for that firm yet."""
+    size = 60 if lg else 34
+    if (STATIC / "assets" / "logos" / f"{f['slug']}.webp").exists():
+        return (f'<img class="av{" lg" if lg else ""}" src="/assets/logos/{f["slug"]}.webp" alt="" width="{size}" height="{size}"'
+                f'{"" if lg else " loading=\"lazy\""} decoding="async">')
     words = re.findall(r"[A-Za-z0-9]+", f["name"])
     ini = (words[0][0] + (words[1][0] if len(words) > 1 else words[0][1:2])).upper()
     m = (f.get("facets") or {}).get("market") or ""
