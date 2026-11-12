@@ -277,7 +277,7 @@ td.room{vertical-align:middle}
 }
 @media (max-width:760px){
   /* phone, default: scroll sideways with the firm name pinned */
-  table.cmp{font-size:14.5px;min-width:900px}
+  table.cmp{font-size:14.5px;min-width:0}
   table.cmp.promo{min-width:0}
   table.cmp.sizes{min-width:0}
   table.cmp.sizes-all{min-width:640px}
@@ -365,6 +365,8 @@ main.kind-home{padding-top:0}
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes show{to{opacity:1}}
 @media (max-width:940px){.home-head{grid-template-columns:1fr;padding:34px 0 28px}.corridor{max-width:560px}}
+@media (max-width:600px){.corridor .t-lab{font-size:18px}.corridor .t-ax{font-size:16px}.corridor .t-note{display:none}
+  .corridor svg{padding:6px 4px 2px 0}}
 
 /* full-width tinted section inside the page column */
 .band{position:relative;isolation:isolate;padding:44px 0 36px;margin:44px 0}

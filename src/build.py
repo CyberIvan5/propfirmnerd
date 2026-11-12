@@ -206,8 +206,8 @@ def hero_svg():
     lim = " ".join(f"{'M' if k == 0 else 'L'}{x(i):.1f},{y(v):.1f}" for k, (i, v) in enumerate(steps))
     eq = " ".join(f"{'M' if i == 0 else 'L'}{x(i):.1f},{y(v):.1f}" for i, v in enumerate(pts))
     grid = "".join(f'<line x1="{x(d*4):.1f}" x2="{x(d*4):.1f}" y1="{T}" y2="{B}" stroke="#C1CBDB" stroke-dasharray="2 4"/>' for d in range(1, 8))
-    dlab = "".join(f'<text x="{(x(d*4)+x(d*4+4))/2:.1f}" y="{B+20}" font-size="12.5" fill="#64728B" text-anchor="middle">Day {d+1}</text>' for d in range(8))
-    ylab = "".join(f'<text x="{L-10}" y="{y(v)+4.5:.1f}" font-size="12.5" fill="{c}" text-anchor="end" font-weight="600">{t}</text>'
+    dlab = "".join(f'<text x="{(x(d*4)+x(d*4+4))/2:.1f}" y="{B+20}" class="t-ax" font-size="12.5" fill="#64728B" text-anchor="middle">Day {d+1}</text>' for d in range(8))
+    ylab = "".join(f'<text x="{L-10}" y="{y(v)+4.5:.1f}" class="t-ax" font-size="12.5" fill="{c}" text-anchor="end" font-weight="600">{t}</text>'
                    for v, t, c in [(target, "$53,000", "#0E8457"), (0, "$50,000", "#64728B"), (-limit, "$48,000", "#CE3329")])
     hx, hy = x(n), y(target)
     return (f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="A 50K evaluation over eight days: the balance climbs from $50,000 to the '
@@ -218,9 +218,9 @@ def hero_svg():
             f'<line x1="{L}" x2="{R}" y1="{y(target):.1f}" y2="{y(target):.1f}" stroke="#0E8457" stroke-width="2.5"/>'
             f'<path d="{lim}" fill="none" stroke="#CE3329" stroke-width="2.5" stroke-linejoin="round"/>'
             f'<path class="eq" pathLength="1" d="{eq}" fill="none" stroke="#0B1B3A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>'
-            f'<text x="{L+10}" y="{y(target)-9:.1f}" font-size="14" font-weight="700" fill="#0E8457">Profit target: reach it and you pass</text>'
-            f'<text x="{L+10}" y="{y(-limit)+19:.1f}" font-size="14" font-weight="700" fill="#CE3329">Max loss limit: touch it and the account closes</text>'
-            f'<text x="{x(12)+8:.1f}" y="{y(-600)+18:.1f}" font-size="12.5" fill="#B02A21">It moves up when a day closes at a new high</text>'
+            f'<text x="{L+10}" y="{y(target)-9:.1f}" class="t-lab" font-size="14" font-weight="700" fill="#0E8457">Profit target: reach it and you pass</text>'
+            f'<text x="{L+10}" y="{y(-limit)+19:.1f}" class="t-lab" font-size="14" font-weight="700" fill="#CE3329">Max loss limit: touch it and the account closes</text>'
+            f'<text x="{x(12)+8:.1f}" y="{y(-600)+18:.1f}" class="t-note" font-size="12.5" fill="#B02A21">It moves up when a day closes at a new high</text>'
             f'<g class="hit"><circle cx="{hx:.1f}" cy="{hy:.1f}" r="7" fill="#FFD23F" stroke="#0B1B3A" stroke-width="2.5"/></g>'
             f'{ylab}{dlab}</svg>')
 
