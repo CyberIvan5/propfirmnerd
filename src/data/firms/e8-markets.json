@@ -118,10 +118,10 @@
  "path_to_live": null,
  "current_public_promo": {
   "code": "E8",
-  "discount": "Up to 50% off",
-  "applies_to": "First order (Classic Markets accounts)",
-  "source_url": "https://e8markets.com/compare-simfi-funded-accounts",
-  "seen": "2026-10-16"
+  "discount": "15% off",
+  "applies_to": "First order; shown on every E8 One account size",
+  "source_url": "https://e8markets.com/e8-one",
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -290,7 +290,7 @@
   "path_to_live: Terms say all accounts are simulated; no live-account path described.",
   "Affiliate commission not published."
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://e8markets.com/",
  "facets": {
   "market": "multi",

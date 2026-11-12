@@ -32,7 +32,7 @@
    "name": "Fundamental",
    "steps": "1-step",
    "billing": "monthly",
-   "price_50k_list": 164,
+   "price_50k_list": 90,
    "price_50k_currency": "USD",
    "activation_fee_50k": 149,
    "reset_fee_50k": null,
@@ -46,13 +46,23 @@
    "profit_split": "80/20",
    "payout_frequency": "Every 10 trading days",
    "payout_rules_note": null,
-   "notes": "Also sold as a one-time payment of $580 with no activation fee."
+   "notes": "Also sold as a one-time payment of $580 with no activation fee.",
+   "prices_by_size": {
+    "50000": 90,
+    "100000": 145,
+    "150000": 175
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-12",
+   "prices_by_size_monthly": true,
+   "prices_by_size_source": "https://phidiaspropfirm.com/accounts",
+   "prices_by_size_note": "Monthly list prices before codes, plus a $149 activation fee on pass ($169 on 150K). One-time versions with no activation fee: $225, $361, $437."
   },
   {
    "name": "Premium",
    "steps": "1-step",
    "billing": "monthly",
-   "price_50k_list": 329,
+   "price_50k_list": 110,
    "price_50k_currency": "USD",
    "activation_fee_50k": 149,
    "reset_fee_50k": null,
@@ -101,10 +111,10 @@
  "path_to_live": "E2L: automatic. Hit the target and click 'Switch to Live' for a LIVE account at Dorman Trading. Fundamental/Premium: discretionary review from 5 payouts or $100,000 cumulative profit; the earlier 3 payouts / $75,000 threshold is marked deprecated. Further tiers: ELITE LIVE (60 days + $125K balance) and MASTER LIVE (120 days + $250K). One LIVE account per trader.",
  "current_public_promo": {
   "code": "PHIDIAS80",
-  "discount": "Up to 80% off",
-  "applies_to": "Evaluations, per the homepage banner (\"Up to 80% off, applied at checkout\"; no end date shown)",
-  "source_url": "https://phidiaspropfirm.com/",
-  "seen": "2026-11-09"
+  "discount": "Up to 85% off one-time accounts, up to 60% off monthly evaluations",
+  "applies_to": "Evaluations, per the banner on Phidias' accounts page (no end date shown)",
+  "source_url": "https://phidiaspropfirm.com/accounts",
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -117,6 +127,11 @@
    "date": "2026 (rules page last modified 2026-09-22)",
    "change": "Discretionary path-to-LIVE threshold raised to 5 payouts or $100,000 cumulative profit; previous 3 payouts / $75,000 marked deprecated (About page still shows old thresholds)",
    "source": "https://phidiaspropfirm.com/rules"
+  },
+  {
+   "date": "2026-11",
+   "change": "Lower list prices: 50K Fundamental $90 a month (was $164) or $225 one-time; 50K Premium $110 a month (was $329) or $275 one-time",
+   "source": "https://phidiaspropfirm.com/accounts"
   }
  ],
  "pros": [
@@ -191,11 +206,11 @@
   "Help center FAQ and changelog are JavaScript-rendered and did not load, so 2026 changelog entries could not be checked",
   "us_residents_accepted is based on the firm's own article and the US being absent from the restricted list; the terms do not state it explicitly"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://phidiaspropfirm.com/",
  "facets": {
   "market": "futures",
-  "price50": 164,
+  "price50": 90,
   "monthly": true,
   "target50": 4000,
   "maxloss50": 2500,
@@ -222,5 +237,6 @@
   "scaling_text": "No account-size scaling plan.",
   "currency": "USD",
   "checked": "2026-11-06"
- }
+ },
+ "price_note": "Fundamental and Premium are also sold as one-time accounts with no activation fee: 50K for $225 and $275."
 }

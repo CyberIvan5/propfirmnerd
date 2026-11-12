@@ -449,9 +449,17 @@ def cons_label(f):
     return "Funded only" if fu else "Eval only"
 
 
+def main_code(f):
+    """The firm's code, unless it only applies to plans we do not list (promo "programs": [])."""
+    p = f.get("current_public_promo") or {}
+    if p.get("code") and (p.get("programs") is None or p.get("programs")):
+        return p["code"]
+    return None
+
+
 def code_cell(f):
     p = f.get("current_public_promo") or {}
-    if p.get("code"):
+    if main_code(f):
         return (f'<button class="codebtn" type="button" data-copy="{esc(p["code"])}" '
                 f'title="Copy code {esc(p["code"])}">{esc(p["code"])}</button>')
     return '<span class="muted">—</span>'
@@ -502,7 +510,7 @@ def firm_row(f, cols):
         "tp": f'<td class="n"{L("tp")} data-v="{num(fac(f, "tp"))}">{fac(f, "tp") or "—"}</td>',
         "code": f'<td{L("code")}>{code_cell(f)}</td>',
         "go": f'<td class="go">{go_link(f, "Visit", "btn sm", "table")}</td>',
-        "deal": (f'<td class="deal"><div>{code_cell(f) if (f.get("current_public_promo") or {}).get("code") else ""}'
+        "deal": (f'<td class="deal"><div>{code_cell(f) if main_code(f) else ""}'
                  f'{go_link(f, "Visit", "btn sm", "table")}</div></td>'),
     }
     attrs = (f'data-market="{fac(f, "market", "")}" data-dd="{fac(f, "dd", "")}" '
@@ -721,7 +729,7 @@ def firm_head(f, h1, sub):
     by = (f'<p class="byline">Checked {fmt_date(f["checked"])} against {nsrc} official and public pages. '
           f'<a href="/methodology/">How we check</a></p>')
     p = f.get("current_public_promo") or {}
-    code = p.get("code")
+    code = main_code(f)
     price = ""
     if fac(f, "price50") is not None:
         price = (f'<div class="price"><span>50K evaluation, list price</span><b>{money(fac(f, "price50"), fac(f, "ccy", "USD"))}'
@@ -962,7 +970,7 @@ def price_table(f):
             continue
         ccy = pr.get("price_50k_currency") or fac(f, "ccy", "USD")
         act = pr.get("activation_fee_50k") or 0
-        disc = round(lp * (100 - pct) / 100, 2) if pct and (not p.get("programs") or pr["name"] in p["programs"]) else None
+        disc = round(lp * (100 - pct) / 100, 2) if pct and (p.get("programs") is None or pr["name"] in p["programs"]) else None
         rows += (f'<tr><th scope="row">{esc(pr["name"])}</th><td class="n">{money(lp, ccy)}'
                  f'{" /mo" if pr.get("billing") == "monthly" else ""}</td>'
                  + ((f'<td class="n">{money(disc, ccy, dec=True)}</td>' if disc else '<td class="n">—</td>') if pct else "")
@@ -1062,7 +1070,7 @@ def list_faq_fill(a, picks, whys):
         "{eod}": names_join([f for f in picks if fac(f, "dd") == "eod"]),
         "{static}": names_join([f for f in picks if fac(f, "dd") == "static"]),
         "{nocons}": names_join([f for f in picks if cons_label(f) == "None"]),
-        "{codes}": names_join([f for f in picks if (f.get("current_public_promo") or {}).get("code")]),
+        "{codes}": names_join([f for f in picks if main_code(f)]),
     }
     p100 = [(size_price(f, 100000), f) for f in picks if size_price(f, 100000) is not None
             and (size_program(f) or {}).get("prices_by_size_ccy", "USD") == "USD"]
@@ -1161,7 +1169,7 @@ def build_lists(site, firms, lists):
                      f'<li class="gain"><span>Target</span>{strip_tags(money(fac(f, "target50"), fac(f, "acc_ccy", ccy)))}</li>'
                      f'<li class="loss"><span>Max loss</span>{strip_tags(money(fac(f, "maxloss50"), fac(f, "acc_ccy", ccy)))}</li>'
                      f'<li><span>Drawdown</span>{esc(DD_LABEL.get(fac(f, "dd"), "—"))}</li>')
-            code = (f.get("current_public_promo") or {}).get("code")
+            code = main_code(f)
             codeline = (f'<span class="codeline">Code <button class="codebtn" type="button" data-copy="{esc(code)}">{esc(code)}</button></span>'
                         if code else "")
             whys[f["slug"]] = why

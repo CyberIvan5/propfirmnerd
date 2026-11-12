@@ -47,7 +47,7 @@
    "drawdown_type": "Static",
    "daily_loss_limit_50k": 2000,
    "consistency_rule": null,
-   "min_trading_days": null,
+   "min_trading_days": "3 profitable days",
    "max_contracts_50k": null,
    "profit_split": "85% (90% as a paid add-on)",
    "payout_frequency": "Every 14 days",
@@ -118,11 +118,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "NOV30",
-  "discount": "30% off",
-  "applies_to": "All accounts, CFDs and futures (banner on Blue Guardian's forex page; no end date shown)",
+  "code": "BG25",
+  "discount": "25% off",
+  "applies_to": "Accounts on Blue Guardian's forex page (\"Save 25% with code BG25\"; no end date shown)",
   "source_url": "https://blueguardian.com/forex",
-  "seen": "2026-11-09"
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -268,7 +268,7 @@
   "trustpilot.score: rating unavailable on Trustpilot due to guideline breach.",
   "Payout guarantee: homepage mentions '24hr payout guarantee' (futures page adds $1,000 extra) but help center calls 24 business hours a processing target."
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://blueguardian.com/",
  "facets": {
   "market": "multi",

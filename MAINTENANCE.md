@@ -43,6 +43,14 @@ leave it as is and report it.**
   gets an initials tile coloured by `facets.market`. When adding a firm, add its icon there under the same slug.
 
 ## Steps
+0. Rolling full re-check (so no firm's date goes stale): list the firms by `checked` (oldest first). Besides the
+   change checks below, fully re-verify the **7 firms with the oldest `checked` date** this week: every program's
+   price (all sizes in `prices_by_size`), target, max loss, drawdown, daily limit, consistency, split, payout rules,
+   minimum days and the promo. Use the firm's pricing page or checkout, its rules/help pages and homepage banner. Only
+   after that, set their `checked` to today. Any firm older than 28 days must be in this week's batch.
+   Known blockers: Apex blocks visitors from Serbia and automated fetches (leave it and say so in the report);
+   Lucid's homepage sits behind a Cloudflare check (its help center and store API work); Hola Prime's forex pages
+   may not render prices (try /forex/prime-challenge/ and the checkout).
 1. For every firm in `src/data/firms/` (skip `"hidden": true`), open its own pricing page, rules/help pages
    and homepage banner (WebFetch; the URLs are in `sources[]` and `website`). Check:
    - 50K price of each program in `programs[]` (list price, before discounts) and activation fee;

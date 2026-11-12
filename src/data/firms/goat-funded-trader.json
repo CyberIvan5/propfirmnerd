@@ -41,7 +41,7 @@
    "name": "2 Step GOAT",
    "steps": "2-step",
    "billing": "one-time",
-   "price_50k_list": 308,
+   "price_50k_list": 330,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
    "reset_fee_50k": null,
@@ -55,13 +55,24 @@
    "profit_split": "80% (up to 100% as a paid add-on)",
    "payout_frequency": "Every 14 days",
    "payout_rules_note": null,
-   "notes": "Targets are 8% in phase 1 and 6% in phase 2."
+   "notes": "Targets are 8% in phase 1 and 6% in phase 2.",
+   "prices_by_size": {
+    "10000": 73,
+    "25000": 163,
+    "50000": 330,
+    "100000": 497,
+    "150000": 780
+   },
+   "prices_by_size_ccy": "USD",
+   "prices_by_size_seen": "2026-11-12",
+   "prices_by_size_source": "https://app.goatfundedtrader.com/checkout",
+   "prices_by_size_note": "List prices at Goat Funded Trader's checkout, before codes."
   },
   {
    "name": "1 Step GOAT",
    "steps": "1-step",
    "billing": "one-time",
-   "price_50k_list": 314,
+   "price_50k_list": 247,
    "price_50k_currency": "USD",
    "activation_fee_50k": 0,
    "reset_fee_50k": null,
@@ -92,11 +103,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "HALLOWEEN50",
+  "code": "FIRSTGFT",
   "discount": "50% off",
-  "applies_to": "All accounts, per the banner on Goat Funded Trader's site (a separate code, FIRSTGFT, gives new customers 50% off their first account)",
+  "applies_to": "New customers' first account; code BOGO40 gives 40% off all accounts (not the 2 Step Promo plan)",
   "source_url": "https://www.goatfundedtrader.com/",
-  "seen": "2026-11-09"
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -129,6 +140,11 @@
    "date": "2026-07",
    "change": "Resets offered at every stage; new Instant HERO and Instant Premium plans (reported by a third-party tracker)",
    "source": "https://propfirmmatch.com/prop-firms/goat-funded-trader/announcements"
+  },
+  {
+   "date": "2026-11",
+   "change": "50K list prices at checkout: 2 Step GOAT $330 (was $308), 1 Step GOAT $247 (was $314); the homepage now features a limited-time '2 Step Promo' 100K account for $99 with its own rules",
+   "source": "https://app.goatfundedtrader.com/checkout"
   }
  ],
  "pros": [
@@ -254,6 +270,10 @@
   {
    "url": "https://www.goatfundedtrader.com/model",
    "supports": "sizes up to 400K"
+  },
+  {
+   "url": "https://app.goatfundedtrader.com/checkout",
+   "supports": "Checkout list prices for 2 Step GOAT, 1 Step and the 2 Step Promo plan"
   }
  ],
  "uncertain": [
@@ -263,11 +283,11 @@
   "Fee refund conflict: payments help page says fee refunded at 4th payout; refund policy and T&C say no refunds. Homepage says 'One-time 100% refundable fee'.",
   "Futures program details are from goatfundedfutures.com homepage only."
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://www.goatfundedtrader.com/",
  "facets": {
   "market": "forex",
-  "price50": 308,
+  "price50": 330,
   "monthly": false,
   "target50": 4000,
   "maxloss50": 5000,

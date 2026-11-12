@@ -112,11 +112,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "PRO15",
-  "discount": "15% off (limited time, no end date given)",
-  "applies_to": "Pro challenge only, per FunderPro's Pro challenge page",
+  "code": null,
+  "discount": "15% off the Pro challenge",
+  "applies_to": "Pro challenge only, limited time, no code needed",
   "source_url": "https://funderpro.com/pro-challenge/",
-  "seen": "2026-11-09",
+  "seen": "2026-11-12",
   "programs": [
    "Pro (2-Phase, Weekly or Daily Rewards)"
   ]
@@ -289,7 +289,7 @@
   "Affiliate eligibility for Serbia: not explicitly stated; Serbia is simply absent from the restricted list the affiliate terms point to",
   "max_contracts: not applicable (CFD lots); a 20% margin-usage limit per asset class applies instead"
  ],
- "checked": "2026-10-19",
+ "checked": "2026-11-12",
  "link": "https://funderpro.com/",
  "facets": {
   "market": "forex",

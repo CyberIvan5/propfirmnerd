@@ -47,7 +47,7 @@
    "max_contracts_50k": null,
    "profit_split": "80%, rising to 100% on the scaling plan",
    "payout_frequency": "First after 14 days, then every 2 weeks",
-   "payout_rules_note": "Payouts capped at $3,000 per request on 50K; $150 minimum (after the profit split).",
+   "payout_rules_note": "On 50K: payouts capped at $3,000 per request; at least $300 profit needed to request a payout; minimum withdrawal $150.",
    "notes": "Targets are 10% in phase 1 and 5% in phase 2.",
    "prices_by_size": {
     "25000": 176,
@@ -212,7 +212,7 @@
   "50K High Stakes New ($249) and Classic ($279) prices, 4% daily and 8% max loss confirmed on the5ers.com/high-stakes on 2026-10-16.",
   "Affiliate commission rates not published."
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://www.the5ers.com/?afmc=1hrc",
  "facets": {
   "market": "multi",

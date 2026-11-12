@@ -117,11 +117,11 @@
  ],
  "path_to_live": "Alpha Prime (London prop firm in the same group): traders are reviewed after a $40,000 single payout, five payouts from one Qualified account, or $100,000 lifetime payouts; qualified traders move from simulated accounts to Alpha Prime live accounts with a 60% split plus a monthly salary",
  "current_public_promo": {
-  "code": null,
-  "discount": null,
-  "applies_to": null,
-  "source_url": "https://alphacapitalgroup.uk/",
-  "seen": "2026-11-02"
+  "code": "ALPHA20",
+  "discount": "20% off",
+  "applies_to": "Alpha Pro, as suggested at checkout; checkout suggests FUNDED40 for Alpha Direct, and 10KFOR40 makes a 10K account $40",
+  "source_url": "https://alphacapitalgroup.uk/product",
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": null,
@@ -302,7 +302,7 @@
   "us_residents_accepted set true from the help center (DXtrade and TradeLocker available to US residents), but the homepage checkout shows an 'I'm not a US resident or citizen' checkbox (shown with MT5 selected)",
   "Registered address: Companies House and the site footer give 1 Allied Business Centre, Harpenden; the Terms give 6-7 Waterside Station Road, Harpenden"
  ],
- "checked": "2026-10-26",
+ "checked": "2026-11-12",
  "link": "https://alphacapitalgroup.uk/",
  "facets": {
   "market": "forex",

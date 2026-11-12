@@ -121,15 +121,12 @@
  ],
  "path_to_live": "Futures only: invite-only Hola Prime Live Account for traders with at least 10 payouts totalling $50,000+ from a sim-funded account. Up to 15% of the account size moves over as starting equity ($7,500 for 50K); no daily or max loss limits; 90% split with daily rewards; max 4/40 contracts on 50K; one live account per trader. No live route published for forex",
  "current_public_promo": {
-  "code": "SPOOKY40",
-  "discount": "40% off",
-  "applies_to": "All forex accounts, new users only (not futures)",
-  "source_url": "https://holaprime.com/forex/",
-  "seen": "2026-10-19",
-  "programs": [
-   "2-Step Prime Challenge (Forex)",
-   "1-Step Prime Challenge (Forex)"
-  ]
+  "code": "BLACK20",
+  "discount": "20% off Fly challenges only",
+  "applies_to": "Fly challenges only, not the Prime Challenge prices listed here",
+  "source_url": "https://www.holaprime.com/forex/",
+  "seen": "2026-11-12",
+  "programs": []
  },
  "affiliate_program": {
   "exists": true,

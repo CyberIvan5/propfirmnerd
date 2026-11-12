@@ -95,10 +95,10 @@
  "path_to_live": null,
  "current_public_promo": {
   "code": null,
-  "discount": null,
-  "applies_to": null,
-  "source_url": null,
-  "seen": "2026-11-09"
+  "discount": "100K Challenge reduced: €439 instead of €540 (2-Step), €399 instead of €499 (1-Step)",
+  "applies_to": "100K accounts only; reduced price shown on FTMO's own pages, no code needed (no end date shown)",
+  "source_url": "https://ftmo.com/en/",
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -257,7 +257,7 @@
   "1-Step launch date (Feb 2026) is from a third-party news page",
   "max_contracts: not applicable (CFD lots; leverage 1:100 Standard, 1:30 Swing)"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://ftmo.com/en/",
  "facets": {
   "market": "forex",

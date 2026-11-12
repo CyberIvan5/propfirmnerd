@@ -46,7 +46,7 @@
    "price_50k_list": 190,
    "price_50k_currency": "USD",
    "activation_fee_50k": 139,
-   "reset_fee_50k": null,
+   "reset_fee_50k": 100,
    "profit_target_50k": 3000,
    "max_loss_50k": 2000,
    "drawdown_type": "EOD in the evaluation and on LiveSim accounts; intraday trailing on Live accounts (stops rising at the starting balance)",
@@ -66,7 +66,7 @@
    "price_50k_list": 170,
    "price_50k_currency": "USD",
    "activation_fee_50k": 139,
-   "reset_fee_50k": null,
+   "reset_fee_50k": 100,
    "profit_target_50k": 3000,
    "max_loss_50k": 2000,
    "drawdown_type": "EOD in the evaluation and on LiveSim accounts; intraday trailing on Live accounts",
@@ -98,7 +98,7 @@
   "discount": "50% off",
   "applies_to": "New evaluations, per the banner on Earn2Trade's site (no end date shown)",
   "source_url": "https://www.earn2trade.com/",
-  "seen": "2026-11-09"
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -256,6 +256,10 @@
   {
    "url": "https://www.earn2trade.com/blog/trader-career-path-explained/",
    "supports": "Trader Career Path growth to $400,000"
+  },
+  {
+   "url": "https://www.earn2trade.com/non-us/purchase",
+   "supports": "TCP and Gauntlet Mini monthly prices, $100 reset price, 50K evaluation rules"
   }
  ],
  "uncertain": [
@@ -265,7 +269,7 @@
   "Affiliate eligibility for Serbian residents is not stated",
   "Platforms list combines the homepage logos (incl. Volumetrica) and the help center platform list; some require the trader's own licence"
  ],
- "checked": "2026-10-19",
+ "checked": "2026-11-12",
  "link": "https://www.earn2trade.com/",
  "facets": {
   "market": "futures",

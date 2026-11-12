@@ -37,12 +37,12 @@
    "profit_target_50k": 4000,
    "max_loss_50k": 5000,
    "drawdown_type": "Static (10% of the starting balance, never moves)",
-   "daily_loss_limit_50k": 2500,
-   "consistency_rule": "None on weekly or bi-weekly rewards; 35% on the On Demand 100% option",
+   "daily_loss_limit_50k": "$2,500 (5%) or $1,500 (3%), chosen at purchase",
+   "consistency_rule": "None on bi-weekly rewards; the On Demand 100% option needs 35% consistency and 7 profitable days of at least 0.5%",
    "min_trading_days": "3 per phase (per the plan page)",
    "max_contracts_50k": null,
-   "profit_split": "60% weekly; 80% bi-weekly; 100% on demand",
-   "payout_frequency": "Weekly, bi-weekly or on demand (trader's choice)",
+   "profit_split": "80% bi-weekly; 100% on demand",
+   "payout_frequency": "Bi-weekly (every 14 days) or on demand (trader's choice)",
    "payout_rules_note": null,
    "notes": "Targets are 8% in phase 1 and 5% in phase 2. Price shown is with the 5% daily loss option; a 3% option is also sold."
   }
@@ -56,11 +56,11 @@
  "payout_methods": [],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "HELLO",
+  "code": "FP",
   "discount": "20% off",
-  "applies_to": "First purchase",
+  "applies_to": "New customers (\"New to FundingPips? Save 20% today with code FP\")",
   "source_url": "https://fundingpips.com/",
-  "seen": "2026-11-01"
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -73,13 +73,18 @@
    "date": "2026-10",
    "change": "Reward cycles listed as Weekly (60%), Bi-Weekly (80%) and On Demand (100%, 35% consistency); no monthly option shown",
    "source": "https://help.fundingpips.com/hc/en-us/articles/34501809112081-2-Step-Standard"
+  },
+  {
+   "date": "2026-11",
+   "change": "2 Step Standard reward cycles are now Bi-weekly (80%) or On Demand (100%); the 60% weekly option is no longer listed",
+   "source": "https://fundingpips.com/2-step-standard"
   }
  ],
  "pros": [
   "Trader picks the reward cycle, up to 100% split on the On Demand option",
   "Evaluation allows overnight/weekend holding and holding through news",
   "Personal fully automated EAs allowed with proof of ownership",
-  "First-purchase discount published by the firm (HELLO, 20%)"
+  "First-purchase discount published by the firm (FP, 20%)"
  ],
  "cons": [
   "Master accounts close positions daily unless you buy a holding add-on",
@@ -129,7 +134,7 @@
   "us_residents_accepted unknown (not mentioned on pages read)",
   "payout_methods, founded_year, Trustpilot, affiliate commission, 2026 changes: not captured"
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://fundingpips.com/",
  "facets": {
   "market": "forex",
@@ -141,7 +146,7 @@
   "consistency_eval": false,
   "consistency_funded": null,
   "split": "80% (100% on demand)",
-  "payouts": "Weekly, bi-weekly or on demand",
+  "payouts": "Bi-weekly or on demand",
   "news": "restricted",
   "ea": "Restricted",
   "us": null,

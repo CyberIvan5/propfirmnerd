@@ -81,7 +81,7 @@
    "profit_target_50k": 3000,
    "max_loss_50k": 2000,
    "drawdown_type": "EOD trailing; locks at $50,100 once the $52,100 initial trail balance is reached",
-   "daily_loss_limit_50k": 1200,
+   "daily_loss_limit_50k": "$1,200 (optional, chosen at purchase)",
    "consistency_rule": "Funded: largest day must be under 40% of total profit in the payout cycle (35% for accounts bought/reset before Nov 28, 2025); evaluation consistency not stated",
    "min_trading_days": null,
    "max_contracts_50k": 4,
@@ -278,7 +278,7 @@
   "Exact date of the optional-DLL change: third parties (traderpayout.com, secondary) date Lucid's X announcement to about Aug 6, 2026.",
   "LucidDirect (instant funding, $515 for 50K) rules were not captured because help-center requests were rate-limited; not included as a main program."
  ],
- "checked": "2026-10-16",
+ "checked": "2026-11-12",
  "link": "https://lucidtrading.com/",
  "facets": {
   "market": "futures",

@@ -135,7 +135,7 @@
   "a": "fundingpips",
   "b": "fundednext",
   "blurb": "Pick your payout cycle vs fee refunded",
-  "verdict": "Both sell a 50K two-step with 8% and 5% targets and a static 10% max loss ($5,000). FundingPips' 2 Step Standard costs $349 and lets you trade split for speed: 60% weekly, 80% bi-weekly or 100% on demand. FundedNext's Stellar 2-Step costs $299.99, pays 80% after 21 days and then every 14, and refunds the fee with the first reward.",
+  "verdict": "Both sell a 50K two-step with 8% and 5% targets and a static 10% max loss ($5,000). FundingPips' 2 Step Standard costs $349 and lets you trade split for speed: 80% bi-weekly or 100% on demand. FundedNext's Stellar 2-Step costs $299.99, pays 80% after 21 days and then every 14, and refunds the fee with the first reward.",
   "body": "<h2>Which to pick</h2><p>Pick FundedNext for the lower price, the fee refund and US access; it is rated 4.5 on Trustpilot from more than 80,000 reviews. Pick FundingPips if faster payouts matter more than the split. Its on-demand option pays 100% but adds a 35% consistency rule.</p><h2>Rules that trip people up</h2><p>FundingPips funded (Master) accounts close positions every day unless you buy a holding add-on; FundedNext allows overnight and weekend holding. FundedNext does not allow EAs on accounts of $50K and above; FundingPips allows your own automated EA with proof of ownership.</p>",
   "published": "2026-11-10"
  },

@@ -113,11 +113,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "LOCKIN",
+  "code": "TRYFT",
   "discount": "50% off",
-  "applies_to": "Per the top banner on Funding Traders' site (accounts and end date not stated); code TRYFT gives 50% off a first challenge",
+  "applies_to": "Your first challenge; the top banner also shows code JOKER for a $100K Instant Funded account at $249 instead of $749",
   "source_url": "https://fundingtraders.com/",
-  "seen": "2026-11-02"
+  "seen": "2026-11-12"
  },
  "affiliate_program": {
   "exists": true,
@@ -269,7 +269,7 @@
   "Promo codes vary over time (on 2026-11-01 the homepage showed HALLOWIN 70% off and TRYFT 50% off a first challenge); accounts covered and expiry not stated",
   "max_contracts: not applicable (CFD lots); Instant capped at 20 lots per trade per Terms"
  ],
- "checked": "2026-10-19",
+ "checked": "2026-11-12",
  "link": "https://fundingtraders.com/?ref=kvc14370673&promo=kvc14370673",
  "facets": {
   "market": "forex",
