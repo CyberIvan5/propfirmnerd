@@ -55,7 +55,7 @@
     "100000": 440
    },
    "prices_by_size_ccy": "USD",
-   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_seen": "2026-11-16",
    "prices_by_size_source": "https://maventrading.com/pricing"
   },
   {
@@ -117,7 +117,7 @@
   "discount": "5% off",
   "applies_to": "Challenges, per Maven's challenge pages (no end date shown)",
   "source_url": "https://maventrading.com/challenges/2-step",
-  "seen": "2026-11-09"
+  "seen": "2026-11-16"
  },
  "affiliate_program": {
   "exists": true,
@@ -138,7 +138,7 @@
   }
  ],
  "pros": [
-  "Low entry prices: 50K Standard 2 Step $220 list ($198 with the published ETERNAL code); sizes from $2K",
+  "Low entry prices: 50K Standard 2 Step $220 list ($209 with the published DIAMOND code, 5% off); sizes from $2K",
   "Static 8% max loss on the 2 Step and no consistency rule on Standard plans",
   "Overnight and weekend holding allowed on all plans",
   "Several payout routes (USDT, USDC, Rise Pay) with a $20 minimum",
@@ -160,7 +160,7 @@
   },
   {
    "url": "https://maventrading.com/pricing",
-   "supports": "50K list and coupon prices, targets, daily/max loss, splits, payout timing, refund on third withdrawal, ETERNAL and OMO codes; prices by account size"
+   "supports": "50K list and coupon prices, targets, daily/max loss, splits, payout timing, refund on third withdrawal, DIAMOND code; prices by account size"
   },
   {
    "url": "https://maventrading.com/faqs",
@@ -206,7 +206,7 @@
   "Affiliate eligibility for Serbia: not explicitly stated; Serbia is only absent from the restricted list",
   "max_contracts: not applicable (CFD lots)"
  ],
- "checked": "2026-11-09",
+ "checked": "2026-11-16",
  "link": "https://maventrading.com/",
  "facets": {
   "market": "forex",
@@ -236,6 +236,6 @@
   "scaling_max": null,
   "scaling_text": null,
   "currency": "USD",
-  "checked": "2026-11-06"
+  "checked": "2026-11-16"
  }
 }

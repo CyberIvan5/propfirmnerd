@@ -101,8 +101,8 @@
    "max_contracts_50k": "4 minis / 40 micros",
    "profit_split": "90%",
    "payout_frequency": "every 3 days once eligible",
-   "payout_rules_note": "50K: minimum withdrawal $250, max $1,200 per cycle, at least $500 profit in the cycle, no buffer. Account concludes after 5 Performance Rewards. Live review after 15 rewards across the trader profile (not guaranteed). Optional $1,000 daily-loss-limit add-on lowers the price. A Rapid Daily variant has daily payouts and a $1,000 DLL.",
-   "notes": "Discounted price varies by official page (seen 2026-10-16): $159.99 on the product page, $149.99 in the help-center rules article, $169.99 in the help-center price article; all list $299.98 (code RAPID, 'up to 50%'). Overnight holding is not allowed on futures. Flex (cheaper: 50K list $141.99, $1,500 EOD drawdown, $2,500 target, 95% split, 5-day payouts, $1,500 cap) is also sold."
+   "payout_rules_note": "50K: minimum withdrawal $250, max $1,000 per cycle for withdrawals 1-3 and $1,250 for withdrawals 4-5, at least $500 profit in the cycle, no buffer. Account concludes after 5 Performance Rewards. Live review after 15 rewards across the trader profile (not guaranteed). Optional $1,000 daily-loss-limit add-on lowers the price. A Rapid Daily variant has daily payouts and a $1,000 DLL.",
+   "notes": "With code RAPID the 50K costs $149.99 on the first purchase and $174.99 on repeat purchases (product page and help center, seen 2026-11-16). The list price is $299.99 on the product page and in the rules article but $299.98 in the help-center price article. Overnight holding is not allowed on futures. Flex (cheaper: 50K list $141.99, $1,500 EOD drawdown, $2,500 target, 95% split, 5-day payouts, $1,500 cap) is also sold."
   }
  ],
  "news_trading": "CFD: allowed in challenge phases; on funded accounts, profits from trades within ±5 minutes of high-impact news on correlated pairs count at only 40% (losses count in full). Futures: Flex page says news trading is allowed",
@@ -126,7 +126,7 @@
   "discount": "Up to 47% off first purchase for new futures users; 40% off repeat purchases",
   "applies_to": "Futures Rapid Daily and Rapid Pro, 25K/50K/100K; from 5 Nov 2026 \"until further notice\"",
   "source_url": "https://helpfutures.fundednext.com/en/articles/16295692-fundednext-futures-rapid-daily-rapid-pro-up-to-50-discount-offer",
-  "seen": "2026-11-09"
+  "seen": "2026-11-16"
  },
  "affiliate_program": {
   "exists": true,
@@ -159,6 +159,11 @@
    "date": "2026 (terms updated 2026-09-25)",
    "change": "Futures lineup now Rapid Pro, Rapid Daily, Legacy and Flex (plus Direct); Flex sold with 'launch price'",
    "source": "https://fundednext.com/futures-challenge-terms"
+  },
+  {
+   "date": "2026-11",
+   "change": "Futures Rapid Pro 50K payout cap now $1,000 per withdrawal for withdrawals 1-3 and $1,250 for withdrawals 4-5 (was $1,200 per cycle; seen 2026-11-16, change date not stated)",
+   "source": "https://helpfutures.fundednext.com/en/articles/17229713-fundednext-futures-rapid-pro-fundednext-account-all-rules"
   }
  ],
  "pros": [
@@ -320,7 +325,7 @@
   "Affiliate base-tier ('Star') rate not confirmed",
   "account_sizes merges CFD (6K-200K) and futures (25K-150K) sizes"
  ],
- "checked": "2026-11-09",
+ "checked": "2026-11-16",
  "link": "https://fundednext.com/",
  "facets": {
   "market": "multi",

@@ -49,7 +49,7 @@
     "150000": 199
    },
    "prices_by_size_ccy": "USD",
-   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_seen": "2026-11-16",
    "prices_by_size_note": "Standard path, per month, plus a $149 activation fee per funded account. No Activation Fee path: $95, $149 and $229 a month.",
    "prices_by_size_monthly": true,
    "prices_by_size_source": "https://help.topstep.com/en/articles/14289835-topstep-pricing-and-payment-questions"
@@ -94,7 +94,7 @@
   "discount": null,
   "applies_to": null,
   "source_url": null,
-  "seen": "2026-11-09"
+  "seen": "2026-11-16"
  },
  "affiliate_program": {
   "exists": true,
@@ -268,7 +268,7 @@
   "LFA profit split: the LFA parameters article does not state it; payout policy states 90/10 generally.",
   "Topstep's April 2026 acquisition of The Futures Desk: reported by third parties and implied by the homepage disclosure (The Futures Desk owned by TS TFD Buyer, LLC); exact date not confirmed on Topstep pages, so not listed in recent_changes."
  ],
- "checked": "2026-11-02",
+ "checked": "2026-11-16",
  "link": "https://www.topstep.com/",
  "facets": {
   "market": "futures",
@@ -298,6 +298,6 @@
   "scaling_max": null,
   "scaling_text": "No account-size scaling; the scaling plan sets contract limits by balance.",
   "currency": "USD",
-  "checked": "2026-11-06"
+  "checked": "2026-11-16"
  }
 }

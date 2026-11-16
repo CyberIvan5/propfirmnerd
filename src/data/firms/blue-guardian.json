@@ -122,7 +122,7 @@
   "discount": "25% off",
   "applies_to": "Accounts on Blue Guardian's forex page (\"Save 25% with code BG25\"; no end date shown)",
   "source_url": "https://blueguardian.com/forex",
-  "seen": "2026-11-12"
+  "seen": "2026-11-16"
  },
  "affiliate_program": {
   "exists": true,
@@ -140,6 +140,11 @@
    "date": "2026-09",
    "change": "Futures Express: from 2nd payout, new profit equal to 50% of previous payout required (accounts bought from 2 Sep)",
    "source": "https://helpfutures.blueguardian.com/en/articles/15679143-express-account-rules"
+  },
+  {
+   "date": "2026-11",
+   "change": "Futures Express can no longer be purchased from 16 Nov 2026; existing Express accounts keep their rules",
+   "source": "https://help.blueguardian.com/en/articles/15618204-general-information-rules"
   }
  ],
  "pros": [

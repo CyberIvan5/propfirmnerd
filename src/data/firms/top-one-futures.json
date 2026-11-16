@@ -39,7 +39,7 @@
    "max_contracts_50k": "3 minis / 30 micros",
    "profit_split": "90%",
    "payout_frequency": "Daily",
-   "payout_rules_note": null,
+   "payout_rules_note": "Elite Daily V2 (help center): minimum payout $500, maximum $1,000 per request, $2,500 payout buffer on 50K; at least 50% of each payout must come from profit made since the last payout. Funded drawdown locks at $50,100; no consistency rule in funded.",
    "notes": "Daily loss limit can be switched off (No DLL option).",
    "prices_by_size": {
     "25000": 178,
@@ -48,7 +48,7 @@
     "150000": 549
    },
    "prices_by_size_ccy": "USD",
-   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_seen": "2026-11-16",
    "prices_by_size_monthly": true,
    "prices_by_size_source": "https://www.toponefutures.com/"
   }
@@ -60,13 +60,13 @@
  "us_residents_accepted": null,
  "restricted_countries_note": null,
  "payout_methods": [],
- "path_to_live": "After 3 payouts, per the homepage comparison table",
+ "path_to_live": "Risk-manager review after 3 successful payouts on one sim funded account; Elite Daily accounts need 5 successful payouts. A Pre-Live stage comes first; up to 5 live accounts, adding one each time a live account reaches its balance trigger (help center).",
  "current_public_promo": {
-  "code": "BOO",
-  "discount": "50% off",
-  "applies_to": "Elite Daily and Ignite instant funding (site banner; 45% off Instant Sim Funded)",
+  "code": "BLACKFRIDAY",
+  "discount": "55% off",
+  "applies_to": "Elite Daily (homepage 'Black November' banner: up to 60% off with code BLACKFRIDAY; Ignite shown at 60% off, Instant Sim Funded at 30% off)",
   "source_url": "https://www.toponefutures.com/",
-  "seen": "2026-11-02"
+  "seen": "2026-11-16"
  },
  "affiliate_program": {
   "exists": null,
@@ -100,12 +100,23 @@
   {
    "url": "https://intercom.help/top-one-futures/en/articles/11003130-path-to-trading-live",
    "supports": "live accounts, up to 5"
+  },
+  {
+   "url": "https://help.toponefutures.com/en/articles/15056075-elite-daily-v2-overview",
+   "supports": "Elite Daily V2 50K rules, payout minimum/maximum, buffer, 90/10"
+  },
+  {
+   "url": "https://checkout.toponefutures.com/",
+   "supports": "checkout options: Daily loss limit Standard or None"
   }
  ],
  "uncertain": [
-  "Legal entity, payout methods, platforms, restricted countries and US access not yet verified."
+  "Legal entity, payout methods, platforms, restricted countries and US access not yet verified.",
+  "Reset fee: data keeps $104; on 2026-11-16 the homepage Elite Daily 50K block showed $93 and the Elite Daily V2 help article $82. Not changed until the firm's pages agree.",
+  "Daily loss limit: checkout offers 'Daily loss limit: None', but the Elite Daily V2 help article says a DLL applies in evaluation and funded.",
+  "Max accounts: help center gives up to 38 active funded accounts in total (34 with 100K/150K Sim accounts); the per-household limit is in a separate article not read."
  ],
- "checked": "2026-11-02",
+ "checked": "2026-11-16",
  "link": "https://www.toponefutures.com/",
  "facets": {
   "market": "futures",
@@ -135,6 +146,6 @@
   "scaling_max": null,
   "scaling_text": "No account-size scaling; contract limits rise with profit. Live traders get another live account at set balances, up to 5.",
   "currency": "USD",
-  "checked": "2026-11-06"
+  "checked": "2026-11-16"
  }
 }

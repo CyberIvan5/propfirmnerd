@@ -55,7 +55,7 @@
     "200000": 1080
    },
    "prices_by_size_ccy": "EUR",
-   "prices_by_size_seen": "2026-11-10",
+   "prices_by_size_seen": "2026-11-16",
    "prices_by_size_note": "100K shown at €439 in a current offer (list €540).",
    "prices_by_size_source": "https://ftmo.com/en/"
   },
@@ -98,7 +98,7 @@
   "discount": "100K Challenge reduced: €439 instead of €540 (2-Step), €399 instead of €499 (1-Step)",
   "applies_to": "100K accounts only; reduced price shown on FTMO's own pages, no code needed (no end date shown)",
   "source_url": "https://ftmo.com/en/",
-  "seen": "2026-11-12"
+  "seen": "2026-11-16"
  },
  "affiliate_program": {
   "exists": true,
@@ -257,7 +257,7 @@
   "1-Step launch date (Feb 2026) is from a third-party news page",
   "max_contracts: not applicable (CFD lots; leverage 1:100 Standard, 1:30 Swing)"
  ],
- "checked": "2026-11-12",
+ "checked": "2026-11-16",
  "link": "https://ftmo.com/en/",
  "facets": {
   "market": "forex",

@@ -50,7 +50,7 @@
    "profit_split": "90/10",
    "payout_frequency": "Select Flex: every 5 winning days ($150+ each). Select Daily: daily eligibility.",
    "payout_rules_note": "50K funded, minimum payout $250. Flex: up to 50% of profits, capped at $2,500 per payout (accounts bought after Sep 1, 2026; $3,000 before), no DLL, no buffer. Daily: up to 2x profit since last payout, capped at $1,250 (after Sep 1, 2026; $1,000 before), $1,000 DLL, $2,100 buffer. Funded contracts start at 2 minis, scale to 3 at $1,500 and 4 at $2,000 EOD profit. Must be net positive for the cycle. The Flex/Daily choice is permanent per account.",
-   "notes": "No DLL during the evaluation. 50K accounts bought before the new dashboard keep a $2,500 profit target. Select 300K exists as a limited release ($449)."
+   "notes": "No DLL during the evaluation. 50K accounts bought before the new dashboard keep a $2,500 profit target. Select 300K ($570, no resets) is now a permanent plan, no longer a limited release."
   },
   {
    "name": "Growth (Evaluation -> Growth Sim Funded)",
@@ -287,7 +287,7 @@
   "Lightning profit_target_50k left null because Lightning has no evaluation target; the $3,000 first-payout profit goal is in payout_rules_note.",
   "Growth funded DLL and contract limits in the funded stage are not stated in the Growth articles."
  ],
- "checked": "2026-11-12",
+ "checked": "2026-11-16",
  "link": "https://tradeify.co/",
  "facets": {
   "market": "futures",
