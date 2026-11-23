@@ -91,7 +91,7 @@
    "price_50k_list": 299.98,
    "price_50k_currency": "USD",
    "activation_fee_50k": null,
-   "reset_fee_50k": 174.99,
+   "reset_fee_50k": 172.99,
    "profit_target_50k": 3000,
    "max_loss_50k": 2000,
    "drawdown_type": "EOD trailing (locks at starting balance + $100, i.e. $50,100)",
@@ -125,8 +125,8 @@
   "code": "RAPID",
   "discount": "Up to 47% off first purchase for new futures users; 40% off repeat purchases",
   "applies_to": "Futures Rapid Daily and Rapid Pro, 25K/50K/100K; from 5 Nov 2026 \"until further notice\"",
-  "source_url": "https://helpfutures.fundednext.com/en/articles/16295692-fundednext-futures-rapid-daily-rapid-pro-up-to-50-discount-offer",
-  "seen": "2026-11-16"
+  "source_url": "https://helpfutures.fundednext.com/en/articles/16295692-fundednext-futures-rapid-daily-rapid-pro-up-discount-offer",
+  "seen": "2026-11-23"
  },
  "affiliate_program": {
   "exists": true,
@@ -325,7 +325,7 @@
   "Affiliate base-tier ('Star') rate not confirmed",
   "account_sizes merges CFD (6K-200K) and futures (25K-150K) sizes"
  ],
- "checked": "2026-11-16",
+ "checked": "2026-11-23",
  "link": "https://fundednext.com/",
  "facets": {
   "market": "multi",

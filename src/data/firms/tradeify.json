@@ -121,11 +121,11 @@
  ],
  "path_to_live": "Tradeify Elite: 3 payouts on one account, or 10 total payouts since the last live transition, make a trader eligible for consideration (not automatic). Elite Live accounts: 80/20 split, daily payouts, EOD drawdown ($2,000 on 50K), no DLL, plus per-account Performance Reward Pools; up to 5 live accounts.",
  "current_public_promo": {
-  "code": "NOV",
-  "discount": "30% off (40% off Growth accounts)",
-  "applies_to": "All accounts; ends 13 November 2026, 11:59 PM EST",
+  "code": null,
+  "discount": null,
+  "applies_to": null,
   "source_url": "https://tradeify.co/",
-  "seen": "2026-11-12"
+  "seen": "2026-11-23"
  },
  "affiliate_program": {
   "exists": true,

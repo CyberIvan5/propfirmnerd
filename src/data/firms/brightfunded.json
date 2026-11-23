@@ -41,12 +41,12 @@
    "drawdown_type": "static (8% of initial balance, does not trail)",
    "daily_loss_limit_50k": 2000,
    "consistency_rule": "none (help center: 'we do not currently enforce a consistency rule')",
-   "min_trading_days": 5,
+   "min_trading_days": "3 profitable days per phase (at least 0.5% net profit each)",
    "max_contracts_50k": null,
    "profit_split": "80% by default; 90% with the paid 90% Profit Split add-on; 90% after the 1st Scaling Plan scale-up and 100% from the 3rd scale-up",
-   "payout_frequency": "first request 30 days after the first trade on the Funded Account, then every 14 days; weekly (every 7 days) with a paid add-on. Requests processed by finance within 1 day ('24-Hour Guaranteed Payouts')",
-   "payout_rules_note": "No minimum payout (any positive amount). All trades and pending orders must be closed before requesting. Paid in EUR by bank transfer or USDC (ERC-20). 15% Evaluation Profit Reward: 15% of Phase 1 + Phase 2 profit is added to the starting balance of a new Funded Account after reaching 10% growth and a payout (paid challenges only). Scaling Plan: +30% account size every 4 months if profitable in 2 of 4 months, at least 10% total profit and 2 payouts in the period; no stated cap.",
-   "notes": "Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 4% of the original account size, measured from the higher of balance or equity at the daily rollover (23:30-23:59 CET). Min 5 trading days per phase (a day counts if a trade stays open 60+ seconds); a paid add-on removes the minimum days. No time limit. Inactivity: an account is deactivated if no trade is placed for 30 days. List price €277; €207.75 with the 25% DOUBLE25 offer (seen 2026-10-19). One-time fee; no activation fee is mentioned in the official fee article. Fee refund only with a paid '100% Challenge Fee Refund' add-on (conditions not published).",
+   "payout_frequency": "first request 14 days after the first funded trade, then every 14 days; weekly (every 7 days) with a paid add-on. Requests processed by finance within 1 day ('24-Hour Guaranteed Payouts')",
+   "payout_rules_note": "No minimum payout and no profit buffer. All trades and pending orders must be closed before requesting. Paid in EUR by bank transfer or USDC (ERC-20). 15% Evaluation Profit Reward: 15% of Phase 1 + Phase 2 profit is added to the starting balance of a new Funded Account after reaching 10% growth and a payout (paid challenges only). Scaling Plan: +30% account size every 4 months if profitable in 2 of 4 months, at least 10% total profit and 2 payouts in the period; no stated cap.",
+   "notes": "Rules for accounts bought from 16 November 2026 (help article 'What is 2-Step Bright'); older accounts keep the previous rules (5 trading days, first payout after 30 days). Targets: Phase 1 8% ($4,000), Phase 2 5% ($2,500). Daily loss is 4%, measured from the higher of balance or equity at the daily rollover (23:30-23:59 CET). Min 3 profitable days per phase (at least 0.5% net profit each). No time limit. List price €277; €193.90 with BF30 (seen 2026-11-23). One-time fee; no activation fee is mentioned.",
    "prices_by_size": {
     "5000": 47,
     "10000": 87,
@@ -60,7 +60,7 @@
    "prices_by_size_source": "https://brightfunded.com/cfds/2-step-bright"
   },
   {
-   "name": "1-Step",
+   "name": "1-Step Daily",
    "steps": "1-step",
    "billing": "one-time",
    "price_50k_list": 297,
@@ -72,12 +72,12 @@
    "drawdown_type": "intraday trailing on equity (6%, follows the equity high-water mark in real time; locks at the initial balance once equity is 6% above it)",
    "daily_loss_limit_50k": 1500,
    "consistency_rule": "none",
-   "min_trading_days": 5,
+   "min_trading_days": 0,
    "max_contracts_50k": null,
    "profit_split": "80% by default; 90% with the paid add-on; 90% after the 1st scale-up and 100% from the 3rd scale-up",
-   "payout_frequency": "first request 30 days after the first funded trade, then every 14 days; weekly with a paid add-on; processed within 1 day",
-   "payout_rules_note": "Same payout rules as the 2-Step plans. The 15% Evaluation Profit Reward is based on the single phase's profit.",
-   "notes": "Target 10% ($5,000). Daily loss 3% of the original account size, measured from the higher of balance or equity at rollover. Min 5 trading days. No time limit. List price €297; €222.75 with DOUBLE25 (seen 2026-10-19)."
+   "payout_frequency": "daily: a payout can be requested any day from the first funded trading day",
+   "payout_rules_note": "No minimum or maximum payout amount; a 1% profit buffer stays in the account. The evaluation profit reward is based on the single phase's profit.",
+   "notes": "Renamed from 1-Step on 16 November 2026 (accounts bought earlier keep the old rules: 5 trading days, first payout after 30 days). Target 10% ($5,000). Daily loss 3%, measured from the higher of balance or equity. Max loss 6% trailing on equity in real time, stops at the starting balance. No minimum trading days. No consistency rule. List price €297; €207.90 with BF30 (seen 2026-11-23)."
   }
  ],
  "news_trading": "Restricted on Funded accounts only: no order executions (market, limit, SL/TP, stop orders) from 5 minutes before to 5 minutes after significant news on the affected instruments. Profits from trades executed in the window are deducted (soft breach, account not failed); take profits on trades held 48+ hours are exempt. No news restriction in Phase 1/Phase 2",
@@ -92,11 +92,11 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "RALLY30",
-  "discount": "30% off 1-Step (RALLY25: 25% off 2-Step Bright)",
-  "applies_to": "Autumn Promo, per-plan codes shown on BrightFunded's site and plan pages; no end date shown",
+  "code": "BF30",
+  "discount": "30% off",
+  "applies_to": "CFD plans (Early Black Friday; homepage banner and plan pages; no end date shown). Futures: FBF45, 45% off",
   "source_url": "https://brightfunded.com/",
-  "seen": "2026-11-16"
+  "seen": "2026-11-23"
  },
  "affiliate_program": {
   "exists": true,
@@ -129,19 +129,24 @@
    "date": "2026-11-15",
    "change": "2-Step Classic (10%/5%, 5% daily, 10% static, €297 at 50K) retired: 15 Nov 2026 was the last day to buy it; existing accounts are not affected",
    "source": "https://help.brightfunded.com/en/articles/14284844-brightfunded-2-step-classic"
+  },
+  {
+   "date": "2026-11",
+   "change": "CFD relaunch for accounts bought from 16 Nov 2026: 1-Step renamed 1-Step Daily with daily payouts and no minimum days; 2-Step Bright needs 3 profitable days per phase (was 5 trading days) and the first payout comes after 14 days (was 30); new Instant plan",
+   "source": "https://help.brightfunded.com/en/articles/18450311-what-is-2-step-bright"
   }
  ],
  "pros": [
   "Static 8% max loss on the 2-Step Bright and no consistency rule",
   "No time limit and no news restriction during the evaluation phases",
   "Fast processing: payouts processed within 1 day, no minimum payout amount",
-  "Scaling Plan of +30% every 4 months with no stated cap, and 100% split from the 3rd scale-up"
+  "Scaling Plan of +30% every 4 months with no stated cap, and 100% split from the 3rd scale-up",
+  "1-Step Daily allows payout requests every day from the first funded day, with no minimum trading days"
  ],
  "cons": [
   "Trustpilot shows a warning: rating unavailable due to a breach of guidelines, and fake reviews were removed",
   "Default split is 80%; 90% needs a paid add-on or a scale-up",
-  "First payout only 30 days after the first funded trade, then every 14 days unless a weekly add-on is bought",
-  "1-Step uses an intraday trailing 6% max loss with a 3% daily limit",
+  "1-Step Daily uses an intraday trailing 6% max loss with a 3% daily limit",
   "30-day inactivity rule deactivates accounts; US traders are limited to DXtrade (no MT5/cTrader)"
  ],
  "best_for": "Forex/CFD traders outside the restricted countries who want a static-drawdown 2-step evaluation with no time limit and no consistency rule, and who are fine with an 80% default split.",
@@ -322,7 +327,7 @@
   "Free $1K Challenge launch date is not stated (help article dated 2026-08-26)",
   "max_contracts: not applicable (CFD lots)"
  ],
- "checked": "2026-11-09",
+ "checked": "2026-11-23",
  "link": "https://brightfunded.com/",
  "facets": {
   "market": "forex",
@@ -334,7 +339,7 @@
   "consistency_eval": false,
   "consistency_funded": false,
   "split": "80% (up to 100% scaling)",
-  "payouts": "Every 14 days after day 30",
+  "payouts": "Every 14 days (1-Step Daily: daily)",
   "news": "restricted",
   "ea": "Restricted",
   "us": null,

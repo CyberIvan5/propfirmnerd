@@ -78,7 +78,7 @@
    "drawdown_type": "Trailing",
    "daily_loss_limit_50k": 2000,
    "consistency_rule": null,
-   "min_trading_days": null,
+   "min_trading_days": "3 profitable days (at least 0.5% each)",
    "max_contracts_50k": null,
    "profit_split": "85% (90% as a paid add-on)",
    "payout_frequency": "Every 14 days",
@@ -114,15 +114,15 @@
  "restricted_countries_note": "Forex help center lists Afghanistan, Albania, Algeria, Cuba, Iran, Jordan, Libya, Myanmar, North Korea, Philippines, Senegal, Syria, Vietnam; futures list is longer (incl. Iraq, Israel, Malaysia, Pakistan, Russia, Turkey, Ukraine, Venezuela, Yemen). https://help.blueguardian.com/en/articles/15618204-general-information-rules",
  "payout_methods": [
   "Rise (no max; $500 min)",
-  "Crypto (under $5,000; $100 min)"
+  "Crypto (up to $1,000 per request)"
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "BG25",
-  "discount": "25% off",
-  "applies_to": "Accounts on Blue Guardian's forex page (\"Save 25% with code BG25\"; no end date shown)",
-  "source_url": "https://blueguardian.com/forex",
-  "seen": "2026-11-16"
+  "code": "BLACK",
+  "discount": "35% off",
+  "applies_to": "Shown on the checkout banner ('35% OFF • LIMITED OFFER') and homepage pricing; scope and end date not stated. GUARD30 (30% off all CFD and futures accounts) is also shown",
+  "source_url": "https://checkout.blueguardian.com/",
+  "seen": "2026-11-23"
  },
  "affiliate_program": {
   "exists": true,
