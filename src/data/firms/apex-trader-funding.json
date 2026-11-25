@@ -3,7 +3,7 @@
  "name": "Apex Trader Funding",
  "website": "https://apextraderfunding.com",
  "status": "active",
- "status_note": "Apex's site did not show its current 50K evaluation prices when we checked, so we do not list a price. The rules below come from Apex's own help center.",
+ "status_note": "Apex's website blocks visitors from our location, so we have not been able to re-check its rules and prices since 16 October 2026. Check apextraderfunding.com before you buy.",
  "market": "futures",
  "legal_entity_and_hq": "Apex Trader Funding Inc., a Texas corporation headquartered in Austin, Texas, USA (mailing address only: 2028 E. Ben White Blvd Ste 240-9873, Austin, TX 78741)",
  "founded_year": 2021,
@@ -100,9 +100,9 @@
  ],
  "path_to_live": "Discretionary: Apex may move a trader from the simulated PA to a live account at any time, based on discipline, consistency and risk management (one guideline is three consecutive withdrawals from one PA). Live split is 90/10, live payouts can be requested daily (minimum $500, only from profit above a $3,100 safety net).",
  "current_public_promo": {
-  "code": "SAVENOW",
-  "discount": "90% off evaluations (limited time)",
-  "applies_to": "Evaluations; shown on Apex's site banner when we checked",
+  "code": null,
+  "discount": "Not verified since 16 October 2026",
+  "applies_to": "Apex's website blocks visitors from our location, so we cannot confirm its current offer. Check apextraderfunding.com before you buy.",
   "source_url": "https://apextraderfunding.com/",
   "seen": "2026-10-16"
  },

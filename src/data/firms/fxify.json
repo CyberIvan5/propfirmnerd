@@ -114,7 +114,9 @@
   "discount": "35% off",
   "applies_to": "Black Friday sale, all programs except Instant Funding Lite; until 9 December 2026, 11:59 PM EST; up to three uses per trader",
   "source_url": "https://fxify.com/",
-  "seen": "2026-11-23"
+  "seen": "2026-11-23",
+  "black_friday": true,
+  "ends": "2026-12-09"
  },
  "affiliate_program": {
   "exists": true,

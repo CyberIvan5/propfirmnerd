@@ -56,11 +56,12 @@
  "payout_methods": [],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "FP",
-  "discount": "20% off",
-  "applies_to": "New customers (\"New to FundingPips? Save 20% today with code FP\")",
+  "code": "BF22",
+  "discount": "22% off",
+  "applies_to": "All accounts (Black Friday sale banner on FundingPips' homepage; no end date shown)",
   "source_url": "https://fundingpips.com/",
-  "seen": "2026-11-12"
+  "seen": "2026-11-25",
+  "black_friday": true
  },
  "affiliate_program": {
   "exists": true,

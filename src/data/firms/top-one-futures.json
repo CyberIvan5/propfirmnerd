@@ -66,7 +66,8 @@
   "discount": "55% off",
   "applies_to": "Elite Daily (homepage 'Black November' banner: up to 60% off with code BLACKFRIDAY; Ignite shown at 60% off, Instant Sim Funded at 30% off)",
   "source_url": "https://www.toponefutures.com/",
-  "seen": "2026-11-23"
+  "seen": "2026-11-23",
+  "black_friday": true
  },
  "affiliate_program": {
   "exists": null,

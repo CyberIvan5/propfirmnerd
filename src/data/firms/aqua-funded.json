@@ -119,7 +119,9 @@
   "discount": "35% off",
   "applies_to": "Every account (Black Friday, ends 30 November); the site shows more off on a 2nd account (40%) and 3rd account (45%)",
   "source_url": "https://www.aquafunded.com/",
-  "seen": "2026-11-23"
+  "seen": "2026-11-23",
+  "black_friday": true,
+  "ends": "2026-11-30"
  },
  "affiliate_program": {
   "exists": true,

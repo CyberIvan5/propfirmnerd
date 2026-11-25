@@ -94,11 +94,15 @@
  ],
  "path_to_live": "After passing, the trader chooses a LiveSim (simulated, EOD drawdown) or a Live account (real brokerage account with a partner prop firm, trailing drawdown, own data fees). LiveSim traders are moved to Live after reaching the LiveSim max withdrawal ($3,000 on TCP50, $5,000 on GM50). TCP Live accounts grow by profit goal: $50K -> $100K -> ... up to $400K",
  "current_public_promo": {
-  "code": "NEXTSTEP50",
-  "discount": "50% off",
-  "applies_to": "New evaluations, per the banner on Earn2Trade's site (no end date shown)",
-  "source_url": "https://www.earn2trade.com/",
-  "seen": "2026-11-16"
+  "code": null,
+  "discount": "Black Week: up to 70% off",
+  "applies_to": "The code is given through 'Unlock the Vault' on Earn2Trade's homepage; its countdown ends around 30 November",
+  "source_url": "https://www.earn2trade.com/non-us",
+  "seen": "2026-11-25",
+  "ends": "2026-11-30",
+  "black_friday": true,
+  "ends_approx": true,
+  "code_note": "Code via Unlock the Vault"
  },
  "affiliate_program": {
   "exists": true,

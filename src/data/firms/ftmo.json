@@ -95,10 +95,11 @@
  "path_to_live": null,
  "current_public_promo": {
   "code": null,
-  "discount": "100K Challenge reduced: €439 instead of €540 (2-Step), €399 instead of €499 (1-Step)",
-  "applies_to": "100K accounts only; reduced price shown on FTMO's own pages, no code needed (no end date shown)",
+  "discount": "Black Friday: up to 30% off, no code needed (50K 2-Step €276 instead of €345)",
+  "applies_to": "Reduced prices shown on FTMO's own pricing; 10K 2-Step is 30% off, larger sizes 20% off. Limited-time offer, no end date shown",
   "source_url": "https://ftmo.com/en/",
-  "seen": "2026-11-16"
+  "seen": "2026-11-25",
+  "black_friday": true
  },
  "affiliate_program": {
   "exists": true,

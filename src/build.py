@@ -370,7 +370,7 @@ LAYOUT = """<!doctype html>
 <footer class="site-foot"><div class="wrap">
 <div class="cols">
 <div class="about">{logo}<p>Prop firm rules, prices and codes in one place, checked against each firm's own pages and dated so you know how fresh they are.</p></div>
-<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li></ul></div>
+<div><strong>Browse</strong><ul><li><a href="/firms/">Firm reviews</a></li><li><a href="/compare/">Compare all firms</a></li><li><a href="/best/">Best of lists</a></li><li><a href="/promo-codes/">Promo codes</a></li><li><a href="/promo-codes/black-friday/">Black Friday deals</a></li><li><a href="/prop-firm-rule-changes/">Rule changes</a></li></ul></div>
 <div><strong>Learn</strong><ul><li><a href="/tools/">Calculators</a></li><li><a href="/guides/">Guides</a></li><li><a href="/methodology/">How we check firms</a></li><li><a href="/risks/">Risks of prop trading</a></li></ul></div>
 <div><strong>Site</strong><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li><li><a href="/privacy/">Privacy</a></li></ul></div>
 </div>
@@ -1133,6 +1133,161 @@ def compare_faq(a, b):
     return out
 
 
+def main_program(f):
+    """The program whose 50K list price is the firm's headline price50 (falls back to the first program)."""
+    progs = f.get("programs") or []
+    for p in progs:
+        if p.get("price_50k_list") is not None and p.get("price_50k_list") == fac(f, "price50"):
+            return p
+    return progs[0] if progs else {}
+
+
+def plan_summary(f):
+    """One factual sentence about the firm's main 50K plan, built only from our data."""
+    ccy = fac(f, "ccy", "USD")
+    acc = fac(f, "acc_ccy", ccy)
+    plan = re.split(r"\s*\(|\s*->", main_program(f).get("name") or "")[0].strip()
+    price = (f"{strip_tags(money(fac(f, 'price50'), ccy))}{' a month' if fac(f, 'monthly') else ''}"
+             if fac(f, "price50") is not None else "a price it does not publish")
+    dd = DD_LABEL.get(fac(f, "dd"), "").lower() if fac(f, "dd") not in ("mixed", None) else ""
+    bits = [f"50K {plan} for {price}" if plan else f"50K for {price}",
+            f"{strip_tags(money(fac(f, 'target50'), acc))} target",
+            f"{strip_tags(money(fac(f, 'maxloss50'), acc))} {dd} max loss".replace("  ", " ")]
+    tail = []
+    if cons_label(f) not in ("None", "—"):
+        tail.append(f"consistency rule: {cons_label(f).lower()}")
+    if fac(f, "split"):
+        tail.append(f"{fac(f, 'split')} split")
+    if fac(f, "payouts"):
+        tail.append(f"payouts {fac(f, 'payouts')[0].lower() + fac(f, 'payouts')[1:]}")
+    return ", ".join(bits) + (". " + "; ".join(tail)[0].upper() + "; ".join(tail)[1:] + "." if tail else ".")
+
+
+def promo_pct(p):
+    m = re.match(r"^(\d+)% off$", (p.get("discount") or "").strip())
+    return int(m.group(1)) if m else None
+
+
+BF_FLAT = {"aqua-funded", "brightfunded", "fxify", "goat-funded-trader", "fundingpips", "tradeday", "myfundedfutures", "funding-traders"}
+
+
+def deal_rows(rows):
+    out = ""
+    for f in rows:
+        p = f["current_public_promo"]
+        pct = promo_pct(p)
+        with_code = "—"
+        if f["slug"] in BF_FLAT and pct and fac(f, "price50") is not None and not fac(f, "monthly"):
+            with_code = (f'{strip_tags(money(round(fac(f, "price50") * (100 - pct) / 100), fac(f, "ccy", "USD")))} '
+                         f'<small>instead of {strip_tags(money(fac(f, "price50"), fac(f, "ccy", "USD")))}</small>')
+        sd = lambda d: datetime.date.fromisoformat(d).strftime("%b %-d")
+        ends = (("About " if p.get("ends_approx") else "") + sd(p["ends"])) if p.get("ends") else "Not stated"
+        out += (f'<tr><th scope="row" data-v="{esc(f["name"].lower())}"><a href="/firms/{f["slug"]}/promo-code/">{avatar(f)}'
+                f'<span class="fn"><span>{esc(f["name"])}</span><small>{esc(MARKET_LABEL.get(fac(f, "market"), ""))}</small></span></a></th>'
+                f'<td data-l="Code">{code_cell(f) if p.get("code") else "<span class=\"muted\">" + esc(p.get("code_note") or "No code needed") + "</span>"}</td>'
+                f'<td data-l="Deal">{esc(p.get("discount") or "")}<br><small class="muted">{esc(p.get("applies_to") or "")}</small></td>'
+                f'<td class="n" data-l="50K with the deal">{with_code}</td>'
+                f'<td class="n" data-l="Ends" data-v="{p.get("ends") or "9999"}">{ends}</td>'
+                f'<td class="n" data-l="Seen" data-v="{p.get("seen") or ""}">{sd(p["seen"]) if p.get("seen") else "—"}</td>'
+                f'<td class="go">{go_link(f, "Get deal", "btn sm", "bf-table")}</td></tr>')
+    head = ('<thead><tr><th scope="col">Firm</th><th scope="col">Code</th><th scope="col">Deal</th>'
+            '<th scope="col" class="n">50K with the deal</th><th scope="col" class="n">Ends</th><th scope="col" class="n">Seen</th>'
+            '<th scope="col"><span class="sr">Visit site</span></th></tr></thead>')
+    return f'<div class="tbl-wrap"><table class="cmp data deals cards rows-mid">{head}<tbody>{out}</tbody></table></div>'
+
+
+def build_black_friday(site, firms):
+    allf = list(firms.values())
+    live = [f for f in allf if (f.get("current_public_promo") or {}).get("seen", "") >= "2026-11-20"
+            and ((f["current_public_promo"].get("code") and main_code(f)) or f["current_public_promo"].get("discount"))
+            and "not verified" not in (f["current_public_promo"].get("discount") or "").lower()]
+    key = lambda f: (-(promo_pct(f["current_public_promo"]) or int((re.search(r"(\d+)%", f["current_public_promo"].get("discount") or "") or [0, 0])[1])), f["name"])
+    bf = sorted([f for f in live if f["current_public_promo"].get("black_friday")], key=key)
+    other = sorted([f for f in live if not f["current_public_promo"].get("black_friday")], key=key)
+    mod = max(f["current_public_promo"]["seen"] for f in live)
+    path = "/promo-codes/black-friday/"
+    top = bf[0] if bf else None
+    def pctof(f):
+        m = re.search(r"(\d+)%", f["current_public_promo"].get("discount") or "")
+        return int(m.group(1)) if m else 0
+    biggest = max(bf, key=pctof) if bf else None
+    soon = sorted([f for f in bf if f["current_public_promo"].get("ends")], key=lambda f: f["current_public_promo"]["ends"])
+    intro = (f'{len(bf)} prop firms we track are running Black Friday sales this week, and {len(other)} more have a code live. '
+             f'Every deal below comes from the firm\'s own website or checkout, with the date we saw it. '
+             f'Discounts apply to the evaluation fee, not to resets or activation fees, and they end without notice, so check the price at checkout.')
+    body = (f'<header class="art-head"><h1>Prop firm Black Friday deals 2026</h1><p class="byline">Updated {fmt_date(mod)}. '
+            f'Codes checked on each firm\'s own site. {DISCLOSE}</p></header>'
+            f'<div class="content"><p class="lede">{intro}</p></div>'
+            f'<h2>Black Friday sales</h2>{deal_rows(bf)}'
+            f'<p class="muted">"50K with the deal" is the main 50K plan\'s list price minus the advertised percentage, shown only where the code covers that plan. '
+            f'Monthly plans are left blank because firms do not always say whether the discount repeats after the first month.</p>'
+            f'<h2>Other codes running this week</h2>{deal_rows(other)}'
+            f'<div class="content"><h2>Before you buy on a discount</h2>'
+            f'<p>A cheaper evaluation is still a paid test, and most people who buy one do not pass. A discount changes what a failed attempt costs you, not your odds of passing. '
+            f'Compare the rules first: the drawdown type and the max loss against the target matter more than 20% off the fee. '
+            f'<a href="/compare/">Compare every firm</a> or read <a href="/risks/">the risks</a> before you spend anything.</p>'
+            f'<p>Codes normally cover the evaluation fee only. Resets, activation fees and monthly renewals are usually charged at the normal price, so the true cost of a monthly plan '
+            f'is higher than the first payment. The <a href="/tools/challenge-cost-calculator/">true cost calculator</a> adds them up.</p></div>')
+    faq = []
+    if biggest:
+        faq.append(["Which prop firm has the biggest Black Friday discount?",
+                    f"{esc(biggest['name'])} advertises {esc(biggest['current_public_promo']['discount'][0].lower() + biggest['current_public_promo']['discount'][1:])}"
+                    + (f" with code {esc(biggest['current_public_promo']['code'])}" if biggest['current_public_promo'].get('code') else "")
+                    + f". {esc((biggest['current_public_promo'].get('applies_to') or '').rstrip('.'))}. A bigger percentage does not always mean a cheaper account: compare the final 50K price and the rules."])
+    if soon:
+        faq.append(["When do prop firm Black Friday deals end?",
+                    "It depends on the firm. " + " ".join(f"{esc(f['name'])}: {'about ' if f['current_public_promo'].get('ends_approx') else ''}{fmt_date(f['current_public_promo']['ends'])}." for f in soon)
+                    + " The others have not published an end date, so they can stop at any time."])
+    faq += [["Do Black Friday codes work on resets and activation fees?",
+             "Usually not. The codes cover the evaluation fee. Some firms waive or cut activation fees as part of a sale (Take Profit Trader's code waives its PRO activation fee), but check the checkout total before you pay."],
+            ["Can I stack a Black Friday code with another code?",
+             "No firm we track lets you combine two discount codes on one order. Some add automatic bundle discounts when you buy several accounts at once."],
+            ["Are these the real codes from the firms?",
+             "Yes. Each code was read from the firm's own website or checkout on the date shown. Where a firm gave us our own partner code, it is marked as a partner code. We do not copy codes from coupon sites."]]
+    desc = (f"Black Friday 2026 prop firm deals from {len(bf)} firms, plus {len(other)} other live codes, each checked on the firm's own site, "
+            f"with end dates and the 50K price after the discount.")
+    graph = [article_schema("Prop firm Black Friday deals 2026", desc, SITE + path, "2026-11-25", mod), faq_schema(faq)]
+    site.add(path, title="Prop Firm Black Friday Deals 2026: Codes Checked", description=desc,
+             body=body + faq_html(faq) + related_html([("/promo-codes/", "All prop firm promo codes", "Every firm's current code in one table"),
+                                                       ("/best/cheapest-prop-firms/", "Cheapest prop firms", "50K list prices before discounts")]),
+             section="promo-codes", trail=[("Promo codes", "/promo-codes/"), ("Black Friday deals", path)],
+             graph=graph, kind="article", priority="0.9", lastmod=mod)
+
+
+def build_changes(site, firms):
+    groups = {}
+    for f in firms.values():
+        for c in f.get("recent_changes_2026") or []:
+            d = str(c.get("date") or "")
+            m = re.match(r"(2026-\d\d)", d)
+            groups.setdefault(m.group(1) if m else "earlier", []).append((d, f, c))
+    months = sorted([k for k in groups if k != "earlier"], reverse=True)
+    label = lambda k: datetime.date(int(k[:4]), int(k[5:7]), 1).strftime("%B %Y")
+    latest = months[0]
+    path = "/prop-firm-rule-changes/"
+    secs = ""
+    for k in months + (["earlier"] if "earlier" in groups else []):
+        items = sorted(groups[k], key=lambda x: (x[1]["name"], x[0]))
+        lis = "".join(f'<li><strong><a href="/firms/{f["slug"]}/">{esc(f["name"])}</a>:</strong> {esc(c["change"])}'
+                      + (f' <a class="src" href="{esc(c["source"])}" rel="nofollow noopener" target="_blank">Source</a>' if c.get("source") else "")
+                      + "</li>" for d, f, c in items)
+        secs += f'<h2>{"Earlier in 2026" if k == "earlier" else label(k)}</h2><ul class="changes">{lis}</ul>'
+    n_latest = len(groups[latest])
+    firms_latest = len({f["slug"] for d, f, c in groups[latest]})
+    mod = max(f["checked"] for f in firms.values())
+    body = (f'<header class="art-head"><h1>Prop firm rule changes: {label(latest)}</h1><p class="byline">Updated {fmt_date(mod)}. '
+            f'Each change links to the firm\'s own announcement or rules page.</p></header>'
+            f'<div class="content"><p class="lede">Prop firms change prices, drawdown rules and payout terms often, and usually without much notice. '
+            f'This page lists every change we recorded while checking the firms we track: {n_latest} changes at {firms_latest} firms in {label(latest)} so far, '
+            f'with earlier months below.</p>{secs}</div>')
+    desc = f"Every prop firm rule and price change we recorded in {label(latest)} and earlier in 2026, with a link to each firm's own source."
+    site.add(path, title=fit_title(f"Prop Firm Rule Changes ({label(latest)}): What Changed", f"Prop Firm Rule Changes ({label(latest)})"),
+             description=desc, body=body + related_html([("/compare/", "Compare every firm", "Current rules side by side"),
+                                                         ("/promo-codes/", "Promo codes", "Current discounts")]),
+             section="firms", trail=[("Rule changes", path)], kind="article", priority="0.8", lastmod=mod,
+             graph=[article_schema(f"Prop firm rule changes: {label(latest)}", desc, SITE + path, "2026-11-25", mod)])
+
+
 def build_lists(site, firms, lists):
     for l in lists:
         picks = pick_list(l, firms)
@@ -1155,6 +1310,8 @@ def build_lists(site, firms, lists):
                 bigger = [(c, pr["prices_by_size"].get(str(c))) for c in (150000, 200000) if pr["prices_by_size"].get(str(c)) is not None]
                 why = (f"100K {plan} for {strip_tags(money(size_price(f, 100000), 'USD'))}{mo}"
                        + (f"; {size_label(bigger[0][0])} for {strip_tags(money(bigger[0][1], 'USD'))}{mo}" if bigger else "") + ".")
+            if l.get("why_auto") == "plan":
+                why = plan_summary(f)
             if l.get("why_auto") == "maxloss" and biggest_maxloss(f):
                 v, pr = biggest_maxloss(f)
                 dd = re.split(r"[(;,]", pr.get("drawdown_type") or "")[0].strip()
@@ -1180,7 +1337,7 @@ def build_lists(site, firms, lists):
         cols = l.get("cols", ["firm", "price", "target", "maxloss", "dd", "cons", "split", "payouts"])
         body = (f'<header class="art-head"><h1>{esc(l["h1"])}</h1><p class="byline">Updated {fmt_date(mod)}. '
                 f'Facts checked against each firm\'s own pages. <a href="/methodology/">How we rank</a>. {DISCLOSE}</p></header>'
-                f'<div class="content"><p class="lede">{l["intro"]}</p></div>'
+                f'<div class="content"><p class="lede">{list_faq_fill(l["intro"], picks, whys)}</p></div>'
                 f'<ol class="rank">{items}</ol><h2>Side by side</h2>{firm_table(picks, cols)}'
                 f'<div class="content">{l.get("body", "").replace("{{ALLOC_TABLE}}", "</div>" + alloc_table(firms) + "<div class=\"content\">").replace("{{SIZE_TABLE}}", "</div>" + sizes_overview(firms) + "<div class=\"content\">")}</div>')
         faq = [[q, list_faq_fill(a, picks, whys)] for q, a in (l.get("faq") or [])]
@@ -1372,6 +1529,8 @@ def build():
     site = Site()
     build_firm_pages(site, firms, lists, compares)
     build_lists(site, firms, lists)
+    build_black_friday(site, firms)
+    build_changes(site, firms)
     build_compares(site, firms, compares)
     build_static_pages(site, firms, lists, compares, contracts)
     n = site.write()

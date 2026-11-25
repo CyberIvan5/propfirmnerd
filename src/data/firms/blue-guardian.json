@@ -122,7 +122,8 @@
   "discount": "35% off",
   "applies_to": "Shown on the checkout banner ('35% OFF • LIMITED OFFER') and homepage pricing; scope and end date not stated. GUARD30 (30% off all CFD and futures accounts) is also shown",
   "source_url": "https://checkout.blueguardian.com/",
-  "seen": "2026-11-23"
+  "seen": "2026-11-23",
+  "black_friday": true
  },
  "affiliate_program": {
   "exists": true,

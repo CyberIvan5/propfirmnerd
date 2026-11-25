@@ -103,11 +103,12 @@
  ],
  "path_to_live": null,
  "current_public_promo": {
-  "code": "FIRSTGFT",
-  "discount": "50% off",
-  "applies_to": "New customers' first account; code BOGO40 gives 40% off all accounts (not the 2 Step Promo plan)",
+  "code": "BLACKFRIDAY55",
+  "discount": "55% off",
+  "applies_to": "All accounts (Black Friday; no end date shown). New customers can instead use FIRSTGFT for 50% off their first account",
   "source_url": "https://www.goatfundedtrader.com/",
-  "seen": "2026-11-16"
+  "seen": "2026-11-25",
+  "black_friday": true
  },
  "affiliate_program": {
   "exists": true,

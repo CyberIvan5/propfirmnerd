@@ -96,7 +96,8 @@
   "discount": "30% off",
   "applies_to": "CFD plans (Early Black Friday; homepage banner and plan pages; no end date shown). Futures: FBF45, 45% off",
   "source_url": "https://brightfunded.com/",
-  "seen": "2026-11-23"
+  "seen": "2026-11-23",
+  "black_friday": true
  },
  "affiliate_program": {
   "exists": true,

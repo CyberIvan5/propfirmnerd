@@ -42,6 +42,20 @@ leave it as is and report it.**
   source count and latest check date on the home page. Firm logos are the firms' own site icons in `static/assets/logos/<slug>.webp` (120x120); a firm without a file
   gets an initials tile coloured by `facets.market`. When adding a firm, add its icon there under the same slug.
 
+- Black Friday page (/promo-codes/black-friday/, built by `build_black_friday`): lists promos seen on or after
+  2026-11-20. Promo fields it uses: `black_friday: true` for sales the firm calls Black Friday / Black Week / Black
+  November, `ends` (ISO date) when the firm states an end, `ends_approx: true` when the end comes from a countdown,
+  `code_note` when the code exists but is not public (e.g. behind a sign-up). The '50K with the deal' column is only
+  computed for firms in `BF_FLAT` (flat % that covers the main 50K plan). When a sale ends, remove `black_friday`,
+  `ends` and set the firm's normal code. After 10 December 2026, ask Ivan whether to keep the page for 2027 or
+  redirect it to /promo-codes/.
+- Rule changes page (/prop-firm-rule-changes/) is built from every firm's `recent_changes_2026`; date entries as
+  YYYY-MM or YYYY-MM-DD so they land in the right month.
+- Alternatives pages (ftmo-alternatives, apex-trader-funding-alternatives in lists.json) use `only` lists of slugs;
+  add new firms of the same market to them. `why_auto: "plan"` builds each line from the firm's data.
+- Apex blocks Serbia: its promo is set to 'Not verified since 16 October 2026' and a status_note says so. If Ivan
+  sends screenshots of apextraderfunding.com (VPN), update from those and remove the note.
+
 ## Steps
 0. Rolling full re-check (so no firm's date goes stale): list the firms by `checked` (oldest first). Besides the
    change checks below, fully re-verify the **7 firms with the oldest `checked` date** this week: every program's

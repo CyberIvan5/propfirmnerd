@@ -278,15 +278,15 @@
  },
  {
   "slug": "prop-firms-that-accept-us-traders",
-  "h1": "Prop firms for US traders",
-  "title": "Prop Firms for US Traders & Residents ({month})",
-  "description": "Which futures and forex prop firms accept US residents, which platforms US traders can use at each, and which firms do not serve the US. Checked against each firm's own pages.",
+  "h1": "Prop trading firms for US traders",
+  "title": "Prop Trading Firms in the USA ({month}): US Traders",
+  "description": "Prop trading firms that accept US traders and residents: futures and forex firms, the platforms US traders can use at each, prices and rules, checked against each firm's own pages.",
   "blurb": "US residents accepted, per each firm's own pages",
   "where": {
    "us": true
   },
   "limit": 30,
-  "intro": "Every firm below says on its own pages that it accepts US residents, or leaves the US off its restricted-country list. Futures firms are the simplest option for US traders. Forex firms often do accept US residents, but usually not on MetaTrader 5, so check the platform before you buy.",
+  "intro": "These {n} prop trading firms accept US residents, according to their own pages, or leave the US off their restricted-country list. Futures prop firms are the simplest choice in the USA: they trade CME futures on US platforms with no platform restrictions. Forex and CFD firms often accept US traders too, but usually not on MetaTrader 5, so check the platform before you buy. Ranked by 50K list price, cheapest first.",
   "why": {},
   "body": "<h2>Futures or forex?</h2>\n<p>Futures prop firms such as Topstep, Apex, Tradeify, Lucid, MyFundedFutures, Alpha Futures, Phidias, TradeDay, Funded Futures Network and Earn2Trade all accept US residents. Their evaluations run on US futures platforms like Tradovate, NinjaTrader and Rithmic, so there is no platform catch.</p>\n<p>Forex and CFD firms are different. Several of them say MetaTrader 5 is not available to US residents, so US traders get a smaller set of platforms:</p>\n<ul>\n<li><a href=\"/firms/ftmo/\">FTMO</a>: US clients are served through a separate US offering at ftmo.oanda.com.</li>\n<li><a href=\"/firms/e8-markets/\">E8 Markets</a>: no MT5 for US citizens; US traders use TradeLocker, cTrader or Match-Trader through E8's US entity.</li>\n<li><a href=\"/firms/goat-funded-trader/\">Goat Funded Trader</a>: no MT5 or cTrader for US clients; TradeLocker, Match-Trader and Volumetrica are available.</li>\n<li><a href=\"/firms/hola-prime/\">Hola Prime</a>: US clients can trade forex on Match-Trader and TradeLocker only.</li>\n</ul>\n<h2>Firms where US access is limited or unclear</h2>\n<p>These firms do not list the US as restricted, but limit what US residents can use, or do not say clearly: <a href=\"/firms/funderpro/\">FunderPro</a> (TradeLocker challenges only), <a href=\"/firms/maven-trading/\">Maven Trading</a> (Match Trader only), <a href=\"/firms/brightfunded/\">BrightFunded</a> (DXtrade only), <a href=\"/firms/the5ers/\">The5ers</a> (no MT5 for US residents) <a href=\"/firms/funding-traders/\">Funding Traders</a> (MT5 not intended for US residents) and <a href=\"/firms/alpha-capital-group/\">Alpha Capital Group</a> (its help center says US residents can use DXtrade and TradeLocker, but its order form asks you to confirm you are not a US resident). For <a href=\"/firms/aqua-funded/\">Aqua Funded</a>, <a href=\"/firms/fundingpips/\">FundingPips</a>, <a href=\"/firms/blue-guardian/\">Blue Guardian</a>, <a href=\"/firms/bulenox/\">Bulenox</a>, <a href=\"/firms/take-profit-trader/\">Take Profit Trader</a> and <a href=\"/firms/top-one-futures/\">Top One Futures</a>, we could not find a clear statement either way. Ask the firm before you pay.</p>\n<h2>Firms that do not accept US residents</h2>\n<p><a href=\"/firms/fxify/\">FXIFY</a> and <a href=\"/firms/blueberry-funded/\">Blueberry Funded</a> list the United States as a restricted country.</p>",
   "faq": [
@@ -313,6 +313,18 @@
    [
     "Which prop firm has the best payouts for US traders?",
     "It depends on what you value. Apex pays 100% of approved payouts on its performance accounts; Topstep, Tradeify, Lucid and Alpha Futures pay 90%. MyFundedFutures pays every 48 hours on Builder and daily on Rapid, but most firms also cap each payout, for example $2,000 at Topstep (XFA Standard) and Lucid on 50K. See how prop firm payouts work for the full rules."
+   ],
+   [
+    "How many prop firms accept US traders?",
+    "{n} of the firms we track accept US residents on their own pages: {names}."
+   ],
+   [
+    "What is the cheapest prop firm for US traders?",
+    "Among firms that accept US residents, the cheapest one-time 50K evaluation is {cheapest_once}, and the cheapest monthly plan is {cheapest_month}. Monthly plans renew until you pass."
+   ],
+   [
+    "Which prop firms for US traders use end-of-day drawdown?",
+    "{eod}."
    ]
   ],
   "published": "2026-10-16"
@@ -400,5 +412,98 @@
    ]
   ],
   "published": "2026-11-10"
+ },
+ {
+  "slug": "ftmo-alternatives",
+  "h1": "FTMO alternatives",
+  "title": "FTMO Alternatives ({month}): Forex Firms Compared",
+  "description": "Forex and CFD prop firms to consider instead of FTMO, with each firm's 50K price, target, max loss and payout rules next to FTMO's, checked against the firms' own pages.",
+  "blurb": "Forex firms to weigh against FTMO's €345 50K Challenge",
+  "only": [
+   "alpha-capital-group",
+   "aqua-funded",
+   "blue-guardian",
+   "blueberry-funded",
+   "brightfunded",
+   "e8-markets",
+   "fundednext",
+   "funderpro",
+   "funding-traders",
+   "fundingpips",
+   "fxify",
+   "goat-funded-trader",
+   "hola-prime",
+   "maven-trading",
+   "the5ers"
+  ],
+  "sort": "price50",
+  "limit": 12,
+  "why_auto": "plan",
+  "published": "2026-11-25",
+  "intro": "FTMO's 50K 2-Step Challenge lists at €345, with a 10% then 5% target, a 5% daily loss limit and a static 10% max loss, and FTMO refunds the fee with your first reward. The firms below sell similar forex and CFD evaluations. They are ordered by 50K list price, cheapest first; check the drawdown type and payout rules before choosing on price.",
+  "body": "<h2>How the main differences work</h2><p><strong>Drawdown.</strong> FTMO's max loss is static: it stays at the same level below your starting balance. Most firms here also use a static max loss on their main plan, but some trail it, and a trailing limit follows your best balance up, which is stricter. See <a href=\"/guides/trailing-drawdown/\">how trailing drawdown works</a>.</p><p><strong>Consistency rules.</strong> FTMO's 2-Step has no consistency rule. Several cheaper firms add one on funded payouts, which caps how much of your profit can come from a single day.</p><p><strong>Payouts.</strong> FTMO pays your first reward from day 14. Some firms below pay on demand or bi-weekly, often in exchange for a lower split or a consistency rule.</p><p>For a head-to-head, see <a href=\"/compare/fxify-vs-ftmo/\">FXIFY vs FTMO</a>, <a href=\"/compare/ftmo-vs-e8-markets/\">FTMO vs E8 Markets</a>, <a href=\"/compare/blue-guardian-vs-ftmo/\">Blue Guardian vs FTMO</a>, <a href=\"/compare/aqua-funded-vs-ftmo/\">Aqua Funded vs FTMO</a> and <a href=\"/compare/blueberry-funded-vs-ftmo/\">Blueberry Funded vs FTMO</a>.</p>",
+  "faq": [
+   [
+    "What is the cheapest alternative to FTMO?",
+    "Among the forex firms we track, the cheapest 50K evaluation is {cheapest_once}. A lower fee often comes with a smaller max loss or extra rules, so compare those before buying."
+   ],
+   [
+    "Which FTMO alternatives have a static drawdown like FTMO?",
+    "{static}."
+   ],
+   [
+    "Which FTMO alternatives have no consistency rule?",
+    "{nocons}."
+   ],
+   [
+    "Is FTMO still worth it?",
+    "FTMO has run since 2015 and holds a 4.8 Trustpilot rating, which is more track record than most firms here. It is not the cheapest. Whether it is worth it depends on how much the fee, the static 10% max loss and the payout timing matter to you; the table above lets you compare them."
+   ]
+  ]
+ },
+ {
+  "slug": "apex-trader-funding-alternatives",
+  "h1": "Apex Trader Funding alternatives",
+  "title": "Apex Trader Funding Alternatives ({month})",
+  "description": "Futures prop firms to consider instead of Apex Trader Funding, with 50K prices, drawdown type, consistency rules and payout terms, checked against each firm's own pages.",
+  "blurb": "Futures firms to weigh against Apex",
+  "only": [
+   "alpha-futures",
+   "bulenox",
+   "earn2trade",
+   "funded-futures-network",
+   "lucid-trading",
+   "myfundedfutures",
+   "phidias",
+   "take-profit-trader",
+   "top-one-futures",
+   "topstep",
+   "tradeday",
+   "tradeify"
+  ],
+  "sort": "price50",
+  "limit": 12,
+  "why_auto": "plan",
+  "published": "2026-11-25",
+  "intro": "When we last checked Apex's own pages (16 October 2026), its 50K EOD evaluation had a $3,000 target and a $2,000 max loss, with payouts after five qualifying days. Apex now blocks visitors from our location, so we cannot re-check its current prices; the firms below are futures prop firms we have checked this month. They are ordered by 50K list price, cheapest first; monthly plans are marked a month and renew until you pass.",
+  "body": "<h2>How the main differences work</h2><p><strong>Monthly or one-time.</strong> Topstep, Earn2Trade, Alpha Futures, Top One Futures, Take Profit Trader and Phidias' monthly plans bill every month until you pass, so a slow pass costs more than the first payment. Lucid, Tradeify, MyFundedFutures, TradeDay, Bulenox and Funded Futures Network sell one-time evaluations. Use the <a href=\"/tools/challenge-cost-calculator/\">true cost calculator</a> to compare.</p><p><strong>Drawdown.</strong> Most of these firms trail the max loss only at the end of the day, which is easier to live with than an intraday trailing limit. See <a href=\"/guides/trailing-drawdown/\">how trailing drawdown works</a>.</p><p><strong>Consistency.</strong> Many futures firms add a consistency rule on funded payouts; check the column in the table.</p><p>For head-to-heads, see <a href=\"/compare/lucid-trading-vs-apex-trader-funding/\">Lucid vs Apex</a> and <a href=\"/compare/alpha-futures-vs-apex-trader-funding/\">Alpha Futures vs Apex</a>.</p>",
+  "faq": [
+   [
+    "What is the cheapest alternative to Apex Trader Funding?",
+    "Among the futures firms we track, the cheapest one-time 50K evaluation is {cheapest_once}, and the cheapest monthly plan is {cheapest_month}."
+   ],
+   [
+    "Which Apex alternatives use end-of-day drawdown?",
+    "{eod}."
+   ],
+   [
+    "Which Apex alternatives have no consistency rule?",
+    "{nocons}."
+   ],
+   [
+    "Why is Apex's price not shown here?",
+    "Apex blocks visitors from our location, so we have not been able to read its current prices since 16 October 2026. We do not copy prices from other sites. Check apextraderfunding.com for its current offer."
+   ]
+  ]
  }
 ]

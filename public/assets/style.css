@@ -355,6 +355,19 @@ main:has(table.big) .wrap{max-width:1520px}
   table.big td.deal .codebtn{text-align:center}
 }
 
+/* deals table (Black Friday page) */
+table.deals td small.muted{display:block;font-size:13.5px;line-height:1.4;margin-top:3px}
+table.deals td:nth-child(3){min-width:260px}
+@media (max-width:760px){
+  table.deals.cards tbody td[data-l=Deal]{grid-column:1/-1}
+  table.deals.cards tbody td[data-l=Code]{grid-column:1/-1}
+  table.deals.cards thead{display:none}
+}
+/* rule changes */
+ul.changes{padding-left:1.1em}
+ul.changes li{margin-bottom:.7em}
+ul.changes a.src{font-size:14px;color:var(--ink-3)}
+
 /* filters */
 .filters{display:flex;flex-wrap:wrap;gap:10px 8px;margin:0 0 16px;align-items:center}
 .filters fieldset{border:0;padding:0;margin:0 16px 0 0;display:flex;gap:6px;flex-wrap:wrap;align-items:center}

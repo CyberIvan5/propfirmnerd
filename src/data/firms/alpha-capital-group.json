@@ -119,9 +119,9 @@
  "current_public_promo": {
   "code": "ALPHA20",
   "discount": "20% off",
-  "applies_to": "Alpha Pro, as suggested at checkout; checkout suggests FUNDED40 for Alpha Direct, and 10KFOR40 makes a 10K account $40",
-  "source_url": "https://alphacapitalgroup.uk/product",
-  "seen": "2026-11-12"
+  "applies_to": "All accounts, per the banner on Alpha Capital's homepage (checkout suggests FUNDED40 on Alpha Direct)",
+  "source_url": "https://alphacapitalgroup.uk/",
+  "seen": "2026-11-25"
  },
  "affiliate_program": {
   "exists": null,
